@@ -60,7 +60,8 @@ def read_sites(res: dict) -> set[str]:
 def grade(gt: dict, res: dict, checked: dict | None = None) -> str:
     verdict = res.get("판정", "오류")
     if verdict in QUOTE_FOUND:
-        if site(res.get("상세페이지", "")) == site(gt.get("원문주소", "")):
+        targets = {site(gt.get("원문주소", ""))} | {site("https://" + a) for a in gt.get("대체주소") or []}
+        if site(res.get("상세페이지", "")) in targets:   # 같은 원문의 다른 곳(대체주소)도 인정
             return "원문 문장 확인"
         return CHECKED.get((checked or {}).get("판단", ""), "근거 확인 필요")
     if verdict == NEAR:
