@@ -229,6 +229,8 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
         c = 공시찾기.candidate_from_url(x["주소"], x["제목"]) or Candidate(
             x["제목"] or x["주소"], x["주소"], x["주소"], "gen_" + hashlib.sha1(x["주소"].encode()).hexdigest()[:12])
         cands.append(c)
+    number = (first.get("추출") or {}).get("숫자", "")
+    cands = 라이너에이전트.snippet_candidates(ans, sources, number) + cands
     print(f"    Deep Research 가 지목한 원 출처 {len(cands)}곳을 받아 직접 확인: {[c.page_url[:60] for c in cands]}")
     again = _run_once({k: v for k, v in result.items() if k in ("입력", "시각")}, sentence, context,
                       article_date, force, None, extra=cands)

@@ -33,7 +33,9 @@ REBUTTAL_TITLE = re.compile(r"설명자료|해명|보도\s*관련|기사\s*관�
 
 
 def drop_rebuttals(cands: list) -> list:
-    return [c for c in cands if not REBUTTAL_TITLE.search(c.title)]
+    """보도 설명자료·해명 게시물은 원 보고서가 아니므로 뒤로 미룬다(11/15: 빼지는 않음 — 기사가 부처 설명자료를
+    그대로 옮긴 경우 그 설명자료가 원문이다, 무작위3 #39 '사실은 이렇습니다')."""
+    return sorted(cands, key=lambda c: bool(REBUTTAL_TITLE.search(c.title)))
 
 
 MAX_CANDIDATES = 8   # 기관별로 모을 후보 수(받기는 원문찾기.py 의 MAX_DOWNLOAD 개만)

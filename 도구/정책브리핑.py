@@ -49,28 +49,50 @@ def _queries(info: dict) -> list[str]:
     return list(dict.fromkeys(q for q in out if q))
 
 
+ACTUALLY_LIST = BASE + "/briefing/actuallyList.do?srchWord={q}&startDate={start}&endDate={end}"
+ACTUALLY_VIEW = BASE + "/briefing/actuallyView.do?newsId={id}"
+ACTUALLY_ITEM = re.compile(r"actuallyView\.do\?newsId=(\d+)[^>]*>\s*(?:<[^>]+>\s*)*([^<]{4,120})")
+MAX_ACTUALLY = 2   # '사실은 이렇습니다'(부처 설명자료) 후보 수
+
+
+def _board(list_url: str, item: re.Pattern, q: str, start: str, end: str, label: str) -> list[tuple[str, str]]:
+    try:
+        page = fetch_bytes(list_url.format(q=urllib.parse.quote(q), start=start, end=end)).decode("utf-8", "replace")
+    except RuntimeError as e:  # 정책브리핑 실패는 다른 경로로 계속(이유 출력)
+        print(f"    정책브리핑 {label} 검색 실패 '{q}': {e}")
+        return []
+    total = re.search(r"검색결과\s*총\s*(?:<[^>]+>\s*)*([\d,]+)", page)
+    n = int(total.group(1).replace(",", "")) if total else 0
+    print(f"    정책브리핑 {label} 검색 '{q}' ({start}~{end}) → {n}건")
+    if n == 0:
+        return []   # 결과가 없으면 최신 목록이 대신 나온다 → 쓰지 않음
+    return [(nid, html_lib.unescape(title).strip()) for nid, title in item.findall(page)]
+
+
 def search(info: dict, article_date: str) -> list[Candidate]:
-    """보도자료 게시물 후보(기사 날짜 이전 DAYS_BEFORE 일). 검색어를 좁은 것부터 넓은 것까지 차례로."""
+    """보도자료 게시물 후보(기사 날짜 이전 DAYS_BEFORE 일). 검색어를 좁은 것부터 넓은 것까지 차례로.
+    '사실은 이렇습니다'(부처 설명자료)도 찾는다 — 기사가 설명자료를 그대로 옮긴 경우(11/15 무작위3 #39)."""
     found: dict[str, str] = {}
     report_q = re.sub(r"[「」『』‘’'\"]", "", info.get("보고서") or "")
-    for q in _queries(info):
+    queries = _queries(info)
+    for q in queries:
         start, end = _window(info, article_date, REPORT_DAYS_BEFORE if q == report_q else DAYS_BEFORE)
-        try:
-            page = fetch_bytes(LIST.format(q=urllib.parse.quote(q), start=start, end=end)).decode("utf-8", "replace")
-        except RuntimeError as e:  # 정책브리핑 실패는 다른 경로로 계속(이유 출력)
-            print(f"    정책브리핑 검색 실패 '{q}': {e}")
-            continue
-        total = re.search(r"검색결과\s*총\s*(?:<[^>]+>\s*)*([\d,]+)", page)
-        n = int(total.group(1).replace(",", "")) if total else 0
-        print(f"    정책브리핑 보도자료 검색 '{q}' ({start}~{end}) → {n}건")
-        if n == 0:
-            continue   # 결과가 없으면 최신 목록이 대신 나온다 → 쓰지 않음
-        for nid, title in ITEM.findall(page):
-            found.setdefault(nid, html_lib.unescape(title).strip())
+        for nid, title in _board(LIST, ITEM, q, start, end, "보도자료"):
+            found.setdefault(nid, title)
         if len(found) >= MAX_RESULTS:
             break
     out = []
     for nid, title in list(found.items())[:MAX_RESULTS]:
         url = VIEW.format(id=nid)
         out.append(Candidate(title, url, url, "gen_" + hashlib.sha1(url.encode()).hexdigest()[:12]))
+    actually: dict[str, str] = {}
+    for q in queries[:2]:
+        start, end = _window(info, article_date, DAYS_BEFORE)
+        for nid, title in _board(ACTUALLY_LIST, ACTUALLY_ITEM, q, start, end, "설명자료"):
+            actually.setdefault(nid, title)
+        if actually:
+            break
+    for nid, title in list(actually.items())[:MAX_ACTUALLY]:
+        url = ACTUALLY_VIEW.format(id=nid)
+        out.append(Candidate(f"(설명자료) {title}", url, url, "gen_" + hashlib.sha1(url.encode()).hexdigest()[:12]))
     return out

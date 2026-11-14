@@ -76,3 +76,44 @@ def named_sources(ans: dict) -> list[dict]:
             seen.add(x["주소"])
             result.append(x)
     return result[:MAX_CANDIDATES]
+
+
+QUOTE_LINE = re.compile(r"[>]\s*[“\"]([^”\"]{20,300})[”\"]|[“]([^”]{20,300})[”]")
+
+
+def quotes(ans: dict) -> list[str]:
+    """답에서 원문 인용으로 낸 문장들(> “…” 꼴)."""
+    out = []
+    for a, b in QUOTE_LINE.findall(ans.get("답", "")):
+        q = re.sub(r"\s+", " ", a or b).strip()
+        if q and q not in out:
+            out.append(q)
+    return out[:3]
+
+
+def snippet_candidates(ans: dict, sources: list[dict], number: str) -> list:
+    """자동 접속이 막힌 누리집(BLS·국무부 등) 대비: Deep Research 가 인용한 문장을 라이너 검색으로 따로 찾아,
+    그 누리집 결과의 검색 요약에 기사 숫자가 있으면 그 요약을 후보로(Deep Research 말이 아니라 검색 색인으로 확인)."""
+    from liner_api import web_search
+    from 기관별 import Candidate
+    from 숫자표기 import to_regex, variants
+    pats = [to_regex(v.text) for v in variants(number)]
+    hosts = {일반경로.host(x["주소"]) for x in sources}
+    out = []
+    for q in quotes(ans):
+        try:
+            rs = web_search(q[:150], max_results=10)
+        except RuntimeError as e:
+            print(f"    인용 문장 검색 실패: {e}")
+            continue
+        for r in rs:
+            url, desc = r.get("url") or "", 일반경로.normalize_numbers(str(r.get("description") or ""))
+            if 일반경로.host(url) in hosts and any(p.search(desc) for p in pats):
+                일반경로.register_snippet(url, str(r.get("description")))
+                key = "gen_snip_" + hashlib.sha1(url.encode()).hexdigest()[:12]
+                if key not in {c.file_key for c in out}:
+                    out.append(Candidate(r.get("title") or url, url, url, key))
+    if out:
+        print(f"    Deep Research 인용 문장을 라이너 검색으로 다시 찾아 원 출처 검색 요약 {len(out)}건 확보")
+    return out
+
