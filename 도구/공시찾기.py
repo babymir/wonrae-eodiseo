@@ -227,6 +227,12 @@ def _doc_text(rcept_no: str) -> str:
     return add_money_forms(normalize_numbers(re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", text))))
 
 
+def _past_year(period: str, day: date) -> int | None:
+    """기준 시점이 기사 날짜보다 앞선 한 해 전체('2025년')면 그 연도. 월·분기·반기가 있으면 None."""
+    m = re.fullmatch(r"\s*(20\d{2})\s*년?\s*", period or "")
+    return int(m.group(1)) if m and int(m.group(1)) < day.year else None
+
+
 def search(info: dict, sentence: str, article_date: str) -> list[Candidate]:
     """기사 날짜 앞뒤 공시 중 정기보고서·잠정실적 원문(최신부터 MAX_REPORTS 개)."""
     try:
@@ -246,6 +252,16 @@ def search(info: dict, sentence: str, article_date: str) -> list[Candidate]:
                                    end_de=end.strftime("%Y%m%d"), page_count=100))
             if data.get("list"):
                 break
+        # 기준 시점이 지난해 한 해 전체('지난해 매출')면 그해 사업보고서(다음 해 1~5월 제출)도 찾는다
+        # (11/15 검증 세트: 매일유업 중국법인 지난해 실적 → 3월 사업보고서가 120일 창 밖이라 못 찾음)
+        year = _past_year(info.get("기준시점", ""), day)
+        if year:
+            annual = json.loads(_api("list.json", corp_code=code, bgn_de=f"{year + 1}0101", end_de=f"{year + 1}0531",
+                                     pblntf_ty="A", page_count=20))
+            extra = [x for x in annual.get("list", []) if "사업보고서" in x.get("report_nm", "")]
+            if extra:
+                print(f"    DART '{corp[1]}' {year}년 사업보고서 {len(extra)}건 더함")
+                data = {**data, "status": "000", "list": extra + list(data.get("list", []))}
     except (RuntimeError, ValueError, zipfile.BadZipFile) as e:  # DART 실패는 다른 경로로 계속(이유 출력)
         print(f"    DART 공시 찾기 실패: {e}")
         return []

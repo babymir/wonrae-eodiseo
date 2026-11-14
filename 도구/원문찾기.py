@@ -33,6 +33,7 @@ import 일반경로
 import 정책브리핑
 import 라이너에이전트
 import 여론조사찾기
+import 시청률찾기
 import 출처종류
 import 판정규칙
 from liner_api import web_search
@@ -379,6 +380,11 @@ def _run_once(result: dict, sentence: str, context: str, article_date: str, forc
             dart = 공시찾기.search(info, sentence, article_date)
             priority += [c.file_key for c in dart[:MAX_PRIORITY_EACH]]
             found = dart + found
+        if finder is 일반경로.finder:
+            # 닐슨코리아 시청률 → 그날 일일 순위 화면(시청률찾기.py)
+            ratings = 시청률찾기.search(sentence, article_date)
+            priority += [c.file_key for c in ratings]
+            found = ratings + found
         if finder is 일반경로.finder:
             # 여론조사 → 중앙선거여론조사심의위 등록 결과분석 PDF(여론조사찾기.py)
             polls = 여론조사찾기.search(info, sentence, context, article_date)
