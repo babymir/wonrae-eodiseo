@@ -25,7 +25,8 @@ from pathlib import Path
 
 from PDF도구 import PDF_DIR
 from 기사받기 import fetch_article, valid_url
-from 원문찾기 import run, save
+from 격리실행 import run_isolated
+from 원문찾기 import save
 
 HOST, PORT = "127.0.0.1", 8765
 WEB_DIR = Path(__file__).resolve().parent / "웹"
@@ -85,7 +86,9 @@ def work(job_id: str, sentence: str, context: str, date: str, force: bool, prefe
                     print(f"[0] 기사 주소에서 제목·날짜·앞뒤 문단을 읽음: {art['제목'][:40]} ({art['날짜'] or '날짜 모름'})")
                 except RuntimeError as e:  # 기사 받기 실패는 문장만으로 계속(이유는 화면에)
                     print(f"[0] 기사 주소를 읽지 못해 문장만으로 찾습니다: {e}")
-            result = run(sentence, context, date, force=force, on_event=on_event, prefer=prefer)
+            # 별도 프로그램으로 돌려 시간 상한을 반드시 지킨다(11/16: 같은 프로그램 안의 상한이 깨진 적 있음)
+            result = run_isolated(sentence, context, date, force=force, prefer=prefer, on_event=on_event,
+                                  on_line=lambda line: job["steps"].append(line.strip()))
             save(result)
             job.update(status="done", result=result)
         except Exception as e:  # 화면에 이유를 보여 주고, 서버 창에는 자세한 기록

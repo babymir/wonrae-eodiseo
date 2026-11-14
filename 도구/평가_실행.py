@@ -9,6 +9,7 @@
 """
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -18,6 +19,7 @@ from pathlib import Path
 from 기사받기 import source_clues
 from 일반경로 import html_text
 from 원문찾기 import run
+from 격리실행 import run_isolated
 
 ROOT = Path(__file__).resolve().parent.parent
 # 평가 폴더: 기본은 작업/평가, 다른 세트는 인자로 (예: python3 도구/평가_실행.py 작업/평가_새기사)
@@ -28,6 +30,7 @@ SKIP = {n.strip() for a in sys.argv[1:] if a.startswith("--건너뛰기=") for n
 CACHE_DIR = EVAL_DIR / "기사캐시"
 CONTEXT_CHARS = 600
 SENTENCE_ONLY = "--문장만" in sys.argv
+ISOLATE = os.environ.get("ORIGIN_ISOLATE") == "1"
 _SUFFIX = "_문장만" if SENTENCE_ONLY else ""
 TARGETS = EVAL_DIR / "평가대상.json"
 RESULTS = EVAL_DIR / f"평가결과{_SUFFIX}.json"
@@ -130,8 +133,9 @@ def main() -> None:
         start = time.time()
         row = dict(t)
         try:
-            row["결과"] = (run(t["문장"]) if SENTENCE_ONLY
-                          else run(t["문장"], article_context(t), t.get("기사날짜") or ""))
+            runner = run_isolated if ISOLATE else run   # ORIGIN_ISOLATE=1: 별도 프로그램(시간 상한 보장, 화면과 같은 조건)
+            row["결과"] = (runner(t["문장"]) if SENTENCE_ONLY
+                          else runner(t["문장"], article_context(t), t.get("기사날짜") or ""))
         except Exception as e:  # 한 건 실패해도 나머지는 계속, 이유는 기록
             row["오류"] = f"{type(e).__name__}: {e}"
             print(f"    실패: {row['오류']}")
