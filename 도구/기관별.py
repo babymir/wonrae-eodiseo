@@ -18,8 +18,8 @@ from pathlib import Path
 USER_AGENT = "Mozilla/5.0 (research prototype)"
 RETRY_WAITS_SEC = [5, 20, 60]
 SITE_PARALLEL = 2    # 기관 누리집마다 동시 요청 수(보사연은 연속 요청에 429)
-CONNECT_TIMEOUT_SEC = 30  # 연결 맺기까지
-TOTAL_TIMEOUT_SEC = 90    # 한 번 받기 전체(넘으면 curl 이 연결을 끊음)
+CONNECT_TIMEOUT_SEC = 15  # 연결 맺기까지(11/15: 30 → 15)
+TOTAL_TIMEOUT_SEC = 45    # 한 번 받기 전체(넘으면 curl 이 연결을 끊음, 11/15: 90 → 45 — 느린 누리집이 한 건을 붙잡지 않게)
 MAX_BYTES = 60 * 1024 * 1024
 # 11/13 보사연 서버가 연결만 연 채 응답을 질질 끌어 25분씩 멈춤. 파이썬 urllib 은 소켓 대기 제한만 있어
 # 막지 못했고, 스레드로 포기해도 멈춘 연결이 동시 요청 자리를 계속 차지해 뒤 요청이 줄줄이 막힘

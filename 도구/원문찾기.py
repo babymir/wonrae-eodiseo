@@ -172,10 +172,15 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
          prefer: dict | None = None) -> dict:
     """1차로 못 찾으면, 같은 숫자를 다룬 다른 기사들의 제목·요약을 문맥으로 넣어 기관·보고서를 다시 뽑고 한 번 더 찾는다.
     (11/15, 연구 근거: 1차에서 못 찾으면 재인용 기사에서 출처 이름을 얻어 반복 검색 — QuanTemp++ 저자 제안, 최대 2라운드)"""
+    # 속도: Deep Research 를 처음부터 동시에 출발시킨다(우리 방식이 못 찾을 때 기다리는 시간을 줄임, 11/15).
+    # 우리 방식이 찾으면 그 답은 안 쓰지만 저장되어 다음에 다시 쓴다.
+    prefetch = None
+    if DEEP_RESEARCH_ON and DEEP_RESEARCH_PREFETCH and not prefer:
+        prefetch = ThreadPoolExecutor(1).submit(라이너에이전트.ask, sentence, context, TIME_LIMIT_SEC - 20)
     first = _run_once(result, sentence, context, article_date, force, prefer)
     if prefer or first.get("판정") != "원출처 미확인" or first.get("출처종류") == "의원실 자료":
         return first
-    deep = _deep_research_round(result, sentence, context, article_date, force, first)
+    deep = _deep_research_round(result, sentence, context, article_date, force, first, prefetch)
     if deep:
         return deep
     if 기록.summary()["총초"] > SECOND_ROUND_BEFORE_SEC:
@@ -201,10 +206,11 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
 
 
 DEEP_RESEARCH_ON = os.environ.get("ORIGIN_DEEP_RESEARCH", "1") == "1"   # 라이너 Deep Research 후보 쓰기(끄기: 0)
+DEEP_RESEARCH_PREFETCH = os.environ.get("ORIGIN_DEEP_RESEARCH_PREFETCH", "1") == "1"   # 처음부터 동시에 묻기(끄기: 0 — 비용 절약)
 
 
 def _deep_research_round(result: dict, sentence: str, context: str, article_date: str, force: bool,
-                         first: dict) -> dict | None:
+                         first: dict, prefetch=None) -> dict | None:
     """우리 방식으로 못 찾으면 라이너 Deep Research 가 원 출처로 지목한 주소를 받아 우리 코드로 확인한다.
     확정 판정(일치 등)이 나올 때만 쓰고, 아니면 None(1차 결과 유지). Deep Research 의 인용을 그대로 믿지 않는다."""
     if not DEEP_RESEARCH_ON or not (first.get("입구") or {}).get("통과", True):
@@ -214,7 +220,14 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
         return None
     print("[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음")
     with 기록.step("라이너 Deep Research"):
-        ans = 라이너에이전트.ask(sentence, context, timeout=left)
+        if prefetch is not None:   # 처음부터 동시에 물어 둔 답
+            try:
+                ans = prefetch.result(timeout=left)
+            except Exception as e:  # 시간 안에 안 오면 후보 없이(이유 출력)
+                print(f"    Deep Research 답을 시간 안에 받지 못함: {type(e).__name__}")
+                ans = {"오류": str(e)}
+        else:
+            ans = 라이너에이전트.ask(sentence, context, timeout=left)
     sources = 라이너에이전트.named_sources(ans) if "오류" not in ans else []
     if not sources:
         print("    Deep Research 가 지목한 원 출처 주소가 없음")

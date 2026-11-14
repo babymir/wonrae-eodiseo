@@ -30,6 +30,7 @@ RERANK_DOC_CHARS = 1500
 DECISION_MODEL = "typesafe/jev-1.13"   # 판정 교차 확인(선택지별 확률)
 ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
 TIMEOUT_SEC = 180
+PDF_TIMEOUT_SEC = 50   # 게이트웨이 PDF 직접 읽기 한 번의 상한
 RETRY_WAITS_SEC = [3, 10]              # 429·5xx·시간 초과면 쉬었다 다시(Retry-After 가 있으면 그 값)
 GATEWAY_PARALLEL = 3                   # 게이트웨이(PDF 읽기) 동시 호출 수
 RERANK_PARALLEL = 5                    # Rerank·Decisions 계정당 동시 5건(라이너 문서)
@@ -51,14 +52,14 @@ def _api_key():
     return key
 
 
-def _post(path, body, headers, slots=_no_limit):
+def _post(path, body, headers, slots=_no_limit, timeout=None):
     """POST 후 JSON. 429·5xx·시간 초과는 RETRY_WAITS_SEC 만큼 쉬고 다시 시도한다."""
     data = json.dumps(body).encode("utf-8")
     for wait in [*RETRY_WAITS_SEC, None]:
         req = urllib.request.Request(BASE_URL + path, data=data, method="POST",
                                      headers={"Content-Type": "application/json", **headers})
         try:
-            with slots, urllib.request.urlopen(req, timeout=TIMEOUT_SEC) as res:
+            with slots, urllib.request.urlopen(req, timeout=timeout or TIMEOUT_SEC) as res:
                 return json.loads(res.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "replace")[:300]
@@ -68,7 +69,7 @@ def _post(path, body, headers, slots=_no_limit):
             wait = float(after) if after and after.replace(".", "").isdigit() else wait
             print(f"    (라이너 {path} HTTP {e.code}, {wait:.0f}초 뒤 다시 시도)")
         except (TimeoutError, urllib.error.URLError) as e:
-            if wait is None:
+            if wait is None or (timeout and isinstance(e, TimeoutError)):   # 짧은 상한을 준 호출은 시간 초과면 다시 안 함
                 raise RuntimeError(f"Liner API 연결 실패({path}): {e}") from e
             print(f"    (라이너 {path} 연결 문제 {e}, {wait}초 뒤 다시 시도)")
         time.sleep(wait + random.uniform(0, 1))
@@ -194,7 +195,9 @@ def ask_json(prompt, pdf_path=None, *, kind="모델", effort="low", schema=None,
     if 캐시.model_cache_on() and (hit := 캐시.get("모델", cache_key)) is not None:
         return hit
     t = time.time()
-    data = _post("/chat/completions", body, {"Authorization": f"Bearer {_api_key()}"}, slots)
+    # PDF 직접 읽기는 한 번에 PDF_TIMEOUT_SEC 까지만(11/15: 느린 건 70초까지 걸림 — 시간 초과면 다른 길로 계속)
+    data = _post("/chat/completions", body, {"Authorization": f"Bearer {_api_key()}"}, slots,
+                 timeout=PDF_TIMEOUT_SEC if pdf_path is not None else None)
     기록.api_call(kind, data.get("model") or body["model"], time.time() - t, data.get("usage"))
     try:
         text = data["choices"][0]["message"]["content"]
