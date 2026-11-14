@@ -46,6 +46,23 @@ def is_news_or_social(url: str, domain: str = "") -> bool:
     return bool(NEWS_OR_SOCIAL.search(h))
 
 
+# 언론 기사 페이지 판별(11/15: 라이너 Deep Research 가 지목한 국내 기사 4건을 원문으로 확인해 '일치' 헛답)
+# 언론사 목록은 끝이 없으므로 주소 꼴과 본문 표지(기자 이름·이메일, 무단전재 금지, 저작권자 ©)로 본다
+NEWS_URL = re.compile(r"articleView|articleViewAmp|/news/article|view\.php\?key=|/article/\d{6,}|/news/\d{6,}|"
+                      r"/view/AKR|/NewsView/|newsView|/read\.php|/cnts/|/arti/|/amp/article", re.I)
+NEWS_TEXT = re.compile(r"무단\s*전재|재배포\s*금지|저작권자\s*[ⓒ©(]|[가-힣]{2,4}\s*기자\s*[A-Za-z0-9._%+-]+@|"
+                       r"[가-힣]{2,4}\s*(?:기자|특파원)\s*=")
+
+
+def is_news_doc(url: str, text: str = "") -> bool:
+    """언론 기사 페이지인지(공공기관 주소는 아님). 주소 꼴 또는 본문 앞뒤의 기자·저작권 표지."""
+    if PUBLIC_HOST.search(host(url)):
+        return False
+    if is_news_or_social(url) or NEWS_URL.search(url or ""):
+        return True
+    return bool(text) and len(NEWS_TEXT.findall(text[:3000] + text[-3000:])) >= 1
+
+
 SNIPPET_MARK = "[라이너 검색 요약]"   # 자동 접속이 막힌 누리집: 검색 결과에 붙은 그 페이지 요약 글로 대조(화면에 따로 표시)
 _snippets: dict[str, str] = {}       # 주소 → 라이너 검색 결과 요약 글(기관 누리집 결과만)
 EN_STOP = {"the", "and", "for", "with", "from", "data", "report", "release", "news", "of", "in", "on", "to", "by"}

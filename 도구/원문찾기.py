@@ -125,7 +125,7 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
     try:
         result = _run_with_limit(result, sentence, context, article_date, force, prefer)
         # 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)
-        result = _guard_condition(result)
+        result = _guard_news(_guard_condition(result))
         result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
         with 기록.step("확인할 곳 안내"):
             result = 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
@@ -219,6 +219,7 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
     if not sources:
         print("    Deep Research 가 지목한 원 출처 주소가 없음")
         return None
+    sources = [x for x in sources if not 일반경로.is_news_doc(x["주소"])]
     cands = []
     for x in sources:
         c = 공시찾기.candidate_from_url(x["주소"], x["제목"]) or Candidate(
@@ -233,6 +234,27 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
         return again
     print("    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지")
     return None
+
+
+def _guard_news(result: dict) -> dict:
+    """근거 문서가 언론 기사면 '원문 확인'으로 보지 않는다. 기사가 그 매체를 출처로 밝힌 경우만 예외
+    ('FT가 보도', 'WSJ에 따르면' — 분해한 기관 누리집이 그 매체 주소)."""
+    if result.get("판정") not in FOUND | {NEAR}:
+        return result
+    url, path = result.get("상세페이지") or "", result.get("PDF") or ""
+    text = ""
+    if path.endswith(".txt") and os.path.exists(path):
+        text = open(path, encoding="utf-8", errors="ignore").read()
+    if not 일반경로.is_news_doc(url, text):
+        return result
+    domain = 일반경로.clean_domain((result.get("추출") or {}).get("기관누리집", ""))
+    if domain and 일반경로.on_domain(url, domain):
+        return result   # 기사가 출처로 밝힌 매체의 기사 자체(외신 보도가 1차 공개)
+    print(f"    근거가 언론 기사라 원문 확인으로 보지 않음: {url[:80]}")
+    keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
+    return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": url}],
+            "이유": "같은 숫자를 쓴 기사는 찾았지만 기관이 낸 원문(보고서·보도자료·공시 등)은 찾지 못했습니다. "
+                   "아래 기사는 참고용이며 원문이 아닙니다."}
 
 
 def _guard_condition(result: dict) -> dict:
