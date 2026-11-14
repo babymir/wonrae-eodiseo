@@ -1,6 +1,8 @@
 """평가대상.json 의 기사 문장을 하나씩 에이전트에 넣고 결과·걸린 시간을 모은다.
 
-사용: python3 도구/평가_실행.py [평가 폴더] [--건너뛰기=23,25] [--문장만]
+사용: python3 도구/평가_실행.py [평가 폴더] [--건너뛰기=23,25] [--문장만] [--회차=2]
+      --회차=N(2 이상): 같은 세트를 다시 잰다. 결과는 평가결과_회차N.json 에 따로, 저장된 검색·판정·Deep Research 답은
+                쓰지 않고 새로 묻는다(ORIGIN_FRESH=1 — 회차마다 독립 측정, 11/16)
       --문장만: 기사 문맥·날짜 없이 문장만 넣는다(실제 사용자가 문장 하나만 붙여 넣는 상황, A6).
                 결과는 평가결과_문장만.json / 평가표_문장만.md 에 따로 저장
 입력: 작업/평가/평가대상.json  (평가_기사모으기.py 결과)
@@ -31,7 +33,10 @@ CACHE_DIR = EVAL_DIR / "기사캐시"
 CONTEXT_CHARS = 600
 SENTENCE_ONLY = "--문장만" in sys.argv
 ISOLATE = os.environ.get("ORIGIN_ISOLATE") == "1"
-_SUFFIX = "_문장만" if SENTENCE_ONLY else ""
+ROUND = int(next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--회차=")), "1"))
+if ROUND >= 2:
+    os.environ["ORIGIN_FRESH"] = "1"   # 격리 실행 자식 프로그램에도 그대로 넘어감
+_SUFFIX = ("_문장만" if SENTENCE_ONLY else "") + (f"_회차{ROUND}" if ROUND >= 2 else "")
 TARGETS = EVAL_DIR / "평가대상.json"
 RESULTS = EVAL_DIR / f"평가결과{_SUFFIX}.json"
 TABLE = EVAL_DIR / f"평가표{_SUFFIX}.md"

@@ -17,6 +17,7 @@
 """
 import glob
 import json
+from pathlib import Path
 import math
 import re
 import sys
@@ -114,10 +115,11 @@ def _links(res: dict) -> list[str]:
     return [u for u in urls if u]
 
 
-def three_metrics(folder: str) -> dict:
-    """새 목표(11/15 밤)의 세 지표: ① 틀린 단정 ② 원문 문장 확인률 ③ 쓸모 있는 답 비율."""
+def three_metrics(folder: str, results_file: str = "평가결과.json") -> dict:
+    """새 목표(11/15 밤)의 세 지표: ① 틀린 단정 ② 원문 문장 확인률 ③ 쓸모 있는 답 비율.
+    results_file: 회차별 결과(평가결과_회차2.json 등)를 따로 채점할 때."""
     gt = {g["번호"]: g for f in sorted(glob.glob(f"{folder}/정답찾기/결과_*.json")) for g in json.load(open(f))}
-    rows = {r["번호"]: r["결과"] for r in json.load(open(f"{folder}/평가결과.json"))}
+    rows = {r["번호"]: r["결과"] for r in json.load(open(f"{folder}/{results_file}")) if r.get("결과")}
     try:
         checks = {c["번호"]: c for c in json.load(open(f"{folder}/정답찾기/근거확인.json"))}
     except FileNotFoundError:
@@ -204,6 +206,34 @@ def summary(counts: Counter, kind: str) -> str:
             f"넓게 세면 {loose}건 ({loose / n:.0%}) · " + " · ".join(parts))
 
 
+def round_files(folder: str) -> list[str]:
+    """1회차(평가결과.json) + 평가결과_회차N.json 들."""
+    names = ["평가결과.json"] + sorted(Path(p).name for p in glob.glob(f"{folder}/평가결과_회차*.json"))
+    return [n for n in names if Path(folder, n).exists()]
+
+
+def rounds_summary(folders: list[str]) -> str:
+    """같은 세트를 여러 번 잰 경우: 회차마다 세 지표(폴더들을 합친 값) + 평균·최저. 회차가 하나면 빈 글."""
+    common = set.intersection(*(set(round_files(f)) for f in folders)) if folders else set()
+    if len(common) < 2:
+        return ""
+    lines, rates = [], {"원문확인": [], "쓸모": [], "틀린단정": []}
+    for name in sorted(common, key=lambda n: (n != "평가결과.json", n)):
+        ms = [three_metrics(f, name) for f in folders]
+        qk, qn = sum(m["원문확인"][0] for m in ms), sum(m["원문확인"][1] for m in ms)
+        uk, un = sum(m["쓸모"][0] for m in ms), sum(m["쓸모"][1] for m in ms)
+        wrong = sum(len(m["틀린단정"]) for m in ms)
+        rates["원문확인"].append(qk / max(qn, 1))
+        rates["쓸모"].append(uk / max(un, 1))
+        rates["틀린단정"].append(wrong)
+        lines.append(f"- {name}: ① 틀린 단정 {wrong}건 · ② 원문 확인 {qk}/{qn} ({qk / max(qn, 1):.0%}) · "
+                     f"③ 쓸모 있는 답 {uk}/{un} ({uk / max(un, 1):.0%})")
+    q, u, w = rates["원문확인"], rates["쓸모"], rates["틀린단정"]
+    lines.append(f"- {len(q)}회 평균: ② {sum(q) / len(q):.0%} (최저 {min(q):.0%}) · ③ {sum(u) / len(u):.0%} (최저 {min(u):.0%})"
+                 f" · ① 틀린 단정 회당 최대 {max(w)}건")
+    return "\n".join(lines)
+
+
 if __name__ == "__main__":
     folders = [a for a in sys.argv[1:] if not a.startswith("--")]
     out = next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--표=")), "")
@@ -225,6 +255,9 @@ if __name__ == "__main__":
     for folder in folders:
         print(f"[{folder}]\n" + metrics_text(three_metrics(folder)))
     print("- 정답에 원문이 없는 문장: " + ", ".join(f"{k[0]}·{k[1]} {v}" for k, v in sorted(all_others.items())))
+    rounds_text = rounds_summary(folders)
+    if rounds_text:
+        print("\n## 반복 측정(회차별·평균·최저)\n" + rounds_text)
     if out:
         with open(out, "w", encoding="utf-8") as f:
             f.write("\n".join(report) + "\n")

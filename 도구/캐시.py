@@ -14,6 +14,9 @@ from pathlib import Path
 CACHE_DIR = Path(__file__).resolve().parent.parent / "작업" / "캐시"
 SEARCH_HOURS = 24 * 7      # 일반 검색 결과를 다시 쓸 시간(11/15: 24 → 7일 — 다음 날 검색 결과가 바뀌어 같은 문장 답이 흔들림)
 RECENT_SEARCH_HOURS = 3    # '최근 하루·한 주' 조건 검색은 짧게(막 나온 자료를 놓치지 않게)
+# ORIGIN_FRESH=1: 이 종류의 저장된 답은 쓰지 않고 새로 묻는다(반복 측정 2회차부터 — 11/16). 새 답은 그대로 저장.
+# 받은 원문 문서·PDF 글자는 같은 문서라 그대로 쓴다.
+FRESH_KINDS = {"검색", "분해", "판정", "표현다름", "딥리서치", "모델", "결과"}
 
 
 def _path(kind: str, key: str) -> Path:
@@ -22,6 +25,8 @@ def _path(kind: str, key: str) -> Path:
 
 
 def get(kind: str, key: str, max_hours: float | None = None):
+    if kind in FRESH_KINDS and os.environ.get("ORIGIN_FRESH") == "1":
+        return None
     path = _path(kind, key)
     if not path.exists():
         return None
