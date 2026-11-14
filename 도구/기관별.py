@@ -143,11 +143,16 @@ def fetch_text(url: str) -> str:
     return fetch_bytes(url).decode("utf-8", "replace")
 
 
+ALIAS_PREFIX = re.compile(r"^(?:대한민국|한국|우리나라|국가|정부)?$")
+
+
 def normalize_institution(name: str) -> str | None:
-    name = re.sub(r"\s", "", name or "")
-    for alias, official in ALIASES.items():
-        if alias in name:
-            return official
+    """세 기관 전용 경로 이름으로. 이름 전체가 같거나 앞에 '대한민국·한국'만 붙은 경우만
+    (11/15 검증 세트: '러시아 통계청'을 국가데이터처로 바꿔 우리 인구동향에 없다며 '원문에 없음' 헛답)."""
+    for part in re.split(r"[·・,/]|및|와|과(?=[가-힣]{2,})", re.sub(r"\s|\(.*?\)", "", name or "")):   # 공동 발표 이름
+        for alias, official in ALIASES.items():
+            if part.endswith(alias) and ALIAS_PREFIX.match(part[: -len(alias)]):
+                return official
     return None
 
 
