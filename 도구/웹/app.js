@@ -32,7 +32,7 @@ const AXIS_NAMES = { "지표": "지표", "대상": "대상", "시점": "시점",
 
 let timer = null;
 let lastRequest = null;     // '그래도 확인하기'에 다시 쓸 요청
-let shownPartial = false;   // 교차 확인 전 임시 판정을 이미 그렸는지
+let shownPartial = null;   // 이미 그린 임시 결과 번호(교차 확인 전 판정, 못 찾은 중간 답)
 
 // 요소 만들기: h("p", {class: "x"}, "글자", 다른요소, ...)
 function h(tag, attrs = {}, ...kids) {
@@ -165,7 +165,7 @@ async function start(e, force = false, prefer = null) {
   e?.preventDefault?.();
   const sentence = $("sentence").value.trim();
   if (!sentence) { $("sentence").focus(); return; }
-  $("error").hidden = true; $("result").hidden = true; shownPartial = false;
+  $("error").hidden = true; $("result").hidden = true; shownPartial = null;
   $("go").disabled = true; $("progress").hidden = false; $("steps").replaceChildren(); showStages([]);
   const began = Date.now();
   clearInterval(timer);
@@ -190,8 +190,9 @@ async function poll(id, began) {
     const steps = showSteps(job.steps || []);
     showStages(job.events);
     if (job.status === "running") {
-      if (job.partial && !shownPartial) {   // 판정은 먼저 보여 주고, 교차 확인은 끝나면 채운다
-        shownPartial = true;
+      // 판정은 먼저 보여 주고, 교차 확인은 끝나면 채운다. 못 찾은 중간 답 뒤에 원문을 찾으면 다시 그린다
+      if (job.partial && shownPartial !== job.partial_n) {
+        shownPartial = job.partial_n;
         render(job.partial, steps, Math.round((Date.now() - began) / 1000), true);
       }
       setTimeout(() => poll(id, began), POLL_MS); return;
@@ -320,7 +321,10 @@ function render(r, steps, secs, partial) {
     rows.push(row("다시 확인", h("p", { class: "muted" }, "통계 숫자 문장이 맞다면 그대로 확인할 수 있습니다. "), again));
   }
   const cross = r["교차확인"] || {};
-  if (partial) {
+  if (partial && r["더찾는중"]) {
+    rows.splice(1, 0, row("더 찾는 중", h("p", { class: "warn" },
+      "라이너 Deep Research로 다른 출처를 더 찾는 중입니다(1분 안팎). 원문을 찾으면 이 결과가 바뀝니다. 아래 확인할 곳은 지금 바로 보셔도 됩니다.")));
+  } else if (partial) {
     rows.push(row("교차 확인", h("p", { class: "muted" }, "두 번째 판정 모델(라이너 Decisions)로 확인하는 중입니다…")));
   } else if (cross["판정"] === "숫자 다름") {
     rows.push(row("교차 확인", h("p", { class: "muted" },

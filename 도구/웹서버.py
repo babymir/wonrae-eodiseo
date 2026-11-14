@@ -75,8 +75,9 @@ def work(job_id: str, sentence: str, context: str, date: str, force: bool, prefe
 
     def on_event(kind: str, data) -> None:
         job["events"].append({"종류": kind, "내용": data})
-        if kind == "판정":
+        if kind in ("판정", "중간답"):   # 중간답: 1차에서 못 찾은 결과를 먼저(Deep Research 로 더 찾는 동안)
             job["partial"] = data
+            job["partial_n"] = job.get("partial_n", 0) + 1
 
     with RUN_LOCK, contextlib.redirect_stdout(StepWriter(job)):
         try:

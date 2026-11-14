@@ -124,14 +124,11 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
     기록.start(on_event)
     result = {"입력": sentence, "시각": datetime.now().isoformat(timespec="seconds")}
     try:
-        result = _run_with_limit(result, sentence, context, article_date, force, prefer)
-        # 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)
-        result = _guard_year(_guard_news(_guard_condition(result)), article_date)
-        if result.get("판정") == "원출처 미확인":
-            result["확인할위치"] = _spots(result, sentence)
-        result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
-        with 기록.step("확인할 곳 안내"):
-            result = 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
+        first_at = {}
+        result = _run_with_limit(result, sentence, context, article_date, force, prefer, first_at)
+        result = _finish(result, sentence, article_date)
+        if first_at:
+            result["첫답초"] = first_at["초"]   # 못 찾았다는 중간 답을 화면에 먼저 보인 시각
         return result
     except 기록.TimeUp as e:   # 시간 상한 뒤 늦게 끝난 작업(결과는 이미 답함)
         print(f"    {e}")
@@ -143,15 +140,38 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
             캐시.put("결과", cache_key, result)
 
 
+def _finish(result: dict, sentence: str, article_date: str) -> dict:
+    """마무리: 헛답 막기(기준값·언론 기사·옛 날짜) → 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)."""
+    result = _guard_year(_guard_news(_guard_condition(result)), article_date)
+    if result.get("판정") == "원출처 미확인":
+        result["확인할위치"] = _spots(result, sentence)
+    result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
+    with 기록.step("확인할 곳 안내"):
+        return 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
+
+
+def _early_answer(first: dict, sentence: str, article_date: str, first_at: dict) -> None:
+    """1차에서 못 찾으면 그 결과(확인할 곳 포함)를 '중간 답'으로 화면에 먼저 보낸다(11/16 속도).
+    Deep Research·2라운드는 뒤에서 계속하고, 찾으면 최종 답이 이것을 바꾼다. 실패해도 본 작업은 계속."""
+    try:
+        early = _finish(dict(first), sentence, article_date)
+    except Exception as e:  # 중간 답은 덤 — 실패 이유만 출력
+        print(f"    (중간 답 만들기 실패: {type(e).__name__}: {e})")
+        return
+    first_at["초"] = 기록.summary()["총초"]
+    print(f"    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌({first_at['초']}초) — 라이너 Deep Research로 더 찾는 중")
+    기록.emit("중간답", {**early, "더찾는중": True})
+
+
 TIME_LIMIT_SEC = int(os.environ.get("ORIGIN_TIME_LIMIT", "150"))   # 한 건 전체 시간 상한(결선 생중계에서 멈추지 않게)
 
 
 def _run_with_limit(result: dict, sentence: str, context: str, article_date: str, force: bool,
-                    prefer: dict | None) -> dict:
+                    prefer: dict | None, first_at: dict | None = None) -> dict:
     """_run 을 TIME_LIMIT_SEC 까지만 기다린다. 넘으면 그때까지 모은 후보·검색 링크로 '원출처 미확인(시간 초과)'.
     (11/15: 캐시 없는 실행에서 PDF 직접 읽기 대기로 한 건이 467초까지 걸린 적이 있음)"""
     ex = ThreadPoolExecutor(1)
-    future = ex.submit(_run, result, sentence, context, article_date, force, prefer)
+    future = ex.submit(_run, result, sentence, context, article_date, force, prefer, first_at)
     try:
         return future.result(timeout=TIME_LIMIT_SEC)
     except FutureTimeout:
@@ -172,7 +192,7 @@ SECOND_ROUND_SNIPPETS = 6      # 2라운드에 쓸 다른 기사 제목·요약 
 
 
 def _run(result: dict, sentence: str, context: str, article_date: str, force: bool,
-         prefer: dict | None = None) -> dict:
+         prefer: dict | None = None, first_at: dict | None = None) -> dict:
     """1차로 못 찾으면, 같은 숫자를 다룬 다른 기사들의 제목·요약을 문맥으로 넣어 기관·보고서를 다시 뽑고 한 번 더 찾는다.
     (11/15, 연구 근거: 1차에서 못 찾으면 재인용 기사에서 출처 이름을 얻어 반복 검색 — QuanTemp++ 저자 제안, 최대 2라운드)"""
     # 속도: Deep Research 를 처음부터 동시에 출발시킨다(우리 방식이 못 찾을 때 기다리는 시간을 줄임, 11/15).
@@ -183,6 +203,8 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     first = _run_once(result, sentence, context, article_date, force, prefer)
     if prefer or first.get("판정") != "원출처 미확인" or first.get("출처종류") == "의원실 자료":
         return first
+    if first_at is not None and (DEEP_RESEARCH_ON or 기록.summary()["총초"] < TIME_LIMIT_SEC - SECOND_ROUND_NEEDS_SEC):
+        _early_answer(first, sentence, article_date, first_at)
     # 속도(11/16): 2라운드를 Deep Research 기다리는 동안 동시에 돌린다(예전엔 차례로 해서 시간이 더해짐)
     second_f = None
     if 기록.summary()["총초"] < TIME_LIMIT_SEC - SECOND_ROUND_NEEDS_SEC:
