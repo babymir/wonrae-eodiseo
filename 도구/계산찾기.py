@@ -9,11 +9,13 @@
 3) 가까울수록·단순할수록 점수를 높여 상위 TOP 개를 라이너 모델에 보여 주고, 같은 뜻의 식을 고르게 한다(없으면 0)
 """
 import re
+from decimal import ROUND_HALF_UP, Decimal
 
 from liner_api import ask_json, json_schema
 from PDF도구 import keyword_hits
 
 MAX_PAGES = 10
+SHORT_DOC_PAGES = 5     # 핵심어가 하나도 안 맞아도 전체에서 계산할 짧은 문서(웹 페이지·보도자료)
 MAX_GAP = 400            # 두 숫자 사이 최대 글자 수(같은 표·같은 문단)
 TOP = 5
 SNIPPET = 70
@@ -32,6 +34,11 @@ CHOOSE_PROMPT = """기사 숫자 "{number}"가 원문에 그대로는 없다. �
 기사 숫자와 같은 뜻(같은 대상·같은 기간·같은 지표)으로 계산한 식의 번호를 고르라. 우연히 값만 같은 식이면 0.
 JSON: {{"선택": 번호 또는 0, "이유": "한 줄"}}"""
 CHOOSE_SCHEMA = json_schema("calc_pick", {"선택": {"type": "integer"}, "이유": {"type": "string"}})
+
+
+def half_up(x: float, decimals: int) -> Decimal:
+    """사사오입(기사식 반올림). 파이썬 round 는 81.25 → 81.2(짝수 쪽)라 기사의 81.3 과 어긋남(11/15 Rezolute 13÷16)."""
+    return Decimal(repr(x)).quantize(Decimal(1).scaleb(-decimals), rounding=ROUND_HALF_UP)
 
 
 def _target(number: str) -> tuple[float, int] | None:
@@ -61,7 +68,9 @@ def _pages(pages: list[str], keywords: list[str]) -> list[int]:
     found = {k: {i for i, p in enumerate(pages) if keyword_hits([k], p)} for k in keywords}
     weight = {k: 1 / len(v) for k, v in found.items() if v}
     score = {i: sum(w for k, w in weight.items() if i in found[k]) for i in range(len(pages))}
-    return sorted([i for i in score if score[i] > 0], key=lambda i: -score[i])[:MAX_PAGES]
+    picked = sorted([i for i in score if score[i] > 0], key=lambda i: -score[i])[:MAX_PAGES]
+    # 핵심어(한국어)가 원문(영어 등)에 안 나와도 짧은 문서는 전체에서 계산한다(11/15: Rezolute '13 of 16' → 81.3%)
+    return picked or (list(range(len(pages))) if len(pages) <= SHORT_DOC_PAGES else [])
 
 
 def search(pages: list[str], number: str, keywords: list[str]) -> list[dict]:
@@ -85,9 +94,9 @@ def search(pages: list[str], number: str, keywords: list[str]) -> list[dict]:
                         except (ZeroDivisionError, OverflowError):
                             continue
                         # 기사 숫자는 크기만 쓰므로(‘19만명 줄어’) 양수 결과만. 순서만 바꾼 식이 중복되지 않음
-                        if got is None or got <= 0 or round(got, decimals) != round(value, decimals):
+                        if got is None or got <= 0 or half_up(got, decimals) != half_up(value, decimals):
                             continue
-                        found.append({"쪽": i + 1, "식": shape.format(a=pt, b=qt) + f" = {got:.{max(decimals, 1)}f}",
+                        found.append({"쪽": i + 1, "식": shape.format(a=pt, b=qt) + f" = {half_up(got, max(decimals, 1))}",
                                       "계산": name, "점수": simple - gap / MAX_GAP,
                                       "재료": [{"숫자": pt, "원문": _around(pages[i], pt)},
                                                {"숫자": qt, "원문": _around(pages[i], qt)}]})

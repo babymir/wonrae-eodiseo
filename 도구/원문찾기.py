@@ -9,6 +9,7 @@
       → 기준 시점이 맞는 PDF 우선 → 숫자 후보 순위 → 라이너 모델이 같은 지표 고르기·판정
       → 못 찾으면 라이너 게이트웨이 모델이 PDF 직접 읽기 → 그래도 없으면 계산·원자료 여부
 """
+import hashlib
 import json
 import os
 import re
@@ -30,6 +31,7 @@ import 공시찾기
 import 논문찾기
 import 일반경로
 import 정책브리핑
+import 라이너에이전트
 import 여론조사찾기
 import 출처종류
 import 판정규칙
@@ -138,7 +140,7 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
             캐시.put("결과", cache_key, result)
 
 
-TIME_LIMIT_SEC = int(os.environ.get("ORIGIN_TIME_LIMIT", "60"))   # 한 건 전체 시간 상한(결선 생중계에서 멈추지 않게)
+TIME_LIMIT_SEC = int(os.environ.get("ORIGIN_TIME_LIMIT", "150"))   # 한 건 전체 시간 상한(결선 생중계에서 멈추지 않게)
 
 
 def _run_with_limit(result: dict, sentence: str, context: str, article_date: str, force: bool,
@@ -171,8 +173,12 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     """1차로 못 찾으면, 같은 숫자를 다룬 다른 기사들의 제목·요약을 문맥으로 넣어 기관·보고서를 다시 뽑고 한 번 더 찾는다.
     (11/15, 연구 근거: 1차에서 못 찾으면 재인용 기사에서 출처 이름을 얻어 반복 검색 — QuanTemp++ 저자 제안, 최대 2라운드)"""
     first = _run_once(result, sentence, context, article_date, force, prefer)
-    if (prefer or first.get("판정") != "원출처 미확인" or first.get("출처종류") == "의원실 자료"
-            or 기록.summary()["총초"] > SECOND_ROUND_BEFORE_SEC):
+    if prefer or first.get("판정") != "원출처 미확인" or first.get("출처종류") == "의원실 자료":
+        return first
+    deep = _deep_research_round(result, sentence, context, article_date, force, first)
+    if deep:
+        return deep
+    if 기록.summary()["총초"] > SECOND_ROUND_BEFORE_SEC:
         return first
     snippets = [f"{r.get('title', '')}: {str(r.get('description', ''))[:200]}"
                 for r in (first.get("_검색결과") or [])[:SECOND_ROUND_SNIPPETS]]
@@ -194,6 +200,41 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     return first
 
 
+DEEP_RESEARCH_ON = os.environ.get("ORIGIN_DEEP_RESEARCH", "1") == "1"   # 라이너 Deep Research 후보 쓰기(끄기: 0)
+
+
+def _deep_research_round(result: dict, sentence: str, context: str, article_date: str, force: bool,
+                         first: dict) -> dict | None:
+    """우리 방식으로 못 찾으면 라이너 Deep Research 가 원 출처로 지목한 주소를 받아 우리 코드로 확인한다.
+    확정 판정(일치 등)이 나올 때만 쓰고, 아니면 None(1차 결과 유지). Deep Research 의 인용을 그대로 믿지 않는다."""
+    if not DEEP_RESEARCH_ON or not (first.get("입구") or {}).get("통과", True):
+        return None
+    left = TIME_LIMIT_SEC - 기록.summary()["총초"] - 15   # 확인할 시간 남기기
+    if left < 20:
+        return None
+    print("[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음")
+    with 기록.step("라이너 Deep Research"):
+        ans = 라이너에이전트.ask(sentence, context, timeout=left)
+    sources = 라이너에이전트.named_sources(ans) if "오류" not in ans else []
+    if not sources:
+        print("    Deep Research 가 지목한 원 출처 주소가 없음")
+        return None
+    cands = []
+    for x in sources:
+        c = 공시찾기.candidate_from_url(x["주소"], x["제목"]) or Candidate(
+            x["제목"] or x["주소"], x["주소"], x["주소"], "gen_" + hashlib.sha1(x["주소"].encode()).hexdigest()[:12])
+        cands.append(c)
+    print(f"    Deep Research 가 지목한 원 출처 {len(cands)}곳을 받아 직접 확인: {[c.page_url[:60] for c in cands]}")
+    again = _run_once({k: v for k, v in result.items() if k in ("입력", "시각")}, sentence, context,
+                      article_date, force, None, extra=cands)
+    if again.get("판정") in FOUND | {NEAR}:
+        again["찾은방법"] = (again.get("찾은방법") or "") + " — 라이너 Deep Research 가 지목한 원 출처를 받아 우리가 직접 대조"
+        again["딥리서치후보"] = [c.page_url for c in cands]
+        return again
+    print("    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지")
+    return None
+
+
 def _guard_condition(result: dict) -> dict:
     """문장의 숫자가 기준값뿐인데(예: '중위소득의 50%에도 못 미치는') 그 기준값으로 원문을 '확인'했다면 내린다.
     기준값은 정의 문장('상대적 빈곤율이란 중위소득 50% 미만…')에 흔히 있어 주장의 원문이 아니다(11/15 헛답)."""
@@ -209,7 +250,7 @@ def _guard_condition(result: dict) -> dict:
 
 
 def _run_once(result: dict, sentence: str, context: str, article_date: str, force: bool,
-              prefer: dict | None = None) -> dict:
+              prefer: dict | None = None, extra: list | None = None) -> dict:
     with 기록.step("입구 필터"):
         gate = {"통과": True} if force else 입구.check(sentence)
     result["입구"] = gate
@@ -273,6 +314,9 @@ def _run_once(result: dict, sentence: str, context: str, article_date: str, forc
         # 전용 출처(정책브리핑·DART·여론조사심의위)에서 찾은 후보는 제목이 기사와 달라도 꼭 받는다
         # (11/14: 문체부 보도자료 제목 '케이-컬처…'가 제목 순위에서 밀려 안 받음)
         priority: list[str] = _snippet_number_hits(found, sentence)
+        if extra:   # 라이너 Deep Research 가 지목한 원 출처(우리가 받아서 확인) — 꼭 받는다
+            found = list(extra) + [c for c in found if c.file_key not in {e.file_key for e in extra}]
+            priority = [c.file_key for c in extra] + priority
         if finder is 일반경로.finder and 정책브리핑.is_government(info):
             # 정부 부처·청 보도자료는 라이너 검색에 거의 안 잡힌다 → 정책브리핑 자체 검색(본문 + 첨부 HWP·PDF)
             brief = 정책브리핑.search(info, article_date)

@@ -273,3 +273,27 @@ def search(info: dict, sentence: str, article_date: str) -> list[Candidate]:
             path.write_text(text, encoding="utf-8")
         out.append(Candidate(title, VIEW.format(no=no), VIEW.format(no=no), key))
     return out
+
+
+RCP_NO = re.compile(r"rcpNo=(\d{14})|rcept_no=(\d{14})")
+
+
+def candidate_from_url(url: str, title: str = "") -> Candidate | None:
+    """DART 공시 보기 주소(…rcpNo=접수번호) → OpenDART 원문을 받아 둔 후보. DART 주소가 아니면 None
+    (라이너 Deep Research 가 지목한 공시를 우리가 직접 읽어 확인할 때, 11/15)."""
+    m = RCP_NO.search(url or "")
+    if not m:
+        return None
+    no = m.group(1) or m.group(2)
+    key = f"gen_dart_{no}"
+    path = WEB_DIR / f"{key}.txt"
+    if not path.exists():
+        try:
+            text = _doc_text(no)
+        except (RuntimeError, zipfile.BadZipFile) as e:
+            print(f"    DART 원문 받기 실패({no}): {e}")
+            return None
+        WEB_DIR.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+    return Candidate(title or f"DART 공시 {no}", VIEW.format(no=no), VIEW.format(no=no), key)
+
