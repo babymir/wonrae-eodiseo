@@ -435,11 +435,15 @@ def _other_numbers(result: dict, base: dict, sentence: str, info: dict, docs: li
     others.sort(key=lambda n: -len(re.sub(r"\D", "", n)))
     if result.get("판정") not in FOUND:
         tokens = period_tokens(info.get("기준시점", ""))
+        tried = 0
         for n in others:
             if not any(find_candidates(d.pages, n, info["핵심어"], d.layout, tokens) for d in docs):
                 continue
             print(f"    문장 속 다른 숫자 '{n}'가 후보 문서에 있어 그 숫자로 다시 대조")
-            retry = _judge(dict(base), sentence, {**info, "숫자": n}, docs)
+            tried += 1
+            if tried > MAX_OTHER_NUMBERS:
+                break
+            retry = _judge(dict(base), sentence, {**info, "숫자": n}, docs, retry=True)
             firm = retry.get("판정") in FOUND
             # 확정 답이면 바로 쓰고, '표현 다름 후보'는 아직 아무 후보도 없을 때만 쓴다(더 확실한 숫자를 계속 찾음)
             if firm or (retry.get("판정") == NEAR and result.get("판정") != NEAR):
@@ -456,6 +460,7 @@ def _other_numbers(result: dict, base: dict, sentence: str, info: dict, docs: li
 
 
 ALTERNATIVES = 3   # 함께 보여 줄 다른 후보 보고서 수
+MAX_OTHER_NUMBERS = 3   # 문장 속 다른 숫자로 다시 대조할 최대 개수(자릿수 많은 것부터)
 LEAD_LINKS = 5     # 원출처 미확인일 때 보여 줄 후보 링크 수
 
 
@@ -596,7 +601,7 @@ def _snippet_number_hits(cands: list, sentence: str) -> list[str]:
     return out
 
 
-def _judge(result: dict, sentence: str, info: dict, docs: list[Doc]) -> dict:
+def _judge(result: dict, sentence: str, info: dict, docs: list[Doc], retry: bool = False) -> dict:
     number = info["숫자"]
     with 기록.step("숫자 찾기"):
         found = [(d, find_candidates(d.pages, number, info["핵심어"], d.layout, period_tokens(info.get("기준시점", "")))) for d in docs]
@@ -607,7 +612,8 @@ def _judge(result: dict, sentence: str, info: dict, docs: list[Doc]) -> dict:
     def start_fallback():
         # 글자 찾기로 못 찾을 때 쓰는 두 길(게이트웨이 직접 읽기, 계산 확인)을 동시에 출발
         nonlocal gateway_f, calc_f
-        if gateway_f is None and not 일반경로.is_web(best.pdf):  # 게이트웨이는 PDF 만 읽는다
+        # 게이트웨이는 PDF 만 읽는다. 다른 숫자로 다시 대조할 때는 안 읽는다(11/15: 숫자 많은 문장에서 같은 PDF 를 4번 읽어 120초)
+        if gateway_f is None and not retry and not 일반경로.is_web(best.pdf):
             gateway_f = ex.submit(read_pdf, best.pdf, sentence, number, best.pages, info["핵심어"], best.layout)
         if calc_f is None and not mentions_raw_data(sentence):
             calc_f = ex.submit(_safe_calc, best.pages, sentence, info)
