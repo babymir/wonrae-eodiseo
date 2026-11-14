@@ -126,7 +126,7 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
     try:
         result = _run_with_limit(result, sentence, context, article_date, force, prefer)
         # 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)
-        result = _guard_news(_guard_condition(result))
+        result = _guard_year(_guard_news(_guard_condition(result)), article_date)
         if result.get("판정") == "원출처 미확인":
             result["확인할위치"] = _spots(result, sentence)
         result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
@@ -338,6 +338,33 @@ def _guard_news(result: dict) -> dict:
     return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": url}],
             "이유": "같은 숫자를 쓴 기사는 찾았지만 기관이 낸 원문(보고서·보도자료·공시 등)은 찾지 못했습니다. "
                    "아래 기사는 참고용이며 원문이 아닙니다."}
+
+
+YEAR = re.compile(r"(?<![\d,.])(19[5-9]\d|20[0-4]\d)(?![\d,])")
+# 날짜(연.월.일) — 표의 한 줄이 특정 날의 기록(옛 목표주가 표 등)인지 가린다. 연도만 적힌 자료 기간('2013–2019년')은 보지 않음
+DAY = re.compile(r"(?<![\d,.])(19[5-9]\d|20[0-4]\d)\s*(?:[./-]|년)\s*(\d{1,2})\s*(?:[./-]|월)\s*\d{1,2}(?!\d)")
+OLD_YEAR_GAP = 3   # 원문 문장의 날짜가 모두 기사 연도보다 이만큼 이상 앞서면 다른 시점의 숫자로 본다
+
+
+def _guard_year(result: dict, article_date: str = "") -> dict:
+    """원문 인용 문장에 적힌 날짜(연.월.일)가 모두 기사보다 한참 앞서고 기사 문장에도 없으면 '원문 확인'으로 보지 않는다.
+    예(11/16 무작위 #5): 2026년 목표주가 41만원 기사 ↔ 옛 목표주가 표 '2011.07.14 매수 410,000 원'.
+    통계는 1~2년 늦게 나오므로 차이가 OLD_YEAR_GAP 년 미만이면 그대로 둔다."""
+    if result.get("판정") not in FOUND | {NEAR}:
+        return result
+    ref = YEAR.search(article_date or "") or YEAR.search(str((result.get("추출") or {}).get("기준시점", "")))
+    years = {int(y) for y, _ in DAY.findall(result.get("원문인용") or "")}
+    if not ref or not years:
+        return result
+    ref_year = int(ref.group(1))
+    in_sentence = {int(y) for y in YEAR.findall(result.get("입력", ""))}
+    if max(years) > ref_year - OLD_YEAR_GAP or years & in_sentence:
+        return result
+    print(f"    원문 문장의 연도({max(years)})가 기사({ref_year})와 달라 원문 확인으로 보지 않음")
+    found = {"제목": result.get("보고서"), "주소": result.get("상세페이지")}
+    keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
+    return {**keep, "판정": "원출처 미확인", "후보": [found] if found["주소"] else [],
+            "이유": f"같은 숫자가 있는 문서를 찾았지만 {max(years)}년 숫자라 이 기사({ref_year}년)의 원문으로 볼 수 없습니다."}
 
 
 def _guard_condition(result: dict) -> dict:

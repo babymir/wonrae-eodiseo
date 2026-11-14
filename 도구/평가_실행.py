@@ -133,7 +133,8 @@ def main() -> None:
         start = time.time()
         row = dict(t)
         try:
-            runner = run_isolated if ISOLATE else run   # ORIGIN_ISOLATE=1: 별도 프로그램(시간 상한 보장, 화면과 같은 조건)
+            # ORIGIN_ISOLATE=1: 별도 프로그램(시간 상한 보장, 화면과 같은 조건). 진행 줄은 로그에 그대로 찍는다
+            runner = (lambda *a: run_isolated(*a, on_line=print)) if ISOLATE else run
             row["결과"] = (runner(t["문장"]) if SENTENCE_ONLY
                           else runner(t["문장"], article_context(t), t.get("기사날짜") or ""))
         except Exception as e:  # 한 건 실패해도 나머지는 계속, 이유는 기록
