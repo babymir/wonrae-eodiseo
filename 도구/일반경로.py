@@ -58,10 +58,43 @@ NEWS_TEXT = re.compile(r"무단\s*전재|재배포\s*금지|저작권자\s*[ⓒ�
 SOURCE_HOST = re.compile(r"\.(?:org|int|edu|ac\.[a-z]{2}|re\.kr|or\.kr)$|^(?:ir|investors?|newsroom|press|media|corp)\.", re.I)
 
 
-def trusted_source(url: str, domain: str = "") -> bool:
-    """기관 자신의 누리집·공공기관·기관/학술 주소·DART·기업 IR/보도자료 주소인지(언론 기사가 아닌 원 출처 후보)."""
+ACADEMIC_HOST = re.compile(r"(?:^|\.)(?:thelancet\.com|wiley\.com|springer(?:link)?\.com|nature\.com|sciencedirect\.com|"
+                           r"elsevier\.com|nejm\.org|jamanetwork\.com|bmj\.com|oup\.com|cell\.com|tandfonline\.com|"
+                           r"frontiersin\.org|mdpi\.com|plos\.org|doi\.org|nih\.gov|biorxiv\.org|medrxiv\.org|arxiv\.org|"
+                           r"ssrn\.com|nber\.org|cambridge\.org|sagepub\.com|apa\.org|acs\.org|science\.org|pnas\.org)$", re.I)
+IR_HOST = re.compile(r"q4cdn\.com$|q4web\.com$|gcs-web\.com$|investis\.com$|^ir\.|^investors?\.", re.I)
+# 기사가 출처로 밝힌 외신(이름 → 주소). 이 매체 기사는 그 문장의 1차 공개 원문으로 인정(11/15 밤, 새 목표)
+CITED_OUTLETS = {"가디언": "theguardian.com", "Guardian": "theguardian.com", "AP": "apnews.com", "에이피": "apnews.com",
+                 "로이터": "reuters.com", "Reuters": "reuters.com", "블룸버그": "bloomberg.com", "Bloomberg": "bloomberg.com",
+                 "뉴욕타임스": "nytimes.com", "NYT": "nytimes.com", "NBC": "nbcnews.com", "CNN": "cnn.com", "BBC": "bbc.co.uk",
+                 "월스트리트저널": "wsj.com", "WSJ": "wsj.com", "파이낸셜타임스": "ft.com", "FT": "ft.com", "CNBC": "cnbc.com",
+                 "닛케이": "nikkei.com", "워싱턴포스트": "washingtonpost.com", "이코노미스트": "economist.com"}
+
+
+def cited_outlet_domains(sentence: str) -> set[str]:
+    """문장이 출처로 밝힌 외신 주소들('가디언에 따르면', 'NBC 등에 따르면')."""
+    return {d for name, d in CITED_OUTLETS.items()
+            if re.search(rf"(?<![A-Za-z가-힣]){re.escape(name)}(?![A-Za-z])", sentence or "")}
+
+
+def brand_match(url: str, names: str) -> bool:
+    """주소의 이름 부분(openai.com → openai)이 기관 영문 이름·원어 검색어에 들어 있는지(그 기관 자신의 누리집)."""
+    labels = [x for x in host(url).split(".") if len(x) >= 4 and x not in ("www", "news", "blog", "home", "corp")]
+    flat = re.sub(r"[^a-z0-9]", "", (names or "").lower())
+    return any(label.replace("-", "") in flat for label in labels[:-1] or labels)
+
+
+def trusted_source(url: str, domain: str = "", names: str = "", sentence: str = "") -> bool:
+    """원 출처로 믿을 만한 주소: 기관 자신의 누리집(누리집 주소·영문 이름), 공공기관, 기관/학술 주소, 학술 출판사,
+    DART, 기업 IR 파일, 기사가 출처로 밝힌 외신(11/15 밤: 너무 좁으면 진짜 원문까지 거름 — 신규 세트)."""
     h = host(url)
     if (domain and on_domain(url, domain)) or PUBLIC_HOST.search(h) or "dart.fss.or.kr" in h:
+        return True
+    if ACADEMIC_HOST.search(h) or IR_HOST.search(h):
+        return True
+    if any(on_domain(url, d) for d in cited_outlet_domains(sentence)):
+        return True
+    if names and brand_match(url, names) and not NEWS_URL.search(url):
         return True
     return bool(SOURCE_HOST.search(h)) and not is_news_doc(url)
 

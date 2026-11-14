@@ -23,8 +23,15 @@ MARKET_LINKS = [
     ("오피넷(주유소 판매가격)", "https://www.opinet.co.kr/", r"오피넷|주유소|휘발유|경유"),
     ("세이브로(해외주식 결제·보관 통계)", "https://seibro.or.kr/", r"세이브로|예탁결제원|순매수"),
     ("한국은행 경제통계시스템 ECOS(환율·금리)", "https://ecos.bok.or.kr/", r"환율|금리|국채|달러인덱스|원·달러|원/달러"),
+    # 조회 화면에만 있는 통계(11/15 밤, 새 목표 ③ — 숫자는 못 보여 줘도 정확한 확인 화면을 알려 준다)
+    ("한국부동산원 R-ONE 부동산통계(주간 아파트 동향 등)", "https://www.reb.or.kr/r-one/", r"부동산원|아파트값|아파트 가격|주간\s*동향|매매가격지수|전세가격"),
+    ("국토교통부 실거래가 공개시스템", "https://rt.molit.go.kr/", r"실거래가|실거래|신고가|월세\s*\d|전세\s*거래"),
+    ("서울 열린데이터광장(서울시 통계)", "https://data.seoul.go.kr/", r"서울시|서울특별시|자치구|구별"),
+    ("건강보험심사평가원 보건의료빅데이터개방시스템(질병별 환자 수)", "https://opendata.hira.or.kr/", r"심평원|심사평가원|진료\s*환자|환자\s*수"),
+    ("대학알리미(대학 공시)", "https://www.academyinfo.go.kr/", r"대학알리미|취업률|졸업자|전문대|대학\s*공시"),
 ]
 MARKET = re.compile(r"화면번호|코스피|코스닥|시가총액|환율|국채금리|금리는|달러인덱스|오피넷|주유소|휘발유|"
+                    r"공매도|거래대금|등락률|실거래가|실거래|아파트값|주간\s*동향|"
                     r"세이브로|순매수|마감했다|거래를 마감|장중|주가는?\s?[\d.]+%\s?(?:내렸|올랐|하락|상승|떨어|뛰었)")
 # 연구자·보고서가 낸 분석이면 시세 화면이 아니다(11/14 중간 점검 #2: 연구위원이 말한 '주가 수익률 20~30%')
 RESEARCH = re.compile(r"연구원|연구위원|연구진|교수|보고서|분석 결과|분석한 결과")
@@ -74,6 +81,8 @@ def classify(sentence: str, info: dict) -> dict | None:
     text = sentence + " " + info.get("기관", "")
     if MARKET.search(text) and not RESEARCH.search(sentence):
         links = [{"제목": t, "주소": u} for t, u, w in MARKET_LINKS if re.search(w, text)]
+        if re.search(r"거래소|KRX|공매도|거래대금|등락률", text) and not any("krx" in x["주소"] for x in links):
+            links.insert(0, {"제목": "한국거래소 정보데이터시스템(시세·공매도·거래대금 통계)", "주소": "https://data.krx.co.kr/"})
         return {"유형": "시세·조회 화면 자료",
                 "설명": "그 시각의 시세·조회 화면에서 나온 숫자라 보고서 원문이 따로 없습니다. "
                         "기사 날짜로 아래 화면에서 직접 조회하면 확인할 수 있습니다.",
@@ -105,10 +114,17 @@ def classify(sentence: str, info: dict) -> dict | None:
 
 
 def attach(result: dict, sentence: str) -> dict:
-    """'원출처 미확인' 결과에 유형별 안내를 붙인다(결과 판정은 바꾸지 않음)."""
+    """'원출처 미확인' 결과에 유형별 안내를 붙인다(결과 판정은 바꾸지 않음).
+    원문 숫자는 확인 못 했지만 원문이 있을 곳(기관 누리집·공공기관·기사가 밝힌 외신의 그 페이지)을 찾았으면
+    '확인할 원문 위치'로 맨 앞에 둔다(11/15 밤, 새 목표 ③)."""
     if result.get("판정") != "원출처 미확인" or result.get("안내"):
         return result
+    spots = result.get("확인할위치") or []
     guide = classify(sentence, result.get("추출") or {})
+    if spots:
+        guide = guide or {"유형": "원문 위치", "설명": "원문이 있을 곳은 찾았지만 자동 접속이 막혔거나 숫자를 찾지 못했습니다. "
+                                                  "아래 원문 위치에서 직접 확인해 주세요.", "링크": []}
+        guide = {**guide, "원문위치": spots, "링크": spots + [x for x in guide["링크"] if x not in spots]}
     if guide:
         print(f"    안내: {guide['유형']} — 링크 {len(guide['링크'])}개")
         result["안내"] = guide

@@ -103,6 +103,67 @@ def score(folder: str) -> tuple[Counter, list[str], Counter]:
     return counts, lines, others
 
 
+def _links(res: dict) -> list[str]:
+    """결과가 사용자에게 보여 준 모든 주소(근거·후보·안내·통계표)."""
+    urls = [res.get("상세페이지") or ""]
+    urls += [x.get("주소", "") for x in res.get("후보") or []]
+    urls += [x.get("상세페이지", "") for x in res.get("다른후보") or []]
+    urls += [x.get("주소", "") for x in (res.get("안내") or {}).get("링크") or []]
+    urls += [x.get("주소", "") for x in res.get("통계표후보") or []]
+    return [u for u in urls if u]
+
+
+def three_metrics(folder: str) -> dict:
+    """새 목표(11/15 밤)의 세 지표: ① 틀린 단정 ② 원문 문장 확인률 ③ 쓸모 있는 답 비율."""
+    gt = {g["번호"]: g for f in sorted(glob.glob(f"{folder}/정답찾기/결과_*.json")) for g in json.load(open(f))}
+    rows = {r["번호"]: r["결과"] for r in json.load(open(f"{folder}/평가결과.json"))}
+    try:
+        checks = {c["번호"]: c for c in json.load(open(f"{folder}/정답찾기/근거확인.json"))}
+    except FileNotFoundError:
+        checks = {}
+    wrong, useful, checkable, quote_n, quote_ok, notes = [], 0, 0, 0, 0, []
+    for n, res in sorted(rows.items()):
+        g = gt.get(n, {})
+        kind, verdict = g.get("분류"), res.get("판정", "오류")
+        claimed = verdict in QUOTE_FOUND | {NEAR}
+        target = site(g.get("원문주소", ""))
+        grade_ = grade(g, res, checks.get(n)) if kind in HAS_ORIGINAL else ""
+        # ① 틀린 단정
+        if claimed and kind in ("원문비공개", "대상아님") and (checks.get(n) or {}).get("판단") != "같은 원문":
+            wrong.append(f"#{n} 정답 '{kind}'인데 '{verdict}'")
+        if grade_ == "틀린 근거(헛답)":
+            wrong.append(f"#{n} 틀린 근거")
+        if verdict == "원문에 없음" and kind in HAS_ORIGINAL:
+            wrong.append(f"#{n} 원문이 있는데 '원문에 없음'")
+        # ② 원문 문장 확인률
+        if kind == "원문있음":
+            quote_n += 1
+            quote_ok += grade_ == "원문 문장 확인"
+        # ③ 쓸모 있는 답
+        if kind in ("원문있음", "원문있음_미확인숫자", "원문비공개"):
+            checkable += 1
+            if kind in HAS_ORIGINAL:
+                ok = grade_ in ("원문 문장 확인", "다른 공식 출처") or (
+                    target and any(site(u) == target for u in _links(res)) and grade_ != "틀린 근거(헛답)")
+                how = "원문 확인" if grade_ in ("원문 문장 확인", "다른 공식 출처") else "확인 위치 안내" if ok else ""
+            else:
+                ok = not claimed and bool((res.get("안내") or {}).get("유형") or res.get("출처종류") == "의원실 자료")
+                how = "비공개 종류 안내" if ok else ""
+            useful += bool(ok)
+            notes.append(f"#{n} [{kind}] {'✅ ' + how if ok else '❌'} ({verdict})")
+    return {"틀린단정": wrong, "원문확인": (quote_ok, quote_n), "쓸모": (useful, checkable), "건별": notes}
+
+
+def metrics_text(m: dict) -> str:
+    qk, qn = m["원문확인"]
+    uk, un = m["쓸모"]
+    lo, hi = wilson(qk, qn)
+    ulo, uhi = wilson(uk, un)
+    return (f"① 틀린 단정 {len(m['틀린단정'])}건{(' — ' + ', '.join(m['틀린단정'])) if m['틀린단정'] else ''}\n"
+            f"② 원문 문장 확인 {qk}/{qn} ({qk / max(qn, 1):.0%}, 95% 구간 {lo:.0%}~{hi:.0%}) — 목표 50%\n"
+            f"③ 쓸모 있는 답 {uk}/{un} ({uk / max(un, 1):.0%}, 95% 구간 {ulo:.0%}~{uhi:.0%}) — 목표 80%")
+
+
 def summary(counts: Counter, kind: str) -> str:
     n = sum(v for (k, _), v in counts.items() if k == kind)
     if not n:
@@ -132,6 +193,9 @@ if __name__ == "__main__":
               "| 결과 | 문장 | 정답 종류 | 우리 판정 | 정답 기관 | 우리 근거 기관 | 문장 |", "|---|---|---|---|---|---|---|",
               *all_lines]
     print("\n## 합계\n- " + summary(total, "숫자확인") + "\n- " + summary(total, "위치만"))
+    print("\n## 새 목표 세 지표(세트별)")
+    for folder in folders:
+        print(f"[{folder}]\n" + metrics_text(three_metrics(folder)))
     print("- 정답에 원문이 없는 문장: " + ", ".join(f"{k[0]}·{k[1]} {v}" for k, v in sorted(all_others.items())))
     if out:
         with open(out, "w", encoding="utf-8") as f:

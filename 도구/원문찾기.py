@@ -127,6 +127,8 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
         result = _run_with_limit(result, sentence, context, article_date, force, prefer)
         # 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)
         result = _guard_news(_guard_condition(result))
+        if result.get("판정") == "원출처 미확인":
+            result["확인할위치"] = _spots(result, sentence)
         result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
         with 기록.step("확인할 곳 안내"):
             result = 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
@@ -230,12 +232,16 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
         else:
             ans = 라이너에이전트.ask(sentence, context, timeout=left)
     sources = 라이너에이전트.named_sources(ans) if "오류" not in ans else []
+    first["_딥리서치참고"] = list(sources) + list((ans or {}).get("참고") or [])   # 못 찾아도 원문 위치 안내에 씀
     if not sources:
         print("    Deep Research 가 지목한 원 출처 주소가 없음")
         return None
     domain = 일반경로.clean_domain((first.get("추출") or {}).get("기관누리집", ""))
-    dropped = [x["주소"] for x in sources if not 일반경로.trusted_source(x["주소"], domain)]
-    sources = [x for x in sources if 일반경로.trusted_source(x["주소"], domain)]
+    info1 = first.get("추출") or {}
+    names = f"{info1.get('기관', '')} {info1.get('원어검색어', '')} {info1.get('보고서', '')}"
+    ok = lambda u: 일반경로.trusted_source(u, domain, names, sentence)   # noqa: E731
+    dropped = [x["주소"] for x in sources if not ok(x["주소"])]
+    sources = [x for x in sources if ok(x["주소"])]
     if dropped:
         print(f"    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: {[u[:50] for u in dropped]}")
     cands = []
@@ -256,6 +262,44 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
     return None
 
 
+MAX_SPOTS = 3
+
+
+def _spots(result: dict, sentence: str) -> list[dict]:
+    """숫자는 확인 못 했지만 원문이 있을 곳: 우리 검색·Deep Research 참고 중 기관 누리집·공공기관·학술·IR·
+    기사가 밝힌 외신 주소(언론 기사·검색 포털은 뺌). 사람이 열어 확인할 수 있게 원문 위치로 알려 준다."""
+    info = result.get("추출") or {}
+    domain = 일반경로.clean_domain(info.get("기관누리집", ""))
+    names = f"{info.get('기관', '')} {info.get('원어검색어', '')} {info.get('보고서', '')}"
+    rows = [{"제목": r.get("title") or r.get("제목") or "", "주소": r.get("url") or r.get("주소") or "",
+             "요약": str(r.get("description") or "")}
+            for r in (result.get("_기관검색결과") or []) + (result.get("_딥리서치참고") or []) + (result.get("_검색결과") or [])]
+    cited = 일반경로.cited_outlet_domains(sentence)
+    pats = [to_regex(v.text) for n in all_numbers(sentence) for v in variants(n)]
+    words = {w for k in info.get("핵심어", []) for w in re.findall(r"[가-힣A-Za-z]{2,}", k)} | set(
+        w.lower() for w in re.findall(r"[A-Za-z]{4,}", info.get("원어검색어", "")))
+
+    def relevant(r: dict) -> bool:
+        """그 페이지가 이 숫자와 관계있는지: 요약에 문장 숫자가 있거나, 제목·요약에 핵심어가 둘 이상"""
+        text = 일반경로.normalize_numbers(r["요약"] or 일반경로.snippet_of(r["주소"]))
+        if text and any(p.search(text) for p in pats):
+            return True
+        hay = (r["제목"] + " " + text).lower()
+        return sum(w.lower() in hay for w in words) >= 2
+    out, seen = [], set()
+    for r in rows:
+        u = r["주소"]
+        if not u or u in seen:
+            continue
+        seen.add(u)
+        is_cited = any(일반경로.on_domain(u, d) for d in cited)
+        if (is_cited or (일반경로.trusted_source(u, domain, names, sentence) and not 일반경로.is_news_doc(u))) and relevant(r):
+            out.append({"제목": (r["제목"] or u)[:80], "주소": u})
+        if len(out) >= MAX_SPOTS:
+            break
+    return out
+
+
 def _guard_news(result: dict) -> dict:
     """근거 문서가 언론 기사면 '원문 확인'으로 보지 않는다. 기사가 그 매체를 출처로 밝힌 경우만 예외
     ('FT가 보도', 'WSJ에 따르면' — 분해한 기관 누리집이 그 매체 주소)."""
@@ -271,7 +315,8 @@ def _guard_news(result: dict) -> dict:
     flat_in, flat_doc = squash(result.get("입력", "")), squash(text)
     # 입력 문장의 25글자 조각이 기사에 그대로 있으면 같은 기사·베낀 기사(검색 요약은 문장 중간부터라 앞부분만 보면 놓침)
     copied = bool(text) and any(flat_in[i:i + 25] in flat_doc for i in range(0, max(1, len(flat_in) - 25), 10))
-    if domain and 일반경로.on_domain(url, domain) and not copied:
+    cited = any(일반경로.on_domain(url, d) for d in 일반경로.cited_outlet_domains(result.get("입력", "")))
+    if ((domain and 일반경로.on_domain(url, domain)) or cited) and not copied:
         return result   # 기사가 출처로 밝힌 매체의 기사 자체(외신 보도가 1차 공개)
     # 입력 문장이 거의 그대로 든 기사는 같은 기사·베낀 기사다(11/15: 연합인포맥스 시세 기사) → 어떤 예외도 원문 아님
     print(f"    근거가 언론 기사라 원문 확인으로 보지 않음: {url[:80]}")
@@ -341,6 +386,7 @@ def _run_once(result: dict, sentence: str, context: str, article_date: str, forc
             for r in general if not SKIP_LEAD.search(r.get("url", ""))][:5]
     result["_검색링크"] = lead   # 시간 초과 때 보여 줄 것(후보를 고르기 전이면 검색 결과라도)
     result["_검색결과"] = general   # 2라운드: 같은 숫자를 다룬 기사들의 제목·요약에서 기관·보고서를 다시 뽑을 때
+    result["_기관검색결과"] = site_results
     finder = FINDERS.get(inst)
     research = 논문찾기.is_research(sentence) or (result.get("입구") or {}).get("경로") == "학술지"
     # 기관을 몰라도 일반 경로로 찾는다(숫자·핵심어 검색에서 나온 공공기관 문서를 대조). 일반 경로는 '원문에 없음'을 내지 않아 안전

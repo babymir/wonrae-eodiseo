@@ -67,7 +67,16 @@ def _announced(sentence: str) -> dict:
 
 
 METHOD_NUMBER = re.compile(r"[\d,.]+\s*(?:명|가구|곳|개사)\s*(?:을|를)?\s*대상|신뢰\s*수준|표본\s*오차|응답률|"
-                           r"[±+-]\s*[\d.]+\s*%\s*(?:포인트|p)|조사\s*기간|\d+\s*[~∼-]\s*\d+\s*일")
+                           r"[±+-]\s*[\d.]+\s*%\s*(?:포인트|p)|조사\s*기간|\d+\s*[~∼-]\s*\d+\s*일|"
+                           # 연구 설계 숫자(11/15 밤 신규 세트): '조사 대상은 … 450명', '시험 24편에 참여한 환자 1,815명',
+                           # '약 4만 7000명을 추적한 결과' — 결과가 아니라 대상·규모
+                           r"(?:조사|연구|분석)\s*대상은|[\d,.]+\s*편(?:에|의|을)|참여한\s*(?:환자|사람|대상자|참가자)|"
+                           r"[\d,.만천]+\s*명(?:을|를)\s*(?:추적|조사|분석|모집)")
+
+
+DESIGN_CUE = re.compile(r"(?:조사|연구|분석|실험)\s*대상은|참여한\s*(?:환자|사람|대상자|참가자)|명(?:을|를)\s*(?:추적|모집)|"
+                        r"편(?:에|의)\s*참여|모아\s*분석|대상으로\s*(?:실시|진행|조사)")
+COUNT_UNIT = re.compile(r"(?:명|가구|곳|개사|편|건|개국)$")
 
 
 def only_method_numbers(sentence: str) -> bool:
@@ -77,6 +86,8 @@ def only_method_numbers(sentence: str) -> bool:
     nums = all_numbers(sentence)
     if not nums:
         return False
+    if DESIGN_CUE.search(sentence) and all(COUNT_UNIT.search(n) for n in nums):
+        return True   # 연구 설계 표현이 있고 숫자가 모두 사람·곳·편 수(결과 비율·금액이 없음)
     method_spans = [m.span() for m in METHOD_NUMBER.finditer(sentence)]
     # 숫자가 조사 방법 표현 안에 있거나 바로 앞(공백·'에' 정도만 사이)에 붙어 있으면 방법 숫자
     attached = lambda st, en: any(a <= st <= b or 0 <= a - en <= 3 for a, b in method_spans)   # noqa: E731
