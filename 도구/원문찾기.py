@@ -92,6 +92,15 @@ def apply_rules(result: dict, sentence: str, number: str) -> None:
         print(f"    규칙 확인: {', '.join(d['규칙'] for d in diffs)} → '일치'를 '표현 바뀜'으로")
 
 
+def _emit_verdict(result: dict) -> None:
+    """판정을 화면에 먼저 보낸다. 단 마지막 헛답 막기(기준값·언론 기사·옛 날짜)에 걸릴 판정은 보내지 않는다
+    (11/16: '원문 확인됨'이 몇 초 보였다가 '못 찾음'으로 바뀌면 화면을 믿을 수 없음). 기사 날짜 대신 기준 시점으로 본다."""
+    safe = _guard_year(_guard_news(_guard_condition(dict(result), quiet=True), quiet=True), quiet=True)
+    if safe.get("판정") != result.get("판정"):
+        return
+    기록.emit("판정", dict(result))
+
+
 def found_result(result: dict, doc: Doc, pick: dict, how: str, sentence: str, number: str) -> dict:
     hit = pick["후보"]
     result.update(판정=pick["판정"], 보고서=doc.cand.title, 상세페이지=doc.cand.page_url, PDF=str(doc.pdf),
@@ -106,7 +115,7 @@ def found_result(result: dict, doc: Doc, pick: dict, how: str, sentence: str, nu
         result["표문맥"] = hit["원문"]
     evidence = result.get("표문맥") or pick["원문인용"]
     apply_rules(result, sentence, number)
-    기록.emit("판정", dict(result))   # 화면에 먼저 보여 주고, 교차 확인은 뒤에서 채운다
+    _emit_verdict(result)   # 화면에 먼저 보여 주고, 교차 확인은 뒤에서 채운다
     with 기록.step("교차 확인(Decisions)"):
         result["교차확인"] = cross_check(sentence, evidence, result["판정"])
     return result
@@ -336,7 +345,7 @@ def _spots(result: dict, sentence: str) -> list[dict]:
     return out
 
 
-def _guard_news(result: dict) -> dict:
+def _guard_news(result: dict, quiet: bool = False) -> dict:
     """근거 문서가 언론 기사면 '원문 확인'으로 보지 않는다. 기사가 그 매체를 출처로 밝힌 경우만 예외
     ('FT가 보도', 'WSJ에 따르면' — 분해한 기관 누리집이 그 매체 주소)."""
     if result.get("판정") not in FOUND | {NEAR}:
@@ -355,7 +364,8 @@ def _guard_news(result: dict) -> dict:
     if ((domain and 일반경로.on_domain(url, domain)) or cited) and not copied:
         return result   # 기사가 출처로 밝힌 매체의 기사 자체(외신 보도가 1차 공개)
     # 입력 문장이 거의 그대로 든 기사는 같은 기사·베낀 기사다(11/15: 연합인포맥스 시세 기사) → 어떤 예외도 원문 아님
-    print(f"    근거가 언론 기사라 원문 확인으로 보지 않음: {url[:80]}")
+    if not quiet:
+        print(f"    근거가 언론 기사라 원문 확인으로 보지 않음: {url[:80]}")
     keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
     return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": url}],
             "이유": "같은 숫자를 쓴 기사는 찾았지만 기관이 낸 원문(보고서·보도자료·공시 등)은 찾지 못했습니다. "
@@ -368,7 +378,7 @@ DAY = re.compile(r"(?<![\d,.])(19[5-9]\d|20[0-4]\d)\s*(?:[./-]|년)\s*(\d{1,2})\
 OLD_YEAR_GAP = 3   # 원문 문장의 날짜가 모두 기사 연도보다 이만큼 이상 앞서면 다른 시점의 숫자로 본다
 
 
-def _guard_year(result: dict, article_date: str = "") -> dict:
+def _guard_year(result: dict, article_date: str = "", quiet: bool = False) -> dict:
     """원문 인용 문장에 적힌 날짜(연.월.일)가 모두 기사보다 한참 앞서고 기사 문장에도 없으면 '원문 확인'으로 보지 않는다.
     예(11/16 무작위 #5): 2026년 목표주가 41만원 기사 ↔ 옛 목표주가 표 '2011.07.14 매수 410,000 원'.
     통계는 1~2년 늦게 나오므로 차이가 OLD_YEAR_GAP 년 미만이면 그대로 둔다."""
@@ -382,20 +392,22 @@ def _guard_year(result: dict, article_date: str = "") -> dict:
     in_sentence = {int(y) for y in YEAR.findall(result.get("입력", ""))}
     if max(years) > ref_year - OLD_YEAR_GAP or years & in_sentence:
         return result
-    print(f"    원문 문장의 연도({max(years)})가 기사({ref_year})와 달라 원문 확인으로 보지 않음")
+    if not quiet:
+        print(f"    원문 문장의 연도({max(years)})가 기사({ref_year})와 달라 원문 확인으로 보지 않음")
     found = {"제목": result.get("보고서"), "주소": result.get("상세페이지")}
     keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
     return {**keep, "판정": "원출처 미확인", "후보": [found] if found["주소"] else [],
             "이유": f"같은 숫자가 있는 문서를 찾았지만 {max(years)}년 숫자라 이 기사({ref_year}년)의 원문으로 볼 수 없습니다."}
 
 
-def _guard_condition(result: dict) -> dict:
+def _guard_condition(result: dict, quiet: bool = False) -> dict:
     """문장의 숫자가 기준값뿐인데(예: '중위소득의 50%에도 못 미치는') 그 기준값으로 원문을 '확인'했다면 내린다.
     기준값은 정의 문장('상대적 빈곤율이란 중위소득 50% 미만…')에 흔히 있어 주장의 원문이 아니다(11/15 헛답)."""
     cond = result.get("기준값숫자")
     if not cond or result.get("판정") not in FOUND | {NEAR} or result.get("다른숫자로확인"):
         return result
-    print(f"    기준값 '{cond}'로만 맞춘 결과라 원문 확인으로 보지 않음")
+    if not quiet:
+        print(f"    기준값 '{cond}'로만 맞춘 결과라 원문 확인으로 보지 않음")
     found = {"제목": result.get("보고서"), "주소": result.get("상세페이지")}
     keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
     return {**keep, "판정": "원출처 미확인", "후보": [found] if found["주소"] else [],
@@ -688,7 +700,7 @@ def near_result(result: dict, near: dict, number: str) -> dict:
                        f"원문 '{near['원문표현']}'. 같은 내용인지 아래 원문을 직접 확인해 주세요."))
     if 일반경로.is_snippet(doc.pdf):
         result["확인못한부분"] = "원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요."
-    기록.emit("판정", dict(result))
+    _emit_verdict(result)
     return result
 
 
