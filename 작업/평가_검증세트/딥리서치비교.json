@@ -1,0 +1,2539 @@
+{
+ "5": {
+  "답": "### 확인 결과\n\n현재 제공된 자료만으로는 **‘28억원’ 수치의 원 출처 문서와 해당 문서의 정확한 문장을 확정할 수 없습니다.** 금융감독원 전자공시시스템 검색 결과에는 뉴로메카의 2026년 3분기 분기보고서가 2026년 11월 13일 17시 19분에 등록된 것으로 나타나지만, 검색 결과에는 직접 연결되는 보고서 주소나 보고서 본문이 표시되지 않습니다 ((5)).\n\n### 확인 가능한 주소\n\n- 금융감독원 전자공시시스템 최근공시:  \n  https://dart.fss.or.kr/dsac001/mainAll.do\n\n위 주소는 공시 검색 목록이며, **뉴로메카 분기보고서의 개별 원문 주소는 제공된 자료에서 확인되지 않습니다** ((5)).\n\n### 원문 인용\n\n제공된 자료에는 분기보고서 본문 중 **‘28억원’이 포함된 문장이 수록되어 있지 않습니다.** 따라서 해당 숫자가 들어간 문장을 그대로 인용하면 원문을 확인하지 않은 허위 인용이 되므로 제시할 수 없습니다.\n\n### 결론\n\n확인 가능한 범위에서 원 출처로 추정되는 문서는 **뉴로메카의 2026년 9월 말 기준 3분기 분기보고서**이지만, 현재 자료만으로는 그 문서의 개별 주소와 ‘28억원’이 포함된 원문 문장을 검증할 수 없습니다 ((5)).",
+  "참고": [
+   {
+    "제목": "뉴로메카, 3분기 영업손실 70억원…적자 폭 2.2배↑",
+    "주소": "https://zdnet.co.kr/view/?no=20261113232530"
+   },
+   {
+    "제목": "진운용 기자",
+    "주소": "https://zdnet.co.kr/reporter/?lstcode=uyic1"
+   },
+   {
+    "제목": "(DOOSAN) Quarterly Report (2025.11.14) | PDF",
+    "주소": "https://www.scribd.com/document/983523653/DOOSAN-Quarterly-Report-2025-11-14"
+   },
+   {
+    "제목": "(DOOSAN) Quarterly Report (2025.05.15) | PDF",
+    "주소": "https://www.scribd.com/document/984118341/DOOSAN-Quarterly-Report-2025-05-15"
+   },
+   {
+    "제목": "최근공시 | 전체 - 전자공시시스템 - 금융감독원",
+    "주소": "https://dart.fss.or.kr/dsac001/mainAll.do"
+   },
+   {
+    "제목": "코스닥 1Q 역대 최대 실적 기업들 3選 ... 우수AMS, 스맥 ...",
+    "주소": "https://www.the-stock.kr/news/articleView.html?idxno=18286"
+   },
+   {
+    "제목": "코스닥시장 - 전자공시시스템 - 금융감독원",
+    "주소": "https://dart.fss.or.kr/dsac001/mainK.do"
+   },
+   {
+    "제목": "Tycoon Febuary'24",
+    "주소": "https://issuu.com/tycoonmedia/docs/24_2_"
+   },
+   {
+    "제목": "2026년 7월 21일 애프터브리핑",
+    "주소": "https://dreago.kr/board/view/?gn=0&sgn=3&no=59311"
+   },
+   {
+    "제목": "주식 급등일보🚀급등테마·대장주 탐색기 | Korean Stocks",
+    "주소": "https://t.me/s/FastStockNews/76634"
+   },
+   {
+    "제목": "일 러 두 기 - AIoT 국제전시회",
+    "주소": "https://www.aiotkorea.or.kr/2023/webzine/KIoT/2023_AIoTHandbook_kor.pdf"
+   },
+   {
+    "제목": "로보로보 매출·영업이익·공시 분석 (2026년 반기)",
+    "주소": "https://biz.dima.tools/bizno/1078841033"
+   },
+   {
+    "제목": "엔젯 매출·영업이익·공시 분석 (2026년 반기)",
+    "주소": "https://biz.dima.tools/bizno/2068636037"
+   }
+  ],
+  "초": 28,
+  "채점": {
+   "정답기관": "fss.or.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 13,
+   "답에숫자": true
+  }
+ },
+ "6": {
+  "답": "### 확인 결과\n\n제공된 검색 결과만으로는 **두산건설의 2024년 3분기 영업이익 271억 원, 전년 동기 447억 원, 감소율 39.4%가 처음 기재된 원 출처 문서와 그 문장**을 확인할 수 없습니다.\n\n검색 결과에서 해당 수치를 명시한 자료는 다음 기사 문장뿐입니다.\n\n> “14일 금융감독원 전자공시에 따르면 두산 건설의 올해 3분기(7∼9월) 연결기준 영업이익은 271억원으로 지난해 같은 기간(447억원)보다 39.4% 줄었다.” ((1))\n\n그러나 이 문서는 매일경제의 **뉴스 기사**이므로, 요청하신 원 출처로 사용할 수 없습니다.\n\n### 확인된 금융감독원 전자공시 주소\n\n검색 결과에 포함된 금융감독원 전자공시 문서는 다음 주소입니다.\n\nhttps://dart.fss.or.kr/report/viewer.do?dcmNo=11636851&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030901294\n\n다만 해당 문서의 검색 추출문은 문자 인코딩이 깨져 있으며, 다음과 같은 일부 표와 공시일만 확인됩니다.\n\n> “2026-10-30” ((4))\n\n추출된 본문에는 **271억 원, 447억 원, 39.4%**가 나타나지 않으므로, 이 문서가 해당 수치의 원 출처라고 단정할 수 없습니다. 또한 문서 제목과 보고서 유형도 검색 결과에서 정상적으로 식별되지 않습니다.\n\n### 연도 표기의 불일치\n\n기사 문장은 2026년 11월 14일 보도된 것으로 표시되어 있고, “올해 3분기”를 2026년 7월부터 9월까지로 표현합니다. ((1)) 따라서 문장 자체의 시간 문맥은 **2026년 3분기 실적**을 가리킵니다.\n\n반면 요청에서는 해당 수치를 **두산건설의 2024년 3분기 실적**이라고 특정했습니다. 제공된 자료에는 2024년 3분기 두산건설의 영업이익 271억 원, 전년 동기 447억 원, 39.4% 감소를 함께 기록한 원문 공시가 없습니다. 검색 결과에 포함된 다른 2024년 문서는 두산로보틱스 관련 증권신고서이며, 2024년 3분기 영업이익을 2,561억 원으로 기재하고 있어 두산건설 수치와 일치하지 않습니다. ((2))\n\n### 결론\n\n현재 제공된 자료에서 확인 가능한 것은 다음뿐입니다.\n\n- **271억 원**: 기사에 기재됨 ((1))\n- **447억 원**: 기사에 기재됨 ((1))\n- **39.4%**: 기사에 기재됨 ((1))\n- **원 출처 공시의 정확한 문장**: 제공된 검색 결과에서는 확인되지 않음\n- **두산건설 2024년 3분기 실적이라는 연도 지정**: 기사 문맥 및 검색 결과와 일치하지 않음\n\n따라서 위 금융감독원 주소를 관련 공시 후보로 제시할 수는 있지만, 그 문서에서 해당 수치가 나온 **정확한 문장을 그대로 인용할 근거가 제공되지 않았습니다**. 해당 숫자의 최초 원 출처를 확정하려면 금융감독원 전자공시에서 두산건설의 **2026년 3분기 분기보고서 또는 연결재무제표 기준 영업실적 공시** 원문을 별도로 열어 손익계산서의 영업이익 및 전년 동기 비교표를 확인해야 합니다.",
+  "참고": [
+   {
+    "제목": "두산건설, 3분기 영업이익 271억원…전년 대비 40% 감소",
+    "주소": "https://stock.mk.co.kr/news/view/1198933"
+   },
+   {
+    "제목": "Doosan Robotics/Registration Statement (Merger)/2024.11 ...",
+    "주소": "https://englishdart.fss.or.kr/dsbh001/main.do?rcpNo=20241112000417"
+   },
+   {
+    "제목": "경제전체",
+    "주소": "https://www.yna.co.kr/economy/all"
+   },
+   {
+    "제목": "/ǸŤްü/(2026.10.30)ǸŤްü",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11636851&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030901294"
+   },
+   {
+    "제목": "두산건설, 3분기 영업이익 271억원…도시정비 수주 4조원",
+    "주소": "https://biz.heraldcorp.com/article/10937012"
+   },
+   {
+    "제목": "/ִ  ϴ ֽ    /(2026.09.23)ִ  ϴ ֽ    ",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11591333&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20260923900724"
+   },
+   {
+    "제목": "산업전체",
+    "주소": "https://www.yna.co.kr/industry/all"
+   },
+   {
+    "제목": "경제 - 다음뉴스",
+    "주소": "https://news.daum.net/economy"
+   },
+   {
+    "제목": "AWAKE - 실시간 주식 공시 정리채널",
+    "주소": "https://t.me/s/darthacking?before=139125"
+   },
+   {
+    "제목": "ڵ/   ()/(2026.10.29)   ()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261029800240&dcmNo=11632721&eleId=0&offset=0&length=0&dtd=HTML"
+   },
+   {
+    "제목": "주요 기업 실적",
+    "주소": "https://test.infostock.co.kr/Research/MainEarning"
+   },
+   {
+    "제목": "װ/ŸֽĹ/(2026.10.30)ŸֽĹ",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11636996&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030801318"
+   },
+   {
+    "제목": "자동차/ 2차전지 파고를 넘어 Overweight",
+    "주소": "http://money2.daishin.com/PDF/Out/intranet_data/Product/ResearchCenter/Report/2026/07/58065_260630_Auto_Monthly_2026.07_v6.pdf"
+   },
+   {
+    "제목": "제 1부 모집 또는 매출에 관한 사항 - 상장공시시스템",
+    "주소": "https://kind.krx.co.kr/external/2022/05/24/000350/20220524000921/10002.htm"
+   },
+   {
+    "제목": "ؾ̿/ Ǵ ֽİûä  û()/(2026.10.16) Ǵ ֽİûä  û()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11616217&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261016900207"
+   },
+   {
+    "제목": "두산 (000150) - 백두산 너머로 - SMIC",
+    "주소": "http://snusmic.com/wp-content/uploads/2025/11/25_2_2%EC%A3%BC%EC%B0%A8_%EC%88%98%EC%A0%95%EB%B3%B4%EA%B3%A0%EC%84%9C_5%ED%8C%80_%EB%91%90%EC%82%B0.pdf"
+   },
+   {
+    "제목": "Morning Meeting Notes",
+    "주소": "https://www.hmsec.com/documents/research/20230703075903370_ko.pdf"
+   },
+   {
+    "제목": "üη/ݤ /(2026.10.30)ݤ (б)",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11637123&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030901347"
+   },
+   {
+    "제목": "주주총회소집공고",
+    "주소": "https://www.doosanenerbility.com/kr/investment/annFile/down/67005"
+   },
+   {
+    "제목": "Ͻ/ֽĺհ/(2026.08.07)ֽĺհ",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260807900621&dcmNo=11514723&eleId=0&offset=0&length=0&dtd=HTML"
+   },
+   {
+    "제목": "목 차",
+    "주소": "https://m.dlenc.co.kr/common/fileDownload.do?fileseq=35443"
+   },
+   {
+    "제목": "ڵ/ȸ/(2026.09.23)ȸ(ӽȸ)",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11591452&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20260923900766"
+   },
+   {
+    "제목": "서 언",
+    "주소": "https://www.stepi.re.kr/common/report/Download.do?reIdx=19&cateCont=A0203&streFileNm=A0203_19&downCont=0"
+   },
+   {
+    "제목": "2017 두산인프라코어 통합보고서",
+    "주소": "https://www.scribd.com/document/780666812/Doosan-Infracore-Integrated-Report-2017-KR"
+   },
+   {
+    "제목": "۷κ/ǸŤްü/(2026.10.16)ǸŤްü",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261016900001&dcmNo=11616187&eleId=0&offset=0&length=0&dtd=HTML"
+   },
+   {
+    "제목": "최근공시",
+    "주소": "https://dart.fss.or.kr/dsac001/mainY.do"
+   },
+   {
+    "제목": "전자공시시스템",
+    "주소": "https://dart.fss.or.kr?ref=dcamp.ghost.io"
+   },
+   {
+    "제목": "전자공시시스템 | 공시서류검색 | 회사별 검색",
+    "주소": "https://dart.fss.or.kr/dsab001/main.do"
+   },
+   {
+    "제목": "최근정정보고서",
+    "주소": "https://dart.fss.or.kr/dsac003/mainY.do"
+   },
+   {
+    "제목": "마이크로컨텍솔/분기보고서/2026.05.14",
+    "주소": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001221"
+   }
+  ],
+  "초": 35,
+  "채점": {
+   "정답기관": "fss.or.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 30,
+   "답에숫자": true
+  }
+ },
+ "7": {
+  "답": "### 확인 결과\n\n기사 문장의 두 통계는 **2026년 2분기와 3분기를 각각 다룬 미국 에너지정보청(EIA)의 공식 문서**에서 확인됩니다. 2분기 수치는 EIA의 2026년 7월 27일자 문서에서 직접 확인되며, 3분기 수치는 EIA 도메인에 게시된 별도 문서의 검색 원문에서 직접 확인됩니다 ((3)) ((13)).\n\n다만 기사 문장의 표현을 원문과 대조하면, EIA가 제공한 문장은 **“hybrid electric vehicles”**라고 되어 있고, 기사에 쓰인 “일반 하이브리드”라는 표현이 원문에 그대로 등장하지는 않습니다 ((3)) ((13)). 또한 2분기 원문은 16%를 “record”라고 명시하지만, 확인된 3분기 원문은 16%에 도달했다고만 명시하며 “역대 최고치”라는 표현은 해당 문장에 포함하지 않습니다 ((3)) ((13)).\n\n| 대상 기간 | 원 출처 문서 | 문서 주소 | 원문에서 확인되는 수치 |\n|---|---|---|---|\n| 2026년 2분기 | 미국 에너지정보청, “Hybrid sales rise while battery electric sales remain lower ...”, 2026년 7월 27일 | https://www.eia.gov/todayinenergy/detail.php?id=67885 | 하이브리드 전기차 판매 비중이 역대 최고인 16%에 도달 |\n| 2026년 3분기 | 미국 에너지정보청 공식 게시 문서 | https://www.eia.gov/about/new/index.php?r=96180 | 하이브리드 전기차 판매 비중이 16%에 도달 |\n\n### 1. 2026년 2분기 수치의 원 출처\n\n#### 문서 식별\n\n2026년 2분기의 “16%”와 “역대 최고치”를 직접 담고 있는 공식 원문은 미국 에너지정보청의 **“Hybrid sales rise while battery electric sales remain lower ...”**라는 문서입니다. 검색된 문서 메타데이터상 발행일은 **2026년 7월 27일**이며, EIA의 `todayinenergy/detail.php` 주소에서 확인됩니다 ((3)).\n\n**원 출처 주소**\n\nhttps://www.eia.gov/todayinenergy/detail.php?id=67885\n\n#### 숫자가 나온 원문 문장\n\n“Between 2Q25 and 2Q26, hybrid electric vehicles continued to gain market share, reaching a record 16% of light-duty vehicle sales.” ((3))\n\n이 문장은 2025년 2분기와 2026년 2분기를 비교하면서 하이브리드 전기차가 시장점유율을 계속 확대했고, 2026년 2분기에 경량차 판매의 **역대 최고치인 16%**에 도달했다고 명시합니다 ((3)). 따라서 기사 문장 중 “올해 2분기 미국 신규 경량차 판매에서 일반 하이브리드 비중은 16%로 역대 최고치를 기록했다”는 부분에 대응하는 가장 직접적인 EIA 원문은 이 문장입니다 ((3)).\n\n다만 EIA 원문에는 기사에 쓰인 “일반 하이브리드”라는 표현 대신 **“hybrid electric vehicles”**라는 표현이 사용됩니다 ((3)). 원문 문장에는 “new”라는 단어가 직접 들어 있지 않고, “light-duty vehicle sales”라고만 되어 있으므로, 기사에서 “신규 경량차 판매”라고 번역하거나 확장한 부분은 원문 문장 자체의 표현보다 넓습니다 ((3)).\n\n### 2. 2026년 3분기 수치의 원 출처\n\n#### 문서 식별\n\n2026년 3분기의 “16%”를 직접 담고 있는 EIA 공식 게시 원문은 다음 주소에서 확인됩니다.\n\n**원 출처 주소**\n\nhttps://www.eia.gov/about/new/index.php?r=96180\n\n제공된 EIA 검색 결과에서는 해당 문서의 제목이 정상적인 기사 제목이 아니라 **“Older than 96180 days”**로 표시되어 있어, 문서 제목과 메타데이터가 비정상적으로 노출된 상태입니다. 그러나 검색된 원문에는 2025년 3분기와 2026년 3분기를 비교한 뒤 하이브리드 전기차 판매 비중이 16%에 도달했다는 문장이 그대로 포함되어 있습니다 ((13)).\n\n#### 숫자가 나온 원문 문장\n\n“Between 3Q25 and 3Q26, hybrid electric vehicles continued to gain market share, reaching 16% of light-duty vehicle sales.” ((13))\n\n이 문장은 2026년 3분기 하이브리드 전기차의 경량차 판매 비중이 **16%**였다는 기사 내용의 직접적인 원문 근거입니다 ((13)). 원문은 2025년 3분기와 2026년 3분기를 비교하고 있으므로, 기사에서 “3분기에도 16%를 나타냈다”고 표현한 수치 자체는 EIA 원문과 일치합니다 ((13)).\n\n그러나 확인된 3분기 원문 문장에는 “record”, 즉 “역대 최고치”라는 단어가 없습니다 ((13)). 따라서 기사 문장의 “역대 최고치를 기록했고, 3분기에도 16%를 나타냈다”라는 구조를 엄밀하게 나누면, **역대 최고치라는 표현은 확인된 2분기 원문에 직접 근거하고, 3분기 부분은 16%라는 수치에 직접 근거한다**고 보는 것이 정확합니다 ((3)) ((13)).\n\n### 3. 기사 문장과 EIA 원문의 대응 관계\n\n| 기사 표현 | EIA 원문과의 일치 여부 | 검증 결과 |\n|---|---|---|\n| 올해 2분기 | 일치 | 원문은 `2Q26`을 명시함 ((3)) |\n| 미국 신규 경량차 판매 | 부분 일치 | 원문은 `light-duty vehicle sales`라고 표현하며 `new`는 인용 문장에 직접 포함하지 않음 ((3)) |\n| 일반 하이브리드 | 부분 일치 | 원문은 `hybrid electric vehicles`라고 표현함 ((3)) ((13)) |\n| 비중은 16% | 일치 | 2분기와 3분기 원문 모두 16%를 명시함 ((3)) ((13)) |\n| 역대 최고치 | 2분기에는 일치 | 2분기 원문은 `reaching a record 16%`라고 명시함 ((3)) |\n| 3분기에도 16% | 일치 | 3분기 원문은 `reaching 16%`라고 명시함 ((13)) |\n\n기사의 “올해 2분기”와 “3분기”를 2026년의 해당 분기로 해석하면, EIA 원문은 각각 `2Q26`과 `3Q26`을 사용하고 있어 시점은 일치합니다 ((3)) ((13)). 2분기 원문은 2025년 2분기와 2026년 2분기를 비교하고, 3분기 원문은 2025년 3분기와 2026년 3분기를 비교하는 방식으로 작성되어 있습니다 ((3)) ((13)).\n\n### 4. “일반 하이브리드”라는 표현에 대한 주의점\n\n확인된 EIA 원문에서 통계 대상은 **“hybrid electric vehicles”**입니다 ((3)) ((13)). 이 표현을 한국어로 옮기면 일반적으로 “하이브리드 전기차” 또는 “하이브리드 차량”에 해당하며, 기사에서 사용한 “일반 하이브리드”는 플러그인 하이브리드나 배터리 전기차와 구분하려는 의도로 보입니다 ((3)) ((13)).\n\n하지만 제공된 EIA 원문 문장만으로는 해당 수치를 “일반 하이브리드”라고 번역한 분류 기준이 문장 안에 설명되어 있지 않습니다 ((3)) ((13)). 따라서 원 출처를 인용할 때는 기사 표현을 그대로 재인용하기보다, EIA의 표현을 유지해 **“하이브리드 전기차가 경량차 판매의 16%를 차지했다”**고 옮기는 편이 원문 충실성 측면에서 더 정확합니다 ((3)) ((13)).\n\n2분기 원문은 하이브리드 전기차의 판매 비중이 “record 16%”라고 명시하므로 “역대 최고 수준의 16%”라고 번역할 수 있습니다 ((3)). 반면 3분기 원문은 시장점유율이 계속 상승해 16%에 도달했다고만 쓰고 있으므로, 3분기 수치에 다시 “역대 최고치”라는 수식어를 붙이려면 해당 문서의 다른 문장이나 표에서 추가 확인이 필요합니다 ((13)).\n\n### 5. 최종 판정\n\n**2026년 2분기 16%의 1차 원 출처**\n\n- 문서: 미국 에너지정보청, “Hybrid sales rise while battery electric sales remain lower ...”\n- 발행일: 2026년 7월 27일 ((3))\n- 주소: https://www.eia.gov/todayinenergy/detail.php?id=67885\n- 원문: “Between 2Q25 and 2Q26, hybrid electric vehicles continued to gain market share, reaching a record 16% of light-duty vehicle sales.” ((3))\n\n**2026년 3분기 16%의 1차 원 출처**\n\n- 문서: 미국 에너지정보청 공식 게시 문서\n- 주소: https://www.eia.gov/about/new/index.php?r=96180\n- 원문: “Between 3Q25 and 3Q26, hybrid electric vehicles continued to gain market share, reaching 16% of light-duty vehicle sales.” ((13))\n\n따라서 제시된 기사 문장의 핵심 수치인 **2026년 2분기 16%와 2026년 3분기 16%는 EIA 공식 원문에서 각각 확인**됩니다 ((3)) ((13)). 다만 원문에 가장 충실하게 쓰려면 “일반 하이브리드”보다는 “하이브리드 전기차”라고 표현하고, “역대 최고치”는 확인된 문장상 2분기의 16%에 직접 연결하는 것이 정확합니다 ((3)) ((13)).",
+  "참고": [
+   {
+    "제목": "Electric vehicles and hybrids surpass 16% of total 2023 ...",
+    "주소": "https://www.eia.gov/todayinenergy/detail.php?id=61344"
+   },
+   {
+    "제목": "Today in Energy - U.S. Energy Information Administration ...",
+    "주소": "https://www.eia.gov/todayinenergy/index.php?tg=%20vehicles"
+   },
+   {
+    "제목": "Hybrid sales rise while battery electric sales remain lower ...",
+    "주소": "https://www.eia.gov/todayinenergy/detail.php?id=67885"
+   },
+   {
+    "제목": "Today in Energy Archive",
+    "주소": "https://www.eia.gov/todayinenergy/archive.php?my=all"
+   },
+   {
+    "제목": "Electrified vehicles continue to see slow growth and less ...",
+    "주소": "https://www.eia.gov/todayinenergy/detail.php?id=36312"
+   },
+   {
+    "제목": "Today in Energy",
+    "주소": "https://www.eia.gov/todayinenergy/index.php?tg=gasoline"
+   },
+   {
+    "제목": "Electric vehicles and hybrids make up 16% of U.S. light- ...",
+    "주소": "https://www.eia.gov/todayinenergy/detail.php?id=60321"
+   },
+   {
+    "제목": "California program encourages adoption of zero-emissions ...",
+    "주소": "https://www.eia.gov/todayinenergy/detail.php?id=28192"
+   },
+   {
+    "제목": "U.S. share of electric and hybrid vehicle sales decreased in ...",
+    "주소": "https://www.eia.gov/todayinenergy/detail.php?id=62063"
+   },
+   {
+    "제목": "US Energy-Related Carbon Dioxide Emissions, 2025",
+    "주소": "https://www.eia.gov/environment/emissions/carbon/"
+   },
+   {
+    "제목": "Autonomous Vehicles: Uncertainties and Energy Implications",
+    "주소": "https://www.eia.gov/outlooks/aeo/av.php"
+   },
+   {
+    "제목": "Annual Energy Outlook 2026",
+    "주소": "https://www.eia.gov/outlooks/aeo/pdf/AEO_Narrative.pdf"
+   },
+   {
+    "제목": "Older than 96180 days",
+    "주소": "https://www.eia.gov/about/new/index.php?r=96180"
+   },
+   {
+    "제목": "U.S. Energy Information Administration",
+    "주소": "https://www.eia.gov/electricity/issuestrends/"
+   },
+   {
+    "제목": "Narrative - U.S. Energy Information Administration ...",
+    "주소": "https://www.eia.gov/outlooks/aeo/narrative/"
+   },
+   {
+    "제목": "Nevada State Analysis",
+    "주소": "https://www.eia.gov/states/NV/analysis"
+   },
+   {
+    "제목": "Hybrid vehicles gain market share in the US as EV sales decline after tax credit expiration",
+    "주소": "https://www.review-energy.com/movilidad/hybrid-vehicles-gain-market-share-in-the-us-as-ev-sales-decline-after-tax-credit-expiration"
+   },
+   {
+    "제목": "The Great Divide: New Hybrids vs. Aging Vehicles",
+    "주소": "https://energydataacademy.com/f/the-great-divide-new-hybrids-vs-aging-vehicles"
+   },
+   {
+    "제목": "US hybrid sales rise as battery electric vehicles lose market ...",
+    "주소": "https://www.review-energy.com/movilidad/us-hybrid-sales-rise-as-battery-electric-vehicles-lose-market-share"
+   },
+   {
+    "제목": "Hybrid Sales Surge: Why Buyers Choose the Middle Ground",
+    "주소": "https://www.autounite.com/blog/hybrids-surging-buyers-choosing-middle-ground"
+   },
+   {
+    "제목": "Electric Plus Hybrid Vehicles Reach Record US Auto ...",
+    "주소": "https://cleantechnica.com/2024/12/06/electric-plus-hybrid-vehicles-reach-record-us-auto-market-share-in-q3/"
+   },
+   {
+    "제목": "Hybrid electric vehicles in the United States - Wikipedia",
+    "주소": "https://en.wikipedia.org/wiki/Hybrid_electric_vehicles_in_the_United_States"
+   },
+   {
+    "제목": "Why Hybrid Cars Are Suddenly More Popular Than EVs",
+    "주소": "https://autos.yahoo.com/ev-and-future-tech/articles/why-hybrid-cars-suddenly-more-110000300.html"
+   },
+   {
+    "제목": "Hybrid-Electric, Plug-in Hybrid-Electric and Electric Vehicle Sales | Bureau of Transportation Statistics",
+    "주소": "https://www.bts.gov/content/gasoline-hybrid-and-electric-vehicle-sales"
+   },
+   {
+    "제목": "Light Duty Electric Drive Vehicles Monthly Sales Updates",
+    "주소": "https://www.anl.gov/esia/light-duty-electric-drive-vehicles-monthly-sales-updates"
+   },
+   {
+    "제목": "Proposed Determination on the Appropriateness of ...",
+    "주소": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100Q3DO.TXT"
+   },
+   {
+    "제목": "Emission Standards: China: New Energy Vehicle (NEV) Policy",
+    "주소": "https://dieselnet.com/standards/cn/nev.php"
+   },
+   {
+    "제목": "On the Road in 2035",
+    "주소": "https://energy.mit.edu/system/files/resources/migrated/MIT-LFEE-08-005-RP.pdf"
+   },
+   {
+    "제목": "Highlights of the Automotive Trends Report | US EPA",
+    "주소": "https://www.epa.gov/automotive-trends/highlights-automotive-trends-report"
+   },
+   {
+    "제목": "Decarbonizing Combustion Vehicles",
+    "주소": "https://www.transportationenergy.org/wp-content/uploads/2023/07/Decarbonizing-Combustion-Vehicles_FINAL.pdf"
+   },
+   {
+    "제목": "(PDF) Future Potential of Hybrid and Diesel Powertrains in ...",
+    "주소": "https://www.researchgate.net/publication/23745872_Future_Potential_of_Hybrid_and_Diesel_Powertrains_in_the_US_Light-Duty_Vehicle_Market"
+   },
+   {
+    "제목": "Forecasting and Modeling Report",
+    "주소": "https://2040.planbayarea.org/sites/default/files/documents/2026-04/Final_Plan_Bay_Area_2050Plus_Forecasting_and_Modeling_Report.pdf"
+   },
+   {
+    "제목": "Instagram",
+    "주소": "https://www.instagram.com/reel/DbLwHy7jhXH"
+   },
+   {
+    "제목": "Competitiveness-of-the-EU-Automotive-Industry-in-Electric- ...",
+    "주소": "https://www.researchgate.net/profile/Sven-Horak-2/publication/338215470_Competitiveness_of_the_EU_Automotive_Industry_in_Electric_Vehicles/links/5e07a8454585159aa4a24c56/Competitiveness-of-the-EU-Automotive-Industry-in-Electric-Vehicles.pdf?origin=scientificContributions"
+   }
+  ],
+  "초": 65,
+  "채점": {
+   "정답기관": "eia.gov",
+   "참고에정답기관": true,
+   "1순위가정답기관": true,
+   "참고수": 34,
+   "답에숫자": true
+  }
+ },
+ "9": {
+  "답": "### 확인 결과\n\n기사 문장의 수치를 직접 확인할 수 있는 가장 가까운 **1차 자료는 중국 해관총서 공식 웹사이트에 게시된 2026년 1∼10월 무역 통계 문서**입니다. 이 문서는 2026년 11월 10일 해관총서가 발표한 통계를 다루며, 해관총서 공식 사이트에 11월 11일 게시됐습니다 ((38)).\n\n- **문서 제목:** 前10个月我国货物贸易进出口增长20%\n- **게시일:** 2026년 11월 11일\n- **주소:** http://www.customs.gov.cn/customs/2026-11/11/article_2026111109112980079.html\n\n### 공식 문서의 원문 인용\n\n해당 문서에서 확인되는 관련 문장은 다음과 같습니다.\n\n> 本报北京11月10日电（记者张翼）海关总署10日发布数据显示，今年前10个月，我国货物贸易进出口总值44.81万亿元人民币，同比增长20%。 ((38))\n\n해관총서 공식 웹사이트의 같은 통계 발표 자료에는 1∼10월 수입액도 다음과 같이 제시돼 있습니다 ((50)).\n\n> 从进口看，前10个月，我国进口18.82万亿元，同比增长23.6%。 ((50))\n\n- **문서 제목:** 前10个月我国外贸数据出炉这些亮点不容错过\n- **게시일:** 2026년 11월 11일\n- **주소:** http://www.customs.gov.cn/customs/2026-11/11/article_2026111109133211123.html\n\n### 기사 문장과 공식 원문의 일치 여부\n\n공식 해관총서 문서에서 확인되는 핵심 수치는 **2026년 1∼10월 상품무역 총액 44.81조 위안, 전년 동기 대비 20% 증가, 수입 18.82조 위안, 전년 동기 대비 23.6% 증가**입니다 ((38)) ((50)).\n\n그러나 확인 가능한 해관총서 공식 원문에는 기사에 적힌 **“전년 동기 대비 8% 증가”**와 **“1조425억 달러”**라는 표현이 그대로 나오지 않습니다 ((38)) ((50)). 따라서 해당 한국어 문장의 달러 기준 무역흑자 수치와 8% 증가율을 해관총서 공식 문서의 문장 그대로 인용해 확인했다고 보기는 어렵습니다.\n\n특히 공식 문서가 제시한 본문 수치는 위안화 기준이며, 기사 문장은 이를 달러 기준으로 제시하고 있습니다 ((38)) ((50)). 그러므로 기사 속 **1조425억 달러**는 해관총서가 같은 공식 문서에서 직접 표기한 수치인지, 별도의 달러 통계표나 환산 과정에서 산출된 수치인지 구분해야 합니다.\n\n### 결론\n\n기사의 발표 주체와 발표 시점에 대응하는 1차 자료는 다음 해관총서 공식 문서입니다.\n\n**원출처 주소:**  \nhttp://www.customs.gov.cn/customs/2026-11/11/article_2026111109112980079.html\n\n**공식 원문:**  \n“本报北京11月10日电（记者张翼）海关总署10日发布数据显示，今年前10个月，我国货物贸易进出口总值44.81万亿元人民币，同比增长20%。” ((38))\n\n다만 현재 확인되는 공식 원문에는 기사에 나온 **“1조425억 달러”와 “전년 동기 대비 8%”를 함께 포함한 문장**이 없으므로, 그 두 수치의 정확한 최초 출처 문장까지는 이 해관총서 문서만으로 확정할 수 없습니다.",
+  "참고": [
+   {
+    "제목": "흔들리는 트럼프, 4연임 채비 나선 시진핑…한반도에 미칠 ...",
+    "주소": "https://www.sisajournal.com/news/articleView.html?idxno=393689"
+   },
+   {
+    "제목": "Instagram",
+    "주소": "https://www.instagram.com/p/Dfjl1gzMck0"
+   },
+   {
+    "제목": "大佬观观观的微博",
+    "주소": "https://www.sina.cn/media/7819159883"
+   },
+   {
+    "제목": "올 10월 수출액 1152억7600만 달러 전년 동월 대비 93.7%↑...11월 1조 달러 넘을 듯...무역수지 425억 달러 흑자",
+    "주소": "https://www.sisa-news.com/news/article.html?no=278485"
+   },
+   {
+    "제목": "中, 내수 부진 속 역대급 흑자…APEC 앞두고 무역갈등은 '숙제'",
+    "주소": "https://www.yna.co.kr/view/AKR20261110162400089"
+   },
+   {
+    "제목": "China’s trade surplus surpasses $1 trillion for a 2nd straight year, as exports surge 35%",
+    "주소": "https://www.nbcnews.com/world/asia/chinas-trade-surplus-surpasses-1-trillion-2nd-straight-year-exports-rcna608493"
+   },
+   {
+    "제목": "2026년 10월 무역수지 425억 달러 흑자, 수출 1조 달러 목표 가시화 < 경제 < 종합 < 기사본문 - 한국사회복지저널",
+    "주소": "http://www.ksw-news.com/news/articleView.html?idxno=3055206"
+   },
+   {
+    "제목": "중국 무역흑자 1조 달러 돌파…AI 반도체 수출 급증에 역대 ...",
+    "주소": "https://www.hellot.net/mobile/article.html?no=116176"
+   },
+   {
+    "제목": "China's Trade Surplus Tops $1 Trillion Amid Global Trade Tensions | WION News",
+    "주소": "https://www.youtube.com/watch?v=E30ubb_LmZI"
+   },
+   {
+    "제목": "2026년 10월 수출입 동향: 수출 1,153억 달러와 무역흑자 425억 달러",
+    "주소": "https://m.youtube.com/watch?v=bx2h0aFUp54&pp=0gcJCSsMAYcqIYzv"
+   },
+   {
+    "제목": "中 무역흑자 1조 달러 돌파…AI·반도체 수출 호조에 사상 최대 ...",
+    "주소": "https://www.m-economynews.com/news/article.html?no=72840"
+   },
+   {
+    "제목": "87.7 Brigada News FM - Goa",
+    "주소": "https://www.facebook.com/brigadanewsfmgoa/posts/chinas-trade-surplus-reached-104-trillion-from-january-to-october-2026-surpassin/122196162686713337"
+   },
+   {
+    "제목": "10월 수출 1152억 8000만 달러 93.7%↑…1~10월 누적 9300억 달러, 연 1조 달러 11월 중 넘을 전망 - 유스연합",
+    "주소": "https://www.youthassembly.kr/news/1030075"
+   },
+   {
+    "제목": "중국 무역 흑자 1조 달러, 작년보다 한 달 앞당겨 넘어섰거든요",
+    "주소": "https://ailens.sedaily.ai/international/2026/11/11/2026-11-11-%EC%A4%91%EA%B5%AD-%EB%AC%B4%EC%97%AD-%ED%9D%91%EC%9E%90-1%EC%A1%B0-%EB%8B%AC%EB%9F%AC-%EC%9E%91%EB%85%84%EB%B3%B4%EB%8B%A4-%ED%95%9C-%EB%8B%AC-%EC%95%9E%EB%8B%B9%EA%B2%A8-%EB%84%98%EC%96%B4%EC%84%B0%EA%B1%B0%EB%93%A0%EC%9A%94"
+   },
+   {
+    "제목": "China's trade surplus soars past $1 trillion as AI boom powers exports | Reuters",
+    "주소": "https://www.reuters.com/world/asia-pacific/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-2026-11-10"
+   },
+   {
+    "제목": "[속보] 1~10월 누적 수출 9천억 달러 첫 돌파…'연 1조 달러' 청신호 - 노컷뉴스",
+    "주소": "https://m.nocutnews.co.kr/news/amp/6600198"
+   },
+   {
+    "제목": "[오늘의글로벌PICK!] 中, 내수 부진 속 1조 달러 역대급 흑자 ...",
+    "주소": "https://www.koreapost.co.kr/news/articleView.html?idxno=90045"
+   },
+   {
+    "제목": "China recorded a trade surplus of just over US$1 trillion from January to October. The world’s second-largest economy is now on track to surpass last year’s record surplus of US$1.2 trillion, despite imports growing faster than exports. | TDM Canal Macau",
+    "주소": "https://www.facebook.com/Canal.Macau/posts/china-recorded-a-trade-surplus-of-just-over-us1-trillion-from-january-to-october/1489198403329950"
+   },
+   {
+    "제목": "11월 중국 무역 흑자, 수출 급증으로 예상치 상회",
+    "주소": "https://kr.investing.com/news/economic-indicators/article-1745881"
+   },
+   {
+    "제목": "중국 무역흑자 1조 달러 돌파…AI 호황 뒤에 가려진 내수 침체",
+    "주소": "https://oortt.app/app/news/hLtp8SFpPbtt-d"
+   },
+   {
+    "제목": "China’s Trade Surplus Surged Past $1 Trillion in October - WSJ",
+    "주소": "https://www.wsj.com/world/china/chinas-trade-surplus-surged-past-1-trillion-in-october-967968c9"
+   },
+   {
+    "제목": "미국 증시 이번 주 폭락, 그러나 트럼프의 중국 방문이 단기 랠리를 촉발할 수도 있음",
+    "주소": "https://www.tradingkey.com/kr/analysis/stocks/us-stocks/261705013-us-stocks-crash-this-week-but-trump-china-visit-may-spark-rally-tradingkey"
+   },
+   {
+    "제목": "중국 무역흑자 1조 달러 돌파, 사상 최대 실적 기록한 진짜 ...",
+    "주소": "https://www.youtube.com/watch?v=mDmVsAMyDLI"
+   },
+   {
+    "제목": "China Tops $1 Trillion Trade Surplus for First Time as November Exports Rebound",
+    "주소": "https://finance.yahoo.com/news/china-tops-1-trillion-trade-184535281.html"
+   },
+   {
+    "제목": "캘퍼스, 머스크 1조 달러 보상안에 반대…’권력 집중’ 우려",
+    "주소": "https://kr.investing.com/news/stock-market-news/article-1692451"
+   },
+   {
+    "제목": "증권사 실적 시즌 개막… 대형은 1조 클럽, 중소형은 흑자 전환",
+    "주소": "https://kr.investing.com/news/stock-market-news/article-1806789"
+   },
+   {
+    "제목": "China Trade Surplus Surges to $1.2 Trillion, Defying US Tariffs",
+    "주소": "https://finance.yahoo.com/news/china-trade-surplus-surges-1-050100666.html"
+   },
+   {
+    "제목": "앤스로픽, 기업가치 1조 달러 이정표 달성하며 세컨더리 마켓에서 오픈AI 추월, AI 시장은 지금 과열되었는가?",
+    "주소": "https://www.tradingkey.com/kr/analysis/stocks/us-stocks/261815544-anthropic-openai-market-valuation-ai-overheated-tradingkey"
+   },
+   {
+    "제목": "今年前3季度我国进出口规模突破1.5万亿美元贸易顺差扩大势头趋缓",
+    "주소": "http://lasa.customs.gov.cn/wuhan_customs/506375/506376/507120/index.html"
+   },
+   {
+    "제목": "2007年1-11月我国外贸进出口规模接近2万亿美元 超过去年全年水平",
+    "주소": "http://lasa.customs.gov.cn/wuhan_customs/506375/506376/507370/index.html"
+   },
+   {
+    "제목": "前2个月我国外贸进出口4.12万亿元",
+    "주소": "http://sjs.customs.gov.cn/customs/2020-03/07/article_2025121222573975027.html"
+   },
+   {
+    "제목": "前4个月进出口9.07万亿元 4月份出口增长8.2%",
+    "주소": "http://www.customs.gov.cn/customs/2020-05/07/article_2025121222584536782.html"
+   },
+   {
+    "제목": "海关总署2026年一季度进出口情况新闻发布会",
+    "주소": "http://www.customs.gov.cn/customs/xwfb34/302330/hgzs2025nqnjckqkxwfbh/index.html"
+   },
+   {
+    "제목": "前10个月我国货物贸易进出口增长5.2%",
+    "주소": "http://www.customs.gov.cn/customs/2024-11/07/article_2025121223352988618.html"
+   },
+   {
+    "제목": "中华人民共和国海关总署",
+    "주소": "http://www.customs.gov.cn/"
+   },
+   {
+    "제목": "海关总署：2007年外贸超2万亿美元",
+    "주소": "http://gdfs.customs.gov.cn/wuhan_customs/506375/506376/507156/index.html"
+   },
+   {
+    "제목": "今年前8个月我国进出口基本持平 8月份进出口环比增长3.9%",
+    "주소": "http://www.customs.gov.cn/customs/2023-09/07/article_2025121223310247730.html"
+   },
+   {
+    "제목": "前10个月我国货物贸易进出口增长20%",
+    "주소": "http://www.customs.gov.cn/customs/2026-11/11/article_2026111109112980079.html"
+   },
+   {
+    "제목": "前10月货物贸易进出口总值同比增20%",
+    "주소": "http://www.customs.gov.cn/customs/2026-11/11/article_2026111109124156465.html"
+   },
+   {
+    "제목": "海关总署公告2026年第155号（关于公布《中华人民共和国 ...",
+    "주소": "http://www.customs.gov.cn/customs/2026-10/30/article_2026103020541861461.html"
+   },
+   {
+    "제목": "前7个月我国货物贸易进出口增长6.2%",
+    "주소": "http://www.customs.gov.cn/customs/xwfb34/302425/6031047/index.html"
+   },
+   {
+    "제목": "今日海关",
+    "주소": "http://www.customs.gov.cn/customs/xwfb34/302425/0e899049-2.html"
+   },
+   {
+    "제목": "上半年北京地区进口首次突破千亿美元",
+    "주소": "http://gdfs.customs.gov.cn/beijing_customs/434756/434804/2941702/434773/434775/453433/index.html"
+   },
+   {
+    "제목": "海关拍卖",
+    "주소": "http://www.customs.gov.cn/customs/302249/zfxxgk/fdzdgknr/2799883/index.html"
+   },
+   {
+    "제목": "前11个月北京地区进出口总值3531亿美元 11月份外贸规模首次突破350亿美元",
+    "주소": "http://gdfs.customs.gov.cn/beijing_customs/434756/434804/2941702/434773/434775/453450/index.html"
+   },
+   {
+    "제목": "海关总署2026年上半年进出口情况新闻发布会",
+    "주소": "http://www.customs.gov.cn/customs/xwfb34/302330/gxbjxxwfbh_js2026nsbnjckqk/index.html"
+   },
+   {
+    "제목": "2010年重庆市外贸进出口值突破120亿美元",
+    "주소": "http://gdfs.customs.gov.cn/chongqing_customs/515860/515862/515864/518825/index.html"
+   },
+   {
+    "제목": "广州海关出台12项便利措施服务保障第140届广交会（图）",
+    "주소": "http://www.customs.gov.cn/customs/2026-10/10/article_2026101014561249540.html"
+   },
+   {
+    "제목": "南昌一季度对外贸易总值突破6亿美元",
+    "주소": "http://guangzhou.customs.gov.cn/nanchang_customs/2007-04/12/article_2026063011374113563.html"
+   },
+   {
+    "제목": "前10个月我国外贸数据出炉这些亮点不容错过",
+    "주소": "http://www.customs.gov.cn/customs/2026-11/11/article_2026111109133211123.html"
+   },
+   {
+    "제목": "新华网：赣前4月进出口总值25.1亿美元 增速全国第三",
+    "주소": "http://gdfs.customs.gov.cn/nanchang_customs/2007-05/17/article_2026063011374227942.html"
+   }
+  ],
+  "초": 78,
+  "채점": {
+   "정답기관": "customs.gov.cn",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 51,
+   "답에숫자": true
+  }
+ },
+ "10": {
+  "답": "### 원 출처 문서\n\n- **문서명:** 「 떨어지는 것은 날개가 있다」\n- **발행일:** 2026년 11월 6일\n- **발행기관:** 하나증권\n- **주소:** https://m.hanaw.com:444/main/research/research/download.cmd?bbsSeq=1289604&attachFileSeq=1&bbsId=&dbType=&bbsCd=2237\n\n해당 문서는 금융지주와 증권사를 제외한 회사채 순상환 규모를 **13조원**으로 명시하고 있어, 제시된 숫자와 일치하는 원 출처로 확인된다 ((29)).\n\n### 원문 인용\n\n> • (금융지주/증권 제외 시) 회사채 순상환 13조원을 단기조달 8조원 + 은행대출 순증으로 메꾼 셈. ((29))\n\n따라서 숫자 **‘13조원’**이 처음 확인되는 원 출처 문서는 하나증권의 「 떨어지는 것은 날개가 있다」 보고서다.",
+  "참고": [
+   {
+    "제목": "예금이탈에 은행채 이달 13조 발행 … 회사채 시장은 찬바람",
+    "주소": "https://www.mk.co.kr/news/stock/11476916"
+   },
+   {
+    "제목": "2007년 10월 24일 (수)",
+    "주소": "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1285276&attachFileSeq=1&bbsId=&dbType=&bbsCd=2206"
+   },
+   {
+    "제목": "2026년 2분기 하나금융지주회사 현황",
+    "주소": "https://www.hanafn.com:8002/download/10080193/crossDownload.do"
+   },
+   {
+    "제목": "[얼어붙은 회사채] 9월부터 만기 몰렸는데…'해빙' 조짐 없는 ...",
+    "주소": "https://kbthink.com/news-list/view.html?newsId=20260813083502407"
+   },
+   {
+    "제목": "회사채 발행 뚝 끊은 기업들…뛰는 미 국채 금리에 '채권 ...",
+    "주소": "https://v.daum.net/v/0hvzef5Ttp?f=p"
+   },
+   {
+    "제목": "CrediVille",
+    "주소": "https://www.hanaw.com/download/research/FileServer/WEB/economy/bond/2025/03/11/CrediVille_250312.pdf"
+   },
+   {
+    "제목": "주식전략",
+    "주소": "https://securities.miraeasset.com/bbs/download/2145573.pdf?attachmentId=2145573"
+   },
+   {
+    "제목": "회사채 16조 순상환·대출 57조↑…기업 '돈줄' 은행으로",
+    "주소": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436006"
+   },
+   {
+    "제목": "CrediVille - 변화의 조짐",
+    "주소": "https://www.hanaw.com/download/research/FileServer/WEB/economy/bond/2022/01/04/CrediVille_220105.pdf"
+   },
+   {
+    "제목": "\"채권 발행 대신 은행 갑니다\"⋯기업들, 8개월 연속 회사채 순 ...",
+    "주소": "https://v.daum.net/v/6nAlCeTsTZ?f=p"
+   },
+   {
+    "제목": "CrediVille - 낡은 연초효과",
+    "주소": "https://www.hanaw.com/download/research/FileServer/WEB/economy/bond/2023/01/10/CrediVille_230111.pdf"
+   },
+   {
+    "제목": "올해 부진 흐름 회사채 발행, 내년 회복 관건은?",
+    "주소": "https://www.yna.co.kr/view/AKR20261025013900008"
+   },
+   {
+    "제목": "증권사 단기조달 수요↑…상반기 CP·단기사채 68% 증가",
+    "주소": "https://www.mt.co.kr/stock/2026/08/04/2026080316125913185"
+   },
+   {
+    "제목": "\"새로 찍느니 갚는다\"⋯韓 기업들, 9개월 연속 회사채 순상환 - 서플",
+    "주소": "https://supple.kr/news/cmttw59er00002m9plquwg5f2"
+   },
+   {
+    "제목": "\"회사채보다 싸게 빌리자\" 기업 노크에…\"금리 깎아줄게 ...",
+    "주소": "https://www.mt.co.kr/finance/2026/09/22/2026092121554592355"
+   },
+   {
+    "제목": "[주식] 증권사 리포트",
+    "주소": "https://t.me/s/companyreport?after=113145"
+   },
+   {
+    "제목": "채권시장 찬바람...기업들 \"2월엔 빚 갚을 만큼만\" 채권 발행",
+    "주소": "https://www.mt.co.kr/stock/2026/02/02/2026020216120685799"
+   },
+   {
+    "제목": "700조 '차환의 시간' 덮쳤다…7%대 금리 떠안는 기업들",
+    "주소": "https://news.nate.com/view/20260913n14283"
+   },
+   {
+    "제목": "자산배분의 창(窓)",
+    "주소": "https://www.hanaw.com/download/research/FileServer/WEB/strategy/strategy/2026/01/07/AAW_20260108.pdf"
+   },
+   {
+    "제목": "2025년 하반기 크레딧시장 전망",
+    "주소": "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%A4%84%EB%8B%A4%EB%A6%AC%EA%B8%B020250523%ED%95%98%EB%82%98%EC%A6%9D%EA%B6%8C."
+   },
+   {
+    "제목": "[2022 3Q 리그테이블] [DCM] 순상환으로 돌아선 기업들",
+    "주소": "https://dealsite.co.kr/articles/92926"
+   },
+   {
+    "제목": "CrediVille - 태영건설 이슈 시사점 및 대응전략",
+    "주소": "https://ssl.pstatic.net/imgstock/upload/research/debenture/1704155616509.pdf"
+   },
+   {
+    "제목": "한파처럼 얼어붙은 회사채, 자금줄 막힌 기업들 '울상' - 헤럴드경제",
+    "주소": "https://biz.heraldcorp.com/article/10666261"
+   },
+   {
+    "제목": "美금리인상·구조조정에 거래 뚝...회사채시장 양극화 심해져",
+    "주소": "https://m.sedaily.com/NewsView/1ODK48QR63"
+   },
+   {
+    "제목": "뉴스 :: 매일경제TV 증권",
+    "주소": "https://mmoney.mbn.co.kr/stock/news?news_service_id=10008&type=hits_count&page=90"
+   },
+   {
+    "제목": "'27년, 다시 볼 회사채",
+    "주소": "https://file.alphasquare.co.kr/media/pdfs/market-report/%27%2727%EB%85%84%2C20261022%EC%9C%A0%EC%95%88%ED%83%80%EC%A6%9D%EA%B6%8C.pdf"
+   },
+   {
+    "제목": "658호",
+    "주소": "https://www.bond.co.kr/KIS_Weekly/KISWeekly%EC%A0%9C658%ED%98%B8(20151211).pdf"
+   },
+   {
+    "제목": "[데일리 자료] 26.09.29 아침에 읽는 주식뉴스모음",
+    "주소": "https://contents.premium.naver.com/bsdstock/kysstock/contents/260929090536903ft"
+   },
+   {
+    "제목": "[2027년 크레딧 시장 전망] 떨어지는 것은 날개가 있다",
+    "주소": "https://m.hanaw.com:444/main/research/research/download.cmd?bbsSeq=1289604&attachFileSeq=1&bbsId=&dbType=&bbsCd=2237"
+   },
+   {
+    "제목": "글로벌 ETF 투자전략 - 변화하는 것과 변하지 않는 것",
+    "주소": "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1286337&attachFileSeq=1&bbsId=&dbType=&bbsCd=1260"
+   },
+   {
+    "제목": "2026 자산배분 전략",
+    "주소": "https://m.hanaw.com:444/main/research/research/download.cmd?bbsSeq=1289011&attachFileSeq=1&bbsId=&dbType=&bbsCd=1261"
+   },
+   {
+    "제목": "out_2026년하반기포럼 표지",
+    "주소": "https://file.hanaw.com/download/research/FileServer/WEB/info/daily/2026/05/22/final.pdf"
+   },
+   {
+    "제목": "PowerPoint 프레젠테이션",
+    "주소": "https://www.hanaw.com/download/research/FileServer/WEB/info/daily/2025/11/19/Forum2026_Hana.pdf"
+   },
+   {
+    "제목": "주간 하나채권",
+    "주소": "https://file.hanaw.com/download/research/FileServer/WEB/economy/bond/2026/04/06/260406_hanabond_weekly_.pdf"
+   },
+   {
+    "제목": "2025 전망포럼",
+    "주소": "https://www.hanaw.com/download/research/FileServer/WEB/info/daily/2024/11/18/2025_Hana_Research_Forum.pdf"
+   },
+   {
+    "제목": "2013년 0월 0일",
+    "주소": "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1275923&attachFileSeq=1&bbsId=&dbType=&bbsCd=2237"
+   },
+   {
+    "제목": "2027 자산배분 전략",
+    "주소": "https://m.hanaw.com:444/main/research/research/download.cmd?bbsSeq=1289565&attachFileSeq=1&bbsId=&dbType=&bbsCd=1261"
+   }
+  ],
+  "초": 25,
+  "채점": {
+   "정답기관": "hanaw.com",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 37,
+   "답에숫자": false
+  }
+ },
+ "13": {
+  "답": "### 원 출처 문서\n\n- **문서명:** *Rezolute Announces Positive Results from the Phase 3 upLIFT Study in Tumor Hyperinsulinism*\n- **발표일:** 2026년 11월 13일\n- **발행기관:** Rezolute, Inc.\n- **문서 주소:** https://ir.rezolutebio.com/news/detail/389/rezolute-announces-positive-results-from-the-phase-3-uplift-study-in-tumor-hyperinsulinism\n\n### 원문 인용\n\n“**To date, 13 participants have met the responder criterion, including 12 who also achieved a complete discontinuation of IV glucose.**” ((26))\n\n### 확인 결과\n\n해당 보도자료는 2026년 11월 5일 데이터 평가를 바탕으로 13명이 반응 기준을 충족했고, 그중 12명이 정맥 포도당 투여를 완전히 중단했다고 밝히고 있다. ((26)) 다만 제공된 원문 검색 결과에는 기사에 제시된 **“16명 중 13명(81.3%)”**이라는 표현이 그대로 노출되지 않고, “13 participants”와 “12”라는 수치가 문장으로 확인된다. ((26)) 따라서 기사 문장의 수치에 대응하는 공식 원 출처는 위 Rezolute 보도자료로 확인되지만, **“16명 중 13명(81.3%)” 전체가 포함된 문장을 원문 그대로 인용하려면 해당 보도자료의 전체 본문 또는 첨부 공시 원문을 추가로 대조해야 한다.**",
+  "참고": [
+   {
+    "제목": "전 세계 감염병 발생 동향",
+    "주소": "https://dportal.kdca.go.kr/pot/bbs/ND_fileDownload_1009.do?q_fileSn=4959088&q_fileId=2bc7f6f8-ed6e-4c4a-9ded-bb90c3cd15b8"
+   },
+   {
+    "제목": "반복성 복통에서 상부위장관 점막병변과 Helicobacter pylori ...",
+    "주소": "https://www.e-cep.org/upload/pdf/1995380106-20091033173233.PDF"
+   },
+   {
+    "제목": "포도당 수액에 의존하던 암 환자들⋯신약 투여 후 75% 끊어",
+    "주소": "https://kormedi.com/2905520/"
+   },
+   {
+    "제목": "튀르키예·시리아 지진 사망자 하루만에 5천 명 넘어서/“한 명 ...",
+    "주소": "https://www.youtube.com/watch?v=4-yWfo9KVw8"
+   },
+   {
+    "제목": "두 개 대학병원에서 진단된 학동기 소아 및 청소년 폐결핵 ...",
+    "주소": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0153kjpid/kjpid-21-191.pdf"
+   },
+   {
+    "제목": "암환자 273만 명 시대, 10명 중 7명은 5년 이상 생존",
+    "주소": "https://www.cancer.go.kr/download.do?uuid=60932fec-9b3c-48f8-aedc-7811aa3f1565.pdf"
+   },
+   {
+    "제목": ":: Korean Journal of Otorhinolaryngology-Head and Neck ...",
+    "주소": "https://www.kjorl.org/journal/view.php?number=1957"
+   },
+   {
+    "제목": "국가데이터처",
+    "주소": "https://mods.go.kr"
+   },
+   {
+    "제목": "'8·2 대책 주역' 고위공직자 절반은 다주택자..집 팔까?",
+    "주소": "https://v.daum.net/v/LZi2L04zxX?f=p"
+   },
+   {
+    "제목": "코로나19 사망자 공식집계보다 3배 더 많아…한국도 4630명 ...",
+    "주소": "https://www.dongascience.com/ko/news/52929"
+   },
+   {
+    "제목": "네오이뮨텍, 美 CAR-T 병용 임상서 NT-I7 고용량군 2년 ...",
+    "주소": "https://biz.chosun.com/industry/business_info/2026/10/27/XJPBHSEBQBBUHKANFTU7DO2B5I/"
+   },
+   {
+    "제목": "지표서비스 | e-나라지표",
+    "주소": "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1011"
+   },
+   {
+    "제목": "[새얼굴] 매일노동뉴스 새 분회장에 김봉석",
+    "주소": "http://media.nodong.org/news/articleView.html?idxno=6457"
+   },
+   {
+    "제목": "2025년(누적) 산업재해 현황 부가통계 “재해조사 대상 사망 ...",
+    "주소": "https://www.moel.go.kr/common/downloadFile.do?file_seq=20260302753&bbs_seq=19159&bbs_id=12&file_ext=pdf"
+   },
+   {
+    "제목": "화난 세종시민들…설명회에서 \"세종보 철거 반대\" 81%",
+    "주소": "https://www.inews365.com/news/article.html?no=573224"
+   },
+   {
+    "제목": "2019년: 미국 대량살상 사건 올해 41건으로 역대 최다 기록",
+    "주소": "https://www.bbc.com/korean/international-50936965"
+   },
+   {
+    "제목": "논문 | 정익모 교수 연구실 | 이화여자대학교 의학과",
+    "주소": "https://app.rndcircle.io/lab/5373feb3-6a5d-479a-8f9e-1edad63070d7/papers"
+   },
+   {
+    "제목": "공식 폐장을 앞둔 해운대 해수욕장이 올해 누적 방문객 1천만 명 ...",
+    "주소": "https://www.instagram.com/reel/DdSdLKZtn45"
+   },
+   {
+    "제목": "수험정보 - 지역인재7급 - 고시닷컴",
+    "주소": "https://law.passonpass.com/exam/notice/exn_view.asp?exn_idx=811"
+   },
+   {
+    "제목": "중앙일보",
+    "주소": "https://www.joongang.co.kr"
+   },
+   {
+    "제목": "CEO로 가는 승진열차…평균 54세, 이공계 출신, 유학파 탑승",
+    "주소": "https://www.hankyung.com/article/2018121023281"
+   },
+   {
+    "제목": "한독 파트너 레졸루트, 3상 81% 반응…1억달러 공모로 ...",
+    "주소": "https://www.medicopharma.co.kr/news/articleView.html?idxno=70432"
+   },
+   {
+    "제목": "Glucose stimulates protein modification by O-linked ...",
+    "주소": "https://www.pnas.org/doi/pdf/10.1073/pnas.97.6.2820"
+   },
+   {
+    "제목": "Late Breaking Abstracts",
+    "주소": "https://professional.diabetes.org/sites/default/files/media/2014_ada_lb_abstracts-print_ready.pdf"
+   },
+   {
+    "제목": "united states securities and exchange commission",
+    "주소": "https://ir.rezolutebio.com/sec-filings/content/0001104659-26-001556/0001104659-26-001556.pdf"
+   },
+   {
+    "제목": "Rezolute Announces Positive Results from the Phase 3 upLIFT Study in Tumor Hyperinsulinism :: Rezolute, Inc. (RZLT)",
+    "주소": "https://ir.rezolutebio.com/news/detail/389/rezolute-announces-positive-results-from-the-phase-3-uplift-study-in-tumor-hyperinsulinism"
+   },
+   {
+    "제목": "Phase III clinical trial data of biopharma companies in 2025",
+    "주소": "https://www.bioworld.com/content/phase3-data-2025"
+   },
+   {
+    "제목": "An open-label extension of a phase 2 dose-finding study o...",
+    "주소": "https://www.degruyterbrill.com/document/doi/10.1515/jpem-2022-0359/html?srsltid=AYCX9vJK00BJxEERIRhHrWGGM2CCOWWbxWHk7EtDFXDgZiefNWCkMbOH"
+   },
+   {
+    "제목": "Rezolute Announces Positive Results from the Phase 3 ...",
+    "주소": "https://markets.businessinsider.com/news/stocks/rezolute-announces-positive-results-from-the-phase-3-uplift-study-in-tumor-hyperinsulinism-1036761320"
+   },
+   {
+    "제목": "February 12, 2026 - EXHIBIT 99.1 - 8-K: Current report | Rezolute, Inc. (RZLT)",
+    "주소": "https://ir.rezolutebio.com/sec-filings/content/0001104659-26-014287/tm265567d1_ex99-1.htm"
+   },
+   {
+    "제목": "Phase II clinical trial data of biopharma companies in 2020",
+    "주소": "https://www.bioworld.com/content/phase2-data-2020"
+   },
+   {
+    "제목": "Rezolute Reports Third Quarter Fiscal 2026 Financial Results and Provides Business Update :: Rezolute, Inc. (RZLT)",
+    "주소": "https://ir.rezolutebio.com/news/detail/377/rezolute-reports-third-quarter-fiscal-2026-financial-results-and-provides-business-update"
+   },
+   {
+    "제목": "Biotech Trial Readouts: Upcoming Catalyst Calendar",
+    "주소": "https://fullydiluted.org/readouts/"
+   },
+   {
+    "제목": "Rezolute says its Phase 3 upLIFT study in tumor ...",
+    "주소": "https://mlq.ai/news/rezolute-says-its-phase-3-uplift-study-in-tumor-hyperinsulinism-met-its-primary-endpoint/"
+   },
+   {
+    "제목": "Rezolute Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results and Provides Business Update :: Rezolute, Inc. (RZLT)",
+    "주소": "https://ir.rezolutebio.com/news/detail/384/rezolute-reports-fourth-quarter-and-full-year-fiscal-2026-financial-results-and-provides-business-update"
+   },
+   {
+    "제목": "Rezolute: 13 responders in preliminary Phase 3 data",
+    "주소": "https://www.stocktitan.net/sec-filings/RZLT/8-k-rezolute-inc-reports-material-event-5d4b9d30c337.html"
+   },
+   {
+    "제목": "Rezolute Reports Second Quarter Fiscal 2026 Financial Results and Provides Business Update :: Rezolute, Inc. (RZLT)",
+    "주소": "https://ir.rezolutebio.com/news/detail/371/rezolute-reports-second-quarter-fiscal-2026-financial-results-and-provides-business-update"
+   },
+   {
+    "제목": "Rezolute releases interim phase 3 results of ersodetug in ...",
+    "주소": "https://www.tradingview.com/news/seekingalpha:e633109ae094b:0-rezolute-releases-interim-phase-3-results-of-ersodetug-in-tumor-hyperinsulinism/"
+   },
+   {
+    "제목": "Rezolute Announces Oral Presentation of Results From its Phase 3 sunRIZE Study of Ersodetug in Patients with Congenital Hyperinsulinism at the Pediatric Endocrine Society Annual Meeting :: Rezolute, Inc. (RZLT)",
+    "주소": "https://ir.rezolutebio.com/news/detail/375/rezolute-announces-oral-presentation-of-results-from-its-phase-3-sunrize-study-of-ersodetug-in-patients-with-congenital-hyperinsulinism-at-the-pediatric-endocrine-society-annual-meeting"
+   },
+   {
+    "제목": "Rezolute reports 13 responses in Phase 3 tumor study",
+    "주소": "https://mugglehead.com/rezolute-uplift-tumor-hyperinsulinism-phase-3-results/"
+   },
+   {
+    "제목": "Rezolute Completes Enrollment in upLIFT Study - RZLT",
+    "주소": "https://www.biopharmawatch.com/news/RZLT/rezolute-completes-enrollment-phase-3-upLIFT-study-ersodetug"
+   },
+   {
+    "제목": "Corporate Presentation",
+    "주소": "https://ir.rezolutebio.com/_assets/_9393923b3d244e0ab6f292d2ae8e02f0/rezolutebio/db/693/10020/pdf/RZLT+Corporate+Presentation_May2025.pdf"
+   },
+   {
+    "제목": "8-K",
+    "주소": "https://ir.rezolutebio.com/sec-filings/content/0001104659-25-085892/0001104659-25-085892.pdf"
+   },
+   {
+    "제목": "Rezolute Announces Four Presentations at the Upcoming ...",
+    "주소": "https://ir.rezolutebio.com/news/detail/379/rezolute-announces-four-presentations-at-the-upcoming-annual-meeting-of-the-endocrine-society"
+   }
+  ],
+  "초": 41,
+  "채점": {
+   "정답기관": "rezolutebio.com",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 44,
+   "답에숫자": false
+  }
+ },
+ "15": {
+  "답": "### 확인 결과\n\n제공된 검색 자료만으로는 숫자 **271억 원**이 처음 기재된 두산건설의 금융감독원 전자공시 원문을 확인할 수 없습니다. 검색 결과에는 2026년 3분기 실적 관련 전자공시 목록과 다른 회사의 공시가 포함되어 있지만, 두산건설의 공시 원문 주소와 271억 원이 기재된 문장은 제시되어 있지 않습니다 ((11)) ((26)).\n\n### 원출처 URL\n\n- **검증된 원출처 URL:** 제공된 자료에서 확인되지 않음\n- **확인 가능한 전자공시 관련 자료:** 금융감독원 전자공시시스템의 최근 공시 목록에는 2026년 3분기 연결재무제표 기준 영업실적 공시들이 표시되지만, 제시된 부분에는 두산건설의 해당 공시 원문이 포함되어 있지 않습니다 ((11)) ((26)).\n\n### 원문 문장\n\n제공된 자료에는 **“271억원”이 포함된 두산건설 전자공시 원문의 문장**이 없습니다. 따라서 현재 자료만으로는 원문 문장을 그대로 인용할 수 없습니다.\n\n검색 결과에 포함된 문장들은 모두 해당 수치를 전달한 보도 기사 또는 기사 검색 결과이며, 원출처로 사용할 수 없으므로 인용 대상에서 제외했습니다 ((1)) ((2)) ((8)).",
+  "참고": [
+   {
+    "제목": "두산건설, 3분기 영업이익 271억원…전년 대비 40% 감소",
+    "주소": "https://www.yna.co.kr/view/AKR20261114029100003"
+   },
+   {
+    "제목": "두산건설, 3분기 영업익 271억원···시공자 선정 실적 역대 ...",
+    "주소": "https://www.newsway.co.kr/news/view?ud=2026111412504158290"
+   },
+   {
+    "제목": "경제 - 다음뉴스",
+    "주소": "https://news.daum.net/economy"
+   },
+   {
+    "제목": "부동산 | 경제",
+    "주소": "https://www.yna.co.kr/economy/real-estate"
+   },
+   {
+    "제목": "ISC/기업설명회(IR) 개최/(2026.10.16)기업설명회(IR) 개최",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11616215&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261016900140"
+   },
+   {
+    "제목": "고려아연/기업설명회(IR) 개최(안내공시)/(2026.10.30)기업설명회(IR) 개최(안내공시)",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11636957&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030801330"
+   },
+   {
+    "제목": "한화/기업설명회(IR) 개최(안내공시)/(2026.10.16)기업설명회(IR) 개최(안내공시)",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11616167&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261016800024"
+   },
+   {
+    "제목": "두산건설 3분기 영업익 271억원…전년비 39.4% 감소",
+    "주소": "https://news.jkn.co.kr/post/1092968"
+   },
+   {
+    "제목": "https://dart.fss.or.kr/report/viewer.do?rcpNo=2023...",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20231114000469&dcmNo=9494105&eleId=12&offset=28260&length=23522&dtd=dart3.xsd"
+   },
+   {
+    "제목": "매출 줄어든 두산건설, 누적 영업익은 소폭 증가",
+    "주소": "https://news.jkn.co.kr/post/1093024"
+   },
+   {
+    "제목": "전자공시시스템",
+    "주소": "https://dart.fss.or.kr?rcpNo=20211026800604"
+   },
+   {
+    "제목": "경제전체",
+    "주소": "https://www.yna.co.kr/economy/all"
+   },
+   {
+    "제목": "[부고] 김연희(국토교통부 홍보담당관)씨 모친상",
+    "주소": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1439364"
+   },
+   {
+    "제목": "산업/기업",
+    "주소": "https://www.yna.co.kr/industry/industrial-enterprise"
+   },
+   {
+    "제목": "최신뉴스",
+    "주소": "https://www.yna.co.kr/news"
+   },
+   {
+    "제목": "전체뉴스",
+    "주소": "https://stock.mk.co.kr/news/all"
+   },
+   {
+    "제목": "산업전체",
+    "주소": "https://www.yna.co.kr/industry/all"
+   },
+   {
+    "제목": "Ƽ/()()/(2026.10.30)()()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11636955&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030801304"
+   },
+   {
+    "제목": "ڰ ̸",
+    "주소": "https://dart.fss.or.kr/dsaf002/viewer.do?rcpNo=20240814003420"
+   },
+   {
+    "제목": "AWAKE - 실시간 주식 공시 정리채널",
+    "주소": "https://t.me/s/darthacking?before=155888"
+   },
+   {
+    "제목": "/繫ǥ  ()()/(2026.10.30)繫ǥ  ()()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11637148&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030901397"
+   },
+   {
+    "제목": "딥노이드(315640)의 실시간 주가를 확인해보세요",
+    "주소": "https://www.tossinvest.com/stocks/A315640/order"
+   },
+   {
+    "제목": "기업과산업",
+    "주소": "https://www.businesspost.co.kr/BP?command=sub&sub=2"
+   },
+   {
+    "제목": "목 차",
+    "주소": "https://www.doosanbobcat.com/kr/investment/announce/fileDown/199"
+   },
+   {
+    "제목": "국내증시 일반",
+    "주소": "https://www.g-enews.com/issuelist.php?ud=2017011302071605805&ssk=&pg=24"
+   },
+   {
+    "제목": "최근공시",
+    "주소": "https://dart.fss.or.kr/dsac001/mainAll.do"
+   },
+   {
+    "제목": "투자 유망 주식/ETF/펀드",
+    "주소": "https://money2.daishin.com/PDF/Out/intranet_data/Product/ResearchCenter/Report/2025/10/55542_251103_retail.pdf"
+   },
+   {
+    "제목": "최근정정보고서",
+    "주소": "https://dart.fss.or.kr/dsac003/mainY.do"
+   },
+   {
+    "제목": "하이브/분기보고서/2024.05.16",
+    "주소": "https://dart.fss.or.kr/dsaf002/main.do?rcpNo=20240516001604"
+   },
+   {
+    "제목": "하이브/분기보고서/2025.11.14",
+    "주소": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001984"
+   },
+   {
+    "제목": "마이크로컨텍솔/분기보고서/2026.05.14",
+    "주소": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001221"
+   },
+   {
+    "제목": "케이피엑스일렉트로켐/분기보고서/2026.05.15",
+    "주소": "https://dart.fss.or.kr/dsaf002/main.do?rcpNo=20260515000695"
+   },
+   {
+    "제목": "계양전기/분기보고서/2025.05.15",
+    "주소": "https://dart.fss.or.kr/dsaf002/main.do?rcpNo=20250515002855"
+   }
+  ],
+  "초": 44,
+  "채점": {
+   "정답기관": "fss.or.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 33,
+   "답에숫자": false
+  }
+ },
+ "16": {
+  "답": "### 확인 결과\n\n현재 확인 가능한 자료만으로는 인용하신 수치가 그대로 실린 **국가데이터처의 원문 통계표 또는 보도자료**를 특정할 수 없습니다. 국가데이터처의 공식 통계 설명 페이지에서 확인되는 원자료의 통계명은 **「산지쌀값조사」**이며, 해당 조사는 산지 쌀값의 작성 목적과 공표 주기 등을 안내하는 국가통계입니다 ((33)).\n\n**공식 원자료 통계 페이지**\n\n- 주소: https://mods.go.kr/statDesc.es?act=view&mid=a10501010000&sttr_cd=S003004\n- 문서명: 산지쌀값조사\n- 확인 가능한 원문: “산지쌀값조사. 통계종류, 계속여부, 법적근거, 작성목적, 작성주기, 작성체계, 공표범위, 공표주기를 안내하는 산지쌀값조사 테이블입니다.” ((33))\n\n다만 제공된 검색 결과의 공식 통계 설명 페이지에는 **11월 5일자 22만9612원**, **10월 25일자 22만9816원**, **0.1% 하락**이라는 세 수치가 함께 표시된 문장이 없습니다. 따라서 위 페이지의 주소를 해당 통계의 공식 원자료 위치로 제시할 수는 있지만, 그 문서에서 숫자가 나온 문장을 그대로 인용했다고 말할 수는 없습니다 ((33)).\n\n### 수치 대조 결과\n\n검색된 자료를 날짜와 금액별로 대조하면, 인용문에 제시된 숫자 조합과 일치하지 않는 기록이 확인됩니다.\n\n| 기준일 | 검색된 금액 | 확인된 자료 |\n|---|---:|---|\n| 2025년 10월 15일 | 23만3032원 | 2025년 10월 25일 자료와 비교된 수치 ((9)) |\n| 2025년 10월 25일 | 22만9612원 | 국가데이터처가 발표한 산지 쌀값으로 제시됨 ((9)) |\n| 2025년 11월 5일 | 22만7816원 | 10월 25일자 22만9612원보다 0.8% 하락한 값으로 제시됨 ((2)) |\n| 2026년 10월 25일 | 22만9816원 | 제공된 검색 결과에서는 공식 원자료가 확인되지 않음 |\n| 2026년 11월 5일 | 22만9612원 | 제공된 검색 결과에서는 공식 원자료가 확인되지 않음 |\n\n2025년 10월 25일 산지 쌀값은 80㎏ 기준 22만9612원으로 기록되어 있으며, 비교 기준일은 10월 15일자 23만3032원으로 제시되어 있습니다 ((9)). 다른 자료도 2025년 10월 25일 산지 쌀값을 20㎏당 5만7403원, 80㎏당 22만9612원으로 명시합니다 ((12)). 따라서 **22만9612원이라는 금액 자체는 확인되지만, 검색된 자료에서는 11월 5일자가 아니라 10월 25일자 금액으로 나타납니다** ((9)) ((12)).\n\n또 다른 자료는 2025년 11월 5일 산지 쌀값을 80㎏당 22만7816원으로 제시하면서, 10월 25일자 22만9612원보다 0.8% 하락했다고 설명합니다 ((2)). 이 기록은 제공된 문장의 “11월 5일자 22만9612원”이라는 부분과 일치하지 않습니다 ((2)).\n\n### 원문 인용 가능 여부\n\n요청하신 형식에 맞춰 **숫자가 들어간 원문 문장**을 인용하려면, 공식 통계표나 국가데이터처의 해당 조사 결과 문서에서 다음 세 항목이 함께 확인되어야 합니다.\n\n- 11월 5일자 산지 쌀값: 80㎏당 22만9612원\n- 10월 25일자 산지 쌀값: 80㎏당 22만9816원\n- 두 기준일 사이의 변동률: 0.1% 하락\n\n그러나 제공된 문서 집합에서 이 세 항목을 동시에 포함한 공식 문장은 확인되지 않았습니다. 국가데이터처의 산지쌀값조사 설명 페이지는 해당 통계의 존재와 작성 체계를 확인해 주지만, 검색 결과에 표시된 본문에는 위 수치가 포함되어 있지 않습니다 ((33)). 또한 2025년 자료에서는 22만9612원이 10월 25일자 금액으로, 11월 5일자는 22만7816원으로 나타나므로, 해당 자료를 인용문에 대한 원문으로 사용할 수 없습니다 ((2)) ((9)).\n\n### 결론\n\n현재 확인 가능한 가장 authoritative한 원자료 위치는 국가데이터처의 **「산지쌀값조사」 공식 통계 페이지**입니다.\n\n- **원자료 주소:** https://mods.go.kr/statDesc.es?act=view&mid=a10501010000&sttr_cd=S003004\n- **공식 페이지의 관련 원문:** “산지쌀값조사. 통계종류, 계속여부, 법적근거, 작성목적, 작성주기, 작성체계, 공표범위, 공표주기를 안내하는 산지쌀값조사 테이블입니다.” ((33))\n\n다만 현재 검색 결과만으로는 **22만9612원, 22만9816원, 0.1% 하락**이 함께 적힌 국가데이터처 원문 문장을 확인할 수 없으므로, 그 수치를 담은 문장을 국가데이터처의 원자료에서 그대로 인용하는 것은 불가능합니다. 확인된 자료만 놓고 보면 22만9612원은 2025년 10월 25일자 금액으로 확인되고, 2025년 11월 5일자는 22만7816원으로 확인되므로, 제공된 문장의 날짜와 금액 조합에는 원자료 확인이 필요한 불일치가 있습니다 ((2)) ((9)) ((12)).",
+  "참고": [
+   {
+    "제목": "쌀 생산량 작년보다 0.9% 줄었다…산지 쌀값 강보합 전망",
+    "주소": "https://www.nongmin.com/article/20261113500658"
+   },
+   {
+    "제목": "쌀 생산 예상보다 줄어…값 약보합 전망",
+    "주소": "https://www.nongmin.com/article/20251114500679"
+   },
+   {
+    "제목": "올 수확기 첫 쌀값 23만5212원…전년비 5.1%↓",
+    "주소": "https://www.agrinet.co.kr/news/articleView.html?idxno=407779"
+   },
+   {
+    "제목": "개정 양곡법 시행, 쌀값 떨어지면 정부가 의무로 사줘야 할까",
+    "주소": "https://www.youtube.com/shorts/TWZh0QkTTvs"
+   },
+   {
+    "제목": "쌀값 다시 꿈틀···12월 약보합 전망",
+    "주소": "https://www.agrinet.co.kr/news/articleView.html?idxno=342148"
+   },
+   {
+    "제목": "쌀값, 비싼 건가 싼 건가…‘적정 가격’을 찾아라 < 농정 < 뉴스 < 기사본문 - 한국농정신문",
+    "주소": "http://www.ikpnews.net/news/articleView.html?idxno=69478"
+   },
+   {
+    "제목": "농림축산식품부 CMS > 11월 5일자 산지쌀값은 안정화 추세",
+    "주소": "https://www.mafra.go.kr/bbs/home/792/572169/artclView.do"
+   },
+   {
+    "제목": "쌀 남아돈다는데 쌀값 27% 폭등…알고보니 정부가 손댄 탓 | 중앙일보",
+    "주소": "https://www.joongang.co.kr/article/25372227"
+   },
+   {
+    "제목": "유통뉴스",
+    "주소": "http://www.joong-ang.com/renew/bbs/view.html?a_idx=1162367354&b_num=2057&category=&search=&keyword=&page=6"
+   },
+   {
+    "제목": "11월 5일자 산지쌀값은 안정화 추세",
+    "주소": "https://eiec.kdi.re.kr/policy/materialView.do?num=259439&pg=&pp=20&topic=O"
+   },
+   {
+    "제목": "쌀값 '천차만별'…브랜드별로 kg당 1.65달러~5달러 - 미주중앙일보",
+    "주소": "https://www.koreadaily.com/article/3191616"
+   },
+   {
+    "제목": "산지 쌀값, 10월 25일자 또 하락…신곡 출하에도 가격 약세",
+    "주소": "http://www.newsfarm.co.kr/news/articleView.html?idxno=99562"
+   },
+   {
+    "제목": "11월 5일자 산지쌀값은 안정화 추세 | 서울Pn",
+    "주소": "https://go.seoul.co.kr/news/prnewsView.php?id=354919&section=b_sec_1&page=1653"
+   },
+   {
+    "제목": "국제 쌀값도 사상 최고치 - 미주한국일보",
+    "주소": "https://www.koreatimes.com/article/20080104/425429"
+   },
+   {
+    "제목": "“쌀 355만1000t 생산 예상…수확기 값 작년보다 강세”",
+    "주소": "https://v.daum.net/v/20251102060025448?f=p"
+   },
+   {
+    "제목": "쌀값 상승세 반전…한가마 19만원 재돌파 '기대감'",
+    "주소": "https://www.nongmin.com/article/20191110316891"
+   },
+   {
+    "제목": "[일본] 쌀 가격 폭등 사태 이후 일본 쌀 수급 현황 - KATI 농식품수출정보",
+    "주소": "https://m.kati.net/board/exportNewsView.do?board_seq=105392&menu_dept2=35&menu_dept3=71"
+   },
+   {
+    "제목": "쌀값 상승 기대에 농민들 벼 출하 주저",
+    "주소": "https://www.djtimes.co.kr/news/curationView.html?idxno=109957"
+   },
+   {
+    "제목": "농식품부, 11월 5일자 산지쌀값은 안정화 추세",
+    "주소": "https://www.kfoenews.com/7112"
+   },
+   {
+    "제목": "\"일본 이어 우리도\"...밥상 위협하는 쌀값 '비상', 20kg 6만원 돌파",
+    "주소": "https://www.youtube.com/watch?v=hmkP0ViTmJ4"
+   },
+   {
+    "제목": "산지쌀값 하락세 완화…농식품부 세차례 걸친 대책 효과",
+    "주소": "http://www.newsfarm.co.kr/news/articleView.html?idxno=96887"
+   },
+   {
+    "제목": "국제 원료가격 - 식품산업통계정보",
+    "주소": "https://www.atfis.or.kr/home/commodity.do?act=detail&cmdtSeCd=CORN&cmdtId=0601000004001103"
+   },
+   {
+    "제목": "수확기 산지 쌀값 20만원선 무너졌다",
+    "주소": "https://v.daum.net/v/zH1RURT6UV?f=p"
+   },
+   {
+    "제목": "가격정보 > 세부가격정보 > 중도매인 판매가격 > 기간별 - KAMIS",
+    "주소": "https://www.kamis.or.kr/customer/price/wholesale/period.do"
+   },
+   {
+    "제목": "일본 쌀값 14주 연속 올라 '쌀 소동'‥\"한국에 쌀 사러 가요\" (2025.04 ...",
+    "주소": "https://www.youtube.com/watch?v=jG3AOBs4Smw"
+   },
+   {
+    "제목": "농민신문 - 쌀 생산 52년 만에 최저…수급 '비상'",
+    "주소": "http://www.foodsecurity.or.kr/bbs/view.php?&bbs_id=qnaa06&page=53&doc_num=3051"
+   },
+   {
+    "제목": "산지쌀값조사 결과[2025년 10월 15일 기준]",
+    "주소": "https://m.blog.naver.com/hi_nso/224044456421"
+   },
+   {
+    "제목": "산지 쌀값, 시장격리에도 안올라",
+    "주소": "https://www.nongmin.com/article/20151110055006"
+   },
+   {
+    "제목": "전년 대비 감소 - 농업관측센터",
+    "주소": "https://aglook.krei.re.kr/upload/observeFiles/36130125085544f09ef1ae13e2c30017.pdf"
+   },
+   {
+    "제목": "2025년 11월 소비자물가동향 | 전체 | 보도자료 | 새소식 : 국가데이터처",
+    "주소": "https://www.kostat.go.kr/board.es?act=view&bid=213&list_no=439514&mid=a10301010000"
+   },
+   {
+    "제목": "Consumer Price Index in August 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "http://kostat.go.kr/board.es?mid=a20101000000&bid=11751&list_no=446747&act=view&mainXml=Y"
+   },
+   {
+    "제목": "통계청과 그 소속기관 직제 시행규칙",
+    "주소": "https://kostat.go.kr/boardDownload.es?bid=1401&list_no=430098&seq=1"
+   },
+   {
+    "제목": "산지쌀값조사 | 분야별보기 | 국가데이터처통계 - 국가데이터처",
+    "주소": "https://mods.go.kr/statDesc.es?act=view&mid=a10501010000&sttr_cd=S003004"
+   },
+   {
+    "제목": "농림축산식품부 > 알림소식 > 보도자료 > 쌀 가격 급등락 없도록 수급 ...",
+    "주소": "https://www.mafra.go.kr/home/5109/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaG9tZSUyRjc5MiUyRjU3Nzc1NCUyRmFydGNsVmlldy5kbyUzRnBhc3N3b3JkJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZiYnNDbFNlcSUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFnZSUzRDElMjZyb3clM0QxMCUyNmJic09wZW5XcmRTZXElM0QlMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNg%3D%3D"
+   },
+   {
+    "제목": "Consumer Price Index in January 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://sri.kostat.go.kr/board.es?mid=a20101000000&bid=11751&act=view&list_no=443359&tag=&nPage=1&ref_bid=11707%2C11708%2C11709%2C11711%2C11712%2C11713%2C11715%2C11716%2C11717%2C11718%2C11719%2C11721%2C11722%2C11723%2C11724%2C11725%2C11726%2C12071%2C11727%2C11728%2C11729%2C11730%2C11731%2C11732%2C11733%2C11734%2C11735%2C12051%2C11786%2C11736%2C11737%2C11738%2C11739%2C11740%2C11741%2C11742%2C11743%2C11744%2C11745%2C11746%2C11747%2C11748%2C11749%2C11773%2C11774%2C11750%2C11751%2C11752%2C11754%2C11755%2C11756%2C11757%2C11758%2C11759%2C11760%2C11761%2C11762%2C12050%2C11763%2C11764%2C11765%2C11766%2C11767%2C11768%2C11769%2C11770%2C11771%2C11772%2C0068"
+   },
+   {
+    "제목": "국가데이터처",
+    "주소": "https://mods.go.kr"
+   },
+   {
+    "제목": "Consumer Price Index in April 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://www.kostat.go.kr/board.es?mid=a20101000000&bid=11751&tag=&act=view&list_no=444937&ref_bid="
+   },
+   {
+    "제목": "지표누리",
+    "주소": "https://www.index.go.kr"
+   },
+   {
+    "제목": "2023년 11월 소비자물가동향 | 전체 | 보도자료 | 새소식 : 국가데이터처",
+    "주소": "https://kostat.go.kr/board.es?mid=a10301010000&bid=213&list_no=428335&act=view&mainXml=Y"
+   },
+   {
+    "제목": "Online Shopping in May 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://kostat.go.kr/board.es?mid=a20101000000&bid=11722&list_no=445713&act=view&mainXml=Y"
+   },
+   {
+    "제목": "일일 미국 주식 뉴스 및 시장 업데이트 | TradingKey",
+    "주소": "https://www.tradingkey.com/kr/analysis/stocks/us-stocks?page=4"
+   },
+   {
+    "제목": "2023년 11월 온라인쇼핑 동향 | 전체 | 보도자료 | 새소식 : 국가데이터처",
+    "주소": "https://kostat.go.kr/board.es?mid=a10301010000&bid=241&tag=&act=view&list_no=428931&ref_bid=203%2C204%2C205%2C206%2C207%2C210%2C211%2C11109%2C11113%2C11814%2C213%2C215%2C214%2C11860%2C11695%2C216%2C218%2C219%2C220%2C10820%2C11815%2C11895%2C11816%2C208%2C245%2C222%2C223%2C225%2C226%2C227%2C228%2C229%2C230%2C11321%2C232%2C233%2C234%2C12029%2C10920%2C11469%2C11470%2C11817%2C236%2C237%2C11471%2C238%2C240%2C241%2C11865%2C243%2C244%2C11893%2C11898%2C12031%2C11825%2C246"
+   },
+   {
+    "제목": "Online Shopping in February 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://www.kostat.go.kr/board.es?mid=a20101000000&bid=11722&tag=&act=view&list_no=444356&ref_bid="
+   },
+   {
+    "제목": "스틸케이스-HNI 합병 선택 마감일, 12월 5일 오전 7시",
+    "주소": "https://kr.investing.com/news/company-news/article-93CH-1732007"
+   },
+   {
+    "제목": "2024년 11월 고용동향 | 전체 | 보도자료 | 새소식 : 국가데이터처",
+    "주소": "https://kostat.go.kr/board.es?mid=a10301010000&bid=210&tag=&act=view&list_no=434140&ref_bid=203%2C204%2C205%2C206%2C207%2C210%2C211%2C11109%2C11113%2C11814%2C213%2C215%2C214%2C11860%2C11695%2C216%2C218%2C219%2C220%2C10820%2C11815%2C11"
+   },
+   {
+    "제목": "Online Shopping in April 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://www.kostat.go.kr/board.es?mid=a20101000000&bid=11722&list_no=445346&act=view&mainXml=Y"
+   },
+   {
+    "제목": "트럼프 ‘이란 발전소 타격 5일 연기’ 발언에 원유 13% 폭락, 귀금속 반등",
+    "주소": "https://www.tradingkey.com/kr/news/commodities/261709260-trump-5-day-delay-to-strike-iranian-crude-oil-plummets-13-precious-metals-rebound-tradingkey"
+   },
+   {
+    "제목": "경제동향통계심의관 업무추진비 집행현황(2022년 11월) | 전체",
+    "주소": "https://kostat.go.kr/board.es?mid=a10104010100&bid=11837&tag=&act=view&list_no=422155&ref_bid=11835%2C11836%2C11837"
+   },
+   {
+    "제목": "Online Shopping in April 2026 | Total | Business Trends | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://www.kostat.go.kr/board.es?mid=a20103010000&bid=11722&tag=&act=view&list_no=445346&ref_bid="
+   },
+   {
+    "제목": "보도자료 – SJIT",
+    "주소": "https://sjit.company/publicity-main/press"
+   },
+   {
+    "제목": "2024년 11월 인구동향(출생, 사망, 혼인, 이혼) | 전체 | 보도자료 | 새소식 : 국가데이터처",
+    "주소": "https://kostat.go.kr/board.es?mid=a10301010000&bid=204&list_no=434867&act=view&mainXml=Y"
+   },
+   {
+    "제목": "Online Shopping in January 2026 | Total | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://www.kostat.go.kr/board.es?mid=a20101000000&bid=11722&tag=&act=view&list_no=443836&ref_bid="
+   },
+   {
+    "제목": "Waterdrip Capital: 펀딩 라운드 및 투자 동향 | CryptoRank.io",
+    "주소": "https://cryptorank.io/ko/funds/waterdrip-capital/rounds"
+   },
+   {
+    "제목": "2024년 11월 국내인구이동 결과 | 전체 | 인구 · 가구 | 보도자료",
+    "주소": "https://kostat.go.kr/board.es?mid=a10301020100&bid=205&tag=&act=view&list_no=434508&ref_bid=203%2C204%2C205%2C206%2C207%3Cbr%3E%3Cbr%3E%EC%9A%94%EA%B8%B0%EC%84%9C"
+   },
+   {
+    "제목": "Online Shopping in March 2026 | Total | Business Trends | Press Releases : Ministry of Data and Statistics",
+    "주소": "https://www.kostat.go.kr/board.es?mid=a20103010000&bid=11722&tag=&act=view&list_no=444930&ref_bid="
+   }
+  ],
+  "초": 55,
+  "채점": {
+   "정답기관": "kosis.kr",
+   "참고에정답기관": false,
+   "1순위가정답기관": false,
+   "참고수": 55,
+   "답에숫자": false
+  }
+ },
+ "18": {
+  "답": "### 원 출처 확인\n\n제공된 숫자 \\\\(23.30\\%\\\\)와 \\\\(22.81\\%\\\\)의 1차 출처는 **교보생명 공식 뉴스룸 보도자료**로 확인됩니다. 해당 보도자료는 2026년 11월 12일 게시됐으며, 교보생명이 직접 발표한 자료입니다 ((17)).\n\n- **원 출처 문서:** 교보생명 공식 뉴스룸 보도자료\n- **문서 제목:** 「교보생명, 변동성 장세에도 퇴직연금 DC∙IRP 수익률 1위」\n- **게시일:** 2026년 11월 12일\n- **주소:** https://news.kyobo.com/%EA%B5%90%EB%B3%B4%EC%83%9D%EB%AA%85-%ED%87%B4%EC%A7%81%EC%97%B0%EA%B8%88-dc-irp-%EC%88%98%EC%9D%B5%EB%A5%A0-1%EC%9C%84\n\n### 숫자가 포함된 원문 인용\n\n“교보생명 퇴직연금 원리금비보장형 상품의 최근 1년 수익률은 DC형이 23.30%로 상위 15개 사업자 중 1위에 올랐으며, IRP도 22.81%로 1위에 올랐다.” ((17))\n\n### 공식 통계표의 추가 확인\n\n교보생명의 공식 적립금·운용수익률 통계표에도 DC형 원리금비보장형 상품의 1년 수익률이 **23.30%**, IRP 원리금비보장형 상품의 1년 수익률이 **22.81%**로 표시되어 있습니다 ((16)).\n\n- **공식 통계표:** 교보생명 「적립금 운용금액 및 수익률」\n- **주소:** https://www.kyobo.com/dgt/web/retirement-pension/official/save-money/operation-money\n- **통계표 원문 수치:**  \n  - 확정기여형(DC), 원리금비보장형 상품, 1년 연평균 수익률: **23.30%** ((16))  \n  - 개인형퇴직연금(IRP), 원리금비보장형 상품, 1년 연평균 수익률: **22.81%** ((16))\n\n따라서 기사 문장에 인용된 두 수치는 교보생명 공식 뉴스룸 보도자료와 교보생명 공식 운용수익률 통계표에서 확인되며, 기사 자체가 아닌 교보생명 공식 자료가 원 출처입니다 ((16)) ((17)).",
+  "참고": [
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 수익률 1위 달성",
+    "주소": "https://www.kmib.co.kr/article/20261112500164"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 수익률 1위…1년 수익률 23% 육박",
+    "주소": "https://www.news1.kr/finance/insurance-card/6351535"
+   },
+   {
+    "제목": "금융/증시 - 목록 - ( - 총 : - 3933건)",
+    "주소": "http://www.4th.kr/news/articleList.html?page=16&total=3933&box_idxno=&sc_multi_code=S1&view_type=sm"
+   },
+   {
+    "제목": "경제",
+    "주소": "https://www.kmib.co.kr/list/721?page=4"
+   },
+   {
+    "제목": "박재찬 보험전문 기자",
+    "주소": "https://www.news1.kr/author/1495"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 수익률 동반 1위… 장단기 운용 ...",
+    "주소": "https://www.insnews.co.kr/news/articleViewAmp.html?idxno=93820"
+   },
+   {
+    "제목": "티지아나 라이프 사이언스 ADR 주가 및 핵심 정보",
+    "주소": "https://alphasquare.co.kr/home/stock-summary?code=TLSA"
+   },
+   {
+    "제목": "교보생명 \"퇴직연금 DC∙IRP 수익률 1위",
+    "주소": "http://www.whitepaper.co.kr/news/articleViewAmp.html?idxno=268697"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 실적배당형 수익률 1위",
+    "주소": "https://thetracker.co.kr/View.aspx?No=4309029"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 수익률 1위…1년 수익률 20%대",
+    "주소": "https://www.lcnews.co.kr/news/articleView.html?idxno=211307"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 장단기 수익률 모두 '1위'",
+    "주소": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261113_0003867720"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 DC·IRP 수익률 1위…\"운용 역량 입증\"",
+    "주소": "https://www.ajunews.com/amp/20261112110642608"
+   },
+   {
+    "제목": "교보생명 \"퇴직연금 DC∙IRP 수익률 1위···1년 수익률 23%\"",
+    "주소": "https://www.whitepaper.co.kr/news/articleView.html?idxno=268697"
+   },
+   {
+    "제목": "“변동성 장세 속 완벽한 독주”… 교보생명, 퇴직연금 DC·IRP ...",
+    "주소": "http://www.dailysmart.co.kr/news/articleView.html?idxno=132393"
+   },
+   {
+    "제목": "교보생명, 퇴직연금 수익률 DC·IRP 모두 1위…1년 수익률 23%대",
+    "주소": "https://pub1y5kn35.planabitde.pics/jp/ja/cat/metod-sink-cabinets-700698/"
+   },
+   {
+    "제목": "적립금 운용금액 및 수익률-교보생명",
+    "주소": "https://www.kyobo.com/dgt/web/retirement-pension/official/save-money/operation-money"
+   },
+   {
+    "제목": "교보생명, 변동성 장세에도 퇴직연금 DC∙IRP 수익률 1위",
+    "주소": "https://news.kyobo.com/%EA%B5%90%EB%B3%B4%EC%83%9D%EB%AA%85-%ED%87%B4%EC%A7%81%EC%97%B0%EA%B8%88-dc-irp-%EC%88%98%EC%9D%B5%EB%A5%A0-1%EC%9C%84"
+   },
+   {
+    "제목": "Shareholders that lost money on Cerevel Therapeutics Holdings, Inc.(ABBV) should contact The Gross Law Firm about pending Class Action - ABBV",
+    "주소": "https://www.prnewswire.com/news-releases/shareholders-that-lost-money-on-cerevel-therapeutics-holdings-incabbv-should-contact-the-gross-law-firm-about-pending-class-action---abbv-302459191.html"
+   },
+   {
+    "제목": "The Gross Law Firm Announces the Filing of a Securities Class Action on Behalf of Cerevel Therapeutics Holdings, Inc.(ABBV) Shareholders",
+    "주소": "https://www.prnewswire.com/news-releases/the-gross-law-firm-announces-the-filing-of-a-securities-class-action-on-behalf-of-cerevel-therapeutics-holdings-incabbv-shareholders-302451599.html"
+   },
+   {
+    "제목": "INVESTOR ALERT: Pomerantz Law Firm Investigates Claims On Behalf of Investors of Klarna Group plc - KLAR",
+    "주소": "https://www.prnewswire.com/news-releases/investor-alert-pomerantz-law-firm-investigates-claims-on-behalf-of-investors-of-klarna-group-plc---klar-302874929.html"
+   },
+   {
+    "제목": "매뉴라이프 파이낸셜 아시아, 2025 ACES 어워드 '아시아 최고 지속가능성 선도 기업' 수상",
+    "주소": "https://www.prnewswire.com/kr/news-releases/uB9E4uB274uB77CuC774uD504u002DuD30CuC774uB0B8uC15Cu002DuC544uC2DCuC544u002Cu002Du0032u0030u0032u0035u002Du0061u0063u0065u0073u002DuC5B4uC6CC-302636922.html"
+   },
+   {
+    "제목": "매뉴라이프, 주요 시장 전반의 성장 전략 가속 위해 제러미 영을 글로벌 고액자산가 부문 국제 브로커리지 최고유통책임자로 선임",
+    "주소": "https://www.prnewswire.com/kr/news-releases/uB9E4uB274uB77CuC774uD504u002Cu002DuC8FCuC694u002DuC2DCuC7A5u002DuC804uBC18uC758u002DuC131uC7A5u002DuC804uB7B5u002DuAC00uC18Du002DuC704uD574-302849105.html"
+   },
+   {
+    "제목": "Digital Forensics Market worth $22.81 billion by 2030- Exclusive Report by MarketsandMarkets™",
+    "주소": "https://www.prnewswire.com/news-releases/digital-forensics-market-worth-22-81-billion-by-2030--exclusive-report-by-marketsandmarkets-302466739.html"
+   },
+   {
+    "제목": "AllianceBernstein National Municipal Income Fund, Inc. RELEASES MONTHLY PORTFOLIO UPDATE",
+    "주소": "https://www.prnewswire.com/news-releases/alliancebernstein-national-municipal-income-fund-inc-releases-monthly-portfolio-update-302835501.html"
+   },
+   {
+    "제목": "Military Drone Market worth $22.81 billion in 2030 - Exclusive Report by MarketsandMarkets™",
+    "주소": "https://www.prnewswire.com/news-releases/military-drone-market-worth-22-81-billion-in-2030---exclusive-report-by-marketsandmarkets-302465561.html"
+   }
+  ],
+  "초": 30,
+  "채점": {
+   "정답기관": "kyobo.com",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 25,
+   "답에숫자": false
+  }
+ },
+ "20": {
+  "답": "### 확인 결과\n\n제공된 자료만으로는 **1855.1원이라는 수치가 처음 발표된 공식 원출처 문서**를 확인할 수 없습니다. 한국석유공사 오피넷 공식 페이지는 가격 산정 기준과 공개 방식을 설명하지만, 제공된 본문에는 `1855.1`이라는 숫자가 포함되어 있지 않습니다. ((19))\n\n- **공식 출처 후보:** 한국석유공사 오피넷  \n- **주소:** https://www.opinet.co.kr/user/dopds/dopDs_1.do  \n- **확인되는 관련 원문:**  \n  “주유소충전소/판매소/집단공급사업자 판매가격 : 단순 산술평균” ((19))\n\n한국석유공사 공식 홈페이지에 표시된 2026년 11월 12일 전국 주유소 평균가격은 휘발유 `1855.04원/리터`로 나타나지만, 이는 기사에 제시된 주간 평균 `1855.1원`과 동일한 수치가 아니며, 해당 주간 집계 문장도 제공된 본문에는 없습니다. ((20))\n\n- **한국석유공사 공식 페이지 주소:**  \n  https://m.knoc.co.kr/servlet/Download?num=3B19BCC8832F06E2E5FFBC5AF2378688&fno=7574C52D6D91C349C986811E4BF14876&bid=NEWS&callback=%2Fsub05%2Fsub05_5_5.jsp&ses=USERSESSION\n\n- **공식 페이지의 관련 원문:**  \n  “2026.11.12\n\n  1855.04 (원/리터) ▲0.04” ((20))\n\n따라서 현재 확인 가능한 자료에 근거하면, **1855.1을 포함한 공식 원문 문장과 그 문서의 정확한 주소는 확인되지 않았습니다.** 오피넷의 해당 주간 가격 통계표 또는 한국석유공사의 2026년 11월 둘째 주 주간 보도자료 원문이 추가로 확보되어야 사용자가 요청한 형태의 원출처 인용을 확정할 수 있습니다.",
+  "참고": [
+   {
+    "제목": "전국 주유소 기름값 26주 연속 하락…휘발유 평균 1855.1원",
+    "주소": "http://www.joongang.tv/news/view/325279/%EC%A0%84%EA%B5%AD-%EC%A3%BC%EC%9C%A0%EC%86%8C-%EA%B8%B0%EB%A6%84%EA%B0%92-26%EC%A3%BC-%EC%97%B0%EC%86%8D-%ED%95%98%EB%9D%BD-%ED%9C%98%EB%B0%9C%EC%9C%A0-%ED%8F%89%EA%B7%A0-1855-1%EC%9B%90-2026"
+   },
+   {
+    "제목": "이 시각 주요뉴스 (26. 11. 14. 12시)",
+    "주소": "https://m.ktv.go.kr/news/sphere/T000021/view?content_id=764010"
+   },
+   {
+    "제목": "전국 휘발유 가격 26주째 내렸지만…두 달간 사실상 제자리",
+    "주소": "https://www.busan.com/view/busan/view.php?code=2026111411402942119"
+   },
+   {
+    "제목": "전국 기름값 26주 연속 하락⋯휘발유 1855원 '제자리걸음'",
+    "주소": "http://www.inews24.com/view/2026189"
+   },
+   {
+    "제목": "주유소 기름값, 26주째 하락에도 두 달 간 사실상 '제자리'",
+    "주소": "https://www.getnews.co.kr/news/articleView.html?idxno=887176"
+   },
+   {
+    "제목": "주유소 기름값 하락폭 미미…두 달간 사실상 제자리 - 매일경제TV",
+    "주소": "https://mbnmoney.mbn.co.kr/mobile/view?news_no=MM1005962191"
+   },
+   {
+    "제목": "기름값 26주째 내렸다는데…휘발유 경유 가격 사실상 제자리",
+    "주소": "https://www.kado.net/news/curationView.html?idxno=2084742"
+   },
+   {
+    "제목": "주유소 기름값 26주째 하락…최근 석 달 간 사실상 '제자리걸음'",
+    "주소": "https://m.segye.com/ampView/20261114503192"
+   },
+   {
+    "제목": "전국 주유소 기름값 26주 연속 하락…휘발유 1855.1원",
+    "주소": "https://www.sentv.co.kr/article/view/sentv202611140003"
+   },
+   {
+    "제목": "주유소 기름값 26주 연속 하락…휘발유·경유 평균가격 두 ...",
+    "주소": "https://www.wikitree.co.kr/articles/1174544"
+   },
+   {
+    "제목": "“26주째 내렸다는데 고작 20원”… 기름값 하락, 주유소에선 ...",
+    "주소": "https://www.jibs.co.kr/news/articles/articlesDetail/67598?feed=da&kakao_from=mainnews"
+   },
+   {
+    "제목": "주유소 기름값 26주째 하락... '찔끔' 떨어져 1800원대",
+    "주소": "http://m.segyefn.com/newsView/20261114503296"
+   },
+   {
+    "제목": "석유 최고가격 또 동결...주유소 기름값 26주 연속 하락 |",
+    "주소": "https://www.womennews.co.kr/news/articleViewAmp.html?idxno=284467"
+   },
+   {
+    "제목": "기름값 26주 연속 내렸지만 '찔끔 하락'…휘발유 1855원",
+    "주소": "https://kr.investing.com/news/stock-market-news/article-2175901"
+   },
+   {
+    "제목": "기름값 26주째 하락…충남·충북 휘발유 전국 평균 웃돌아 |",
+    "주소": "https://www.daejonilbo.com/news/articleViewAmp.html?idxno=2313494"
+   },
+   {
+    "제목": "주유소 기름값 26주 연속 하락···두 달째 제자리 수준",
+    "주소": "https://www.newsway.co.kr/news/view?ud=2026111410132626988"
+   },
+   {
+    "제목": "국제유가 급락에도 기름값 '찔끔' 하락…26주째 내림세 무색 |",
+    "주소": "https://www.sankyungtoday.com/news/articleViewAmp.html?idxno=64249"
+   },
+   {
+    "제목": "주유소 기름값 26주째↓…휘발유 1855.1원·경유 1841.8원",
+    "주소": "https://www.slist.kr/news/articleView.html?idxno=781591"
+   },
+   {
+    "제목": "싼 주유소 찾기 오피넷",
+    "주소": "https://www.opinet.co.kr/user/dopds/dopDs_1.do"
+   },
+   {
+    "제목": "한국석유공사",
+    "주소": "https://m.knoc.co.kr/servlet/Download?num=3B19BCC8832F06E2E5FFBC5AF2378688&fno=7574C52D6D91C349C986811E4BF14876&bid=NEWS&callback=%2Fsub05%2Fsub05_5_5.jsp&ses=USERSESSION"
+   },
+   {
+    "제목": "한국석유공사 - 총무< 카테고리별 정보< 사전정보공표 < 정보공개",
+    "주소": "https://www.knoc.co.kr/sub05/sub05_12_filelist.jsp?gpk=11&page=&gov_public_nid=276&sType=ALL&sWord="
+   },
+   {
+    "제목": "한국석유공사 - 석유개발 현황도< 해외사업< 석유개발사업 < 사업소개",
+    "주소": "https://www.knoc.co.kr/sub03/sub03_2_2_vietnam_11_2.jsp"
+   },
+   {
+    "제목": "한국석유공사 - 기관장 업무추진비< 기관운영< 경영공시 < 열린경영",
+    "주소": "https://www.knoc.co.kr/sub02/sub02_2_6_10_5.jsp?page=61&num=592&mode=view&field=&text=&grp=null&bid=NEWS&ses=USERSESSION"
+   },
+   {
+    "제목": "한국석유공사 - 상세보기 < 보도자료 < 홍보센터홍보센터",
+    "주소": "https://www.knoc.co.kr/sub11/sub11_1.jsp?page=21&num=696&mode=view&field=&text=&grp=null&bid=NEWS&ses=USERSESSION&psize=12"
+   }
+  ],
+  "초": 31,
+  "채점": {
+   "정답기관": "opinet.co.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 24,
+   "답에숫자": false
+  }
+ },
+ "22": {
+  "답": "### 원 출처 확인 결과\n\n현재 확인 가능한 자료만으로는 **“매출 24억 5000만 원, 순이익 7억 원”이라는 두 숫자가 함께 기재된 원문 문장이나 표를 확정적으로 확인할 수 없습니다.**\n\n가장 유력한 원 출처는 매일유업이 2026년 3월 19일 제출한 **2025년 사업보고서**입니다. 해당 보고서는 2025년 12월 31일 기준 재무정보를 담고 있으며, 검색 결과에도 매일유업의 2025년 사업보고서로 확인됩니다 ((16)).\n\n- **원 출처 문서:** 매일유업 「사업보고서 2025.12.31」\n- **문서 주소:** https://www.maeil.com/ir/download.jsp?y=2025&m=4\n- **공시 제출일:** 2026년 3월 19일 ((16))\n\n다만 제공된 검색 결과의 원문 발췌에는 해당 종속회사 재무정보 표가 노출되지 않고, 다음과 같은 매일유업 전체 연결재무정보만 확인됩니다.\n\n> “매출액. 1,097,780,502. 745,758,779. 1,843,539,281. 영업이익. 39,647,417.” ((16))\n\n따라서 현재 자료만으로는 **북경매일유업유한공사의 매출 24억 5000만 원과 순이익 7억 원이 나온 원문 문장을 그대로 인용할 수 없습니다.** 해당 사업보고서 원문에서 ‘주요 종속회사 요약 재무정보’ 또는 ‘종속기업의 재무정보’ 표를 직접 확인해야 정확한 원문 인용이 가능합니다.",
+  "참고": [
+   {
+    "제목": "한국서 우유 덜 마시자…해외 나간 유업계, '이것' 팔았다",
+    "주소": "https://www.sedaily.com/article/20114219"
+   },
+   {
+    "제목": "1분기 보고서 2024.05.16",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2024&m=1"
+   },
+   {
+    "제목": "7年亏21亿、老板忙着套现，“水牛奶第一股”走到悬崖边？",
+    "주소": "https://www.jiemian.com/article/14316032.html"
+   },
+   {
+    "제목": "반기 보고서 2024.08.14",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2024&m=2"
+   },
+   {
+    "제목": "매일홀딩스005990",
+    "주소": "https://comp.nicebizline.com/co/CO0100M010GE.nice?stockcd=005990&nav=2"
+   },
+   {
+    "제목": "매일유업, 저출산 쓰나미에도 수출 청신호...중국법인 매출 ...",
+    "주소": "https://www.thevaluenews.co.kr/news/183746"
+   },
+   {
+    "제목": "1분기 보고서 2024.03.31",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2024_01_no2.pdf"
+   },
+   {
+    "제목": "[남양유업에 무슨 일이③] 주인 바뀌고 수출 반토막...매일 ...",
+    "주소": "http://www.financialreview.co.kr/news/articleView.html?idxno=44013"
+   },
+   {
+    "제목": "[Who Is ?] 김선희 매일유업 대표이사 사장",
+    "주소": "https://www.businesspost.co.kr/BP?command=article_view&num=221834"
+   },
+   {
+    "제목": "매일유업(267980) - SMIC",
+    "주소": "http://snusmic.com/wp-content/uploads/2020/11/180505_%EB%A7%A4%EC%9D%BC%EC%9C%A0%EC%97%85_2%ED%8C%80.pdf"
+   },
+   {
+    "제목": "주가 희비 교차 매일유업·남양유업 '다른 듯 같은 고민'",
+    "주소": "https://www.ilyo.co.kr/?ac=article_view&entry_id=491249"
+   },
+   {
+    "제목": "매일유업(주)",
+    "주소": "https://m.kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20230605-28.pdf"
+   },
+   {
+    "제목": "https://huggingface.co/seriouspark/find_tune_bert_...",
+    "주소": "https://huggingface.co/seriouspark/find_tune_bert_output/commit/a21af7851f6e59d1136a7a854add5f44bc561aa0.diff?file=tokenizer.json"
+   },
+   {
+    "제목": "1분기 보고서 2025.05.15",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2025&m=1"
+   },
+   {
+    "제목": "반기 보고서 2025.08.14",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2025&m=2"
+   },
+   {
+    "제목": "매일유업",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2025&m=4"
+   },
+   {
+    "제목": "1분기 보고서 2026.05.15",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2026&m=1"
+   },
+   {
+    "제목": "사업보고서 2019.12.31",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2019_02_no2.pdf"
+   },
+   {
+    "제목": "www.maeil.com 1588-1539 서울시 종로구 종로1길 50 케이 ...",
+    "주소": "https://www.maeil.com/infomation/maeil.pdf"
+   },
+   {
+    "제목": "전자공시 미리보기",
+    "주소": "https://dart.fss.or.kr/dsaf002/viewer.do?rcpNo=20250515002855"
+   },
+   {
+    "제목": "ڵ/()()/(2026.11.02)()()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261102800520&dcmNo=11637857&eleId=0&offset=0&length=0&dtd=HTML"
+   },
+   {
+    "제목": "1분기 보고서 2025.03.31",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2025_01_no2.pdf"
+   },
+   {
+    "제목": "Ѽ/繫ǥؿ()()/(2026.10.30)繫ǥؿ()()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11637099&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20261030801377"
+   },
+   {
+    "제목": "사업 보고서 2025.12.31",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2025_04_no2.pdf"
+   },
+   {
+    "제목": "매일유업 - 기업개요",
+    "주소": "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=267980&cn="
+   },
+   {
+    "제목": "ISC/繫ǥ  ()()/(2026.07.27)繫ǥ  ()()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260727900088&dcmNo=11495165&eleId=0&offset=0&length=0&dtd=HTML"
+   },
+   {
+    "제목": "반기 보고서 2020.06.30",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2020_03_no2.pdf"
+   },
+   {
+    "제목": "기업공시 길라잡이",
+    "주소": "https://dart.fss.or.kr/info/main.do?menu=210"
+   },
+   {
+    "제목": "3분기 보고서 2019.09.30",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2019_01_no2.pdf"
+   },
+   {
+    "제목": "사업보고서를 통해 본 리딩 식품기업 동향 16. 매일유업",
+    "주소": "https://www.foodnews.co.kr/news/articleView.html?idxno=113523"
+   },
+   {
+    "제목": "큐에이드/거래처와의거래중단/(2026.09.23)거래처와의거래중단",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11591389&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20260923900696"
+   },
+   {
+    "제목": "3분기 보고서 2025.11.14",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2025&m=3"
+   },
+   {
+    "제목": "3분기 보고서 2025.09.30",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2025_03_no2.pdf"
+   },
+   {
+    "제목": "Ƽκƽ/μǺλä(ؿܽμǺλä)ĸä/(2026.09.23)μǺλä(ؿܽμǺλä)ĸä",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?dcmNo=11591161&dtd=HTML&eleId=0&length=0&offset=0&rcpNo=20260923900598"
+   },
+   {
+    "제목": "사업 보고서 2017.12.31",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2017_04.pdf"
+   },
+   {
+    "제목": "[Who Is ?] 김선희 매일유업 대표이사 부회장",
+    "주소": "https://www.businesspost.co.kr/BP?command=article_view&num=384706"
+   },
+   {
+    "제목": "https://dart.fss.or.kr/report/viewer.do?rcpNo=2024...",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20240401002982&dcmNo=9800212&eleId=10&offset=77464&length=8860&dtd=dart4.xsd"
+   },
+   {
+    "제목": "3분기 보고서 2024.11.14",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2024&m=3"
+   },
+   {
+    "제목": "반기 보고서 2023.06.30",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2023_02_no2.pdf"
+   },
+   {
+    "제목": "LGַ/繫ǥؿ()()/(2026.10.08)繫ǥؿ()()",
+    "주소": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261008800055&dcmNo=11606525&eleId=0&offset=0&length=0&dtd=HTML"
+   },
+   {
+    "제목": "사업 보고서 2022.12.31",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2022_05_no1.pdf"
+   },
+   {
+    "제목": "사업보고서 2025.03.20",
+    "주소": "https://www.maeil.com/ir/download.jsp?y=2024&m=4"
+   },
+   {
+    "제목": "반기 별도 검토보고서 2025.06.30",
+    "주소": "https://www.maeilholdings.com/ir/pdf/2025_01_no4.pdf"
+   }
+  ],
+  "초": 34,
+  "채점": {
+   "정답기관": "fss.or.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 43,
+   "답에숫자": false
+  }
+ },
+ "23": {
+  "답": "### 원 출처 문서\n\n- **문서명:** 한국거래소 Data Marketplace 「거래 상하위 50종목」\n- **주소:** https://data.krx.co.kr/contents/MDC/MDI/outerLoader/index.cmd?screenId=MDCEASY016&locale=ko_KR&kosdaqGlobalYn=1\n- **문서 유형:** 한국거래소의 시장 통계표 조회 화면\n- **근거:** 해당 화면은 순위, 종목코드, 종목명, 시장구분, 시작일 기준가, 종료일 종가, 대비, 등락률 등을 제공하는 표로 구성되어 있다 ((21)).\n\n### 숫자가 표시되는 원문 형식\n\n제공된 원문 추출본에서 확인되는 표의 열 제목은 다음과 같다.\n\n> “순위, 종목코드, 종목명, 시장구분, 시작일기준가, 종료일종가, 대비, 등락률, 합계, 일평균, 합계, 일평균.” ((21))\n\n다만 제공된 문서 추출본에는 **금호건설우 종목 행과 `74.25%` 수치가 노출되어 있지 않다**. 따라서 현재 확보된 원문만으로는 `금호건설우`, `13,400원`, `23,350원`, `9,950원`, `74.25%`가 함께 들어간 행을 **문서 원문 그대로** 인용할 수 없다 ((21)).\n\n### 결론\n\n확인 가능한 원 출처 주소는 위의 **한국거래소 Data Marketplace 「거래 상하위 50종목」 통계표**이며, 한국거래소는 시장정보와 투자분석정보를 제공하는 Data Marketplace를 운영한다 ((20)). 그러나 이 화면은 정적 문장형 보고서가 아니라 조회 조건에 따라 결과가 표시되는 통계표이고, 제공된 검색 자료에는 해당 기간의 금호건설우 행이 포함되어 있지 않으므로, `74.25%`가 들어간 정확한 원문 문장 또는 표 행은 현재 자료만으로 확인·직접 인용할 수 없다.",
+  "참고": [
+   {
+    "제목": "[베스트&워스트] 금호건설우 74% 폭등·AI 기판주 날개…3분기 실적 한파에 게임·유통주는 '직격탄' - 이투데이",
+    "주소": "https://www.etoday.co.kr/news/view/2648038"
+   },
+   {
+    "제목": "(주1) 정정 전 - KRX 공시",
+    "주소": "https://kind.krx.co.kr/external/2024/04/05/000175/20240405000392/10001.htm"
+   },
+   {
+    "제목": "[머니워치] 코스피, 외국인 매도에 하락 마감…17일 엔비디아 ...",
+    "주소": "http://www.newswatch.kr/news/articleView.html?idxno=81823"
+   },
+   {
+    "제목": "[특징주] 금호건설우, 장중 상한가…이틀 연속 상승세 < 재테크 < 경제·과학 < 기사본문 | 뉴스티앤티",
+    "주소": "https://www.newstnt.com/news/articleView.html?idxno=727435"
+   },
+   {
+    "제목": "(주1) 정정 후 - 상장공시시스템(KIND)",
+    "주소": "https://kind.krx.co.kr/external/2024/03/27/000138/20240327000608/10001.htm"
+   },
+   {
+    "제목": "금호건설우(002995)- 매일경제 마켓",
+    "주소": "https://stock.mk.co.kr/price/home/KR7002991008"
+   },
+   {
+    "제목": "알파스퀘어 | 올인원 스마트 트레이딩 플랫폼",
+    "주소": "https://alphasquare.co.kr/home/stock-summary?code=002995"
+   },
+   {
+    "제목": "금호건설우 - Npay 증권",
+    "주소": "https://finance.naver.com/item/main.naver?code=002995"
+   },
+   {
+    "제목": "OTE 그룹, 2025년 3분기 실적 발표 예정: 11월 13일",
+    "주소": "https://kr.investing.com/news/company-news/article-93CH-1664237"
+   },
+   {
+    "제목": "6월 13일 테슬라의 주주 투표는 매우 중요합니다 - Morgan Stanley",
+    "주소": "https://kr.investing.com/news/stock-market-news/6%EC%9B%94-13%EC%9D%BC-%ED%85%8C%EC%8A%AC%EB%9D%BC%EC%9D%98-%EC%A3%BC%EC%A3%BC-%ED%88%AC%ED%91%9C%EB%8A%94-%EB%A7%A4%EC%9A%B0-%EC%A4%91%EC%9A%94%ED%95%A9%EB%8B%88%EB%8B%A4---morgan-stanley-432SI-1070240"
+   },
+   {
+    "제목": "마일스톤 CARDAMYST, FDA 2025년 12월 13일 결정 예정",
+    "주소": "https://kr.investing.com/news/company-news/article-93CH-1545688"
+   },
+   {
+    "제목": "BeZero - Products, Competitors, Financials, Employees, Headquarters Locations",
+    "주소": "https://www.cbinsights.com/company/bezero-carbon"
+   },
+   {
+    "제목": "코스피 9% 폭등, 하루 두 차례 서킷브레이커… 전문가들 \"낙관론 경계해야\"",
+    "주소": "https://tradingkey.com/kr/analysis/stocks/us-stocks/261741517-kospi-korea-samsung-stock-price-market-tradingkey"
+   },
+   {
+    "제목": "KRX Data Marketplace - 한국거래소",
+    "주소": "https://data.krx.co.kr/"
+   },
+   {
+    "제목": "매일경제 마켓",
+    "주소": "https://stock.mk.co.kr/"
+   },
+   {
+    "제목": "다음 금융",
+    "주소": "https://finance.daum.net/"
+   },
+   {
+    "제목": "코스피지수 (KS11)",
+    "주소": "https://kr.investing.com/indices/kospi"
+   },
+   {
+    "제목": "주식시장 최고 상승종목",
+    "주소": "https://kr.investing.com/equities/top-stock-gainers"
+   },
+   {
+    "제목": "콕스톡 - 주식 전략 신호 서비스",
+    "주소": "https://www.kokstock.com/"
+   },
+   {
+    "제목": "투자자별 매매동향 - KRX Data Marketplace - 한국거래소",
+    "주소": "https://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd"
+   },
+   {
+    "제목": "거래 상하위 50종목",
+    "주소": "https://data.krx.co.kr/contents/MDC/MDI/outerLoader/index.cmd?screenId=MDCEASY016&locale=ko_KR&kosdaqGlobalYn=1"
+   },
+   {
+    "제목": "SK하이닉스(000660)의 실시간 주가를 확인해보세요",
+    "주소": "https://www.tossinvest.com/stocks/A000660/order"
+   },
+   {
+    "제목": "한국 주식시장",
+    "주소": "https://kr.investing.com/equities/south-korea"
+   },
+   {
+    "제목": "코스피 - 시장종합 - 한국경제",
+    "주소": "https://markets.hankyung.com/indices/kospi"
+   },
+   {
+    "제목": "로그인 - 한국거래소",
+    "주소": "https://data.krx.co.kr/contents/MMC/INDX/indx/MMCINDX002.cmd"
+   },
+   {
+    "제목": "Liquidity Tracker",
+    "주소": "https://securities.miraeasset.com/bbs/download/2034789.pdf?attachmentId=2034789"
+   },
+   {
+    "제목": "동양우 뉴스 | 알파스퀘어 종목이슈",
+    "주소": "https://alphasquare.co.kr/home/stock-issue?code=001525&type=news"
+   },
+   {
+    "제목": "인포스탁 모바일 주식 신문",
+    "주소": "https://news.infostock.co.kr/a"
+   },
+   {
+    "제목": "급락장 속 대피소 된 우선주…보통주 밀릴 때 주간 수익률 '방긋 ...",
+    "주소": "https://news.nate.com/view/20260626n26335"
+   },
+   {
+    "제목": "실시간 시장요약 | 증시현황 · 주요뉴스 · 급상승테마",
+    "주소": "https://alphasquare.co.kr/home/market-summary"
+   },
+   {
+    "제목": "KOSPI 성장주 다시 보기",
+    "주소": "https://www.samsungpop.com/common.do?cmd=down&contentType=application/pdf&inlineYn=Y&saveKey=research.pdf&fileName=4010/2023051217042914K_02_01.pdf"
+   },
+   {
+    "제목": "시황",
+    "주소": "https://www.myasset.com/myasset/research/rs_global/RS_0401000_M.cmd?glblGubun=KS"
+   },
+   {
+    "제목": "2024-09-13 (금)",
+    "주소": "https://stock.pstatic.net/stock-research/invest/18/20240913_invest_853362000.pdf"
+   },
+   {
+    "제목": "비상장주식시세, 장외주식시세, 비상장주식시세표, 장외 ...",
+    "주소": "http://www.38.co.kr/html/trade/price/price.php"
+   }
+  ],
+  "초": 41,
+  "채점": {
+   "정답기관": "krx.co.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 34,
+   "답에숫자": false
+  }
+ },
+ "24": {
+  "답": "### 원 출처 문서\n\n- **기관:** 미국 노동부 산하 노동통계국(BLS)\n- **문서:** *Producer Price Index News Release, October 2026*\n- **발표일:** 2026년 11월 13일\n- **주소:** https://www.bls.gov/news.release/archives/ppi_11132026.htm\n\n### 원문 인용\n\n> “The Producer Price Index for final demand rose 0.3 percent in October, seasonally adjusted, the U.S. Bureau of Labor Statistics reported today.” ((2))\n\n### 확인 결과\n\n해당 수치가 처음 확인되는 공식 원 출처는 위 BLS의 **2026년 10월 생산자물가지수(PPI) 보도자료**입니다. ((2)) 원문에서 0.3%는 **최종수요(final demand) PPI가 10월 계절조정 기준으로 상승한 수치**로 제시되어 있습니다. ((2)) 즉, 한국어 문장의 “전품목(헤드라인) PPI”는 원문의 공식 분류명인 “final demand”를 가리킨 것으로 보이며, 원문에는 “all items”라는 표현이 사용되지 않았습니다.",
+  "참고": [
+   {
+    "제목": "Producer Price Index News Release summary - 2026 M10 Results",
+    "주소": "https://www.bls.gov/news.release/ppi.nr0.htm"
+   },
+   {
+    "제목": "Producer Price Index News Release - 2026 M10 Results",
+    "주소": "https://www.bls.gov/news.release/archives/ppi_11132026.htm"
+   },
+   {
+    "제목": "Consumer Price Index - October 2026",
+    "주소": "https://www.bls.gov/news.release/pdf/cpi.pdf"
+   },
+   {
+    "제목": "CPI Home : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/cpi"
+   },
+   {
+    "제목": "Consumer Price Index Summary - 2026 M09 Results",
+    "주소": "https://www.bls.gov/news.release/cpi.nr0.htm"
+   },
+   {
+    "제목": "Producer Price Indexes - August 2026",
+    "주소": "https://www.bls.gov/news.release/pdf/ppi.pdf"
+   },
+   {
+    "제목": "Producer Price Index News Release",
+    "주소": "https://www.bls.gov/news.release/archives/ppi_09102026.htm"
+   },
+   {
+    "제목": "Consumer Price Index News Release",
+    "주소": "https://www.bls.gov/news.release/archives/cpi_11162011.htm"
+   },
+   {
+    "제목": "Consumer Price Index News Release - 2026 M02 Results",
+    "주소": "https://www.bls.gov/news.release/archives/cpi_03112026.htm"
+   },
+   {
+    "제목": "Consumer Price Index News Release - 2026 M10 Results",
+    "주소": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+   },
+   {
+    "제목": "Consumer Price Index News Release - 2026 M03 Results",
+    "주소": "https://www.bls.gov/news.release/archives/cpi_04102026.htm"
+   },
+   {
+    "제목": "BLS News Release",
+    "주소": "https://www.bls.gov/beta/nextgen/cpi/consumer-price-index-2023-10-12.htm"
+   },
+   {
+    "제목": "Consumer Price Index, Los Angeles area — July 2026 : Western Information Office : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/regions/west/news-release/consumerpriceindex_losangeles.htm"
+   },
+   {
+    "제목": "Producer Price Index : The Economics Daily : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/opub/ted/producer-price-index.htm"
+   },
+   {
+    "제목": "Producer Price Indexes - February 2026",
+    "주소": "https://www.bls.gov/news.release/archives/ppi_03182026.pdf"
+   },
+   {
+    "제목": "Producer Price Index News Release - 2026 M01 Results",
+    "주소": "https://www.bls.gov/news.release/archives/ppi_02272026.htm"
+   },
+   {
+    "제목": "Consumer Price Index, Phoenix area — August 2026 : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/regions/west/news-release/consumerpriceindex_phoenix.htm"
+   },
+   {
+    "제목": "Consumer Price Index, South Region — September 2026 : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/regions/southeast/news-release/consumerpriceindex_south.htm"
+   },
+   {
+    "제목": "Table 3. Consumer Price Index for All Urban ...",
+    "주소": "https://www.bls.gov/news.release/cpi.t03.htm"
+   },
+   {
+    "제목": "Producer Price Index Home : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/ppi"
+   },
+   {
+    "제목": "Consumer Price Index, Chicago-Naperville-Elgin area – September 2026 : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/regions/midwest/news-release/consumerpriceindex_chicago.htm"
+   },
+   {
+    "제목": "Table 1. Producer price index percent changes and weights for Final ...",
+    "주소": "https://www.bls.gov/news.release/ppi.t01.htm"
+   },
+   {
+    "제목": "Consumer Price Index - December 2025",
+    "주소": "https://www.bls.gov/news.release/archives/cpi_01132026.pdf"
+   },
+   {
+    "제목": "Consumer Price Index, Midwest Region — September 2026 : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/regions/mountain-plains/news-release/consumerpriceindex_midwest.htm"
+   },
+   {
+    "제목": "Consumer Price Index (CPI) News Release : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/cpi/news.htm?kuid=417e3aa8-e286-437f-9ab0-df56eaf7fd8b-1793145600&kref=WkG6bs3MBNZa"
+   },
+   {
+    "제목": "Table 1. Consumer Price Index for All Urban ...",
+    "주소": "https://www.bls.gov/news.release/cpi.t01.htm"
+   },
+   {
+    "제목": "Consumer Price Index, Anchorage area — August 2026 : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/regions/west/news-release/consumerpriceindex_anchorage.htm"
+   },
+   {
+    "제목": "Latest PPI News Releases : U.S. Bureau of Labor Statistics",
+    "주소": "https://www.bls.gov/ppi/news-release"
+   },
+   {
+    "제목": "Consumer Price Index News Release - 2025 M11 Results",
+    "주소": "https://www.bls.gov/news.release/archives/cpi_12182025.htm"
+   }
+  ],
+  "초": 24,
+  "채점": {
+   "정답기관": "bls.gov",
+   "참고에정답기관": true,
+   "1순위가정답기관": true,
+   "참고수": 29,
+   "답에숫자": false
+  }
+ },
+ "25": {
+  "답": "### 확인 결과\n\n제공된 자료만으로는 **“2026년 1월부터 10월까지 6개 자치구에서 월세 300만 원 이상 아파트 거래가 41건”이라는 수치를 문장 형태로 명시한 국토교통부의 보고서, 보도자료, 통계표 또는 공시 문서를 확인할 수 없습니다.** 국토교통부 실거래가 공개시스템은 거래 원자료를 조회하는 시스템이며, 제공된 화면에는 해당 조건으로 집계된 ‘41건’이라는 결과가 나타나지 않습니다 ((18)).\n\n확인되는 가장 가까운 공식 원자료는 다음의 **국토교통부 실거래가 공개시스템 GIS서비스**입니다.\n\n- **원자료 문서명:** 국토교통부 실거래가 공개시스템 GIS서비스\n- **주소:** https://rt.molit.go.kr/pt/gis/gis.do?srhThingSecd=D&mobileAt=\n\n해당 시스템에는 기준연도, 월, 지역, 면적, 금액, 전월세 구분 등을 조회하는 항목이 제공되며, 제공된 화면에는 “2026년”을 기준연도로 선택할 수 있는 기능이 표시되어 있습니다 ((18)).\n\n### 공식 문서에서 확인되는 원문\n\n국토교통부의 실거래가 공개 안내에는 다음과 같이 적혀 있습니다.\n\n> 국토교통부에서는 정부3.0 및 공공데이터 개방, 부동산 거래 가격 및 거래 동향을 보다 정확하고 신속히 파악할 수 있도록 부동산 거래신고제를 통해 수집된 실거래 자료를 공개하고 있습니다. ((13))\n\n또한 전월세 공개 대상과 관련해서는 다음과 같이 명시되어 있습니다.\n\n> 전월세가 실거래가 공개는 2021년 6월부터 임대차계약 신고를 한 주택(아파트, 연립/다세대, 단독/다가구, 오피스텔) 및 2011년 1월부터 주민센터 및 일부 공개 가능한 대법원 등기소의 주택 확정일자 자료를 대상으로 하고 있습니다. ((13))\n\n### ‘41건’ 수치에 대한 판단\n\n제공된 국토교통부 자료에는 **‘월세 300만원 이상’, ‘노원·도봉·강북·금천·관악·구로구’, ‘41건’**을 한 문장 안에서 함께 제시한 원문이 없습니다. 따라서 위 공식 시스템을 원자료 조회 경로로 제시할 수는 있지만, 국토교통부의 별도 문서가 해당 수치를 문장으로 발표했다고 단정하거나 그 문장을 그대로 인용할 수는 없습니다 ((13)) ((18)).\n\n아울러 국토교통부는 실거래가 공개시스템 자료와 부동산거래현황통계가 집계 기준과 관리 범위에서 다르다고 안내하고 있습니다. 실거래가 공개시스템은 계약일 기준으로 실시간 취합 후 익일 공개되는 자료이고, 부동산거래현황통계는 신고일 이후 월말 기준으로 취합·공표되는 자료입니다 ((13)). 따라서 ‘41건’은 별도의 정식 통계표 문장에서 인용된 수치라기보다, 해당 시스템에서 특정 기간·지역·주택 유형·임대료 조건을 설정해 거래 내역을 추출한 뒤 계산한 결과일 가능성이 있으나, 제공된 자료만으로는 그 산출 과정을 검증할 수 없습니다.\n\n결론적으로, 현재 확인 가능한 공식 원자료의 주소는 **https://rt.molit.go.kr/pt/gis/gis.do?srhThingSecd=D&mobileAt=**이며, 해당 자료에서 인용할 수 있는 관련 공식 문장은 위 인용문입니다. 다만 **‘41건’ 자체가 들어간 문장을 국토교통부 공식 문서에서 그대로 확인한 자료는 제공된 범위에 없습니다.**",
+  "참고": [
+   {
+    "제목": "서울 외곽도 월세 300만원 시대…노도강 임대 매물 반토막[집 ...",
+    "주소": "https://news.nate.com/view/20260513n04254"
+   },
+   {
+    "제목": "전세난에 월세난까지…무주택자 내 집 마련 압박 커진다 ...",
+    "주소": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261113_0003867651"
+   },
+   {
+    "제목": "국토교통부 실거래가공개시스템 게시판",
+    "주소": "https://rt.molit.go.kr/pt/bbs/bbsDetail.do?nttId=862&bbsId=BBSMSTR_000000000152"
+   },
+   {
+    "제목": "신혼부부‧청년 주거지원방안",
+    "주소": "https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=%5B%EB%B6%99%EC%9E%84%EC%9E%90%EB%A3%8C%5D+180705%2818%EC%8B%9C%EC%9D%B4%ED%9B%84%29+%EC%8B%A0%ED%98%BC%EB%B6%80%EB%B6%80+%EC%B2%AD%EB%85%84+%EC%A3%BC%EA%B1%B0%EC%A7%80%EC%9B%90%EB%B0%A9%EC%95%88.pdf"
+   },
+   {
+    "제목": "“강북 아파트에서 매달 300만원 따박따박”…非강남 월세, ...",
+    "주소": "https://v.daum.net/v/20260514104500833"
+   },
+   {
+    "제목": "노도강·금관구도 월세 300만원…'국민평형'서도 고액 ...",
+    "주소": "https://www.donga.com/news/Economy/article/all/20261108/134985783/1"
+   },
+   {
+    "제목": "대환대출 < 청년전용 보증부월세대출 < 주택전세자금대출 < 개인상품 | 주택도시기금",
+    "주소": "https://nhuf.molit.go.kr/FP/FP05/FP0502/FP05020705.jsp"
+   },
+   {
+    "제목": "전세 줄어드니… 노도강 국평이 '월세 300만원' 넘겨",
+    "주소": "https://www.kmib.co.kr/article/20260610500541"
+   },
+   {
+    "제목": "부동산｜리스트",
+    "주소": "https://www.donga.com/news/MLife/List_0106"
+   },
+   {
+    "제목": "문화",
+    "주소": "https://www.donga.com/news/List/Culture/httpssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss?p=121&prod=news&ymd=&m="
+   },
+   {
+    "제목": "주택시장 정상화와 주거복지 증진",
+    "주소": "http://www.molit.go.kr/doc/housing"
+   },
+   {
+    "제목": "경제",
+    "주소": "https://www.donga.com/news/List/Economy/httpsssssssssssssssssssssss?p=81&prod=news&ymd=20261108&m="
+   },
+   {
+    "제목": "국토교통부 실거래가공개시스템 공개안내",
+    "주소": "https://rt.molit.go.kr/pt/info/info.do"
+   },
+   {
+    "제목": "청년주택드림청약 | 국토교통부",
+    "주소": "https://www.molit.go.kr/2024dreamaccount"
+   },
+   {
+    "제목": "국토교통부 부동산거래 전자계약시스템",
+    "주소": "https://irts.molit.go.kr/com/cmn/popup/fee/rtecsFeeRtoPopup.do"
+   },
+   {
+    "제목": "전체｜리스트｜동아일보",
+    "주소": "https://www.donga.com/news/List/ColumnSasul/httpssssssssss?ymd=20261108&m="
+   },
+   {
+    "제목": "공동주택 새소식 | 중앙공동주택관리지원센터",
+    "주소": "https://myapt.molit.go.kr/board/161.do?mode=view&idx=40136"
+   },
+   {
+    "제목": "국토교통부 실거래가공개시스템 GIS서비스",
+    "주소": "https://rt.molit.go.kr/pt/gis/gis.do?srhThingSecd=D&mobileAt="
+   },
+   {
+    "제목": "정책Q&A",
+    "주소": "https://www.molit.go.kr/USR/policyTarget/dtl.jsp?idx=734"
+   },
+   {
+    "제목": "국토교통부 소관 예산 및 기금운용계획 개요",
+    "주소": "https://www.molit.go.kr/portal/common/download/DownloadMltm2.jsp?FilePath=portal%2FDextUpload%2F202501%2F20250114_153627_306.pdf&FileName=%EA%B5%AD%ED%86%A0%EA%B5%90%ED%86%B5%EB%B6%80_25%EB%85%84+%EC%98%88%EC%82%B0%EA%B0%9C%EC%9A%94%28%ED%99%95%EC%A0%95%29.pdf"
+   },
+   {
+    "제목": "주요 보도자료 관리시스템",
+    "주소": "https://www.molit.go.kr/clink/list.jsp?SRCH_TEXT=&lcmspage=11"
+   }
+  ],
+  "초": 35,
+  "채점": {
+   "정답기관": "molit.go.kr",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 21,
+   "답에숫자": false
+  }
+ },
+ "27": {
+  "답": "### 확인 결과\n\n현재 제공된 검색 자료만으로는 해당 금액이 처음 기록된 **국토교통부 실거래가 공개시스템의 개별 원자료 행 또는 상세 조회 문서**를 특정할 수 없습니다. 검색 결과에는 “국토교통부 실거래가 공개시스템”이 근거로 언급되어 있지만, 해당 거래를 직접 조회할 수 있는 상세 주소, 원자료 내려받기 파일, 통계표 원문은 포함되어 있지 않습니다 ((2)).\n\n따라서 아래 공식 시스템 주소는 확인 경로로 제시할 수 있으나, 검색 결과만으로는 해당 거래의 개별 상세 주소까지 확정할 수 없습니다.\n\n**국토교통부 실거래가 공개시스템:**  \n\n\n### 확인 가능한 수치와 날짜\n\n검색 자료에서 금액, 면적, 거래일을 한 문장으로 모두 확인할 수 있는 문장은 다음과 같습니다.\n\n“가장 최근 신고가 거래는 경기 광명시 유-플래닛광명역데시앙으로, 2026년 10월 7일 전용 84.86~84.95㎡가 15억 6,500만원에 거래됐습니다.” ((22))\n\n이 문장은 **2026년 10월 7일**, **전용면적 84.86~84.95㎡**, **15억 6,500만원**이라는 세 가지 핵심 수치를 제시합니다 ((22)). 다만 해당 문장이 실거래가 공개시스템에서 직접 작성된 원문이라는 증거는 검색 자료에 없으므로, 국토교통부 원자료의 문장으로 그대로 인용할 수는 없습니다 ((22)).\n\n### 원자료 특정이 어려운 이유\n\n사용자가 제시한 문장은 “지난달”이라는 상대적 표현을 사용하고 있으므로, 2026년 11월 14일을 기준으로 하면 거래 시점은 2026년 10월입니다 ((2)). 검색된 보도 문장도 “지난 10월 15억6500만원에 신고가를 기록했다”고 설명해 제시된 기간과 금액을 일치시킵니다 ((2)).\n\n그러나 검색 결과에는 동일 단지와 유사한 면적에 대해 서로 다른 거래일과 가격 정보가 함께 나타납니다. 일부 자료는 15억 6,500만원 거래를 2026년 9월 28일 거래로 표시하고 있으며 ((10)), 다른 자료는 2026년 10월 16일 최근 실거래가를 14억 5,000만원으로 표시합니다 ((12)). 이처럼 거래일, 면적 표기, 최근 거래가격이 일치하지 않으므로, 검색 결과에 표시된 민간 시세·거래 정보만으로는 기사 문장 속 15억 6,500만원의 최초 등록 행을 확정하기 어렵습니다 ((10)) ((12)).\n\n또한 검색 자료에는 동일한 금액을 전하는 여러 문서가 있지만, 이들 문서가 국토교통부 데이터의 원본 파일인지, 공개시스템에서 내려받은 원자료를 재가공한 것인지 확인할 수 없습니다 ((1)) ((3)). 따라서 15억 6,500만원이라는 수치가 공식 시스템에 등록된 거래에서 유래했다는 점은 확인되지만, 제공된 자료만으로 그 수치가 최초로 등장한 공식 문서의 작성일, 원문 형식, 개별 거래 식별정보까지 확정할 수 없습니다 ((2)) ((22)).\n\n### 최종 판단\n\n- **공식 확인 경로:** 국토교통부 실거래가 공개시스템  \n  \n- **검색 자료에서 확인되는 거래 정보:** 2026년 10월 7일, 전용 84.86~84.95㎡, 15억 6,500만원 ((22))\n- **그대로 인용할 수 있는 확인 문장:**  \n  “가장 최근 신고가 거래는 경기 광명시 유-플래닛광명역데시앙으로, 2026년 10월 7일 전용 84.86~84.95㎡가 15억 6,500만원에 거래됐습니다.” ((22))\n- **원자료 여부:** 위 인용문은 검색된 확인 자료에 실린 문장이며, 국토교통부 공개시스템의 원문 문장으로 확인된 것은 아닙니다 ((22)).\n- **결론:** 현재 자료만으로는 요청한 의미의 “숫자가 처음 나온 원 출처 문서”와 그 문서의 문장을 확정적으로 제시할 수 없습니다. 확인 가능한 가장 근접한 원자료 경로는 국토교통부 실거래가 공개시스템이지만, 개별 거래의 공식 상세 기록이나 원자료 행이 제공되지 않았습니다 ((2)) ((22)).",
+  "참고": [
+   {
+    "제목": "GS건설 뉴스 | 알파스퀘어 종목이슈",
+    "주소": "https://alphasquare.co.kr/home/stock-issue?code=006360&type=news"
+   },
+   {
+    "제목": "같은 84㎡인데 7억 차이…코스트코 앞 아파트 몸값 껑충",
+    "주소": "https://www.hankyung.com/article/202611123688i"
+   },
+   {
+    "제목": "부동산 뉴스",
+    "주소": "https://www.etoday.co.kr/real-estate"
+   },
+   {
+    "제목": "같은 전용 84㎡인데 7억원 차이...대형 쇼핑시설 인접 아파트 ...",
+    "주소": "https://www.beyondpost.co.kr/view.php?ud=2026111211113989205868f676_30"
+   },
+   {
+    "제목": "같은 전용 84㎡라도 수억원 차이... 대형 유통시설 인근 단지 ...",
+    "주소": "https://www.rcast.co.kr/news/articleView.html?idxno=32052"
+   },
+   {
+    "제목": "하락기인가? 서울 용산구 -31.34% 오전 브리핑",
+    "주소": "https://www.youtube.com/watch?v=q1YNZ-8TeBY"
+   },
+   {
+    "제목": "코세권' 아파트가 주택시장에서 주목",
+    "주소": "https://www.kdnp.org/news/907340"
+   },
+   {
+    "제목": "'철산동 철산래미안자이' 실거래가·시세·2년뒤 가격예측 분석",
+    "주소": "https://m.richgo.ai/realty/danji/a2VEQie"
+   },
+   {
+    "제목": "유-플래닛태영데시앙 실거래가·시세 | 광명시 아파트 매매·전세·대출",
+    "주소": "https://property.ambitstock.com/apt/41210-zbdpdy/"
+   },
+   {
+    "제목": "일직동 유-플래닛광명역데시앙 층간소음·소음 후기 5개",
+    "주소": "https://realty.daangn.com/complexes/15024056/topics/noise"
+   },
+   {
+    "제목": "'일직동 유-플래닛'의 매매, 시세, 후기 (2026)",
+    "주소": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EB%AA%85%EC%8B%9C-%EC%9D%BC%EC%A7%81%EB%8F%99-%EC%9C%A0-%ED%94%8C%EB%9E%98%EB%8B%9B/fiwkf2"
+   },
+   {
+    "제목": "일직동 유-플래닛광명역데시앙",
+    "주소": "https://kbland.kr/se/c/33081"
+   },
+   {
+    "제목": "'광명시 일직동' 투자 분석",
+    "주소": "https://m.richgo.ai/realty/region/4121010600"
+   },
+   {
+    "제목": "'일직동 유-플래닛광명역데시앙' 실거래가 - 경기 아파트 시세",
+    "주소": "https://m.richgo.ai/realty/danji/a3wHKGT"
+   },
+   {
+    "제목": "'일직동 클래시아'의 매매, 월세, 후기 (2026)",
+    "주소": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EB%AA%85%EC%8B%9C-%EC%9D%BC%EC%A7%81%EB%8F%99-%ED%81%B4%EB%9E%98%EC%8B%9C%EC%95%84/gsqgt2"
+   },
+   {
+    "제목": "일직동 유-플래닛광명역데시앙 시세·실거래가·대출한도",
+    "주소": "https://www.bank-mall.co.kr/inquiry/details/apt/33081"
+   },
+   {
+    "제목": "'하안동 주공10단지' 실거래가·시세·2년뒤 가격예측 분석",
+    "주소": "https://m.richgo.ai/realty/danji/a2RNSQl"
+   },
+   {
+    "제목": "'일직동 유-플래닛광명역데시앙'의 매매, 시세, 후기 (2026)",
+    "주소": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EB%AA%85%EC%8B%9C-%EC%9D%BC%EC%A7%81%EB%8F%99-%EC%9C%A0-%ED%94%8C%EB%9E%98%EB%8B%9B%EA%B4%91%EB%AA%85%EC%97%AD%EB%8D%B0%EC%8B%9C%EC%95%99/whoi51"
+   },
+   {
+    "제목": "'일직동 광명역푸르지오'의 매매, 시세, 후기 (2026)",
+    "주소": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EB%AA%85%EC%8B%9C-%EC%9D%BC%EC%A7%81%EB%8F%99-%EA%B4%91%EB%AA%85%EC%97%AD%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4/o80g3a"
+   },
+   {
+    "제목": "일직동 유-플래닛광명역데시앙 살아본 후기",
+    "주소": "https://realty.daangn.com/complexes/15024056/reviews/307546"
+   },
+   {
+    "제목": "'소하동 성원' 실거래가·시세·2년뒤 가격예측 분석",
+    "주소": "https://m.richgo.ai/realty/danji/a6NOwGi"
+   },
+   {
+    "제목": "경기 광명시 아파트 신고가 20건유-플래닛광명역데시앙, 주공13 ...",
+    "주소": "https://m.ppomppu.co.kr/new/bbs_view.php?id=house&no=259198&page=1"
+   },
+   {
+    "제목": "'일직동 광명역파크자이'의 매매, 시세, 후기 (2026)",
+    "주소": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EB%AA%85%EC%8B%9C-%EC%9D%BC%EC%A7%81%EB%8F%99-%EA%B4%91%EB%AA%85%EC%97%AD%ED%8C%8C%ED%81%AC%EC%9E%90%EC%9D%B4/dirasc"
+   },
+   {
+    "제목": "경매 - 2024타경2077 안산지원",
+    "주소": "https://www.missgoauction.com/auction/item/20240130002077B250826-1/"
+   },
+   {
+    "제목": "'철산동 철산한신' 실거래가·시세·2년뒤 가격예측 분석",
+    "주소": "https://m.richgo.ai/realty/danji/a0QRmnh"
+   },
+   {
+    "제목": "일직동 유-플래닛광명역데시앙 살아본후기 52개",
+    "주소": "https://realty.daangn.com/complexes/15024056/reviews"
+   },
+   {
+    "제목": "'일직동 지웰에스테이트'의 매매, 월세, 후기 (2026)",
+    "주소": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EB%AA%85%EC%8B%9C-%EC%9D%BC%EC%A7%81%EB%8F%99-%EC%A7%80%EC%9B%B0%EC%97%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8/iivpqd"
+   },
+   {
+    "제목": "경기 광명시 아파트 거래량 TOP 20｜주공1단지·도덕파크타운",
+    "주소": "https://mlbpark.donga.com/mp/b.php?id=202610190119538384&p=241&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com"
+   },
+   {
+    "제목": "'소하동 동양1차' 아파트 실거래가·시세·2년뒤 가격예측 분석",
+    "주소": "https://m.richgo.ai/realty/danji/a5OrgDd"
+   }
+  ],
+  "초": 78,
+  "채점": {
+   "정답기관": "molit.go.kr",
+   "참고에정답기관": false,
+   "1순위가정답기관": false,
+   "참고수": 29,
+   "답에숫자": false
+  }
+ },
+ "28": {
+  "답": "### 원 출처 문서\n\n- **문서명:** *Income & Expenditure Survey (IES) 2022/2023*\n- **발행기관:** 남아프리카공화국 통계청(Statistics South Africa)\n- **발행일:** 2025년 1월 29일\n- **문서 주소:** https://www.statssa.gov.za/?p=17995\n\n이 문서는 2023년에 발생한 남아프리카공화국 전체 가계 소비지출 가운데 하우텡주의 비중을 **약 36.0%**로 직접 제시한 공식 통계청 원문이다 ((4)).\n\n### 원문 인용\n\n“**Gauteng accounted for approximately 36,0% of all household consumption expenditure that occurred in 2023, while Western Cape contributed 18,4%.**” ((4))\n\n### 수치 대조\n\n원문의 **“approximately 36,0%”**가 제시된 한국어 문장의 **“전국의 약 36%”**에 해당하며, 원문은 해당 기준연도를 **2023년**으로 명시한다 ((4)).",
+  "참고": [
+   {
+    "제목": "South African Households Spend R3 Trillion Annually",
+    "주소": "https://www.statssa.gov.za/?p=17981"
+   },
+   {
+    "제목": "General Household Survey",
+    "주소": "https://www.statssa.gov.za/publications/P0318/P03182023.pdf"
+   },
+   {
+    "제목": "Only 36% of young children (Aged 0 – 4 years) live with ...",
+    "주소": "https://www.statssa.gov.za/?p=2007"
+   },
+   {
+    "제목": "Income & Expenditure Survey (IES) 2022/2023",
+    "주소": "https://www.statssa.gov.za/?p=17995"
+   },
+   {
+    "제목": "Stats Biz",
+    "주소": "https://www.statssa.gov.za/wp-content/uploads/2019/11/StatsBiz_October2019.pdf"
+   },
+   {
+    "제목": "Income and Expenditure Survey of Households 2022/2023, ...",
+    "주소": "https://www.statssa.gov.za/publications/P0100/P01002022.pdf"
+   },
+   {
+    "제목": "GHS Series Volume VII: Housing from a human settlement ...",
+    "주소": "https://www.statssa.gov.za/?p=6429"
+   },
+   {
+    "제목": "2022/23 StatsSA Household Income & Expenditure Survey ...",
+    "주소": "https://pmg.org.za/committee-meeting/40268/"
+   },
+   {
+    "제목": "South Africa's Income & Expenditure Survey Takes Off",
+    "주소": "https://www.statssa.gov.za/?p=15911"
+   },
+   {
+    "제목": "Household spending reached R3-trillion in 2022/23 - The Herald",
+    "주소": "https://www.theherald.co.za/news/2025-02-14-household-spending-reached-r3-trillion-in-202223/"
+   },
+   {
+    "제목": "POVERTY TRENDS IN SOUTH AFRICA",
+    "주소": "https://www.statssa.gov.za/publications/Report-03-10-06/Report-03-10-062023.pdf"
+   },
+   {
+    "제목": "Cape Town tops household spending in South Africa",
+    "주소": "https://propertyreview.co.za/post/cape-town-tops-household-spending-in-south-africa"
+   },
+   {
+    "제목": "SA households spend R3 trn annually - Stats SA",
+    "주소": "https://www.jacarandafm.com/news/news/stilfontein-number-illegal-miners-still-unknown/"
+   },
+   {
+    "제목": "Household spending reached R3-trillion in 2022/23",
+    "주소": "https://www.timeslive.co.za/news/south-africa/2025-02-14-household-spending-reached-r3-trillion-in-202223/"
+   },
+   {
+    "제목": "SUBJECTIVE POVERTY IN SOUTH AFRICA",
+    "주소": "https://www.statssa.gov.za/publications/Report-03-10-31/Report-03-10-312023.pdf"
+   },
+   {
+    "제목": "Exploring Statistics South Africa's national household ...",
+    "주소": "https://www.researchgate.net/publication/46536373_Exploring_Statistics_South_Africa%27s_national_household_surveys_as_sources_of_information_about_household-level_food_security"
+   },
+   {
+    "제목": "Improving national accounts and GDP",
+    "주소": "https://www.statssa.gov.za/publications/Report%2004-04-04/GDP%20benchmarking%202026%20(Media%20presentation).pdf"
+   },
+   {
+    "제목": "description of the republic of south africa",
+    "주소": "https://www.sec.gov/Archives/edgar/data/932419/000110465920035733/a20-6244_1ex99de.htm"
+   }
+  ],
+  "초": 42,
+  "채점": {
+   "정답기관": "statssa.gov.za",
+   "참고에정답기관": true,
+   "1순위가정답기관": true,
+   "참고수": 18,
+   "답에숫자": false
+  }
+ },
+ "30": {
+  "답": "### 숫자 원 출처 확인\n\n- **원 출처 문서:** 폭스바겐그룹 공식 보도자료 「Supervisory Board approves Future Plan 2030」\n- **발표일:** 2026년 9월 3일 ((27))\n- **문서 주소:** https://www.volkswagen-group.com/en/press-releases/supervisory-board-approves-future-plan-2030-a-strong-signal-for-volkswagen-group-20662\n\n### 숫자가 포함된 원문 인용\n\n“According to the analysis underlying the Future Plan 2030, a Group-wide workforce adjustment of approximately 50,000 positions – including management roles – is necessary.” ((27))\n\n따라서 기사 문장에 나온 **“약 5만 명 추가 감축”**의 직접적인 원 출처는 2026년 9월 3일 공개된 폭스바겐그룹의 **Future Plan 2030 공식 보도자료**다. ((27))",
+  "참고": [
+   {
+    "제목": "Volkswagen Plans to Cut 50000 Jobs",
+    "주소": "https://www.nytimes.com/2026/09/03/business/volkswagen-job-cuts.html"
+   },
+   {
+    "제목": "Volkswagen to slash up to 50000 jobs in historic restructuring",
+    "주소": "https://www.ft.com/content/77641f53-8dcb-4adf-9295-9ce44b8d49d6?syn-25a6b1a6=1"
+   },
+   {
+    "제목": "Volkswagen to cut further 50000 jobs as it ends row with ...",
+    "주소": "https://www.theguardian.com/business/2026/sep/03/volkswagen-confirms-100000-job-cuts-by-2030"
+   },
+   {
+    "제목": "Volkswagen Approves Plan to Cut 50000 More Jobs in ...",
+    "주소": "https://www.bloomberg.com/news/articles/2026-09-03/vw-board-gives-ceo-blume-unanimous-backing-to-overhaul-carmaker"
+   },
+   {
+    "제목": "Volkswagen board approves plan to cut another 50000 jobs",
+    "주소": "https://www.bbc.com/news/articles/cx2z0kvy4n4o"
+   },
+   {
+    "제목": "폭스바겐, 5만명 추가 감축",
+    "주소": "https://www.hankyung.com/article/2026090451011"
+   },
+   {
+    "제목": "Volkswagen flags 50000 job cuts across group as board ...",
+    "주소": "https://www.reuters.com/business/autos-transportation/volkswagen-supervisory-board-approves-transformation-plan-2026-09-03/"
+   },
+   {
+    "제목": "폭스바겐, 5만명 추가 감원... 전기차 전환에 대규모 구조조정",
+    "주소": "https://www.hankookilbo.com/news/article/A2026090409510004584"
+   },
+   {
+    "제목": "Volkswagen board approves 50000 additional job cuts - TT",
+    "주소": "https://www.ttnews.com/articles/volkswagen-board-job-cuts"
+   },
+   {
+    "제목": "직원 5만명 구조조정 한 자동차 공룡, 안 팔리는 차는 전부 ...",
+    "주소": "https://www.mk.co.kr/news/business/12161764"
+   },
+   {
+    "제목": "VW Restructures, Cuts 50000 Jobs in Germany",
+    "주소": "https://www.linkedin.com/posts/evangelossimoudis_volkswagen-flags-50000-job-cuts-across-group-activity-7501627401425080320-sKyw"
+   },
+   {
+    "제목": "'중국·관세' 더 버티기 어렵다... 폭스바겐, 5만 명 추가 감원 검토",
+    "주소": "http://www.autoherald.co.kr/news/articleView.html?idxno=61089"
+   },
+   {
+    "제목": "VW Cuts Another 50000 Jobs and Possibly a Brand: TDS",
+    "주소": "https://www.thedrive.com/news/vw-cuts-another-50000-jobs-and-possibly-a-brand-tds"
+   },
+   {
+    "제목": "Volkswagen to cut 100000 jobs by end of decade",
+    "주소": "https://www.dw.com/en/volkswagen-to-cut-100000-jobs-by-end-of-decade/a-78896123"
+   },
+   {
+    "제목": "폭스바겐, 2030년까지 5만 명 추가 감축… 총 10 ... - 다나와 자동차",
+    "주소": "https://mauto.danawa.com/news/index.php?Tab=N1&Stab=all&SearchKey=press&SearchWord=%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%98%A4%ED%86%A0%EB%89%B4%EC%8A%A4&Punit=10&Page=0&Work=detail&no=6056135"
+   },
+   {
+    "제목": "Volkswagen Confirms Cutting 50000 Jobs As Part Of Its ...",
+    "주소": "https://finance.yahoo.com/economy/policy/articles/volkswagen-confirms-cutting-50-000-114606303.html"
+   },
+   {
+    "제목": "[이 시각 세계] 노조·주정부 반발에 폭스바겐 '10만 명' 감축 제동",
+    "주소": "https://imnews.imbc.com/replay/2026/nwtoday/article/6847359_37012.html"
+   },
+   {
+    "제목": "폭스바겐, 독일 인력 1만9000명 구조조정…생산능력 조정한다",
+    "주소": "https://www.alphabiz.co.kr/news/articleView.html?idxno=152663"
+   },
+   {
+    "제목": "Volkswagen's 50000 job cuts passed unanimously, and ...",
+    "주소": "https://www.autonext.co/news/volkswagen-future-plan-2030-50000-jobs-unanimous-four-plants-2027"
+   },
+   {
+    "제목": "Volkswagen Group Layoffs 2026 - Up to 100000 Jobs Cut",
+    "주소": "https://layoffhedge.com/company/volkswagen-group"
+   },
+   {
+    "제목": "실적 경고 직면한 폭스바겐, 구조조정 프로그램 추가 강화",
+    "주소": "https://v.daum.net/v/yh6Euh4qmx"
+   },
+   {
+    "제목": "Volkswagen plans 50000 job cuts as analysts see 'halo ...",
+    "주소": "https://www.cnbcafrica.com/2026/volkswagen-plans-50000-job-cuts-as-analysts-see-halo-effect-for-german-auto-industry"
+   },
+   {
+    "제목": "中 부진 폭스바겐 고강도 구조조정…현대차그룹 '글로벌 2위' ...",
+    "주소": "https://www.news1.kr/industry/auto-industry/6228088"
+   },
+   {
+    "제목": "Why Germany's Volkswagen could cut 100000 jobs",
+    "주소": "https://www.dw.com/en/volkswagen-job-cuts-germany-restructuring/a-78483715"
+   },
+   {
+    "제목": "폭스바겐 대규모 인력 감축 계획, 현대차·기아 유럽 영향력 ...",
+    "주소": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=87910"
+   },
+   {
+    "제목": "Volkswagen board approves turnaround plan, flags 50000 ...",
+    "주소": "https://www.reddit.com/r/europe/comments/1w6km5i/volkswagen_board_approves_turnaround_plan_flags/"
+   },
+   {
+    "제목": "Supervisory Board approves Future Plan 2030",
+    "주소": "https://www.volkswagen-group.com/en/press-releases/supervisory-board-approves-future-plan-2030-a-strong-signal-for-volkswagen-group-20662"
+   },
+   {
+    "제목": "Future Plan 2030: The Future of the Volkswagen Group",
+    "주소": "https://www.volkswagen-group.com/en/future-plan-the-next-phase-of-transformation-20510"
+   },
+   {
+    "제목": "Oliver Blume presents key levers of plan for the future at ...",
+    "주소": "https://www.volkswagen-group.com/en/press-releases/strengthen-substance-invest-with-purpose-in-the-future-build-lasting-value-oliver-blume-presents-key-levers-of-plan-for-the-future-at-volkswagen-ag-annual-general-meeting-20483"
+   },
+   {
+    "제목": "1937 to 1945 – Founding of the Company and Integration into ...",
+    "주소": "https://www.volkswagen-group.com/en/volkswagen-chronicle-17351/1937-to-1945-founding-of-the-company-and-integration-into-the-war-economy-17354"
+   },
+   {
+    "제목": "Agreement reached: Volkswagen AG positions itself competitively for the future | Volkswagen Newsroom",
+    "주소": "https://www.volkswagen-newsroom.com/en/press-releases/agreement-reached-volkswagen-ag-positions-itself-competitively-for-the-future-18945"
+   },
+   {
+    "제목": "Volkswagen is putting its future plan into action with a new pick-up truck for South America | Volkswagen Newsroom",
+    "주소": "https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-is-putting-its-future-plan-into-action-with-a-new-pick-up-truck-for-south-america-19156"
+   },
+   {
+    "제목": "Oliver Blume on Competitiveness, Transformation and Growth",
+    "주소": "https://www.volkswagen-group.com/en/oliver-blume-on-competitiveness-transformation-and-growth-20605"
+   },
+   {
+    "제목": "entire-vw-ar25.pdf - Annual Report 2025",
+    "주소": "https://annualreport2025.volkswagen-group.com/_assets/downloads/entire-vw-ar25.pdf?h=bz8bYG_n"
+   },
+   {
+    "제목": "Volkswagen Future Plan: Passenger Cars brand gives first glimpse of entry-level electric model at works meeting | Volkswagen Newsroom",
+    "주소": "https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-future-plan-passenger-cars-brand-gives-first-glimpse-of-entry-level-electric-model-at-works-meeting-18996"
+   },
+   {
+    "제목": "\"We have the best conditions for a successful transformation ...",
+    "주소": "https://www.volkswagen-group.com/en/we-have-the-best-conditions-for-a-successful-transformation-interview-with-ceo-oliver-blume-20563"
+   },
+   {
+    "제목": "[PDF] Volkswagen is putting its future plan into action with a new pick-up ...",
+    "주소": "https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-is-putting-its-future-plan-into-action-with-a-new-pick-up-truck-for-south-america-19156/download"
+   },
+   {
+    "제목": "The History of Scania - Volkswagen Group",
+    "주소": "https://www.volkswagen-group.com/en/the-history-of-the-brands-17668/the-history-of-scania-17682"
+   },
+   {
+    "제목": "1992 to 2015 – Globalisation of the Mobility Group",
+    "주소": "https://www.volkswagen-group.com/en/volkswagen-chronicle-17351/1992-to-2015-globalisation-of-the-mobility-group-17360"
+   },
+   {
+    "제목": "Car Brain Challenge “Re-inCARnate Herbie”",
+    "주소": "https://www.volkswagen-group.com/en/car-brain-challenge-re-incarnate-herbie-19848"
+   },
+   {
+    "제목": "Volkswagen Group increases all-electric deliveries by around ...",
+    "주소": "https://www.volkswagen-group.com/en/press-releases/volkswagen-group-increases-all-electric-deliveries-by-around-50-percent-in-the-first-half-year-17461"
+   },
+   {
+    "제목": "Frequently Asked Questions Car Brain Challenge",
+    "주소": "https://www.volkswagen-group.com/en/frequently-asked-questions-car-brain-challenge-20105"
+   },
+   {
+    "제목": "Volkswagen advances restructuring plan that could cut 50K ...",
+    "주소": "https://www.wardsauto.com/news/volkswagen-advances-restructuring-plan-that-could-cut-50k-jobs/829727/"
+   },
+   {
+    "제목": "Volkswagen board approves cutting 50000 jobs and ...",
+    "주소": "https://apnews.com/article/volkswagen-job-cuts-plants-oliver-blume-8ebf1cc6693a06d06b12fac5693c8333"
+   },
+   {
+    "제목": "Volkswagen Group",
+    "주소": "https://en.wikipedia.org/wiki/Volkswagen_Group"
+   },
+   {
+    "제목": "VW approves plan to cut 50000 more jobs in broad pverhaul",
+    "주소": "https://www.autofinancenews.net/allposts/pressreleases/vw-approves-plan-to-cut-50000-more-jobs-in-broad-pverhaul/"
+   },
+   {
+    "제목": "Volkswagen approves Oliver Blume's plan for 50,000 more job ...",
+    "주소": "https://internationalfinance.com/transport/volkswagen-approves-oliver-blumes-plan-for-50000-more-job-cuts-us-expansion/"
+   },
+   {
+    "제목": "Volkswagen Will Cut 50000 Jobs And Slash Half Its Models ...",
+    "주소": "https://finance.yahoo.com/markets/stocks/articles/volkswagen-cut-50-000-jobs-055821614.html"
+   },
+   {
+    "제목": "Volkswagen board approves restructuring that will drop ...",
+    "주소": "https://www.youtube.com/watch?v=bHya8Ia2PBo"
+   },
+   {
+    "제목": "Volkswagen Board Approves Doubling Job Cuts to ...",
+    "주소": "https://www.wsj.com/business/autos/volkswagen-board-approves-plan-to-cut-workforce-model-portfolio-ac933812"
+   },
+   {
+    "제목": "Volkswagen Layoffs: The 50000 Figure Is Not a Target",
+    "주소": "https://www.finalroundai.com/blog/volkswagen-layoffs"
+   },
+   {
+    "제목": "Volkswagen Future Plan 2030 Simplifies Leadership",
+    "주소": "https://www.linkedin.com/posts/alessandro-agostini_volkswagen-operationaltransformation-valuecreation-activity-7503042252726755330-y6JK"
+   },
+   {
+    "제목": "Volkswagen layoffs 2026: was AI the reason? - AI Layoffs",
+    "주소": "https://ailayoffs.org/companies/volkswagen"
+   },
+   {
+    "제목": "Licensable video: Volkswagen board approves plan to cut ...",
+    "주소": "https://www.reutersconnect.com/item/volkswagen-board-approves-plan-to-cut-50000-more-jobs-worldwide/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XQU5BQ0FBVklERU8yMDI2MDkwNDQyMzgxNDMy"
+   },
+   {
+    "제목": "Volkswagen to cut 50000 more jobs to counter tariffs and ...",
+    "주소": "https://www.france24.com/en/technology/20260904-volkswagen-to-cut-another-50-000-jobs-to-counter-tariffs-and-chinese-competition"
+   },
+   {
+    "제목": "Volkswagen Group Future Plan 2030 Job Cuts And Model ...",
+    "주소": "https://www.motor1.com/news/807085/volkswagen-group-future-plan-2030/"
+   },
+   {
+    "제목": "Volkswagen AG",
+    "주소": "https://uploads.vw-mms.de/system/production/documents/cws/003/439/file_en/5bf5c863cf9669e64e2d63a734f40cd710b8a8da/2026-10-29-volkswagen-group-roadshow-presentation-en.pdf?1793883086"
+   },
+   {
+    "제목": "Volkswagen Layoffs 2026: 50,000 More Job Cuts Approved",
+    "주소": "https://www.grindhotline.com/volkswagen-layoffs-2026-50000-more-job-cuts-future-plan-2030.html"
+   },
+   {
+    "제목": "Volkswagen Layoffs 2026: 100,0... - The Grind Hotline",
+    "주소": "https://podcasts.apple.com/us/podcast/volkswagen-layoffs-2026-100-000-job-cuts-confirmed/id1853875818?i=1000787891501&l=ar"
+   }
+  ],
+  "초": 34,
+  "채점": {
+   "정답기관": "volkswagen-group.com",
+   "참고에정답기관": true,
+   "1순위가정답기관": false,
+   "참고수": 59,
+   "답에숫자": false
+  }
+ }
+}
