@@ -123,6 +123,7 @@ def three_metrics(folder: str) -> dict:
     except FileNotFoundError:
         checks = {}
     wrong, useful, checkable, quote_n, quote_ok, notes = [], 0, 0, 0, 0, []
+    by_source_q, by_source_u = {}, {}   # 같은 원문은 한 번만: 원문 → 그 원문을 인용한 문장들이 모두 맞았는지
     for n, res in sorted(rows.items()):
         g = gt.get(n, {})
         kind, verdict = g.get("분류"), res.get("판정", "오류")
@@ -140,6 +141,8 @@ def three_metrics(folder: str) -> dict:
         if kind == "원문있음":
             quote_n += 1
             quote_ok += grade_ == "원문 문장 확인"
+            key = source_key(g, n)
+            by_source_q[key] = by_source_q.get(key, True) and grade_ == "원문 문장 확인"
         # ③ 쓸모 있는 답
         if kind in ("원문있음", "원문있음_미확인숫자", "원문비공개"):
             checkable += 1
@@ -152,8 +155,20 @@ def three_metrics(folder: str) -> dict:
                 ok = not claimed and bool((res.get("안내") or {}).get("유형") or res.get("출처종류") == "의원실 자료")
                 how = "비공개 종류 안내" if ok else ""
             useful += bool(ok)
+            key = source_key(g, n)
+            by_source_u[key] = by_source_u.get(key, True) and bool(ok)
             notes.append(f"#{n} [{kind}] {'✅ ' + how if ok else '❌'} ({verdict})")
-    return {"틀린단정": wrong, "원문확인": (quote_ok, quote_n), "쓸모": (useful, checkable), "건별": notes}
+    return {"틀린단정": wrong, "원문확인": (quote_ok, quote_n), "쓸모": (useful, checkable), "건별": notes,
+            "원문확인_원문별": (sum(by_source_q.values()), len(by_source_q)),
+            "쓸모_원문별": (sum(by_source_u.values()), len(by_source_u))}
+
+
+def source_key(g: dict, n: int) -> str:
+    """정답 원문을 가리키는 열쇠(주소에서 http·www·끝 / 를 뗌). 원문 주소가 없으면 문장마다 따로.
+    (11/16: 무작위 세트에 같은 BLS PPI 발표를 인용한 문장이 8건 — 문장 수로 세면 한 원문이 성적을 끌어올림)"""
+    url = (g.get("원문주소") or "").strip().lower()
+    url = re.sub(r"^https?://(www\.)?", "", url).rstrip("/")
+    return url or f"#{n}"
 
 
 def metrics_text(m: dict) -> str:
@@ -163,7 +178,18 @@ def metrics_text(m: dict) -> str:
     ulo, uhi = wilson(uk, un)
     return (f"① 틀린 단정 {len(m['틀린단정'])}건{(' — ' + ', '.join(m['틀린단정'])) if m['틀린단정'] else ''}\n"
             f"② 원문 문장 확인 {qk}/{qn} ({qk / max(qn, 1):.0%}, 95% 구간 {lo:.0%}~{hi:.0%}) — 목표 50%\n"
-            f"③ 쓸모 있는 답 {uk}/{un} ({uk / max(un, 1):.0%}, 95% 구간 {ulo:.0%}~{uhi:.0%}) — 목표 80%")
+            f"③ 쓸모 있는 답 {uk}/{un} ({uk / max(un, 1):.0%}, 95% 구간 {ulo:.0%}~{uhi:.0%}) — 목표 80%"
+            + _per_source(m))
+
+
+def _per_source(m: dict) -> str:
+    """같은 원문을 인용한 문장이 여럿이면, 원문마다 한 번만 센 값도(그 문장들이 모두 맞아야 맞음)."""
+    qk, qn = m["원문확인_원문별"]
+    uk, un = m["쓸모_원문별"]
+    if (qn, un) == (m["원문확인"][1], m["쓸모"][1]):
+        return ""
+    return (f"\n   같은 원문은 한 번만 세면: ② {qk}/{qn} ({qk / max(qn, 1):.0%}) · ③ {uk}/{un} ({uk / max(un, 1):.0%})"
+            " — 한 원문의 문장이 모두 맞아야 맞음")
 
 
 def summary(counts: Counter, kind: str) -> str:
