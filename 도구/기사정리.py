@@ -137,6 +137,8 @@ CONDITION_AFTER = r"\s*(?:의|을|를|에|에도|도)?\s*(?:못\s*미치|미달|
 
 def is_condition_number(sentence: str, number: str) -> bool:
     """문장 속 그 숫자가 기준값·조건(이하·미만·못 미치는·중·당 …)으로 쓰였는지."""
+    if re.search(r"(?:이상|이하|미만|초과|넘는|미달)\s*$", number.strip()):
+        return True   # 분해한 숫자 자체에 기준 표현이 붙음('0.08% 이상' — 11/16 신규 세트2 음주 기준 헛답)
     core = re.escape(number.strip())
     return bool(re.search(core.replace(r"\ ", r"\s*") + CONDITION_AFTER, sentence))
 

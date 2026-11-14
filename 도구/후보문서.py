@@ -6,7 +6,7 @@
 - 정기간행물 묶음 표지(1쪽 목차)면 2쪽 큰 글씨를 글 제목으로
 """
 import re
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait
 from dataclasses import dataclass, replace
 from datetime import date
 from pathlib import Path
@@ -30,6 +30,7 @@ COVER_CHARS = 400         # 제목 비교에 쓸 1쪽 첫머리 글자 수
 
 
 WORKERS = 6
+LOAD_DEADLINE_SEC = 60   # 후보 문서 받기·글자 뽑기 전체 상한
 
 
 @dataclass
@@ -215,8 +216,14 @@ def load_docs(cands: list[Candidate], tokens: dict, report_name: str, query: str
     if keep:
         ranked.sort(key=lambda c: c.file_key not in keep)          # 발간 목록 후보는 반드시 받는다
     cands = ranked[:MAX_DOWNLOAD]
-    with ThreadPoolExecutor(WORKERS) as ex:
-        docs = [d for d in ex.map(lambda c: _load_one(c, tokens, report_name), cands) if d]
+    # 받기·글자 뽑기는 LOAD_DEADLINE_SEC 까지만 기다리고, 늦은 문서는 빼고 계속(11/16: 느린 누리집·큰 PDF 로 한 건 880초)
+    ex = ThreadPoolExecutor(WORKERS)
+    futures = [ex.submit(_load_one, c, tokens, report_name) for c in cands]
+    done, late = wait(futures, timeout=LOAD_DEADLINE_SEC)
+    if late:
+        print(f"    문서 {len(late)}건이 {LOAD_DEADLINE_SEC}초 안에 받기·읽기를 못 끝내 빼고 계속")
+    docs = [f.result() for f in futures if f in done and not f.exception() and f.result()]
+    ex.shutdown(wait=False, cancel_futures=True)
     if len(docs) > 1:  # 라이너 Rerank 로 '제목 비슷함'을 다시 매긴다(실패하면 글자 비교 점수 유지)
         covers = [d.cand.title + " " + d.cover for d in docs]
         scores = rerank_scores(query, covers)

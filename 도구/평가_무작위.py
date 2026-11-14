@@ -14,6 +14,8 @@
       방식 D: 최신순 + 또 다른 검색어 + 다른 시드, 30건(검증 세트 — 11/15. 보면서 고치지 않고 일반 규칙의 효과만 잰다)
       방식 E: 최신순 + 또 다른 검색어 + 다른 시드, 40건(신규 세트 — 11/15 밤. 결과를 보고 고치지 않는다. 정직한 실력 측정)
       방식 F: 최신순 + 또 다른 검색어 + 다른 시드, 40건(신규 세트2 — 새 목표 세 지표 측정용, 보고 고치지 않음)
+      방식 G: 최신순 + 공공·연구기관·보고서 출처 검색어, 30건(인용 장면 세트 — 11/15. 보고서에 인용하려는 숫자처럼
+              공공·연구기관·국제기구·보고서·실태조사를 출처로 밝힌 문장만. 라이너 Deep Research 와 비교용, 보고 고치지 않음)
 결과: <결과 폴더>/평가대상.json → python3 -u 도구/평가_실행.py <결과 폴더>
 중간 저장: 받은 기사는 <결과 폴더>/기사캐시/ 에 저장해 다시 받지 않는다.
 """
@@ -32,10 +34,10 @@ METHOD = next((a.split("=", 1)[1] for a in _FLAGS if a.startswith("--방식=")),
 from 평가_새기사 import DAUM_SEARCH, MAX_SENT, MIN_SENT, NUMBER, OUT_DIR, SKIP_WORDS, fetch_html, parse_article # noqa: E402 (sys.argv 를 먼저 정리해야 함)
 
 ROOT = Path(__file__).resolve().parent.parent
-SAMPLE_SIZE = {"C": 40, "E": 40, "F": 40}.get(METHOD, 30)   # 뽑을 문장 수
+SAMPLE_SIZE = {"C": 40, "E": 40, "F": 40, "G": 30}.get(METHOD, 30)   # 뽑을 문장 수
 POOL_TARGET = 160         # 무작위로 뽑기 전에 모을 후보 수
 PAGES = 8                 # 검색어마다 볼 검색 결과 쪽 수
-SEED = {"A": 20261114, "B": 20261122, "C": 20261115, "D": 20261116, "E": 20261117, "F": 20261118}[METHOD]   # 고정 시드(재현용)
+SEED = {"A": 20261114, "B": 20261122, "C": 20261115, "D": 20261116, "E": 20261117, "F": 20261118, "G": 20261119}[METHOD]   # 고정 시드(재현용)
 SORT = "accuracy" if METHOD == "B" else "recency"
 MAX_PER_QUERY = 30        # 한 검색어가 후보를 독차지하지 않게
 SOURCE_QUERIES = {"A": ["따르면", "조사 결과", "집계", "보고서", "통계", "분석 결과", "발표"],
@@ -47,8 +49,13 @@ SOURCE_QUERIES = {"A": ["따르면", "조사 결과", "집계", "보고서", "�
                   "E": ["자료에 따르면", "설문 결과", "늘어난 것으로", "줄어든 것으로", "비중은", "만에 최대",
                         "공개한 자료", "통계를 보면", "조사해 발표"],
                   "F": ["발표했다", "기록했다", "집계했다", "조사를 보면", "에 달했다", "상승률", "감소율",
-                        "역대 최고", "점유율"]}[METHOD]
+                        "역대 최고", "점유율"],
+                  "G": ["연구원 보고서", "보고서에 따르면", "실태조사 결과", "통계에 따르면", "한국은행 자료",
+                        "OECD 보고서", "공단 자료", "연구원이 발표한", "백서에 따르면", "국제기구 보고서"]}[METHOD]
 SOURCE_CUE = re.compile(r"따르면|조사|집계|보고서|통계|분석|발표|자료|밝혔|나타났")
+# 방식 G: 문장에 공공·연구기관·국제기구·보고서 이름이 있어야 함(인용하려는 숫자 장면)
+PUBLIC_CUE = re.compile(r"연구원|연구소|연구센터|보고서|실태조사|백서|통계청|국가데이터처|한국은행|[가-힣]+(부|처|청)(가|는|의|이|에 따르면| 자료)"
+                        r"|공단|공사|진흥원|개발원|위원회|OECD|IMF|세계은행|국제[가-힣]+기구|유엔|UN|WHO|IEA|대학교? 연구팀|논문")
 # 출처가 아닌 숫자(경기 점수·주가 시세·날씨·사고 소식 등)가 많은 기사는 원문 찾기 대상이 아니므로 제목으로 뺀다
 SKIP_TITLE = re.compile(r"\[포토\]|\[사진\]|부고|인사\]|날씨|경기 결과|골|홈런|코스피.*(마감|출발)|환율.*(마감|출발)")
 
@@ -58,7 +65,7 @@ def pick_sentence(paras: list[str]) -> tuple[str, str] | None:
     for para in paras:
         for s in (s.strip() for s in re.split(r"(?<=[다요])\.\s+", para)):
             if (MIN_SENT <= len(s) <= MAX_SENT and NUMBER.search(s) and SOURCE_CUE.search(s)
-                    and not SKIP_WORDS.search(s)):
+                    and not SKIP_WORDS.search(s) and (METHOD != "G" or PUBLIC_CUE.search(s))):
                 return s.rstrip(".") + ".", para
     return None
 
