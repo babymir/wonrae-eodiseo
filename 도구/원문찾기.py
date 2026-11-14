@@ -219,7 +219,11 @@ def _deep_research_round(result: dict, sentence: str, context: str, article_date
     if not sources:
         print("    Deep Research 가 지목한 원 출처 주소가 없음")
         return None
-    sources = [x for x in sources if not 일반경로.is_news_doc(x["주소"])]
+    domain = 일반경로.clean_domain((first.get("추출") or {}).get("기관누리집", ""))
+    dropped = [x["주소"] for x in sources if not 일반경로.trusted_source(x["주소"], domain)]
+    sources = [x for x in sources if 일반경로.trusted_source(x["주소"], domain)]
+    if dropped:
+        print(f"    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: {[u[:50] for u in dropped]}")
     cands = []
     for x in sources:
         c = 공시찾기.candidate_from_url(x["주소"], x["제목"]) or Candidate(

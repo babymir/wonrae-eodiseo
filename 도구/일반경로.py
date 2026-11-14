@@ -49,9 +49,21 @@ def is_news_or_social(url: str, domain: str = "") -> bool:
 # 언론 기사 페이지 판별(11/15: 라이너 Deep Research 가 지목한 국내 기사 4건을 원문으로 확인해 '일치' 헛답)
 # 언론사 목록은 끝이 없으므로 주소 꼴과 본문 표지(기자 이름·이메일, 무단전재 금지, 저작권자 ©)로 본다
 NEWS_URL = re.compile(r"articleView|articleViewAmp|/news/article|view\.php\?key=|/article/\d{6,}|/news/\d{6,}|"
-                      r"/view/AKR|/NewsView/|newsView|/read\.php|/cnts/|/arti/|/amp/article", re.I)
+                      r"/news/view/\d+|/view/AKR|/NewsView/|newsView|/read\.php|/cnts/|/arti/|/amp/article|"
+                      r"-\d{6,}(?:\.html?)?$", re.I)
 NEWS_TEXT = re.compile(r"무단\s*전재|재배포\s*금지|저작권자\s*[ⓒ©(]|[가-힣]{2,4}\s*기자\s*[A-Za-z0-9._%+-]+@|"
-                       r"[가-힣]{2,4}\s*(?:기자|특파원)\s*=")
+                       r"[가-힣]{2,4}\s*(?:기자|특파원)\s*=|기자의\s*(?:주요|다른)\s*(?:뉴스|기사)|구독한\s*기자|"
+                       r"기자\s*이름을\s*클릭")
+# 원 출처로 믿을 만한 주소(라이너 Deep Research 가 지목한 후보는 이런 주소만 받는다 — 11/15 언론 기사 헛답)
+SOURCE_HOST = re.compile(r"\.(?:org|int|edu|ac\.[a-z]{2}|re\.kr|or\.kr)$|^(?:ir|investors?|newsroom|press|media|corp)\.", re.I)
+
+
+def trusted_source(url: str, domain: str = "") -> bool:
+    """기관 자신의 누리집·공공기관·기관/학술 주소·DART·기업 IR/보도자료 주소인지(언론 기사가 아닌 원 출처 후보)."""
+    h = host(url)
+    if (domain and on_domain(url, domain)) or PUBLIC_HOST.search(h) or "dart.fss.or.kr" in h:
+        return True
+    return bool(SOURCE_HOST.search(h)) and not is_news_doc(url)
 
 
 def is_news_doc(url: str, text: str = "") -> bool:
@@ -77,7 +89,8 @@ def clean_domain(raw: str) -> str:
 
 
 def host(url: str) -> str:
-    return re.sub(r"^www\.", "", urllib.parse.urlparse(url).netloc.lower())
+    """주소의 호스트(www. 와 포트 번호 뗌 — 11/15: 'm.hanaw.com:444')."""
+    return re.sub(r"^www\.", "", (urllib.parse.urlparse(url).hostname or "").lower())
 
 
 def on_domain(url: str, domain: str) -> bool:
