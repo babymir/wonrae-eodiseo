@@ -37,7 +37,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SAMPLE_SIZE = {"C": 40, "E": 40, "F": 40, "G": 30}.get(METHOD, 30)   # 뽑을 문장 수
 POOL_TARGET = 160         # 무작위로 뽑기 전에 모을 후보 수
 PAGES = 8                 # 검색어마다 볼 검색 결과 쪽 수
-SEED = {"A": 20261114, "B": 20261122, "C": 20261115, "D": 20261116, "E": 20261117, "F": 20261118, "G": 20261119}[METHOD]   # 고정 시드(재현용)
+SEED = {"A": 20261114, "B": 20261122, "C": 20261115, "D": 20261116, "E": 20261117, "F": 20261118, "G": 20261119, "H": 20261120, "I": 20261121}[METHOD]   # 고정 시드(재현용)
 SORT = "accuracy" if METHOD == "B" else "recency"
 MAX_PER_QUERY = 30        # 한 검색어가 후보를 독차지하지 않게
 SOURCE_QUERIES = {"A": ["따르면", "조사 결과", "집계", "보고서", "통계", "분석 결과", "발표"],
@@ -51,7 +51,11 @@ SOURCE_QUERIES = {"A": ["따르면", "조사 결과", "집계", "보고서", "�
                   "F": ["발표했다", "기록했다", "집계했다", "조사를 보면", "에 달했다", "상승률", "감소율",
                         "역대 최고", "점유율"],
                   "G": ["연구원 보고서", "보고서에 따르면", "실태조사 결과", "통계에 따르면", "한국은행 자료",
-                        "OECD 보고서", "공단 자료", "연구원이 발표한", "백서에 따르면", "국제기구 보고서"]}[METHOD]
+                        "OECD 보고서", "공단 자료", "연구원이 발표한", "백서에 따르면", "국제기구 보고서"],
+                  # H: 무작위(아무 기사) 새 세트, I: 인용 장면(공공·연구기관·보고서 이름이 든 문장) 새 세트 — 11/16 새벽, 보고 고치지 않음
+                  "H": ["밝혔다", "보면", "기준으로", "달한다", "웃돌았다", "밑돌았다", "차지했다", "불어났다", "급증했다"],
+                  "I": ["연구원 분석", "보고서를 보면", "조사 결과를 보면", "통계를 보면", "자료에 따르면", "백서",
+                        "공사 자료", "진흥원", "개발원", "위원회 자료"]}[METHOD]
 SOURCE_CUE = re.compile(r"따르면|조사|집계|보고서|통계|분석|발표|자료|밝혔|나타났")
 # 방식 G: 문장에 공공·연구기관·국제기구·보고서 이름이 있어야 함(인용하려는 숫자 장면)
 PUBLIC_CUE = re.compile(r"연구원|연구소|연구센터|보고서|실태조사|백서|통계청|국가데이터처|한국은행|[가-힣]+(부|처|청)(가|는|의|이|에 따르면| 자료)"
@@ -65,7 +69,7 @@ def pick_sentence(paras: list[str]) -> tuple[str, str] | None:
     for para in paras:
         for s in (s.strip() for s in re.split(r"(?<=[다요])\.\s+", para)):
             if (MIN_SENT <= len(s) <= MAX_SENT and NUMBER.search(s) and SOURCE_CUE.search(s)
-                    and not SKIP_WORDS.search(s) and (METHOD != "G" or PUBLIC_CUE.search(s))):
+                    and not SKIP_WORDS.search(s) and (METHOD not in ("G", "I") or PUBLIC_CUE.search(s))):
                 return s.rstrip(".") + ".", para
     return None
 
