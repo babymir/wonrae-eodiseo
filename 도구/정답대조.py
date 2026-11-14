@@ -124,6 +124,11 @@ def three_metrics(folder: str, results_file: str = "평가결과.json") -> dict:
         checks = {c["번호"]: c for c in json.load(open(f"{folder}/정답찾기/근거확인.json"))}
     except FileNotFoundError:
         checks = {}
+    try:   # 개발 세트에서 이미 본 원문을 쓰는 문장(문장은 다름) — '처음 보는 원문만' 값에서 뺀다(11/16)
+        seen = {c["번호"] for c in json.load(open(f"{folder}/정답찾기/이미본원문.json"))}
+    except FileNotFoundError:
+        seen = set()
+    fresh_q, fresh_u = [0, 0], [0, 0]
     wrong, useful, checkable, quote_n, quote_ok, notes = [], 0, 0, 0, 0, []
     by_source_q, by_source_u = {}, {}   # 같은 원문은 한 번만: 원문 → 그 원문을 인용한 문장들이 모두 맞았는지
     for n, res in sorted(rows.items()):
@@ -143,6 +148,9 @@ def three_metrics(folder: str, results_file: str = "평가결과.json") -> dict:
         if kind == "원문있음":
             quote_n += 1
             quote_ok += grade_ == "원문 문장 확인"
+            if n not in seen:
+                fresh_q[0] += grade_ == "원문 문장 확인"
+                fresh_q[1] += 1
             key = source_key(g, n)
             by_source_q[key] = by_source_q.get(key, True) and grade_ == "원문 문장 확인"
         # ③ 쓸모 있는 답
@@ -157,12 +165,16 @@ def three_metrics(folder: str, results_file: str = "평가결과.json") -> dict:
                 ok = not claimed and bool((res.get("안내") or {}).get("유형") or res.get("출처종류") == "의원실 자료")
                 how = "비공개 종류 안내" if ok else ""
             useful += bool(ok)
+            if n not in seen:
+                fresh_u[0] += bool(ok)
+                fresh_u[1] += 1
             key = source_key(g, n)
             by_source_u[key] = by_source_u.get(key, True) and bool(ok)
             notes.append(f"#{n} [{kind}] {'✅ ' + how if ok else '❌'} ({verdict})")
     return {"틀린단정": wrong, "원문확인": (quote_ok, quote_n), "쓸모": (useful, checkable), "건별": notes,
             "원문확인_원문별": (sum(by_source_q.values()), len(by_source_q)),
-            "쓸모_원문별": (sum(by_source_u.values()), len(by_source_u))}
+            "쓸모_원문별": (sum(by_source_u.values()), len(by_source_u)),
+            "처음본원문": (tuple(fresh_q), tuple(fresh_u)) if seen else None}
 
 
 def source_key(g: dict, n: int) -> str:
@@ -181,7 +193,16 @@ def metrics_text(m: dict) -> str:
     return (f"① 틀린 단정 {len(m['틀린단정'])}건{(' — ' + ', '.join(m['틀린단정'])) if m['틀린단정'] else ''}\n"
             f"② 원문 문장 확인 {qk}/{qn} ({qk / max(qn, 1):.0%}, 95% 구간 {lo:.0%}~{hi:.0%}) — 목표 50%\n"
             f"③ 쓸모 있는 답 {uk}/{un} ({uk / max(un, 1):.0%}, 95% 구간 {ulo:.0%}~{uhi:.0%}) — 목표 80%"
-            + _per_source(m))
+            + _per_source(m) + _fresh_only(m))
+
+
+def _fresh_only(m: dict) -> str:
+    """개발 세트에서 이미 본 원문을 쓰는 문장을 뺀 값(정답찾기/이미본원문.json 이 있을 때)."""
+    if not m.get("처음본원문"):
+        return ""
+    (qk, qn), (uk, un) = m["처음본원문"]
+    return (f"\n   처음 보는 원문만: ② {qk}/{qn} ({qk / max(qn, 1):.0%}) · ③ {uk}/{un} ({uk / max(un, 1):.0%})"
+            " — 개발 세트에서 본 원문을 쓰는 문장 제외")
 
 
 def _per_source(m: dict) -> str:
