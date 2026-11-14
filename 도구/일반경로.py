@@ -99,6 +99,24 @@ def query_lang(q: str) -> str:
 PRESS_SITES = {"gg.go.kr": "gnews.gg.go.kr"}   # 기관 누리집 → 보도자료 게시판이 있는 다른 주소
 
 
+MAX_SINGLE_KEYWORDS = 2   # 핵심어 하나씩 쓰는 짧은 검색어 수
+
+
+def diverse_queries(info: dict, domain: str) -> list[tuple[str, str]]:
+    """종류가 다른 짧은 검색어(11/15, 연구 근거: AVeriTeC 2025 — 검색어 종류를 합치면 완전한 증거 6/20 → 19/20,
+    QuanTemp++ — 짧고 서로 다른 검색 구로 Recall@100 0.51 → 0.82).
+    - 출처를 묻는 검색어: '기관 핵심어 보도자료' / '핵심어 통계 발표'
+    - 핵심어를 하나씩 쓴 짧은 검색어(기관 누리집 안, 기관 이름과)"""
+    inst, keys = info.get("기관", ""), [k for k in info.get("핵심어", []) if k][:MAX_SINGLE_KEYWORDS]
+    out = []
+    if keys:
+        out.append((f"{inst} {keys[0]} 보도자료".strip(), "ko"))
+        out.append((f"{keys[0]} {info.get('기준시점', '')} 통계 발표 자료".strip(), "ko"))
+    for k in keys:
+        out.append((f"site:{domain} {k}" if domain else f"{inst} {k}".strip(), "ko"))
+    return out
+
+
 def search(info: dict) -> list[dict]:
     """일반 경로 검색어를 동시에 보낸다. 결과는 합쳐서 돌려준다(중복 주소 제거)."""
     domain = clean_domain(info.get("기관누리집", ""))
@@ -119,6 +137,8 @@ def search(info: dict) -> list[dict]:
             qs.append((f"site:{domain} {info['원어검색어']}", lang))
     if info.get("기관"):
         qs.append((f"{info['기관']} {terms} {period} filetype:pdf".strip(), "ko"))
+    qs += diverse_queries(info, domain)
+    qs = list(dict.fromkeys(qs))
     with ThreadPoolExecutor(max(1, len(qs))) as ex:
         answers = list(ex.map(lambda q: _one(*q), qs))
     out, seen = [], set()

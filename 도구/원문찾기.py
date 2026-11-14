@@ -162,6 +162,38 @@ def _run_with_limit(result: dict, sentence: str, context: str, article_date: str
         ex.shutdown(wait=False)
 
 
+SECOND_ROUND_BEFORE_SEC = 25   # 이 시간 안에 1차가 끝났을 때만 2라운드(60초 상한 안에 끝나게)
+SECOND_ROUND_SNIPPETS = 6      # 2라운드에 쓸 다른 기사 제목·요약 수
+
+
+def _run(result: dict, sentence: str, context: str, article_date: str, force: bool,
+         prefer: dict | None = None) -> dict:
+    """1차로 못 찾으면, 같은 숫자를 다룬 다른 기사들의 제목·요약을 문맥으로 넣어 기관·보고서를 다시 뽑고 한 번 더 찾는다.
+    (11/15, 연구 근거: 1차에서 못 찾으면 재인용 기사에서 출처 이름을 얻어 반복 검색 — QuanTemp++ 저자 제안, 최대 2라운드)"""
+    first = _run_once(result, sentence, context, article_date, force, prefer)
+    if (prefer or first.get("판정") != "원출처 미확인" or first.get("출처종류") == "의원실 자료"
+            or 기록.summary()["총초"] > SECOND_ROUND_BEFORE_SEC):
+        return first
+    snippets = [f"{r.get('title', '')}: {str(r.get('description', ''))[:200]}"
+                for r in (first.get("_검색결과") or [])[:SECOND_ROUND_SNIPPETS]]
+    if not snippets:
+        return first
+    context2 = (context + " [같은 숫자를 다룬 다른 기사] " + " / ".join(snippets)).strip()
+    info1 = first.get("추출") or {}
+    print("[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음")
+    second = _run_once({k: v for k, v in result.items() if k in ("입력", "시각")}, sentence, context2,
+                       article_date, force, None)
+    info2 = second.get("추출") or {}
+    same = all(info1.get(k) == info2.get(k) for k in ("기관", "보고서", "기관누리집", "원어검색어"))
+    if second.get("판정") in FOUND | {NEAR, "통계표·원자료 인용"}:
+        second["찾은방법"] = (second.get("찾은방법") or "") + " — 2라운드(같은 숫자를 다룬 다른 기사에서 출처 이름을 얻어 다시 찾음)"
+        second["2라운드"] = {"1차추출": info1, "2차추출": info2}
+        return second
+    if same:
+        print("    2라운드도 같은 기관·보고서라 1차 결과를 씀")
+    return first
+
+
 def _guard_condition(result: dict) -> dict:
     """문장의 숫자가 기준값뿐인데(예: '중위소득의 50%에도 못 미치는') 그 기준값으로 원문을 '확인'했다면 내린다.
     기준값은 정의 문장('상대적 빈곤율이란 중위소득 50% 미만…')에 흔히 있어 주장의 원문이 아니다(11/15 헛답)."""
@@ -176,8 +208,8 @@ def _guard_condition(result: dict) -> dict:
                    "볼 수 없습니다. 주장(예: '3명 중 1명')의 원 통계를 직접 확인해 주세요.")}
 
 
-def _run(result: dict, sentence: str, context: str, article_date: str, force: bool,
-         prefer: dict | None = None) -> dict:
+def _run_once(result: dict, sentence: str, context: str, article_date: str, force: bool,
+              prefer: dict | None = None) -> dict:
     with 기록.step("입구 필터"):
         gate = {"통과": True} if force else 입구.check(sentence)
     result["입구"] = gate
@@ -221,6 +253,7 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     lead = [{"제목": r.get("title"), "주소": r.get("url")}
             for r in general if not SKIP_LEAD.search(r.get("url", ""))][:5]
     result["_검색링크"] = lead   # 시간 초과 때 보여 줄 것(후보를 고르기 전이면 검색 결과라도)
+    result["_검색결과"] = general   # 2라운드: 같은 숫자를 다룬 기사들의 제목·요약에서 기관·보고서를 다시 뽑을 때
     finder = FINDERS.get(inst)
     research = 논문찾기.is_research(sentence) or (result.get("입구") or {}).get("경로") == "학술지"
     # 기관을 몰라도 일반 경로로 찾는다(숫자·핵심어 검색에서 나온 공공기관 문서를 대조). 일반 경로는 '원문에 없음'을 내지 않아 안전
