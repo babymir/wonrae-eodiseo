@@ -95,7 +95,8 @@ def variants(number: str) -> list[Variant]:
     if pm:
         num, sign = pm.groups()
         signs = ["%p", "%포인트"] if sign != "%" else ["%"]
-        nums = {num, f"{float(num):.1f}"}
+        # 43% ↔ 43.0% 만(소수가 있는 값을 소수 한 자리로 자르지 않는다 — 11/15: '1.13%p'에서 '1.1%p'를 만들던 버그)
+        nums = {num} | ({num + ".0"} if "." not in num else set())
         for n in sorted(nums):
             for s in signs:
                 text = n + s
