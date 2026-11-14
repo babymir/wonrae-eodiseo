@@ -1,6 +1,6 @@
 """「원래 어디서?」 웹 화면 서버 (표준 라이브러리 + PyMuPDF).
 
-실행: python3 도구/웹서버.py   → 브라우저에서 http://127.0.0.1:8765
+실행: python3 도구/웹서버.py   → 브라우저에서 http://127.0.0.1:8765 (자리가 차 있으면 ORIGIN_PORT=8766)
 - POST /api/check   {"sentence", "context", "date", "force", "prefer"} → {"job": id}
   prefer: '다른 후보'에서 사람이 고른 보고서 {"제목","상세페이지","PDF주소","키"} (지원 기관 PDF 주소만)
   force: 입구 필터가 '통계 문장 아님'이라 해도 확인(화면의 '그래도 확인하기')
@@ -14,6 +14,7 @@
 import contextlib
 import io
 import json
+import os
 import re
 import sys
 import threading
@@ -28,7 +29,7 @@ from 기사받기 import fetch_article, valid_url
 from 격리실행 import run_isolated
 from 원문찾기 import save
 
-HOST, PORT = "127.0.0.1", 8765
+HOST, PORT = "127.0.0.1", int(os.environ.get("ORIGIN_PORT", "8765"))   # 자리가 차 있으면 ORIGIN_PORT=8766
 WEB_DIR = Path(__file__).resolve().parent / "웹"
 SAFE_PDF = re.compile(r"^[\w가-힣.\-]+\.pdf$")
 ZOOM = 2.0                 # 쪽 그림 해상도 배율

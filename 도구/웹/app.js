@@ -18,6 +18,15 @@ const VERDICT = {
 // 공개 문서 원문이 없는 종류(시세·업계 자료)는 '못 찾음'이 아니라 '원문이 문서로 없음'으로 보여 준다
 const NO_PUBLIC_DOC = { "시세·조회 화면 자료": "시세·조회 화면에만 있는 숫자입니다 — 확인할 화면을 알려 드립니다",
   "업계·관계자 자료": "업계·관계자가 기자에게 준 숫자로 보입니다 — 공개 문서 원문이 없을 수 있습니다" };
+// 원문을 못 찾았을 때 제목: 실제로 보여 줄 것이 있는 만큼만 말한다(11/16: 안내가 없는데 '확인할 곳을 알려 드립니다'로 나옴)
+function noneHead(r, kind) {
+  if (r["시간초과"]) return "시간 안에 확인을 마치지 못했습니다 — 지금까지 찾은 후보를 보여 드립니다";
+  if (NO_PUBLIC_DOC[kind]) return NO_PUBLIC_DOC[kind];
+  if (r["출처종류"] === "의원실 자료") return "국회의원실이 받은 자료로 보입니다 — 공개 원문이 없을 수 있습니다";
+  if ((r["안내"] || {})["원문위치"]?.length) return "원문이 있을 곳은 찾았지만 숫자는 확인하지 못했습니다 — 아래 위치에서 직접 확인해 주세요";
+  if (r["안내"]) return "원문을 찾지 못했습니다 — 확인할 곳을 알려 드립니다";
+  return "원문을 찾지 못했습니다";
+}
 // 칸별 비교(2단 판정): 판정 모델이 칸마다 답한 것
 const AXIS_NAMES = { "지표": "지표", "대상": "대상", "시점": "시점", "비교기준": "비교 기준", "수준변화": "수준·변화량" };
 
@@ -288,13 +297,15 @@ function render(r, steps, secs, partial) {
 
   // 확인 결과 표: 판정 / 원 보고서 / 확인한 것
   const kind = (r["안내"] || {})["유형"];
-  const headText = r["판정"] === "원출처 미확인" && NO_PUBLIC_DOC[kind] ? NO_PUBLIC_DOC[kind] : v.head;
+  const headText = r["판정"] === "원출처 미확인" ? noneHead(r, kind) : v.head;
+  const spotOnly = r["판정"] === "원출처 미확인" && !r["시간초과"] && !!(r["안내"] || {})["원문위치"]?.length;
   const head = h("strong", { class: `verdict-text ${v.cls}`, tabindex: "-1" },
-    v.group ? `[${v.group}] ` : "", headText);
+    v.group ? `[${spotOnly ? "원문 위치만 찾음" : v.group}] ` : "", headText);
   const ok = /^(\d)\/\1$/.test(String(r["기준시점확인"] || ""));  // "2/2" 처럼 다 맞았을 때만
   const source = title ? [`${info["기관"] || ""} 「${title}」`,
     view ? (isWeb(pdf) ? ", 웹 페이지" : `, PDF ${view.page}쪽${view.note}`) : "",
-    ok && info["기준시점"] ? ` (기준 시점 ${info["기준시점"]})` : ""].join("") : "찾지 못함";
+    ok && info["기준시점"] ? ` (기준 시점 ${info["기준시점"]})` : ""].join("")
+    : spotOnly ? "원문이 있을 곳만 찾음(아래 '확인할 곳')" : "찾지 못함";
   const calc = r["계산확인"] || {};
   const rows = [
     row("판정", head, h("p", { class: "verdict-sub" }, summaryText(r))),
@@ -352,7 +363,9 @@ function render(r, steps, secs, partial) {
     rows.push(row("찾아본 보고서", h("ul", { class: "plain" }, r["확인한문서"].map((t) => h("li", {}, cleanTitle(t))))));
   }
   if (r["후보"]?.length) {
-    rows.push(row("찾아본 곳", h("ul", { class: "plain" }, r["후보"].map((t) => h("li", {}, link(t["주소"], t["제목"]))))));
+    const none = r["판정"] === "원출처 미확인";   // 못 찾았을 때 후보는 원문이 아님을 분명히
+    rows.push(row("찾아본 곳", none ? h("p", { class: "muted" }, "원문으로 확인되지 않은 문서입니다(참고용).") : null,
+      h("ul", { class: "plain" }, r["후보"].map((t) => h("li", {}, link(t["주소"], t["제목"]))))));
   }
   if (r["사람이고른보고서"]) rows.splice(2, 0, row("고른 보고서", h("p", { class: "muted" }, `직접 고른 「${cleanTitle(r["사람이고른보고서"])}」로 다시 확인한 결과입니다.`)));
   parts.push(h("table", { class: "summary" }, h("caption", {}, "확인 결과"), h("tbody", {}, rows)));

@@ -40,7 +40,7 @@
 cp .env.example .env      # LINER_API_KEY, DART_API_KEY(선택, opendart.fss.or.kr 무료 발급)
 
 # 2) 화면
-python3 도구/웹서버.py    # 브라우저에서 http://127.0.0.1:8765
+python3 도구/웹서버.py    # 브라우저에서 http://127.0.0.1:8765 (자리가 차 있으면 ORIGIN_PORT=8766 python3 도구/웹서버.py)
 
 # 3) 명령줄로 한 문장
 python3 도구/원문찾기.py "쏘카는 3분기 연결 기준 매출 1352억원, 영업이익 98억원을 기록했다고 13일 밝혔다."
