@@ -41,32 +41,43 @@ def run_isolated(sentence: str, context: str = "", date: str = "", force: bool =
                                  "prefer": prefer}, ensure_ascii=False))
     proc.stdin.close()
     box: dict = {"result": None, "candidates": []}
+    done = threading.Event()   # 결과 줄이 오면 바로 알림
 
     def reader() -> None:
         for line in proc.stdout:
             line = line.rstrip("\n")
             if line.startswith(RESULT):
                 box["result"] = json.loads(line[len(RESULT):])
+                done.set()
             elif line.startswith(EVENT):
                 ev = json.loads(line[len(EVENT):])
                 if ev.get("종류") == "후보":
                     box["candidates"] = ev.get("내용") or []
                 if on_event:
                     on_event(ev.get("종류"), ev.get("내용"))
-            elif on_line and line.strip():
+            elif on_line and line.strip() and not done.is_set():
                 on_line(line)
+        done.set()   # 결과 없이 끝남(오류 등)
 
-    t = threading.Thread(target=reader, daemon=True)
+    def reaper() -> None:
+        """결과를 낸 뒤에도 자식은 미리 보낸 Deep Research 답을 마저 받아 저장하고 끝난다(11/16: 이걸 기다려
+        답이 35초에 나왔는데 105초로 보였음). 상한+여유가 지나면 끝낸다."""
+        try:
+            proc.wait(timeout=max(1, limit + GRACE_SEC - (time.time() - start)))
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait()
+
     start = time.time()
-    t.start()
-    try:
-        proc.wait(timeout=limit + GRACE_SEC)
-    except subprocess.TimeoutExpired:
+    threading.Thread(target=reader, daemon=True).start()
+    finished = done.wait(timeout=limit + GRACE_SEC)
+    if not finished:
         proc.kill()
         proc.wait()
         if on_line:
             on_line(f"    시간 상한 {limit:.0f}초(+{GRACE_SEC}초)를 넘겨 원문 찾기를 끝냄")
-    t.join(timeout=5)
+    else:
+        threading.Thread(target=reaper, daemon=True).start()
     if box["result"] is not None:
         return box["result"]
     return {"입력": sentence, "판정": "원출처 미확인", "시간초과": True,
