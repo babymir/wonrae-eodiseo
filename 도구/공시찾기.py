@@ -1,0 +1,246 @@
+"""기업 숫자 → 금융감독원 전자공시(DART) 원문(11/14).
+
+기업 실적·사업 숫자의 원문은 DART 분기·반기·사업보고서와 잠정실적 공시다. OpenDART API(무료 인증키,
+.env 의 DART_API_KEY)로 회사 → 기사 날짜 전후 공시 → 원문(document.xml, zip 안 XML)을 받아 글자로 대조한다.
+- 회사 목록(corpCode.xml, 약 12만 곳)은 작업/캐시/dart_회사목록.json 에 저장해 CORP_CACHE_DAYS 일마다 새로 받는다
+- 원문 글자는 작업/웹문서/gen_dart_<접수번호>.txt (일반경로.fetch_doc 이 이미 받은 파일로 그대로 씀)
+- 사람에게 보여 줄 주소: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=<접수번호>
+"""
+import html as html_lib
+import io
+import json
+import re
+import time
+import urllib.parse
+import zipfile
+from datetime import date, timedelta
+from pathlib import Path
+
+from 기관별 import Candidate, fetch_bytes
+from 일반경로 import WEB_DIR, normalize_numbers
+from 후보문서 import article_day
+
+ROOT = Path(__file__).resolve().parent.parent
+ENV_FILE = ROOT / ".env"
+API = "https://opendart.fss.or.kr/api/"
+VIEW = "https://dart.fss.or.kr/dsaf001/main.do?rcpNo={no}"
+CORP_CACHE = ROOT / "작업" / "캐시" / "dart_회사목록.json"
+CORP_CACHE_DAYS = 7
+DAYS_BEFORE, DAYS_AFTER = 120, 3   # 기사 날짜 앞뒤로 찾을 공시 기간
+MAX_REPORTS = 3
+REPORT_NAME = re.compile(r"분기보고서|반기보고서|사업보고서|영업\(잠정\)실적|매출액또는손익구조|결산실적")
+# 실적이 아닌 회사 사건(주총·증자·계약 등): 그 사건 공시를 찾는다(11/14 무작위2: 오스코텍 임시주총 정관 변경)
+EVENT_WORDS = {
+    r"주주총회|주총|정관|이사\s*선임|감사\s*선임": r"주주총회|정관",
+    r"유상증자|무상증자|증자": r"증자",
+    r"자사주|자기주식": r"자기주식",
+    r"합병|분할|인수": r"합병|분할|양수|인수",
+    r"배당": r"배당",
+    r"공급계약|수주|계약\s*체결": r"공급계약|계약",
+    r"전환사채|CB|신주인수권": r"전환사채|신주인수권",
+}
+MONEY_WORDS = re.compile(r"매출|영업이익|영업손실|순이익|순손실|당기순|실적|분기|반기|보고서|공시|흑자|적자|고객|배당|자산|부채")
+NOT_COMPANY = re.compile(r"거래소|공사|공단|협회|연구원|연구소|정부|위원회|증권$|투자증권|[청부처]$")
+
+
+def _key() -> str:
+    if ENV_FILE.exists():
+        for line in ENV_FILE.read_text(encoding="utf-8").splitlines():
+            if line.startswith("DART_API_KEY="):
+                return line.split("=", 1)[1].strip()
+    return ""
+
+
+def _api(path: str, **params) -> bytes:
+    key = _key()
+    if not key:
+        raise RuntimeError("DART 인증키가 없습니다(.env 에 DART_API_KEY=… 를 넣어 주세요)")
+    return fetch_bytes(API + path + "?" + urllib.parse.urlencode({"crtfc_key": key, **params}))
+
+
+def _corps() -> dict[str, list[str]]:
+    """회사 이름 → [고유번호, 종목코드]. 상장사를 우선."""
+    if CORP_CACHE.exists() and time.time() - CORP_CACHE.stat().st_mtime < CORP_CACHE_DAYS * 86400:
+        return json.loads(CORP_CACHE.read_text(encoding="utf-8"))
+    z = zipfile.ZipFile(io.BytesIO(_api("corpCode.xml")))
+    xml = z.read(z.namelist()[0]).decode("utf-8", "replace")
+    corps: dict[str, list[str]] = {}
+    for code, name, stock in re.findall(r"<corp_code>(\d+)</corp_code>\s*<corp_name>([^<]+)</corp_name>\s*"
+                                        r"(?:<corp_eng_name>[^<]*</corp_eng_name>\s*)?<stock_code>([^<]*)</stock_code>", xml):
+        name, stock = name.strip(), stock.strip()
+        if name not in corps or (stock and not corps[name][1]):
+            corps[name] = [code, stock]
+    CORP_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    CORP_CACHE.write_text(json.dumps(corps, ensure_ascii=False), encoding="utf-8")
+    print(f"    DART 회사 목록 새로 받음: {len(corps)}곳")
+    return corps
+
+
+def find_corp(name: str) -> tuple[str, str] | None:
+    """(고유번호, 정식 이름). 이름이 정확히 같거나 '(주)'·'주식회사'를 뗀 이름이 같을 때만."""
+    clean = re.sub(r"\(주\)|㈜|주식회사|\s", "", name or "")
+    if not clean or NOT_COMPANY.search(clean):
+        return None
+    corps = _corps()
+    hit = corps.get(clean) or corps.get(name.strip())
+    return (hit[0], clean) if hit else None
+
+
+def is_company_number(info: dict, sentence: str) -> bool:
+    return bool(MONEY_WORDS.search(sentence)) and find_corp(info.get("기관", "")) is not None
+
+
+UNIT_MARK = re.compile(r"단위\s*[:：]?\s*(백만원|천원|원)")
+UNIT_SIZE = {"원": 1, "천원": 10**3, "백만원": 10**6}
+BIG_NUMBER = re.compile(r"(?<![\d.,])\(?-?\d{1,3}(?:,\d{3}){1,5}\)?(?![\d,])")
+
+
+def korean_money(won: int) -> str:
+    """원 단위 정수 → 기사식 표기('1조246억', '19억3300만'). 0인 묶음은 뺀다."""
+    jo, rest = divmod(won, 10**12)
+    eok, rest = divmod(rest, 10**8)
+    man = rest // 10**4
+    return (f"{jo}조" if jo else "") + (f"{eok}억" if eok else "") + (f"{man}만" if man else "")
+
+
+def money_forms(won: int) -> list[str]:
+    """기사가 쓸 법한 반올림·버림 표기들(억 반올림·버림, 천만·백만 반올림)."""
+    forms = []
+    for step, how in ((10**8, round), (10**8, int), (10**7, round), (10**6, round)):
+        v = how(won / step) * step
+        if v >= 10**8:
+            forms.append(korean_money(v) + "원")
+    return list(dict.fromkeys(forms))
+
+
+def add_money_forms(text: str) -> str:
+    """재무표 숫자 옆에 '〔환산 1,352억원·1352억원〕'을 붙인다(11/14 무작위3: 쏘카 '1352억원' ↔ '135,195,115,866'(단위 원)).
+    표 머리 '(단위 : 원/천원/백만원)'을 보고 그 뒤 숫자를 원으로 바꿔 억 이상만."""
+    marks = [(m.start(), UNIT_SIZE[m.group(1)]) for m in UNIT_MARK.finditer(text)]
+    if not marks:
+        return text
+    out, last, mi, size = [], 0, 0, 0
+    for m in BIG_NUMBER.finditer(text):
+        while mi < len(marks) and marks[mi][0] < m.start():
+            size = marks[mi][1]
+            mi += 1
+        if not size:
+            continue
+        won = int(re.sub(r"[^\d]", "", m.group())) * size
+        if won < 10**8:
+            continue
+        out.append(text[last:m.end()] + "〔환산 " + "·".join(money_forms(won)) + "〕")
+        last = m.end()
+    return "".join(out) + text[last:]
+
+
+TABLE = re.compile(r"<TABLE\b.*?</TABLE>", re.S | re.I)
+ROW = re.compile(r"<TR\b.*?</TR>", re.S | re.I)
+CELL = re.compile(r"<(TH|TD|TE|TU)\b([^>]*)>(.*?)</\1>", re.S | re.I)
+NUM_CELL = re.compile(r"^\(?-?[\d,.]+\)?$")
+
+
+def _cell_text(raw: str) -> str:
+    return re.sub(r"\s+", " ", html_lib.unescape(re.sub(r"<[^>]+>", " ", raw))).replace("\u3000", " ").strip()
+
+
+def flatten_table(xml: str) -> str:
+    """공시 표 한 개 → 줄마다 '행 이름 | 열 이름: 값 | …'(11/14 마키나락스: 표가 펴지면 '3개월·누적' 열 머리가
+    값과 떨어져 판정 모델이 어느 열 숫자인지 몰랐음). 열 이름은 표 머리(THEAD 또는 칸이 모두 TH 인 앞줄)에서만 만든다.
+    머리가 없는 표(신고서 양식 등)는 칸을 ' | '로 이은 줄 그대로."""
+    grid: list[list[str]] = []
+    is_head: list[bool] = []
+    carry: dict[int, tuple[str, int]] = {}   # 열 번호 → (글자, 남은 줄 수) — ROWSPAN
+    thead_end = xml.upper().find("</THEAD>")
+
+    def take_carry(cells: list[str], col: int) -> int:
+        nonlocal carry
+        while col in carry:
+            text, left = carry[col]
+            cells.append(text)
+            carry = {**carry, col: (text, left - 1)} if left > 1 else {k: v for k, v in carry.items() if k != col}
+            col += 1
+        return col
+
+    for m in ROW.finditer(xml):
+        row = m.group(0)
+        found = CELL.findall(row)
+        cells, col = [], 0
+        for _, attrs, raw in found:
+            col = take_carry(cells, col)
+            text = _cell_text(raw)
+            span = int((re.search(r'COLSPAN="(\d+)"', attrs, re.I) or [0, 1])[1])
+            rows = int((re.search(r'ROWSPAN="(\d+)"', attrs, re.I) or [0, 1])[1])
+            for _ in range(span):
+                cells.append(text)
+                if rows > 1:
+                    carry[col] = (text, rows - 1)
+                col += 1
+        take_carry(cells, col)
+        if cells:
+            grid.append(cells)
+            in_thead = 0 <= m.start() < thead_end
+            is_head.append(in_thead or (bool(found) and all(t.upper() == "TH" for t, _, _ in found)))
+    n_head = next((i for i, h in enumerate(is_head) if not h), len(grid))
+    if n_head == 0 or n_head >= len(grid):   # 머리 없는 표 / 머리뿐인 표: 칸을 이은 줄 그대로
+        return "\n" + "\n".join(" | ".join(dict.fromkeys(c for c in r if c)) for r in grid) + "\n"
+    names = {i: " ".join(dict.fromkeys(r[i] for r in grid[:n_head] if i < len(r) and r[i]))
+             for i in range(1, max(len(r) for r in grid))}
+    lines = []
+    for r in grid[n_head:]:
+        vals = [f"{names.get(i) + ': ' if names.get(i) else ''}{c}" for i, c in enumerate(r[1:], start=1) if c]
+        lines.append(" | ".join([r[0], *vals]) if vals else r[0])
+    return "\n" + "\n".join(lines) + "\n"
+
+
+def _doc_text(rcept_no: str) -> str:
+    z = zipfile.ZipFile(io.BytesIO(_api("document.xml", rcept_no=rcept_no)))
+    parts = []
+    for n in z.namelist():
+        xml = z.read(n).decode("utf-8", "replace")
+        xml = TABLE.sub(lambda m: flatten_table(m.group(0)), xml)   # 표는 줄마다 '행 | 열: 값'
+        xml = re.sub(r"</(?:P|TR|TITLE|TABLE)>", "\n", xml, flags=re.I)   # 문단·표 줄 끝에서 줄바꿈
+        parts.append(re.sub(r"<[^>]+>", " ", xml))
+    text = html_lib.unescape("\n".join(parts))
+    text = re.sub(r"영업수익|수익\(매출액\)", "영업수익(매출액)", text)   # 기사는 '매출'이라 씀
+    return add_money_forms(normalize_numbers(re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", text))))
+
+
+def search(info: dict, sentence: str, article_date: str) -> list[Candidate]:
+    """기사 날짜 앞뒤 공시 중 정기보고서·잠정실적 원문(최신부터 MAX_REPORTS 개)."""
+    try:
+        corp = find_corp(info.get("기관", ""))
+        events = [name for words, name in EVENT_WORDS.items() if re.search(words, sentence)]
+        if not corp or not (MONEY_WORDS.search(sentence) or events):
+            return []
+        day = article_day(article_date) or date.today()
+        bgn, end = day - timedelta(days=DAYS_BEFORE), day + timedelta(days=DAYS_AFTER)
+        data = json.loads(_api("list.json", corp_code=corp[0], bgn_de=bgn.strftime("%Y%m%d"),
+                               end_de=end.strftime("%Y%m%d"), page_count=100))
+    except (RuntimeError, ValueError, zipfile.BadZipFile) as e:  # DART 실패는 다른 경로로 계속(이유 출력)
+        print(f"    DART 공시 찾기 실패: {e}")
+        return []
+    if data.get("status") not in ("000", "013"):   # 013 = 조회된 데이터 없음
+        print(f"    DART 공시 목록 오류: {data.get('status')} {data.get('message')}")
+        return []
+    wanted = re.compile("|".join([REPORT_NAME.pattern, *events])) if events else REPORT_NAME
+    # 사건 공시가 있으면 그것을 먼저(정기보고서는 뒤로)
+    reports = sorted([x for x in data.get("list", []) if wanted.search(x.get("report_nm", ""))],
+                     key=lambda x: not (events and re.search("|".join(events), x.get("report_nm", ""))))[:MAX_REPORTS]
+    print(f"    DART '{corp[1]}' 공시 {len(data.get('list', []))}건 중 보고서·실적 {len(reports)}건")
+    out = []
+    for x in reports:
+        report = re.sub(r"\s+", " ", x["report_nm"]).strip()   # 공시 이름 속 긴 공백 정리
+        no, title = x["rcept_no"], f"{corp[1]} {report} ({x['rcept_dt']})"
+        key = f"gen_dart_{no}"
+        path = WEB_DIR / f"{key}.txt"
+        if not path.exists():
+            try:
+                text = _doc_text(no)
+            except (RuntimeError, zipfile.BadZipFile) as e:
+                print(f"    DART 원문 받기 실패({title}): {e}")
+                continue
+            WEB_DIR.mkdir(parents=True, exist_ok=True)
+            path.write_text(text, encoding="utf-8")
+        out.append(Candidate(title, VIEW.format(no=no), VIEW.format(no=no), key))
+    return out

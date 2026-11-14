@@ -1,0 +1,116 @@
+[자본시장연구원] '자본시장연구원 보고서에 따르면' (past_week) → 검색 17건, 문장 1건
+[자본시장연구원] '자본시장연구원 보고서에 따르면' (past_month) → 검색 15건, 문장 1건
+[자본시장연구원] '자본시장연구원 보고서에 따르면' (past_year) → 검색 18건, 문장 0건
+[자본시장연구원] '자본시장연구원 연구위원은' (past_week) → 검색 20건, 문장 1건
+[자본시장연구원] '자본시장연구원 연구위원은' (past_month) → 검색 19건, 문장 0건
+[자본시장연구원] '자본시장연구원 연구위원은' (past_year) → 검색 20건, 문장 1건
+[자본시장연구원] '자본연 보고서' (past_week) → 검색 12건, 문장 0건
+[자본시장연구원] '자본연 보고서' (past_month) → 검색 19건, 문장 0건
+[자본시장연구원] '자본연 보고서' (past_year) → 검색 19건, 문장 1건
+    기사 받기 실패: https://kr.investing.com/equities/fine-semitech-corp — 기관 누리집 받기 실패(HTTP 403): https://kr.investing.com/equities/fine-semitech-corp
+[자본시장연구원] '자본시장연구원 이슈보고서' (past_week) → 검색 12건, 문장 0건
+[자본시장연구원] '자본시장연구원 이슈보고서' (past_month) → 검색 16건, 문장 0건
+[자본시장연구원] '자본시장연구원 이슈보고서' (past_year) → 검색 20건, 문장 0건
+[자본시장연구원] '자본시장연구원 자본시장포커스' (past_week) → 검색 4건, 문장 0건
+[자본시장연구원] '자본시장연구원 자본시장포커스' (past_month) → 검색 17건, 문장 0건
+    기사 받기 실패: https://www.mordorintelligence.kr/industry-reports/enterprise-information-archiving-market — 기관 누리집 받기 실패(HTTP 403): https://www.mordorintelligence.kr/industry-reports/enterprise-information-archiving-market
+[자본시장연구원] '자본시장연구원 자본시장포커스' (past_year) → 검색 20건, 문장 0건
+    기사 받기 실패: https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=572E02530D912A8260168BBE7AE23952.Hyper?no=106043&siteId=2 — 기관 누리집 받기 실패(HTTP 404): https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=572E02530D912A8260168BBE7AE23952.Hyper?no=106043&siteId=2
+[국가데이터처] '국가데이터처 고용동향' (past_week) → 검색 17건, 문장 3건
+    기사 받기 실패: https://www.mordorintelligence.kr/industry-reports/data-center-technical-workforce-market — 기관 누리집 받기 실패(HTTP 403): https://www.mordorintelligence.kr/industry-reports/data-center-technical-workforce-market
+    기사 받기 실패: https://kr.investing.com/news/stock-market-news/article-93CH-2137418 — 기관 누리집 받기 실패(HTTP 403): https://kr.investing.com/news/stock-market-news/article-93CH-2137418
+[국가데이터처] '국가데이터처 고용동향' (past_month) → 검색 20건, 문장 0건
+    기사 받기 실패: https://www.mordorintelligence.kr/industry-reports/united-states-data-center-construction-market — 기관 누리집 받기 실패(HTTP 403): https://www.mordorintelligence.kr/industry-reports/united-states-data-center-construction-market
+[국가데이터처] '국가데이터처 고용동향' (past_year) → 검색 20건, 문장 2건
+    기사 받기 실패: https://kr.investing.com/news/stock-market-news/article-2168339 — 기관 누리집 받기 실패(HTTP 403): https://kr.investing.com/news/stock-market-news/article-2168339
+[국가데이터처] '국가데이터처 소비자물가동향' (past_week) → 검색 19건, 문장 0건
+    기사 받기 실패: https://kr.investing.com/economic-calendar/south-korean-cpi-467 — 기관 누리집 받기 실패(HTTP 403): https://kr.investing.com/economic-calendar/south-korean-cpi-467
+[국가데이터처] '국가데이터처 소비자물가동향' (past_month) → 검색 19건, 문장 2건
+[국가데이터처] '국가데이터처 소비자물가동향' (past_year) → 검색 15건, 문장 0건
+[국가데이터처] '국가데이터처 인구동향' (past_week) → 검색 20건, 문장 1건
+[국가데이터처] '국가데이터처 인구동향' (past_month) → 검색 18건, 문장 1건
+[국가데이터처] '국가데이터처 인구동향' (past_year) → 검색 18건, 문장 0건
+    기사 받기 실패: https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=BDED7732BFFC4D7144ABE795009ED811.Hyper?no=106069&siteId=1 — 기관 누리집 받기 실패(HTTP 404): https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=BDED7732BFFC4D7144ABE795009ED811.Hyper?no=106069&siteId=1
+[국가데이터처] '국가데이터처 가계동향' (past_week) → 검색 19건, 문장 2건
+[국가데이터처] '국가데이터처 가계동향' (past_month) → 검색 19건, 문장 5건
+[국가데이터처] '국가데이터처 가계동향' (past_year) → 검색 17건, 문장 4건
+    기사 받기 실패: https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=C57A7B8F0D39AA43E1667C8011D7FCF1.Hyper?no=106066&siteId=1 — 기관 누리집 받기 실패(HTTP 404): https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=C57A7B8F0D39AA43E1667C8011D7FCF1.Hyper?no=106066&siteId=1
+[국가데이터처] '국가데이터처 산업활동동향' (past_week) → 검색 20건, 문장 1건
+    기사 받기 실패: https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=19EB0170A6F7382043629AC2D546BB51.Hyper?no=105792&siteId=1 — 기관 누리집 받기 실패(HTTP 404): https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=19EB0170A6F7382043629AC2D546BB51.Hyper?no=105792&siteId=1
+[국가데이터처] '국가데이터처 산업활동동향' (past_month) → 검색 19건, 문장 2건
+[국가데이터처] '국가데이터처 산업활동동향' (past_year) → 검색 19건, 문장 2건
+[국가데이터처] '국가데이터처 사회조사' (past_week) → 검색 20건, 문장 0건
+[국가데이터처] '국가데이터처 사회조사' (past_month) → 검색 20건, 문장 0건
+    기사 받기 실패: https://www.mordorintelligence.kr/industry-reports/artificial-intelligence-ai-data-center-market — 기관 누리집 받기 실패(HTTP 403): https://www.mordorintelligence.kr/industry-reports/artificial-intelligence-ai-data-center-market
+[국가데이터처] '국가데이터처 사회조사' (past_year) → 검색 19건, 문장 0건
+[국가데이터처] '국가데이터처 경제활동인구조사' (past_week) → 검색 20건, 문장 1건
+[국가데이터처] '국가데이터처 경제활동인구조사' (past_month) → 검색 20건, 문장 2건
+[국가데이터처] '국가데이터처 경제활동인구조사' (past_year) → 검색 19건, 문장 0건
+    기사 받기 실패: http://www.gdaily.kr/bbs/board.php?bo_table=news&wr_id=22769 — 기관 누리집 받기 실패(HTTP 403): http://www.gdaily.kr/bbs/board.php?bo_table=news&wr_id=22769
+[국가데이터처] '국가데이터처 가계금융복지조사' (past_week) → 검색 11건, 문장 0건
+    기사 받기 실패: https://www.busandabom.net/bofels/sisa_jaryo11.pdf — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>
+[국가데이터처] '국가데이터처 가계금융복지조사' (past_month) → 검색 20건, 문장 1건
+[국가데이터처] '국가데이터처 가계금융복지조사' (past_year) → 검색 17건, 문장 1건
+    기사 받기 실패: https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=0F7D89BE617E00F0D7993F5C7C4BB327.Hyper?no=106094&siteId=2 — 기관 누리집 받기 실패(HTTP 404): https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=0F7D89BE617E00F0D7993F5C7C4BB327.Hyper?no=106094&siteId=2
+[국가데이터처] '국가데이터처 온라인쇼핑동향' (past_week) → 검색 19건, 문장 0건
+    기사 받기 실패: https://www.mordorintelligence.kr/industry-reports/apparel-market — 기관 누리집 받기 실패(HTTP 403): https://www.mordorintelligence.kr/industry-reports/apparel-market
+    기사 받기 실패: https://www.fortunebusinessinsights.com/ko/e-commerce-apparel-market-117963 — 기관 누리집 받기 실패(HTTP 403): https://www.fortunebusinessinsights.com/ko/e-commerce-apparel-market-117963
+[국가데이터처] '국가데이터처 온라인쇼핑동향' (past_month) → 검색 20건, 문장 1건
+[국가데이터처] '국가데이터처 온라인쇼핑동향' (past_year) → 검색 17건, 문장 0건
+[국가데이터처] '국가데이터처 주택소유통계' (past_week) → 검색 19건, 문장 0건
+[국가데이터처] '국가데이터처 주택소유통계' (past_month) → 검색 19건, 문장 3건
+[국가데이터처] '국가데이터처 주택소유통계' (past_year) → 검색 15건, 문장 2건
+[한국보건사회연구원] '한국보건사회연구원 보고서에 따르면' (past_week) → 검색 20건, 문장 5건
+[한국보건사회연구원] '한국보건사회연구원 보고서에 따르면' (past_month) → 검색 19건, 문장 1건
+[한국보건사회연구원] '한국보건사회연구원 보고서에 따르면' (past_year) → 검색 20건, 문장 0건
+    기사 받기 실패: https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=2A362BB7DB7DDA39C6789E97E1D1663B.Hyper?no=106113&siteId=1 — 기관 누리집 받기 실패(HTTP 404): https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do%3BJSESSIONID_KITA=2A362BB7DB7DDA39C6789E97E1D1663B.Hyper?no=106113&siteId=1
+[한국보건사회연구원] '한국보건사회연구원 연구위원은' (past_week) → 검색 18건, 문장 0건
+[한국보건사회연구원] '한국보건사회연구원 연구위원은' (past_month) → 검색 20건, 문장 2건
+[한국보건사회연구원] '한국보건사회연구원 연구위원은' (past_year) → 검색 20건, 문장 0건
+    기사 받기 실패: https://www.cnfamily.kr:57980/bbs/board.php?bo_table=report&wr_id=188&page=19 — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cnfamily.kr'. (_ssl.c:1081)>
+    기사 받기 실패: https://www.cnfamily.kr:57980/bbs/board.php?bo_table=report&wr_id=150&page=16 — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cnfamily.kr'. (_ssl.c:1081)>
+[한국보건사회연구원] '보사연 보고서' (past_week) → 검색 18건, 문장 1건
+[한국보건사회연구원] '보사연 보고서' (past_month) → 검색 17건, 문장 0건
+[한국보건사회연구원] '보사연 보고서' (past_year) → 검색 18건, 문장 0건
+[한국보건사회연구원] '보건복지 이슈앤포커스' (past_week) → 검색 12건, 문장 0건
+[한국보건사회연구원] '보건복지 이슈앤포커스' (past_month) → 검색 14건, 문장 0건
+    기사 받기 실패: https://www.unipress.co.kr/news/articleView.html?idxno=15313 — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>
+[한국보건사회연구원] '보건복지 이슈앤포커스' (past_year) → 검색 20건, 문장 2건
+[한국보건사회연구원] '보건복지포럼 보고서' (past_week) → 검색 10건, 문장 1건
+[한국보건사회연구원] '보건복지포럼 보고서' (past_month) → 검색 19건, 문장 1건
+    기사 받기 실패: https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=67948 — 기관 누리집 받기 실패(HTTP 403): https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=67948
+[한국보건사회연구원] '보건복지포럼 보고서' (past_year) → 검색 20건, 문장 0건
+⚠ 자본시장연구원: 후보 5건뿐 (목표 10건)
+모자란 5건은 다른 기관 남은 후보로 보충
+
+후보 54건 중 30건 선택 → 작업/평가/평가대상.json
+   1. [자본시장연구원] 이석훈 자본시장연구원 선임연구위원이 상장 후 5년이 지난 특례기업 124곳의 주가를 같은 기간 코스닥지수와 비교한 결과, 평균으로는 특례기업이 지수보다 8.4% 
+   2. [자본시장연구원] 한편 , 장기적인 투자수요를 추정한 자본시장연구원은 국내에서 2050 년까지 탄소중립을 달성하기 위한 온실가스 감축 투자수요를 할인율에 따라 1,722 조 ~2,
+   3. [자본시장연구원] (서울=연합뉴스) 황철환 기자 = '스튜어드십 코드'(수탁자 책임 원칙)에 참여 중인 국내 기관투자자 가운데 자발적으로 이행보고서를 발간 중인 경우가 10곳에 불
+   4. [자본시장연구원] 현재 글로벌 스테이블코인 시장의 99% 이상은 달러 기반(USDT, USDC 등)이다.
+   5. [자본시장연구원] 유가증권시장에서 전망공시를 한 기업 비율은 2008년 약 21%에서 2025년 약 7%로 낮아졌다.
+   6. [국가데이터처] 18일 국가데이터처의 가계금융복지조사 마이크로데이터를 분석한 결과 지난해 우리나라 상위 0.1% 가구의 순자산 총액은 357조 2000억 원으로 집계됐다.
+   7. [국가데이터처] 국가데이터처가 발표한 9월 산업활동동향에 따르면 전산업생산은 전월보다 3.0% 증가해 15년 6개월 만에 최대 증가폭을 기록했다.
+   8. [국가데이터처] 데이터처의 '2026년 8월 경제활동인구 조사 비경제활동인구 부가조사'에 따르면 20대 '쉬었음' 인구는 37만7천명, 30대는 30만3천명으로 20·30대를 합
+   9. [국가데이터처] 12일 국가데이터처가 발표한 '7월 고용동향'에 따르면 15세 이상 취업자는 2913만6000명으로, 1년 전보다 10만8000명 증가했지만 15∼29세 청년층 
+  10. [국가데이터처] 국가데이터처가 18일 발표한 ‘2026년 2월 고용동향’을 보면 15세 이상 취업자 수는 2841만3000명으로 1년 전보다 23만4000명 늘었다.
+  11. [국가데이터처] 국가데이터처가 오늘(26일) 발표한 '2025년 4분기 가계동향 조사 결과'를 보면 지난해 4분기 가구당 월평균 소득은 542만 2천 원으로 1년 전보다 4% 늘
+  12. [국가데이터처] 국가데이터처가 10월 1일 발표한 '2026년 8월 온라인쇼핑동향'에 따르면 8월 온라인쇼핑 거래액은 24조2118억원으로 1년 전보다 7.3% 늘었다.
+  13. [국가데이터처] 18일 국가데이터처 국가통계포털(KOSIS) 가계동향조사에 따르면 올해 2분기 전세 가구의 월평균 이자 비용은 21만1965원으로 집계됐다.
+  14. [국가데이터처] 광공업 생산의 대부분을 차지하는 제조업 생산도 0.2% 늘었다.
+  15. [국가데이터처] 오늘(1일) 국가데이터처 국가통계포털(KOSIS)과 산업활동동향에 따르면, 3분기 소매판매액 지수(불변)는 작년 동기보다 0.5% 감소했습니다.
+  16. [한국보건사회연구원] 보건복지부·한국보건사회연구원의 ‘2023년도 노인실태조사’를 재분석한 ‘보건복지포럼’(2024년 11월호)에 따르면 65세 이상 노인의 44.6%가
+  17. [한국보건사회연구원] 한국보건사회연구원이 최근 발간한 '보건복지 이슈앤포커스(제476호)'에서 '의약품 남용에 대한 국민의 인식과 정책적 시사점'에 따르면 2025년 9월 19~64세
+  18. [한국보건사회연구원] 27일 한국보건사회연구원이 발간한 '보건복지 이슈앤포커스'제476호 '의약품 남용에 대한 국민의 인식과 정책적 시사점'에 따르면 2025년 성인 대상 조사에서 응
+  19. [한국보건사회연구원] ‘2024년 청년 삶 실태조사’를 분석한 결과, 19~34세 청년의 5.2%가 은둔 상태로 추정됐다.
+  20. [한국보건사회연구원] 보고서에 따르면 2024년도 가족과 출산 조사 분석 결과 19∼34세 미혼 청년 중 '쉬었음' 비중은 5.5%였다.
+  21. [한국보건사회연구원] 2020년 노인실태조사에서는 노인의 40.5%가 연령으로 인한 차별경험이 있다고 응답했다(보건복지부·한국보건사회연구원, 2020).
+  22. [한국보건사회연구원] 19일 한국보건사회연구원 보건복지포럼 10월호에 실린 곽윤경 연구위원의 '이주배경 초기 청년의 노동시장 진입 격차와 청년정책 접근성' 보고서에 따르면 이주배경 초
+  23. [한국보건사회연구원] 10일 한국보건사회연구원의 '청년 건강 현황과 과제: 취약청년 중심으로'(김동진·이지영) 보고서에 따르면 '청년 삶 실태조사' 결과, 자립준비청년의 우울증상 유병
+  24. [한국보건사회연구원] 생계급여는 현행 기준 중위소득 32%에서 35%로 단계적으로 올리고, 주거급여는 기준 중위소득 50%로 상향하는 방안이 제시됐다.
+  25. [한국보건사회연구원] 2024년 통계를 기준으로 한 이 보고서에 따르면, 쉬었음 미혼 청년의 70.8%는 일자리 경험이 있었다.
+  26. [국가데이터처] (서울=연합뉴스) 원형민 기자 = 2일 국가데이터처 국가통계포털(KOSIS)과 가계동향 조사에 따르면 지난해 4분기 기준 적자가구 비율은 25.0%를 기록했다.
+  27. [국가데이터처] 향후 1년 이내 취업과 창업 의사가 있는 비경제활동인구는 324만 명으로 전체 비경제활동인구의 19.9%를 차지해, 지난해 같은달 대비 0.5%포인트 하락했습니다
+  28. [국가데이터처] 18일 국가데이터처 국가통계포털(KOSIS)과 가계동향에 따르면, 올해 2분기(4∼6월) 전세 가구의 월평균 이자 비용은 21만1천965원으로, 통계가 개편된 2
+  29. [국가데이터처] 26일 국가데이터처 국가통계포털(KOSIS)에 따르면 지난해 자산 상위 20% 가구의 자가 거주 주택 평균 가격은 6억9341만원으로 전년보다 7.7% 상승했다.
+  30. [국가데이터처] 24일 국가데이터처(옛 통계청) 주택소유통계와 국가통계포털에 따르면 지난해 서울에 거주하는 30대(가구주 기준) 무주택 가구는 52만7천729가구로 집계돼 관련 

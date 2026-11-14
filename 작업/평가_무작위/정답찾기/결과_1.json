@@ -1,0 +1,17 @@
+[
+ {"번호":1,"분류":"원문비공개","원문주소":"","원문인용":"","원문종류":"기타","메모":"'기후부에 따르면'으로 기자에게 준 수치로 보인다. 기후부 보도자료·국회 자료·NGO 보고서를 찾아봤지만 784만t은 공개 문서에서 나오지 않았다."},
+ {"번호":2,"분류":"원문비공개","원문주소":"","원문인용":"","원문종류":"기타","메모":"심평원이 정춘생 의원실에 낸 국회 제출 자료라 공개되지 않았다. 의원 보도자료도 128만1695명으로는 찾아지지 않았다."},
+ {"번호":3,"분류":"원문있음","원문주소":"https://ourworldindata.org/population-growth-over-time","원문인용":"global population growth peaked in 1963 at an annual growth rate of 2.3%","원문종류":"통계표","메모":"Our World in Data 'Population growth over time' 글에 있다. 같은 사이트의 data insight 글은 'over 2%'라고만 쓴다."},
+ {"번호":4,"분류":"원문있음","원문주소":"https://ora.ox.ac.uk/objects/uuid:1609de9b-565c-4e01-b0ed-a1054c3b6e3e","원문인용":"Twenty-two studies were eligible that experimentally manipulated eating rate and measured food intake, hunger, or both.","원문종류":"논문","메모":"Robinson 외 2014, AJCN 100(1):123-151 'A systematic review and meta-analysis examining the effect of eating rate on energy intake and hunger' 초록에 있다(옥스퍼드 저장소). 22라는 숫자는 연구 건수일 뿐이라 통계 주장으로서는 약하다."},
+ {"번호":5,"분류":"모름","원문주소":"","원문인용":"","원문종류":"보도자료","메모":"서울경찰청이 13일 발표한 내용인데 보도자료 원문을 찾지 못했다(경찰 보도자료는 smpa.go.kr에 늦게 올라오거나 아예 안 올라오기도 한다). 검색에서는 다른 사건만 나왔다."},
+ {"번호":6,"분류":"원문있음","원문주소":"https://www.index.go.kr/unify/idx-info.do?idxCd=1024","원문인용":"35.9%로, 이는 65세 이상 노인인구 중 35.9%가 (중위소득 50% 미만)","원문종류":"통계표","메모":"'3명 중 1명 이상'은 지표누리 '상대적 빈곤율' 지표(65세 이상 처분가능소득 기준 2024년 35.9%)와 맞는다. 국가데이터처 가계금융복지조사의 66세 이상 37.7%도 해당하는데, 기사가 어느 통계를 쓴 것인지는 밝히지 않았다."},
+ {"번호":7,"분류":"원문비공개","원문주소":"","원문인용":"","원문종류":"기타","메모":"법률신문이 공소청에서 따로 받은 자료다(취재용으로 제공됨). 공개 통계로는 나오지 않았다."},
+ {"번호":8,"분류":"원문비공개","원문주소":"","원문인용":"","원문종류":"기타","메모":"인터뷰한 전문가가 말로 한 추정('통계적으로 … 설명했다')이고, 출처 통계를 밝히지 않았다. 대략적인 숫자라 확인할 수 있는 원문이 없다."},
+ {"번호":9,"분류":"원문있음_미확인숫자","원문주소":"https://www.state.gov/releases/office-of-the-spokesman/2026/10/quad-joint-press-release-on-economic-prosperity-and-security/","원문인용":"expressed their intent to provide over $85 million of technical and financial assistance to support access to trusted SI","원문종류":"보도자료","메모":"기사는 정상들이 앞으로 발표할 것이라고 했지만, 8500만달러는 이미 10/31 쿼드 외교장관 공동 보도자료(미 국무부, 일본 외무성 mofa.go.jp/files/101110375.pdf)에 있다. 두 곳 모두 403으로 막혀서, 인용문은 전문을 옮겨 실은 jgu.edu.in 사본으로 확인했다."},
+ {"번호":10,"분류":"모름","원문주소":"","원문인용":"","원문종류":"기타","메모":"칼럼이 '집계가 있다'고만 하고 출처를 밝히지 않았다. 예탁결제원·국회 자료를 찾아봤지만 '상위 1%가 절반 이상'이라는 최근 수치는 찾지 못했다."},
+ {"번호":11,"분류":"원문있음","원문주소":"https://www.bls.gov/news.release/ppi.nr0.htm","원문인용":"The Producer Price Index for final demand rose 0.3 percent in October, seasonally adjusted","원문종류":"보도자료","메모":"미 노동통계국 PPI 보도자료(2026년 10월분, 11/13 발표)에 있다. 9월 1.4%(수정치)도 같은 문서에 있다."},
+ {"번호":12,"분류":"원문비공개","원문주소":"","원문인용":"","원문종류":"기타","메모":"브루클린 건물 붕괴에 대해 뉴욕시장이 기자회견에서 말한 내용이다. nyc.gov에 회견 녹취록이 나중에 올라올 수 있지만, 11월 것은 아직 찾지 못했다."},
+ {"번호":13,"분류":"대상아님","원문주소":"","원문인용":"","원문종류":"기타","메모":"설문 기간과 응답자 수(330명, 유효 326명)만 있는 조사 방법 설명이다."},
+ {"번호":14,"분류":"원문있음","원문주소":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12819223/","원문인용":"Higher consumption of sugar-sweetened beverages (SSBs) was significantly associated with an increased EC risk (HR 1.29 for >1 unit/day vs. non-consumers, P for trend = 0.004)","원문종류":"논문","메모":"Yi 외, Frontiers in Public Health(2026.1, doi:10.3389/fpubh.2025.1692974)로 저자 소속은 쓰촨대 화서제2병원이다. 제목에 92,777명이 나오고 HR 1.29가 29% 증가에 해당한다."},
+ {"번호":15,"분류":"원문비공개","원문주소":"","원문인용":"","원문종류":"기타","메모":"신한카드 내부 카드 매출 집계를 언론사에 준 것으로 보인다. 공개된 보고서나 보도자료는 확인되지 않았다."}
+]

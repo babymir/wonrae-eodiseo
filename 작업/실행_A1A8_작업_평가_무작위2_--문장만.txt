@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "도구/평가_실행.py", line 135, in <module>
+    main()
+    ~~~~^^
+  File "도구/평가_실행.py", line 109, in main
+    targets = json.loads(TARGETS.read_text(encoding="utf-8"))
+                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '작업/평가_무작위2 --문장만/평가대상.json'
