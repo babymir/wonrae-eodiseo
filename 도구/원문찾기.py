@@ -15,6 +15,7 @@ import re
 import sys
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FutureTimeout
 from datetime import datetime
 from pathlib import Path
 
@@ -120,15 +121,44 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
     기록.start(on_event)
     result = {"입력": sentence, "시각": datetime.now().isoformat(timespec="seconds")}
     try:
-        result = _run(result, sentence, context, article_date, force, prefer)
+        result = _run_with_limit(result, sentence, context, article_date, force, prefer)
         # 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)
+        result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
         with 기록.step("확인할 곳 안내"):
-            return 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
+            result = 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
+        return result
+    except 기록.TimeUp as e:   # 시간 상한 뒤 늦게 끝난 작업(결과는 이미 답함)
+        print(f"    {e}")
+        return result
     finally:
         result["시간"] = 기록.summary()
         print(f"    걸린 시간 {result['시간']['총초']}초 — 단계별 {result['시간']['단계초']}")
         if os.environ.get(RESULT_CACHE_ENV) == "1" and result.get("판정"):
             캐시.put("결과", cache_key, result)
+
+
+TIME_LIMIT_SEC = int(os.environ.get("ORIGIN_TIME_LIMIT", "60"))   # 한 건 전체 시간 상한(결선 생중계에서 멈추지 않게)
+
+
+def _run_with_limit(result: dict, sentence: str, context: str, article_date: str, force: bool,
+                    prefer: dict | None) -> dict:
+    """_run 을 TIME_LIMIT_SEC 까지만 기다린다. 넘으면 그때까지 모은 후보·검색 링크로 '원출처 미확인(시간 초과)'.
+    (11/15: 캐시 없는 실행에서 PDF 직접 읽기 대기로 한 건이 467초까지 걸린 적이 있음)"""
+    ex = ThreadPoolExecutor(1)
+    future = ex.submit(_run, result, sentence, context, article_date, force, prefer)
+    try:
+        return future.result(timeout=TIME_LIMIT_SEC)
+    except FutureTimeout:
+        기록.stop()   # 남은 작업은 다음 단계에 들어서면 멈춘다
+        print(f"    시간 상한 {TIME_LIMIT_SEC}초를 넘겨 지금까지 찾은 것으로 답함")
+        links = result.get("_진행후보") or result.get("_검색링크") or []
+        partial = {k: v for k, v in result.items() if not k.startswith("_")}
+        partial.update(판정="원출처 미확인", 시간초과=True, 후보=links[:LEAD_LINKS],
+                       이유=(f"{TIME_LIMIT_SEC}초 안에 원문 대조를 마치지 못했습니다(누리집 응답이 느리거나 문서가 큼). "
+                           "지금까지 찾은 후보 문서를 보여 드립니다. 잠시 뒤 다시 확인하면 저장된 자료로 더 빨리 끝납니다."))
+        return partial
+    finally:
+        ex.shutdown(wait=False)
 
 
 def _run(result: dict, sentence: str, context: str, article_date: str, force: bool,
@@ -167,6 +197,7 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
         listed = listed_f.result()
     lead = [{"제목": r.get("title"), "주소": r.get("url")}
             for r in general if not SKIP_LEAD.search(r.get("url", ""))][:5]
+    result["_검색링크"] = lead   # 시간 초과 때 보여 줄 것(후보를 고르기 전이면 검색 결과라도)
     finder = FINDERS.get(inst)
     research = 논문찾기.is_research(sentence) or (result.get("입구") or {}).get("경로") == "학술지"
     # 기관을 몰라도 일반 경로로 찾는다(숫자·핵심어 검색에서 나온 공공기관 문서를 대조). 일반 경로는 '원문에 없음'을 내지 않아 안전
@@ -215,6 +246,7 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     cands = listed + [c for c in found if c.file_key not in keys]   # 발간 목록 후보가 앞
     cands = drop_rebuttals(cands)   # 보도 설명자료·해명 게시물은 원 보고서가 아님
     print(f"[2] {inst} 원 보고서 후보 {len(cands)}건")
+    result["_진행후보"] = [{"제목": c.title, "주소": c.page_url} for c in cands[:LEAD_LINKS]]   # 시간 초과 때 보여 줄 것
     기록.emit("후보", [c.title for c in cands[:MAX_DOWNLOAD]])
     with 기록.step("PDF 받기·글자"):
         docs, why_empty = load_docs(cands, tokens, info.get("보고서", ""), rank_query, article_date,

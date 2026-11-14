@@ -11,17 +11,29 @@ import time
 from contextlib import contextmanager
 
 _lock = threading.Lock()
-_state: dict = {"start": 0.0, "steps": {}, "calls": [], "listener": None}
+_state: dict = {"start": 0.0, "steps": {}, "calls": [], "listener": None, "stopped": False}
+
+
+class TimeUp(Exception):
+    """한 건 시간 상한을 넘겨 멈춘 작업(원문찾기.run 이 그때까지 찾은 것으로 답한다)."""
 
 
 def start(listener=None) -> None:
     """새 건 시작. listener(종류, 데이터): 진행 이벤트를 받을 함수(웹 화면용, 없으면 None)."""
     with _lock:
-        _state.update(start=time.time(), steps={}, calls=[], listener=listener)
+        _state.update(start=time.time(), steps={}, calls=[], listener=listener, stopped=False)
+
+
+def stop() -> None:
+    """시간 상한: 아직 돌고 있는 작업이 다음 단계에 들어서면 멈추게 한다."""
+    with _lock:
+        _state["stopped"] = True
 
 
 @contextmanager
 def step(name: str):
+    if _state.get("stopped"):
+        raise TimeUp(f"시간 상한으로 '{name}' 단계를 시작하지 않음")
     t = time.time()
     try:
         yield
