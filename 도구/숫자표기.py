@@ -102,6 +102,11 @@ def variants(number: str) -> list[Variant]:
                 text = n + s
                 if text != core:
                     found.append(Variant(text, "표기변환(소수점·기호)"))
+        # 'N in 10' 비율: 기사 '약 90%' ↔ 원문 'About 9 in 10', '10명 중 9명'(11/16 신규 세트2 AP)
+        if sign == "%" and "." not in num and int(num) % 10 == 0 and 10 <= int(num) <= 90:
+            k = int(num) // 10
+            found.append(Variant(rf"re:{k}\s*(?:in|out\s+of)\s*10\b", "표기변환(10명 중 N명)"))
+            found.append(Variant(rf"re:10\s*명\s*(?:중|가운데)\s*{k}\s*명", "표기변환(10명 중 N명)"))
         # 베이시스포인트: 기사 '1.13%포인트' ↔ 원문 '113-basis-point'·'113 bp'(11/14 NBER 논문)
         if sign != "%":
             bp = round(float(num) * 100)
@@ -154,6 +159,20 @@ def variants(number: str) -> list[Variant]:
         nums = "|".join(re.escape(x) for x in dict.fromkeys([str(value), f"{value:,}"]))
         found.append(Variant(rf"re:(?:{nums})(?=\s+(?:[a-z-]+\s+)?(?:{eng[unit_word.group(1)]})\b)",
                              "표기변환(영문 개수 표기)"))
+    # 원화로 바꾼 달러 금액: 기사 '4조 6000억 원' ↔ 원문 '$3.2 billion'(11/16 신규 세트2 로이터·보건산업진흥원).
+    # 환율 1달러 1,300~1,600원 범위의 달러 값(billion 은 소수 둘째 자리까지, million 은 정수)
+    if re.search(r"원$", raw) and value >= 10**9:
+        lo, hi = value / 1600, value / 1300
+        alts, unit = [], ""
+        if hi >= 10**9:
+            alts = [f"{x / 100:g}" for x in range(int(lo / 10**7), int(hi / 10**7) + 1)]
+            unit = r"\s*(?:billion|bn|B\b)"
+        elif hi - lo < 10**9:
+            alts = [str(x) for x in range(int(lo / 10**6), int(hi / 10**6) + 1)]
+            unit = r"\s*(?:million|mn|M\b)"
+        if 0 < len(alts) <= 400:
+            nums = "|".join(re.escape(a) for a in sorted(set(alts), key=len, reverse=True))
+            found.append(Variant(rf"re:\$?\s*(?:{nums}){unit}", "표기변환(원화로 바꾼 달러 금액, 환율 범위)"))
     # 일본·중국 원문의 億·万: '1.2억 명' ↔ '約1.2億人'(11/14 일본 임야청 백서)
     for v in list(found):
         if re.search(r"[억만]", v.text) and not v.text.startswith("re:"):

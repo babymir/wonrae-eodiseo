@@ -85,9 +85,11 @@ def _corps() -> dict[str, list]:
 def find_corp(name: str) -> tuple[str, str] | None:
     """(고유번호, 정식 이름). 이름이 정확히 같거나 '(주)'·'주식회사'를 뗀 이름이 같을 때만."""
     clean = re.sub(r"\(주\)|㈜|주식회사|\s", "", name or "")
-    if not clean or NOT_COMPANY.search(clean):
+    if not clean:
         return None
     corps = _corps()
+    if NOT_COMPANY.search(clean) and not (corps.get(clean) or ["", ""])[1]:
+        return None   # 공사·공단이라도 상장사(한국전력공사 등)는 DART 공시가 원문(11/16 신규 세트2)
     hit = corps.get(clean) or corps.get(name.strip())
     return (hit[0], clean) if hit else None
 

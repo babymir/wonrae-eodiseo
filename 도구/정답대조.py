@@ -143,8 +143,9 @@ def three_metrics(folder: str) -> dict:
         if kind in ("원문있음", "원문있음_미확인숫자", "원문비공개"):
             checkable += 1
             if kind in HAS_ORIGINAL:
+                targets = {target} | {site("https://" + a) for a in g.get("대체주소") or []}   # 같은 원문의 다른 곳
                 ok = grade_ in ("원문 문장 확인", "다른 공식 출처") or (
-                    target and any(site(u) == target for u in _links(res)) and grade_ != "틀린 근거(헛답)")
+                    bool(target) and any(site(u) in targets for u in _links(res)) and grade_ != "틀린 근거(헛답)")
                 how = "원문 확인" if grade_ in ("원문 문장 확인", "다른 공식 출처") else "확인 위치 안내" if ok else ""
             else:
                 ok = not claimed and bool((res.get("안내") or {}).get("유형") or res.get("출처종류") == "의원실 자료")

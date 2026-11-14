@@ -40,6 +40,10 @@ DISCLOSURE = re.compile(r"분기보고서|반기보고서|사업보고서|감사
 NOT_COMPANY = re.compile(r"거래소|공사|공단|협회|연구원|연구소|정부|위원회|[청부처]$")
 POLL = re.compile(r"여론조사|갤럽|리얼미터|표본오차|신뢰수준|지지율")
 INDUSTRY = re.compile(r"업계에 따르면|관계자에 따르면|업계는|업계 추산|소식통")
+# 발언 인용(11/16 새 목표 ③): 따옴표 속 말 + 말했다·밝혔다 류, '시장은 "…"'
+SPEECH = re.compile(r"[“\"][^”\"]{6,}[”\"]\s*(?:라고|이라고|며|고)?\s*(?:말했|밝혔|강조했|덧붙였|설명했|전했)|"
+                    r"(?:시장|장관|대표|회장|의원|대통령|총리|위원장|사장|청장)(?:은|는|이|가)\s*[“\"]")
+SOURCE_CUE = re.compile(r"따르면|에서|조사|통계|보고서|발표|집계|공시|밝혔|자료")
 PUBLIC_DOMAIN = re.compile(r"\.go\.kr$|^kostat|^mods\.go|kosis")
 STAT_WORDS = re.compile(r"통계|조사|동향|데이터처|통계청")
 
@@ -106,6 +110,15 @@ def classify(sentence: str, info: dict) -> dict | None:
         return {"유형": "국가통계 원자료",
                 "설명": "보도자료·보고서에서 찾지 못했습니다. 기사가 국가통계포털(KOSIS) 통계표에서 직접 뽑은 숫자일 수 있습니다.",
                 "링크": kosis_tables(info)}
+    if SPEECH.search(sentence) and not re.search(r"보고서|조사|통계|공시|발표한\s*자료", sentence):
+        return {"유형": "발언 인용",
+                "설명": "인터뷰·발언·회견에서 말한 숫자로 보입니다. 공개 문서 원문이 따로 없을 수 있습니다. "
+                        "발언한 기관의 보도자료나 회견 기록이 있으면 그곳이 원문입니다.",
+                "링크": []}
+    if not (info.get("기관") or "").strip() and not SOURCE_CUE.search(sentence):
+        return {"유형": "출처를 밝히지 않은 숫자",
+                "설명": "기사 문장에 숫자의 출처가 없습니다. 기사 앞뒤 문단에서 출처(기관·자료 이름)를 찾아 함께 넣으면 다시 찾아 볼 수 있습니다.",
+                "링크": []}
     if INDUSTRY.search(sentence):
         return {"유형": "업계·관계자 자료",
                 "설명": "업계·관계자가 기자에게 준 자료로 보입니다. 공개된 원문이 없을 가능성이 큽니다.",

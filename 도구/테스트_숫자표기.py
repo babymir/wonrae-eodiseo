@@ -40,6 +40,12 @@ CASES = [
     ("9천151억원", "9,151억원", True),
     ("6.5%", "increased 6.5% for the 12 months", True),
     ("6.5%", "increased 16.5% for the 12 months", False),          # 앞 숫자에 붙은 것은 다른 값
+    ("4조 6000억 원", "more than $3.2 billion in projects", True),    # 11/16 원화로 바꾼 달러(환율 범위)
+    ("2,800억 원", "about $180 million in 2024", True),
+    ("14조 원", "$19.26 billion by 2030", False),                    # 환율 범위 밖
+    ("약 90%", "About 9 in 10 Black voters", True),                   # 11/16 N in 10
+    ("80%", "응답자 10명 중 8명이", True),
+    ("80%", "8 in 100 people", False),
 ]
 
 CONDITIONS = [
@@ -48,6 +54,7 @@ CONDITIONS = [
     ("200달러 이하 소액 헌금 비중은 65%에 달한다", "200달러", True),
     ("200달러 이하 소액 헌금 비중은 65%에 달한다", "65%", False),
     ("인구 10만 명당 27.8명", "10만 명", True),
+    ("혈중알코올농도는 면허취소 수준(0.08% 이상)이었다", "0.08% 이상", True),   # 11/16 숫자 자체에 기준 표현
     ("전년 대비 3.0% 증가했다", "3.0%", False),
 ]
 
