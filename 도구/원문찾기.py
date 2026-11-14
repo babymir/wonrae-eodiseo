@@ -36,7 +36,7 @@ import 여론조사찾기
 import 출처종류
 import 판정규칙
 from liner_api import web_search
-from PDF도구 import find_candidates, period_tokens
+from PDF도구 import squash, find_candidates, period_tokens
 from 검색 import SKIP_LEAD, is_recent, search_all
 from 기관별 import FINDERS, Candidate, drop_rebuttals, normalize_institution
 from 기사정리 import all_numbers, extract_cached, is_condition_number, stabilize
@@ -252,8 +252,10 @@ def _guard_news(result: dict) -> dict:
     if not 일반경로.is_news_doc(url, text):
         return result
     domain = 일반경로.clean_domain((result.get("추출") or {}).get("기관누리집", ""))
-    if domain and 일반경로.on_domain(url, domain):
+    copied = squash(result.get("입력", ""))[:40] in squash(text) if text else False
+    if domain and 일반경로.on_domain(url, domain) and not copied:
         return result   # 기사가 출처로 밝힌 매체의 기사 자체(외신 보도가 1차 공개)
+    # 입력 문장이 거의 그대로 든 기사는 같은 기사·베낀 기사다(11/15: 연합인포맥스 시세 기사) → 어떤 예외도 원문 아님
     print(f"    근거가 언론 기사라 원문 확인으로 보지 않음: {url[:80]}")
     keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
     return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": url}],

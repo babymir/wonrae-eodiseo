@@ -52,6 +52,7 @@ ROUTE_REASON = {
     "인용·발언": "사람의 의견을 전하는 문장이라 통계 원문과 대조할 대상이 아닙니다.",
     "개인 사례": "한 사람의 사례를 전하는 문장이라 통계 원문과 대조할 대상이 아닙니다.",
     "통계 문장 아님": "통계 단위(%, 명, 원, 배 등)가 붙은 숫자가 없습니다.",
+    "조사 방법": "숫자가 모두 조사 방법(표본 수·신뢰수준·표본오차·조사 기간)이라 대조할 결과 숫자가 없습니다. 결과는 앞뒤 문장에 있습니다.",
 }
 DECISION_MIN = 0.5
 # 기관·회사가 '밝혔다·발표·공시'한 숫자는 제안·행정 소식·발언이라도 원 보도자료·공시가 있다(11/14 무작위3:
@@ -63,6 +64,24 @@ SOFT_ROUTES = {"정책 제안", "행정·행사 소식", "인용·발언"}
 def _announced(sentence: str) -> dict:
     return {"통과": True, "경로": "공식 발표", "방법": "규칙",
             "이유": "기관·회사가 발표한 숫자라 원 보도자료·공시에서 찾음"}
+
+
+METHOD_NUMBER = re.compile(r"[\d,.]+\s*(?:명|가구|곳|개사)\s*(?:을|를)?\s*대상|신뢰\s*수준|표본\s*오차|응답률|"
+                           r"[±+-]\s*[\d.]+\s*%\s*(?:포인트|p)|조사\s*기간|\d+\s*[~∼-]\s*\d+\s*일")
+
+
+def only_method_numbers(sentence: str) -> bool:
+    """문장의 단위 붙은 숫자가 모두 조사 방법(…명을 대상으로, 95% 신뢰수준, 표본오차 ±3.1%p)인지
+    (11/15: 갤럽 조사 개요 문장에서 표본 수 1,002명을 '일치'로 냄 — 결과 숫자는 앞뒤 문장에 있음)."""
+    from 기사정리 import all_numbers   # 입구는 가볍게 불러오려고 여기서
+    nums = all_numbers(sentence)
+    if not nums:
+        return False
+    method_spans = [m.span() for m in METHOD_NUMBER.finditer(sentence)]
+    # 숫자가 조사 방법 표현 안에 있거나 바로 앞(공백·'에' 정도만 사이)에 붙어 있으면 방법 숫자
+    attached = lambda st, en: any(a <= st <= b or 0 <= a - en <= 3 for a, b in method_spans)   # noqa: E731
+    claims = [n for n in nums if not any(attached(m.start(), m.end()) for m in re.finditer(re.escape(n), sentence))]
+    return bool(method_spans) and not claims
 
 
 def _not_target(route: str, how: str, extra: str = "") -> dict:
@@ -93,6 +112,8 @@ def check(sentence: str) -> dict:
                           "주소": KCI_SEARCH + urllib.parse.quote(words.strip())}]}
     if not STAT_NUMBER.search(sentence):
         return _not_target("통계 문장 아님", "규칙")
+    if only_method_numbers(sentence):
+        return _not_target("조사 방법", "규칙")
     route = route_by_rule(sentence)
     if route == "통계 사실":
         return {"통과": True, "경로": route, "방법": "규칙", "이유": "통계 숫자와 통계 결과 표현이 있음"}
