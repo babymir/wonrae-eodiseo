@@ -183,29 +183,43 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     first = _run_once(result, sentence, context, article_date, force, prefer)
     if prefer or first.get("판정") != "원출처 미확인" or first.get("출처종류") == "의원실 자료":
         return first
+    # 속도(11/16): 2라운드를 Deep Research 기다리는 동안 동시에 돌린다(예전엔 차례로 해서 시간이 더해짐)
+    second_f = None
+    if 기록.summary()["총초"] < TIME_LIMIT_SEC - SECOND_ROUND_NEEDS_SEC:
+        second_f = ThreadPoolExecutor(1).submit(_second_round, result, sentence, context, article_date, force, first)
     deep = _deep_research_round(result, sentence, context, article_date, force, first, prefetch)
     if deep:
         return deep
-    if 기록.summary()["총초"] > TIME_LIMIT_SEC - SECOND_ROUND_NEEDS_SEC:
-        return first   # 시간 상한 안에 2라운드를 마칠 시간이 없음
+    if second_f is not None:
+        left = TIME_LIMIT_SEC - 기록.summary()["총초"] - 5
+        try:
+            second = second_f.result(timeout=max(1, left))
+        except Exception as e:  # 시간 안에 못 끝나면 1차 결과(이유 출력)
+            print(f"    2라운드를 시간 안에 마치지 못함: {type(e).__name__}")
+            second = None
+        if second:
+            return second
+    return first
+
+
+def _second_round(result: dict, sentence: str, context: str, article_date: str, force: bool,
+                  first: dict) -> dict | None:
+    """같은 숫자를 다룬 다른 기사들의 제목·요약을 문맥으로 넣어 기관·보고서를 다시 뽑고 한 번 더 찾는다.
+    확정 답(원문 확인·사람 확인 필요·통계표)이 나올 때만 돌려주고, 아니면 None."""
     snippets = [f"{r.get('title', '')}: {str(r.get('description', ''))[:200]}"
                 for r in (first.get("_검색결과") or [])[:SECOND_ROUND_SNIPPETS]]
     if not snippets:
-        return first
+        return None
     context2 = (context + " [같은 숫자를 다룬 다른 기사] " + " / ".join(snippets)).strip()
     info1 = first.get("추출") or {}
     print("[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음")
     second = _run_once({k: v for k, v in result.items() if k in ("입력", "시각")}, sentence, context2,
                        article_date, force, None)
-    info2 = second.get("추출") or {}
-    same = all(info1.get(k) == info2.get(k) for k in ("기관", "보고서", "기관누리집", "원어검색어"))
     if second.get("판정") in FOUND | {NEAR, "통계표·원자료 인용"}:
         second["찾은방법"] = (second.get("찾은방법") or "") + " — 2라운드(같은 숫자를 다룬 다른 기사에서 출처 이름을 얻어 다시 찾음)"
-        second["2라운드"] = {"1차추출": info1, "2차추출": info2}
+        second["2라운드"] = {"1차추출": info1, "2차추출": second.get("추출") or {}}
         return second
-    if same:
-        print("    2라운드도 같은 기관·보고서라 1차 결과를 씀")
-    return first
+    return None
 
 
 DEEP_RESEARCH_ON = os.environ.get("ORIGIN_DEEP_RESEARCH", "1") == "1"   # 라이너 Deep Research 후보 쓰기(끄기: 0)

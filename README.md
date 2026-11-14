@@ -49,6 +49,10 @@ python3 도구/원문찾기.py "쏘카는 3분기 연결 기준 매출 1352억�
 python3 도구/테스트_숫자표기.py
 ```
 
+설정(환경 변수):
+- `ORIGIN_TIME_LIMIT` 한 건 시간 상한(초, 기본 150). 시연 때는 `ORIGIN_TIME_LIMIT=60 python3 도구/웹서버.py` 처럼 줄인다(넘으면 그때까지 찾은 후보·확인할 곳을 보여 줌).
+- `ORIGIN_DEEP_RESEARCH=0` 라이너 Deep Research 후보 끄기, `ORIGIN_DEEP_RESEARCH_PREFETCH=0` 처음부터 동시에 묻지 않기(비용 절약).
+
 ## 성적을 어떻게 쟀나
 
 - **세트를 나눴습니다**: 개발 세트(보면서 고침) / 검증 세트(처음 보는 기사 30건) / **시험 세트(코드 동결 뒤 한 번만 측정)**
