@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 CACHE_DIR = Path(__file__).resolve().parent.parent / "작업" / "캐시"
-SEARCH_HOURS = 24          # 일반 검색 결과를 다시 쓸 시간
+SEARCH_HOURS = 24 * 7      # 일반 검색 결과를 다시 쓸 시간(11/15: 24 → 7일 — 다음 날 검색 결과가 바뀌어 같은 문장 답이 흔들림)
 RECENT_SEARCH_HOURS = 3    # '최근 하루·한 주' 조건 검색은 짧게(막 나온 자료를 놓치지 않게)
 
 

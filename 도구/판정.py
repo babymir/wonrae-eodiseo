@@ -1,5 +1,6 @@
 """라이너 모델에 묻는 단계: 문장 분해, 후보 중 고르기·판정, 계산 확인, PDF 직접 읽기."""
 import hashlib
+import os
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -12,6 +13,7 @@ from 표찾기 import find_number_row, table_context
 import 출처종류
 
 CHOOSE_CACHE_HOURS = 24 * 30   # 같은 판정 질문의 모델 답을 다시 쓸 기간
+NO_JUDGE_CACHE = os.environ.get("ORIGIN_NO_JUDGE_CACHE") == "1"   # 흔들림 시험: 저장한 판정을 안 쓰고 새로 묻기
 TOP_K = 5                  # 모델에 보여 줄 숫자 후보 수(11/14 밤: 3 → 5, 공시 표는 같은 숫자가 여러 줄에 나옴)
 MIN_KEYWORD_PAGES = 2      # 핵심어 쪽이 이보다 적으면 PDF 전체를 보냄(크기 허용 시)
 PAGE_HEAD_CHARS = 300      # PDF 직접 읽기로 찾은 쪽의 머리글(표 제목·단위)을 판정 모델에 같이 보여 줄 글자 수
@@ -109,7 +111,7 @@ def choose(sentence: str, number: str, hits: list[dict], pages: list[str]) -> di
                                   overview=survey_overview(pages))
     # 같은 문장·같은 후보에는 같은 판정(11/14 흔들림): 모델 답을 저장해 다시 쓴다(지시문이 바뀌면 열쇠도 바뀜)
     key = hashlib.md5(prompt.encode()).hexdigest()
-    ans = 캐시.get("판정", key, CHOOSE_CACHE_HOURS)
+    ans = None if NO_JUDGE_CACHE else 캐시.get("판정", key, CHOOSE_CACHE_HOURS)
     if ans is None:
         ans = _choose_vote(prompt)
         캐시.put("판정", key, ans)
@@ -148,7 +150,7 @@ def near_match(sentence: str, number: str, hits: list[dict]) -> dict | None:
     lines = [f"[{i}] {h['쪽']}쪽 (원문 표기 '{h['표기']}'): \"{h['원문']}\"" for i, h in enumerate(top, start=1)]
     prompt = NEAR_PROMPT.format(number=number, article=sentence, candidates="\n".join(lines))
     key = hashlib.md5(prompt.encode()).hexdigest()
-    ans = 캐시.get("표현다름", key, CHOOSE_CACHE_HOURS)
+    ans = None if NO_JUDGE_CACHE else 캐시.get("표현다름", key, CHOOSE_CACHE_HOURS)
     if ans is None:
         def ask() -> dict:
             return ask_json(prompt, kind="표현 다름 후보", effort="low", routing="quality", schema=NEAR_SCHEMA)

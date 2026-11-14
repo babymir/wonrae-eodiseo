@@ -164,7 +164,7 @@ def _run_with_limit(result: dict, sentence: str, context: str, article_date: str
         ex.shutdown(wait=False)
 
 
-SECOND_ROUND_BEFORE_SEC = 25   # 이 시간 안에 1차가 끝났을 때만 2라운드(60초 상한 안에 끝나게)
+SECOND_ROUND_NEEDS_SEC = 45    # 2라운드에 필요한 시간(남은 시간이 이보다 적으면 안 함 — 11/15: 25초 고정이면 Deep Research 뒤 늘 건너뜀)
 SECOND_ROUND_SNIPPETS = 6      # 2라운드에 쓸 다른 기사 제목·요약 수
 
 
@@ -183,8 +183,8 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
     deep = _deep_research_round(result, sentence, context, article_date, force, first, prefetch)
     if deep:
         return deep
-    if 기록.summary()["총초"] > SECOND_ROUND_BEFORE_SEC:
-        return first
+    if 기록.summary()["총초"] > TIME_LIMIT_SEC - SECOND_ROUND_NEEDS_SEC:
+        return first   # 시간 상한 안에 2라운드를 마칠 시간이 없음
     snippets = [f"{r.get('title', '')}: {str(r.get('description', ''))[:200]}"
                 for r in (first.get("_검색결과") or [])[:SECOND_ROUND_SNIPPETS]]
     if not snippets:
