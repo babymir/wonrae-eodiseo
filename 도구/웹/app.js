@@ -3,17 +3,21 @@
 const $ = (id) => document.getElementById(id);
 const POLL_MS = 1200;
 
+// group: 맨 위 3단 묶음(원문 확인됨 / 사람 확인 필요 / 원문 못 찾음) — 판정 9종을 비전문가가 바로 읽게(11/15)
 const VERDICT = {
-  "일치": { cls: "v-same", head: "원문과 같습니다" },
-  "표현 바뀜": { cls: "v-shift", head: "원문과 표현이 달라졌습니다" },
-  "숫자 다름": { cls: "v-shift", head: "원문의 숫자와 다릅니다" },
-  "표현 다름 후보": { cls: "v-shift", head: "같은 숫자가 원문에 있지만 표현이 다릅니다" },
-  "기사가 계산": { cls: "v-calc", head: "기사가 원문 숫자로 계산한 값입니다" },
-  "통계표·원자료 인용": { cls: "v-table", head: "보고서가 아니라 통계표·원자료에서 온 숫자입니다" },
-  "원문에 없음": { cls: "v-none", head: "원문에서 확인되지 않습니다" },
-  "원출처 미확인": { cls: "v-none", head: "원 보고서를 찾지 못했습니다" },
-  "확인 대상 아님": { cls: "v-none", head: "통계 원문과 대조할 문장이 아닙니다" },
+  "일치": { cls: "v-same", group: "원문 확인됨", head: "원문과 같습니다" },
+  "표현 바뀜": { cls: "v-shift", group: "원문 확인됨", head: "원문과 표현이 달라졌습니다" },
+  "숫자 다름": { cls: "v-shift", group: "원문 확인됨", head: "원문의 숫자와 다릅니다" },
+  "기사가 계산": { cls: "v-calc", group: "원문 확인됨", head: "기사가 원문 숫자로 계산한 값입니다" },
+  "표현 다름 후보": { cls: "v-shift", group: "사람 확인 필요", head: "같은 숫자가 원문에 있지만 표현이 다릅니다" },
+  "통계표·원자료 인용": { cls: "v-table", group: "사람 확인 필요", head: "보고서가 아니라 통계표·원자료에서 온 숫자입니다" },
+  "원문에 없음": { cls: "v-none", group: "원문 못 찾음", head: "기사가 밝힌 자료에서 이 숫자를 찾지 못했습니다" },
+  "원출처 미확인": { cls: "v-none", group: "원문 못 찾음", head: "원문을 아직 찾지 못했습니다 — 확인할 곳을 알려 드립니다" },
+  "확인 대상 아님": { cls: "v-none", group: "확인 대상 아님", head: "통계 원문과 대조할 문장이 아닙니다" },
 };
+// 공개 문서 원문이 없는 종류(시세·업계 자료)는 '못 찾음'이 아니라 '원문이 문서로 없음'으로 보여 준다
+const NO_PUBLIC_DOC = { "시세·조회 화면 자료": "시세·조회 화면에만 있는 숫자입니다 — 확인할 화면을 알려 드립니다",
+  "업계·관계자 자료": "업계·관계자가 기자에게 준 숫자로 보입니다 — 공개 문서 원문이 없을 수 있습니다" };
 // 칸별 비교(2단 판정): 판정 모델이 칸마다 답한 것
 const AXIS_NAMES = { "지표": "지표", "대상": "대상", "시점": "시점", "비교기준": "비교 기준", "수준변화": "수준·변화량" };
 
@@ -283,7 +287,10 @@ function render(r, steps, secs, partial) {
   }[r["판정"]] || [["원 보고서", !!title], ["원문 쪽", found], ["숫자", found], ["뜻", r["판정"] === "일치"]];
 
   // 확인 결과 표: 판정 / 원 보고서 / 확인한 것
-  const head = h("strong", { class: `verdict-text ${v.cls}`, tabindex: "-1" }, v.head);
+  const kind = (r["안내"] || {})["유형"];
+  const headText = r["판정"] === "원출처 미확인" && NO_PUBLIC_DOC[kind] ? NO_PUBLIC_DOC[kind] : v.head;
+  const head = h("strong", { class: `verdict-text ${v.cls}`, tabindex: "-1" },
+    v.group ? `[${v.group}] ` : "", headText);
   const ok = /^(\d)\/\1$/.test(String(r["기준시점확인"] || ""));  // "2/2" 처럼 다 맞았을 때만
   const source = title ? [`${info["기관"] || ""} 「${title}」`,
     view ? (isWeb(pdf) ? ", 웹 페이지" : `, PDF ${view.page}쪽${view.note}`) : "",
