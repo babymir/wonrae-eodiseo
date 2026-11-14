@@ -267,7 +267,9 @@ def _guard_news(result: dict) -> dict:
     if not 일반경로.is_news_doc(url, text):
         return result
     domain = 일반경로.clean_domain((result.get("추출") or {}).get("기관누리집", ""))
-    copied = squash(result.get("입력", ""))[:40] in squash(text) if text else False
+    flat_in, flat_doc = squash(result.get("입력", "")), squash(text)
+    # 입력 문장의 25글자 조각이 기사에 그대로 있으면 같은 기사·베낀 기사(검색 요약은 문장 중간부터라 앞부분만 보면 놓침)
+    copied = bool(text) and any(flat_in[i:i + 25] in flat_doc for i in range(0, max(1, len(flat_in) - 25), 10))
     if domain and 일반경로.on_domain(url, domain) and not copied:
         return result   # 기사가 출처로 밝힌 매체의 기사 자체(외신 보도가 1차 공개)
     # 입력 문장이 거의 그대로 든 기사는 같은 기사·베낀 기사다(11/15: 연합인포맥스 시세 기사) → 어떤 예외도 원문 아님
