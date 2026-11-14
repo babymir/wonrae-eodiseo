@@ -58,18 +58,24 @@ def _api(path: str, **params) -> bytes:
     return fetch_bytes(API + path + "?" + urllib.parse.urlencode({"crtfc_key": key, **params}))
 
 
-def _corps() -> dict[str, list[str]]:
-    """회사 이름 → [고유번호, 종목코드]. 상장사를 우선."""
+def _corps() -> dict[str, list]:
+    """회사 이름 → [고유번호, 종목코드, 같은 이름의 모든 고유번호]. 상장사를 우선."""
     if CORP_CACHE.exists() and time.time() - CORP_CACHE.stat().st_mtime < CORP_CACHE_DAYS * 86400:
-        return json.loads(CORP_CACHE.read_text(encoding="utf-8"))
+        cached = json.loads(CORP_CACHE.read_text(encoding="utf-8"))
+        if all(len(v) == 3 for v in list(cached.values())[:5]):   # 옛 형식(고유번호 목록 없음)이면 새로 받는다
+            return cached
     z = zipfile.ZipFile(io.BytesIO(_api("corpCode.xml")))
     xml = z.read(z.namelist()[0]).decode("utf-8", "replace")
     corps: dict[str, list[str]] = {}
     for code, name, stock in re.findall(r"<corp_code>(\d+)</corp_code>\s*<corp_name>([^<]+)</corp_name>\s*"
                                         r"(?:<corp_eng_name>[^<]*</corp_eng_name>\s*)?<stock_code>([^<]*)</stock_code>", xml):
         name, stock = name.strip(), stock.strip()
-        if name not in corps or (stock and not corps[name][1]):
-            corps[name] = [code, stock]
+        if name not in corps:
+            corps[name] = [code, stock, [code]]
+        else:
+            corps[name][2].append(code)   # 이름이 같은 회사가 여럿(옛 법인·새 법인) — 공시가 있는 쪽을 찾을 때 씀
+            if stock and not corps[name][1]:
+                corps[name][:2] = [code, stock]
     CORP_CACHE.parent.mkdir(parents=True, exist_ok=True)
     CORP_CACHE.write_text(json.dumps(corps, ensure_ascii=False), encoding="utf-8")
     print(f"    DART 회사 목록 새로 받음: {len(corps)}곳")
@@ -84,6 +90,21 @@ def find_corp(name: str) -> tuple[str, str] | None:
     corps = _corps()
     hit = corps.get(clean) or corps.get(name.strip())
     return (hit[0], clean) if hit else None
+
+
+PARTICLE = re.compile(r"(?:의|은|는|이|가|도|과|와|에|을|를|로|으로)$")
+
+
+def corp_in_sentence(sentence: str) -> tuple[str, str] | None:
+    """문장 속 상장회사 이름(어절, 조사 뗌, 이웃 두 어절 붙여서도). '금융감독원 전자공시에 따르면 두산 건설의 …'처럼
+    분해한 기관이 회사가 아닐 때 쓴다(11/15 검증 세트). 우연히 같은 짧은 이름을 피하려고 상장사·3글자 이상만."""
+    corps = _corps()
+    words = [PARTICLE.sub("", w) for w in re.findall(r"[가-힣A-Za-z0-9&]+", sentence)]
+    for cand in [a + b for a, b in zip(words, words[1:])] + words:
+        hit = corps.get(cand)
+        if len(cand) >= 3 and hit and hit[1] and not NOT_COMPANY.search(cand):
+            return hit[0], cand
+    return None
 
 
 def is_company_number(info: dict, sentence: str) -> bool:
@@ -210,13 +231,21 @@ def search(info: dict, sentence: str, article_date: str) -> list[Candidate]:
     """기사 날짜 앞뒤 공시 중 정기보고서·잠정실적 원문(최신부터 MAX_REPORTS 개)."""
     try:
         corp = find_corp(info.get("기관", ""))
+        if not corp or not (_corps().get(corp[1]) or ["", ""])[1]:
+            # 분해한 기관이 회사가 아니거나 비상장 이름(예: DART 목록의 '금융감독원')이면 문장 속 상장회사로
+            corp = corp_in_sentence(sentence) or corp
         events = [name for words, name in EVENT_WORDS.items() if re.search(words, sentence)]
         if not corp or not (MONEY_WORDS.search(sentence) or events):
             return []
         day = article_day(article_date) or date.today()
         bgn, end = day - timedelta(days=DAYS_BEFORE), day + timedelta(days=DAYS_AFTER)
-        data = json.loads(_api("list.json", corp_code=corp[0], bgn_de=bgn.strftime("%Y%m%d"),
-                               end_de=end.strftime("%Y%m%d"), page_count=100))
+        codes = (_corps().get(corp[1]) or [corp[0], "", [corp[0]]])[2]
+        codes = [corp[0], *[c for c in codes if c != corp[0]]][:4]
+        for code in codes:   # 이름이 같은 회사가 여럿이면 기간 안에 공시가 있는 쪽(11/15: 두산건설 옛 법인은 공시 0건)
+            data = json.loads(_api("list.json", corp_code=code, bgn_de=bgn.strftime("%Y%m%d"),
+                                   end_de=end.strftime("%Y%m%d"), page_count=100))
+            if data.get("list"):
+                break
     except (RuntimeError, ValueError, zipfile.BadZipFile) as e:  # DART 실패는 다른 경로로 계속(이유 출력)
         print(f"    DART 공시 찾기 실패: {e}")
         return []
