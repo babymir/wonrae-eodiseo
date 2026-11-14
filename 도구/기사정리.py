@@ -130,6 +130,17 @@ NUMBER_WITH_UNIT = re.compile(
 NOT_VALUE = re.compile(r"^\d+\s*대$")   # '60대'(나이대) 같은 것
 
 
+# 기준값·조건 숫자: '중위소득의 50%에도 못 미치는', '200달러 이하', '3명 중', '10만 명당' — 주장이 아니라 기준이다
+# (11/15: 노인 빈곤 문장에서 기준값 50%를 골라 '상대적 빈곤율' 정의 문장과 맞춰 '표현 바뀜' 헛답)
+CONDITION_AFTER = r"\s*(?:의|을|를|에|에도|도)?\s*(?:못\s*미치|미달|미만|이하|이상|초과|넘는|넘은|넘어|웃도|밑도|기준|중\b|중\s|당|까지|부터)"
+
+
+def is_condition_number(sentence: str, number: str) -> bool:
+    """문장 속 그 숫자가 기준값·조건(이하·미만·못 미치는·중·당 …)으로 쓰였는지."""
+    core = re.escape(number.strip())
+    return bool(re.search(core.replace(r"\ ", r"\s*") + CONDITION_AFTER, sentence))
+
+
 def all_numbers(sentence: str) -> list[str]:
     """문장 속 단위 붙은 숫자 전부(나온 순서, 중복 없음)."""
     out = []

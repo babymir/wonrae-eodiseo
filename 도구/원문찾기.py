@@ -37,7 +37,7 @@ from liner_api import web_search
 from PDF도구 import find_candidates, period_tokens
 from 검색 import SKIP_LEAD, is_recent, search_all
 from 기관별 import FINDERS, Candidate, drop_rebuttals, normalize_institution
-from 기사정리 import all_numbers, extract_cached, stabilize
+from 기사정리 import all_numbers, extract_cached, is_condition_number, stabilize
 from 숫자표기 import to_regex, variants
 from 순위 import cross_check, rank_hits, same_indicator
 from 판정 import choose, mentions_raw_data, near_match, read_pdf
@@ -123,6 +123,7 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
     try:
         result = _run_with_limit(result, sentence, context, article_date, force, prefer)
         # 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)
+        result = _guard_condition(result)
         result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
         with 기록.step("확인할 곳 안내"):
             result = 미확인안내.attach(미확인안내.to_raw_data(result), sentence)
@@ -161,6 +162,20 @@ def _run_with_limit(result: dict, sentence: str, context: str, article_date: str
         ex.shutdown(wait=False)
 
 
+def _guard_condition(result: dict) -> dict:
+    """문장의 숫자가 기준값뿐인데(예: '중위소득의 50%에도 못 미치는') 그 기준값으로 원문을 '확인'했다면 내린다.
+    기준값은 정의 문장('상대적 빈곤율이란 중위소득 50% 미만…')에 흔히 있어 주장의 원문이 아니다(11/15 헛답)."""
+    cond = result.get("기준값숫자")
+    if not cond or result.get("판정") not in FOUND | {NEAR} or result.get("다른숫자로확인"):
+        return result
+    print(f"    기준값 '{cond}'로만 맞춘 결과라 원문 확인으로 보지 않음")
+    found = {"제목": result.get("보고서"), "주소": result.get("상세페이지")}
+    keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
+    return {**keep, "판정": "원출처 미확인", "후보": [found] if found["주소"] else [],
+            "이유": (f"문장 속 숫자 '{cond}'는 주장이 아니라 기준값이라, 같은 숫자가 있는 문서를 찾아도 이 주장의 원문이라고 "
+                   "볼 수 없습니다. 주장(예: '3명 중 1명')의 원 통계를 직접 확인해 주세요.")}
+
+
 def _run(result: dict, sentence: str, context: str, article_date: str, force: bool,
          prefer: dict | None = None) -> dict:
     with 기록.step("입구 필터"):
@@ -180,6 +195,14 @@ def _run(result: dict, sentence: str, context: str, article_date: str, force: bo
         return result
     with 기록.step("문장 분해"):
         info = stabilize(extract_cached(sentence, context, article_date), sentence, article_date)
+    if is_condition_number(sentence, info["숫자"]):
+        # 기준값을 고른 경우: 문장 속 다른 주장 숫자로 바꾼다. 없으면 기준값만으로는 '원문 확인'을 내지 않는다(_judge 뒤)
+        claims = [n for n in all_numbers(sentence) if not is_condition_number(sentence, n)]
+        if claims:
+            print(f"    고른 숫자 '{info['숫자']}'는 기준값이라 주장 숫자 '{claims[0]}'로 바꿈")
+            info = {**info, "숫자": claims[0]}
+        else:
+            result["기준값숫자"] = info["숫자"]
     result["추출"] = info
     print(f"[1] 라이너 모델 분해: {info}")
     기록.emit("분해", info)
@@ -287,7 +310,7 @@ def _other_numbers(result: dict, base: dict, sentence: str, info: dict, docs: li
     # 조건·분모 숫자('200달러 이하', '3명 중', '10만 명당')는 주장이 아니다 → 다시 대조에 쓰지 않음
     # (11/14: FEC '200달러 이하'로 일반 설명 페이지와 맞춰 '일치')
     others = [n for n in numbers if n.replace(" ", "") != info["숫자"].replace(" ", "")
-              and not re.search(re.escape(n) + r"\s*(?:이하|이상|미만|초과|중|당|까지|부터)", sentence)]
+              and not is_condition_number(sentence, n)]
     # 흔한 작은 숫자('4건')보다 자릿수가 많은 숫자부터(우연히 같은 숫자를 맞출 위험이 적다)
     others.sort(key=lambda n: -len(re.sub(r"\D", "", n)))
     if result.get("판정") not in FOUND:
