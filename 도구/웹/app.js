@@ -277,6 +277,7 @@ function row(label, ...content) {
 
 
 function render(r, steps, secs, partial) {
+  if (r["재생"] && r["재생"]["실제소요초"] > 0) secs = Math.round(r["재생"]["실제소요초"]);   // 재생 시간이 아니라 원래 실행에 걸린 시간
   const gate = r["입구"] || {};
   const v = gate["통과"] === false && gate["종류"] === "지원 범위 밖"
     ? { cls: "v-none", head: "지원 범위 밖 자료입니다" }
@@ -457,6 +458,11 @@ function render(r, steps, secs, partial) {
   parts.push(h("details", { class: "trace" }, h("summary", {}, `어떻게 찾았나 (${secs}초)`),
     h("ol", {}, steps.map((s) => h("li", {}, s)), r["찾은방법"] ? h("li", {}, r["찾은방법"]) : null), apis, timing));
 
+  // 시연 재생(11/16, 크레딧 소진): 새로 찾은 것이 아니라 실제로 돌려 저장한 결과임을 밝힌다
+  const rp = r["재생"];
+  if (rp) parts.unshift(h("p", { class: "note" },
+    `저장된 실제 실행 결과를 다시 보여 드립니다(${String(rp["실행시각"] || "").slice(0, 10)} 실행` +
+    (rp["실제소요초"] > 0 ? `, 실제 소요 ${rp["실제소요초"]}초).` : ").")));
   box.replaceChildren(...parts);
   box.hidden = false;
   head.focus({ preventScroll: true });

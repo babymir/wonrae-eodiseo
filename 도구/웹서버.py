@@ -10,6 +10,10 @@
 - GET  /api/page?file=&page=&mark=&quote=  → 원문 쪽 PNG (숫자·문장에 형광펜 표시, 그 부분만 잘라서)
 - GET  /api/pdf?file=  → 원문 PDF
 한 번에 한 건씩 처리한다(진행 기록을 화면에 보여 주려고 출력을 가로채기 때문).
+
+시연 재생(11/16, 라이너 크레딧 소진): ORIGIN_REPLAY=1 이면 작업/시연/저장결과.json 의 문장은 새로 찾지 않고
+실제로 돌려 저장한 결과와 진행 기록을 그대로 다시 보여 준다(만들기: python3 도구/시연_저장.py).
+결과에 '재생' 표시를 붙여 화면에 '저장된 실행 결과'라고 밝힌다. 그 밖의 문장은 평소처럼 찾는다.
 """
 import contextlib
 import io
@@ -18,6 +22,7 @@ import os
 import re
 import sys
 import threading
+import time
 import traceback
 import urllib.parse
 import uuid
@@ -35,6 +40,10 @@ SAFE_PDF = re.compile(r"^[\w가-힣.\-]+\.pdf$")
 ZOOM = 2.0                 # 쪽 그림 해상도 배율
 CROP_MARGIN = 170          # 형광펜 위아래로 보여 줄 여백(pt)
 MARK = (1.0, 0.894, 0.361)  # 형광 노랑 #FFE45C
+
+REPLAY_FILE = Path(__file__).resolve().parent.parent / "작업" / "시연" / "저장결과.json"
+REPLAY_ON = os.environ.get("ORIGIN_REPLAY") == "1"
+REPLAY_MAX_SEC = 8.0       # 재생에 쓰는 최대 시간(실제 걸린 시간이 이보다 짧으면 실제 시간만큼)
 
 JOBS: dict[str, dict] = {}
 RUN_LOCK = threading.Lock()
@@ -96,6 +105,46 @@ def work(job_id: str, sentence: str, context: str, date: str, force: bool, prefe
         except Exception as e:  # 화면에 이유를 보여 주고, 서버 창에는 자세한 기록
             job.update(status="error", error=f"{type(e).__name__}: {e}")
             traceback.print_exc(file=sys.__stderr__)
+
+
+def _norm(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def load_replays() -> dict[str, dict]:
+    """시연 재생용 저장 결과(문장 → 항목). 재생을 켰는데 파일이 없거나 깨졌으면 이유를 알린다."""
+    if not REPLAY_ON:
+        return {}
+    try:
+        items = json.loads(REPLAY_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"시연 재생 파일을 읽지 못했습니다({REPLAY_FILE.name}): {e} — python3 도구/시연_저장.py 로 만드세요")
+        return {}
+    return {_norm(x["문장"]): x for x in items}
+
+
+REPLAYS = load_replays()
+
+
+def replay(job_id: str, item: dict) -> None:
+    """저장한 실제 실행을 다시 보여 준다: 진행 줄과 단계 결과를 차례로 내고 마지막에 저장 결과."""
+    job, res = JOBS[job_id], dict(item["결과"])
+    real = float((res.get("시간") or {}).get("총초") or 0)
+    events = [("분해", res.get("추출")), ("보고서", res.get("보고서"))]
+    if res.get("쪽") and str(res.get("PDF", "")).endswith(".pdf"):
+        events.append(("쪽", {"PDF": Path(res["PDF"]).name, "쪽": res["쪽"], "표기": res.get("찾은표기", "")}))
+    lines = item.get("진행") or [res.get("이유") or "저장된 결과를 불러옴"]
+    pace = min(real, REPLAY_MAX_SEC) / max(1, len(lines))
+    at = {i * len(lines) // len(events): ev for i, ev in enumerate(events)}   # 단계 결과를 진행 줄 사이에 고르게
+    for i, line in enumerate(lines):
+        job["steps"].append(line.strip())
+        kind, data = at.get(i, (None, None))
+        if data:
+            job["events"].append({"종류": kind, "내용": data})
+        time.sleep(pace)
+    res["재생"] = {"실행시각": item.get("실행시각", ""), "실제소요초": round(real, 1), "출처파일": item.get("출처파일", "")}
+    job["events"].append({"종류": "판정", "내용": res})
+    job.update(status="done", result=res)
 
 
 def page_png(file: str, page_no: int, mark: str, quote: str, crop: bool) -> bytes:
@@ -180,6 +229,10 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_json({"error": "고른 보고서 정보가 올바르지 않습니다(지원 기관 누리집 PDF만 됩니다)."}, 400)
         job_id = uuid.uuid4().hex[:12]
         JOBS[job_id] = {"status": "running", "steps": [], "events": [], "partial": None, "result": None, "error": None}
+        saved = REPLAYS.get(_norm(sentence)) if not prefer else None
+        if saved:
+            threading.Thread(target=replay, daemon=True, args=(job_id, saved)).start()
+            return self.send_json({"job": job_id})
         threading.Thread(target=work, daemon=True, args=(
             job_id, sentence, (body.get("context") or "").strip()[:3000], (body.get("date") or "").strip()[:20],
             body.get("force") is True, prefer, url,
@@ -195,4 +248,6 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     print(f"「원래 어디서?」 화면: http://{HOST}:{PORT}  (끄려면 Ctrl+C)")
+    if REPLAY_ON:
+        print(f"시연 재생 켜짐: 저장된 실제 결과 {len(REPLAYS)}건은 새로 찾지 않고 다시 보여 줍니다")
     ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
