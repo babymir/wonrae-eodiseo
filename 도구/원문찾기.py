@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
@@ -95,7 +96,8 @@ def apply_rules(result: dict, sentence: str, number: str) -> None:
 def _emit_verdict(result: dict) -> None:
     """판정을 화면에 먼저 보낸다. 단 마지막 헛답 막기(기준값·언론 기사·옛 날짜)에 걸릴 판정은 보내지 않는다
     (11/16: '원문 확인됨'이 몇 초 보였다가 '못 찾음'으로 바뀌면 화면을 믿을 수 없음). 기사 날짜 대신 기준 시점으로 본다."""
-    safe = _guard_year(_guard_news(_guard_condition(dict(result), quiet=True), quiet=True), quiet=True)
+    safe = _guard_other_org(_guard_year(_guard_news(_guard_condition(dict(result), quiet=True), quiet=True), quiet=True),
+                            quiet=True)
     if safe.get("판정") != result.get("판정"):
         return
     기록.emit("판정", dict(result))
@@ -160,7 +162,7 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
 
 def _finish(result: dict, sentence: str, article_date: str) -> dict:
     """마무리: 헛답 막기(기준값·언론 기사·옛 날짜) → 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)."""
-    result = _guard_year(_guard_news(_guard_condition(result)), article_date)
+    result = _guard_other_org(_guard_year(_guard_news(_guard_condition(result)), article_date))
     if result.get("판정") == "원출처 미확인":
         result["확인할위치"] = _spots(result, sentence)
     result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
@@ -407,6 +409,42 @@ def _guard_year(result: dict, article_date: str = "", quiet: bool = False) -> di
     keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
     return {**keep, "판정": "원출처 미확인", "후보": [found] if found["주소"] else [],
             "이유": f"같은 숫자가 있는 문서를 찾았지만 {max(years)}년 숫자라 이 기사({ref_year}년)의 원문으로 볼 수 없습니다."}
+
+
+DOC_HEAD_CHARS = 5000   # 다른 기관 판별: 문서 앞부분에 기사 속 기관 이름이 있으면 그 기관 문서로 본다
+
+
+def _doc_head(path: str) -> str:
+    try:
+        if path.endswith(".txt"):
+            return open(path, encoding="utf-8", errors="ignore").read(DOC_HEAD_CHARS)
+        if path.endswith(".pdf") and os.path.exists(path):
+            out = subprocess.run(["pdftotext", "-l", "2", path, "-"], capture_output=True, text=True, timeout=20)
+            return out.stdout[:DOC_HEAD_CHARS]
+    except (OSError, subprocess.SubprocessError) as e:  # 못 읽으면 이름 확인 없이 판단(이유 출력)
+        print(f"    (문서 앞부분을 읽지 못함: {e})")
+    return ""
+
+
+def _guard_other_org(result: dict, quiet: bool = False) -> dict:
+    """근거 문서가 기사가 밝힌 기관이 아닌 곳(공공기관·사본·DART·학술·IR·출처로 밝힌 외신 제외)의 문서이고, 문서 앞부분에
+    그 기관 이름도 없으면 '원문 확인'으로 보지 않는다(11/16 사전 점검: 싱가포르 등록청 자료를 인용한 C4ADS 보고서를 '일치').
+    이전 모든 결과에 대 보니 걸리는 것은 이 건과 예전 헛답(ibtimes·야후 파이낸스)뿐."""
+    if result.get("판정") not in FOUND | {NEAR}:
+        return result
+    info = result.get("추출") or {}
+    url = result.get("상세페이지") or ""
+    if not 일반경로.other_org_doc(url, info, result.get("입력", "")):
+        return result
+    inst = re.sub(r"\s+", "", info.get("기관", ""))
+    if inst and inst in re.sub(r"\s+", "", _doc_head(result.get("PDF") or "")):
+        return result
+    if not quiet:
+        print(f"    근거 문서가 기사가 밝힌 기관({info.get('기관')})이 아닌 곳의 문서라 원문 확인으로 보지 않음: {url[:80]}")
+    keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
+    return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": url}],
+            "이유": (f"같은 숫자가 있는 다른 기관의 문서({일반경로.host(url)})는 찾았지만, 기사가 밝힌 "
+                   f"'{info.get('기관')}'의 원문은 찾지 못했습니다. 아래 문서는 참고용이며 원문이 아닙니다.")}
 
 
 def _guard_condition(result: dict, quiet: bool = False) -> dict:

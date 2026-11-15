@@ -368,6 +368,27 @@ def followed_url(path: Path, quote: str) -> str:
     return m.group(1) if m else ""
 
 
+# 다른 기관 문서 판별(11/16): 기사가 밝힌 기관이 아닌 곳의 문서를 '원문'으로 내지 않게. 같은 원문을 옮겨 두는 곳은 예외
+COPY_HOST = re.compile(r"(?:^|\.)(?:korea\.kr|kosis\.kr)$|\.or\.kr$")
+
+
+def other_org_doc(url: str, info: dict, sentence: str = "") -> bool:
+    """근거 주소가 기사가 밝힌 기관(누리집을 알 때)과 다른 곳이고, 공공기관·사본·DART·학술·IR·출처로 밝힌 외신도 아니면 True."""
+    domain = clean_domain(info.get("기관누리집", ""))
+    h = host(url)
+    if not domain or not url or on_domain(url, domain):
+        return False
+    if (PUBLIC_HOST.search(h) or COPY_HOST.search(h) or "dart.fss.or.kr" in h or ACADEMIC_HOST.search(h)
+            or IR_HOST.search(h)):
+        return False
+    if any(on_domain(url, d) for d in cited_outlet_domains(sentence)):
+        return False
+    label = max(domain.split(".")[:-1] or [domain], key=len)
+    if len(label) >= 4 and label in h:   # nielsen.com ↔ nielsenkorea.co.kr
+        return False
+    return not brand_match(url, f"{info.get('기관', '')} {info.get('원어검색어', '')}")
+
+
 def fetch_doc(c: Candidate) -> Path | None:
     """일반 경로 후보를 받는다. 이미 받은 것은 다시 받지 않는다. 실패·빈 페이지면 None.
     - PDF → 원본PDF/<키>.pdf

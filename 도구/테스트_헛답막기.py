@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import 일반경로  # noqa: E402
-from 원문찾기 import _guard_condition, _guard_news, _guard_year  # noqa: E402
+from 원문찾기 import _guard_condition, _guard_news, _guard_other_org, _guard_year  # noqa: E402
 from 입구 import only_method_numbers  # noqa: E402
 
 KEPT, DROPPED = "그대로", "원출처 미확인"
@@ -62,6 +62,26 @@ METHOD_CASES = [
 ]
 
 
+def org_case(url: str, inst: str, site: str, sentence: str = "", extra: str = "") -> str:
+    r = found(sentence or f"{inst}에 따르면 10%였다.", "인용", 상세페이지=url, PDF="")
+    r["추출"].update(기관=inst, 기관누리집=site, 원어검색어=extra)
+    return outcome(_guard_other_org(r, quiet=True))
+
+
+OTHER_ORG_CASES = [
+    ("등록청 자료를 인용한 연구단체 보고서(11/16 사전 점검 무작위 #13)",
+     lambda: org_case("https://c4ads.org/wp-content/uploads/2026/09/x.pdf", "싱가포르 회계기업규제청", "acra.gov.sg"), DROPPED),
+    ("기업 숫자를 실은 금융 정보 사이트(예전 헛답)",
+     lambda: org_case("https://finance.yahoo.com/news/x", "엔비디아", "nvidia.com"), DROPPED),
+    ("정책브리핑 사본 — 그대로", lambda: org_case("https://www.korea.kr/briefing/x", "관세청", "customs.go.kr"), KEPT),
+    ("기관 자기 누리집(이름이 주소에 일부) — 그대로",
+     lambda: org_case("https://www.nielsenkorea.co.kr/x", "닐슨코리아", "nielsen.com"), KEPT),
+    ("영문 이름이 주소와 맞음 — 그대로",
+     lambda: org_case("https://energyshift.institute/work/x", "에너지전환연구소", "esi.org", extra="Energy Shift Institute KEPCO"), KEPT),
+    ("DART 공시 — 그대로", lambda: org_case("https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1", "농심", "nongshim.com"), KEPT),
+]
+
+
 def news_case(url: str, sentence: str, page_text: str, institution_site: str = "") -> str:
     with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf-8") as f:
         f.write(page_text)
@@ -100,9 +120,10 @@ def main() -> int:
     bad += [check(n, outcome(_guard_condition(r, quiet=True)), w) for n, r, w in CONDITION_CASES]
     bad += [check(s, only_method_numbers(s), w) for s, w in METHOD_CASES]
     bad += [check(n, f(), w) for n, f, w in NEWS_CASES]
+    bad += [check(n, f(), w) for n, f, w in OTHER_ORG_CASES]
     bad += [check("공공기관 주소는 언론 아님", 일반경로.is_news_doc("https://gnews.gg.go.kr/briefing/a"), False)]
     bad = [b for b in bad if b]
-    total = len(YEAR_CASES) + len(CONDITION_CASES) + len(METHOD_CASES) + len(NEWS_CASES) + 1
+    total = len(YEAR_CASES) + len(CONDITION_CASES) + len(METHOD_CASES) + len(NEWS_CASES) + len(OTHER_ORG_CASES) + 1
     print("\n".join(bad) if bad else "통과: 헛답 막기")
     print(f"\n사례 {total}개 — {'모두 통과' if not bad else f'{len(bad)}개 실패'}")
     return 1 if bad else 0
