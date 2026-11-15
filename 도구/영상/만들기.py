@@ -19,6 +19,8 @@ FPS, W, H = 30, 1920, 1080
 BG = "0xf2f3f5"
 FLIP_SHARE = 3                          # 문제 장면: 앞 3줄 동안 쪽 넘기기, 나머지는 AI 검색 그림
 MAX_SEC = 300                           # 대회 제한 5분
+FADE = 0.45                             # 장면이 바뀔 때 바탕색으로 흐려졌다 나타나는 시간(초)
+REC_SKIP = 0.5                          # 녹화 앞의 빈 화면(페이지 여는 중) 건너뛰기
 
 
 def run(cmd: list[str]) -> None:
@@ -32,9 +34,18 @@ def still(png: Path, sec: float, out: Path) -> None:
          "-vf", f"scale={W}:{H},format=yuv420p", "-an", str(out)])
 
 
+def fade(clip: Path, sec: float) -> None:
+    """장면 앞뒤를 바탕색에서 부드럽게 나타나고 사라지게(11/16: 장면이 '갑자기 바뀌는 느낌')."""
+    tmp = clip.with_name(clip.stem + "_f.mp4")
+    run(["ffmpeg", "-y", "-i", str(clip), "-vf",
+         f"fade=t=in:st=0:d={FADE}:c={BG},fade=t=out:st={max(0, sec - FADE):.3f}:d={FADE}:c={BG},format=yuv420p",
+         "-an", str(tmp)])
+    tmp.replace(clip)
+
+
 def fit_video(src: Path, sec: float, out: Path) -> None:
     """녹화를 sec 초로: 길면 자르고 짧으면 마지막 화면을 멈춰 늘린다."""
-    run(["ffmpeg", "-y", "-i", str(src), "-r", str(FPS),
+    run(["ffmpeg", "-y", "-ss", str(REC_SKIP), "-i", str(src), "-r", str(FPS),
          "-vf", f"scale={W}:{H},tpad=stop_mode=clone:stop_duration={sec:.3f},format=yuv420p",
          "-t", f"{sec:.3f}", "-an", str(out)])
 
@@ -78,11 +89,15 @@ def main() -> int:
             a, b = TMP / f"{name}_a.mp4", TMP / f"{name}_b.mp4"
             flip_video(split, a)
             still(PIC / "문제_AI.png", sec - split, b)
+            fade(a, split)
+            fade(b, sec - split)
             lst = TMP / f"{name}.txt"
             lst.write_text(f"file '{a.name}'\nfile '{b.name}'\n", encoding="utf-8")
             run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(clip)])
         else:
             still(PIC / f"{s['그림']}.png", sec, clip)
+        if s["종류"] != "문제":   # 문제 장면은 두 조각에 따로 넣었음
+            fade(clip, sec)
         clips.append(clip)
         for i, (st, d) in enumerate(zip(starts, durs)):
             audio_parts.append((clock + st, VOICE / f"{name}_{i}.mp3"))

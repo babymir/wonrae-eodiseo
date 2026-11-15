@@ -42,7 +42,7 @@ td.good { color: #1f6f43; }
 SLIDES = {
     "제목": """<h1>원래 어디서?</h1>
 <p class="sub">기사 속 숫자의 원문을 문장까지 찾아 주는 AI 에이전트</p>
-<p class="small">라이너 .EXE-THON 2026 · 라이너 API로 만듦</p>""",
+<p class="small">라이너 .EXE-THON 2026 출품 · 라이너 API로 만들었습니다</p>""",
     "문제_AI": """<h2>AI 검색에 물어보면</h2>
 <table><tr><th>AI 검색 8종, 뉴스 인용 출처 시험</th><td class="num">오답 60% 이상</td></tr>
 <tr><th>원문 대신 사본·기사 인용, 지어낸 주소</th><td class="num">다수</td></tr></table>
@@ -64,9 +64,13 @@ SLIDES = {
 <div><b>판정</b><span>Model</span><span>Decisions</span><i>칸별 비교·교차 확인</i></div>
 </div>
 <div class="check">단계 사이마다 코드가 원문 문서를 직접 열어 숫자를 확인 → 문서에 없는 인용은 '원문 확인'으로 내지 않음 · 건당 라이너 API 약 26회</div>""",
-    "마무리": """<h1>원래 어디서?</h1>
-<p class="sub">숫자를 인용하기 직전, 30분 대신 1분 안에.</p>
-<p class="small">언론사 데스크 · 공공기관 홍보실 · 라이너 Write '내보내기 전 숫자 점검'<br>github.com/babymir/wonrae-eodiseo</p>""",
+    "마무리": """<h2>숫자를 인용하기 전에, 문장 하나만 넣어 보세요</h2>
+<table>
+<tr><th>기자·편집자</th><td>송고 전에 기사 속 숫자를 원문과 대조</td></tr>
+<tr><th>공공기관 홍보·통계 담당</th><td>우리 기관 통계가 바르게 인용됐는지 점검</td></tr>
+<tr><th>보고서·제안서 쓰는 사람</th><td>옮긴 숫자마다 원문 쪽·문장을 각주로</td></tr>
+</table>
+<p class="small">github.com/babymir/wonrae-eodiseo</p>""",
 }
 
 
