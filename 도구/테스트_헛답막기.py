@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import 일반경로  # noqa: E402
-from 원문찾기 import _guard_condition, _guard_news, _guard_other_org, _guard_year  # noqa: E402
+from 원문찾기 import _guard_condition, _guard_doc_date, _guard_news, _guard_other_org, _guard_year  # noqa: E402
 from 입구 import only_method_numbers  # noqa: E402
 
 KEPT, DROPPED = "그대로", "원출처 미확인"
@@ -43,6 +43,24 @@ YEAR_CASES = [
     ("기사 문장에 그 연도가 있음 — 그대로",
      found("2015년 7월 1일 당시 환율은 1130원이었다.", "2015.07.01 1,130원"),
      "2026-11-01", KEPT),
+]
+
+def date_case(url: str, sentence: str, period: str) -> str:
+    r = found(sentence, "인용", 상세페이지=url)
+    r["추출"]["기준시점"] = period
+    return outcome(_guard_doc_date(r, quiet=True))
+
+
+DOC_DATE_CASES = [
+    ("기준 연도보다 먼저 나온 보고서의 표 줄(11/16 사전 점검 무작위 #1)",
+     lambda: date_case("https://w4.kirs.or.kr/download/valueup/250401_KG.pdf", "3분기 별도 영업이익이 44억원으로 증가했다.",
+                       "2026년 3분기"), DROPPED),
+    ("전망 문장은 앞선 해 보고서도 원문 — 그대로",
+     lambda: date_case("https://x.re.kr/2025/10/report.pdf", "내년 성장률은 1.8%로 전망된다.", "2026년"), KEPT),
+    ("같은 해 문서 — 그대로",
+     lambda: date_case("https://x.go.kr/2026/11/a.pdf", "10월 고용률은 63.1%였다.", "2026년 10월"), KEPT),
+    ("DART 접수번호는 날짜로 보지 않음 — 그대로",
+     lambda: date_case("https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000752", "매출 100억원", "2026년 3분기"), KEPT),
 ]
 
 CONDITION_CASES = [
@@ -121,9 +139,10 @@ def main() -> int:
     bad += [check(s, only_method_numbers(s), w) for s, w in METHOD_CASES]
     bad += [check(n, f(), w) for n, f, w in NEWS_CASES]
     bad += [check(n, f(), w) for n, f, w in OTHER_ORG_CASES]
+    bad += [check(n, f(), w) for n, f, w in DOC_DATE_CASES]
     bad += [check("공공기관 주소는 언론 아님", 일반경로.is_news_doc("https://gnews.gg.go.kr/briefing/a"), False)]
     bad = [b for b in bad if b]
-    total = len(YEAR_CASES) + len(CONDITION_CASES) + len(METHOD_CASES) + len(NEWS_CASES) + len(OTHER_ORG_CASES) + 1
+    total = len(YEAR_CASES) + len(CONDITION_CASES) + len(METHOD_CASES) + len(NEWS_CASES) + len(OTHER_ORG_CASES) + len(DOC_DATE_CASES) + 1
     print("\n".join(bad) if bad else "통과: 헛답 막기")
     print(f"\n사례 {total}개 — {'모두 통과' if not bad else f'{len(bad)}개 실패'}")
     return 1 if bad else 0

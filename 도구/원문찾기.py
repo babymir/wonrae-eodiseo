@@ -96,8 +96,8 @@ def apply_rules(result: dict, sentence: str, number: str) -> None:
 def _emit_verdict(result: dict) -> None:
     """판정을 화면에 먼저 보낸다. 단 마지막 헛답 막기(기준값·언론 기사·옛 날짜)에 걸릴 판정은 보내지 않는다
     (11/16: '원문 확인됨'이 몇 초 보였다가 '못 찾음'으로 바뀌면 화면을 믿을 수 없음). 기사 날짜 대신 기준 시점으로 본다."""
-    safe = _guard_other_org(_guard_year(_guard_news(_guard_condition(dict(result), quiet=True), quiet=True), quiet=True),
-                            quiet=True)
+    safe = _guard_doc_date(_guard_other_org(_guard_year(_guard_news(_guard_condition(dict(result), quiet=True), quiet=True),
+                                                        quiet=True), quiet=True), quiet=True)
     if safe.get("판정") != result.get("판정"):
         return
     기록.emit("판정", dict(result))
@@ -162,7 +162,7 @@ def run(sentence: str, context: str = "", article_date: str = "", force: bool = 
 
 def _finish(result: dict, sentence: str, article_date: str) -> dict:
     """마무리: 헛답 막기(기준값·언론 기사·옛 날짜) → 못 찾았을 때 '왜 없는지·어디서 확인할지'(A1~A3)."""
-    result = _guard_other_org(_guard_year(_guard_news(_guard_condition(result)), article_date))
+    result = _guard_doc_date(_guard_other_org(_guard_year(_guard_news(_guard_condition(result)), article_date)))
     if result.get("판정") == "원출처 미확인":
         result["확인할위치"] = _spots(result, sentence)
     result = {k: v for k, v in result.items() if not k.startswith("_")}   # 진행용 임시 값은 결과에 남기지 않음
@@ -445,6 +445,36 @@ def _guard_other_org(result: dict, quiet: bool = False) -> dict:
     return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": url}],
             "이유": (f"같은 숫자가 있는 다른 기관의 문서({일반경로.host(url)})는 찾았지만, 기사가 밝힌 "
                    f"'{info.get('기관')}'의 원문은 찾지 못했습니다. 아래 문서는 참고용이며 원문이 아닙니다.")}
+
+
+# 주소 속 문서 날짜: '/2025/04/', '2025-04', '20250401', 파일 이름 앞 '250401_'(yymmdd). DART 접수번호는 뺀다
+URL_DATE = re.compile(r"(?<!\d)(20[12]\d)[/_-]?(0[1-9]|1[0-2])(?:[/_-]?(?:[0-2]\d|3[01]))?(?!\d)"
+                      r"|(?<!\d)([12]\d)(0[1-9]|1[0-2])([0-2]\d|3[01])(?=[_-])")
+FORECAST = re.compile(r"전망|예상|예측|추정|목표|계획|될 것|할 것|가능성|시나리오")
+
+
+def doc_year(url: str) -> int | None:
+    path = re.sub(r"rcpNo=\d+", "", re.sub(r"^https?://[^/]+", "", url or ""))
+    years = [int(m.group(1)) if m.group(1) else 2000 + int(m.group(3)) for m in URL_DATE.finditer(path)]
+    years = [y for y in years if 2010 <= y <= 2030]
+    return max(years) if years else None
+
+
+def _guard_doc_date(result: dict, quiet: bool = False) -> dict:
+    """근거 문서가 기사 숫자의 기준 연도보다 먼저 나온 문서(주소 속 날짜)면 원문일 수 없다(전망·예상 문장은 빼고).
+    11/16 사전 점검 3회차 무작위 #1: 2026년 3분기 실적 ↔ 2025년 4월 기업분석 보고서 표 줄의 우연한 44.
+    이전 모든 결과 파일에 대 보니 걸리는 것은 이 건뿐."""
+    if result.get("판정") not in FOUND | {NEAR} or FORECAST.search(result.get("입력", "")):
+        return result
+    ref = YEAR.search(str((result.get("추출") or {}).get("기준시점", "")))
+    year = doc_year(result.get("상세페이지") or "")
+    if not ref or year is None or year >= int(ref.group(1)):
+        return result
+    if not quiet:
+        print(f"    근거 문서({year}년)가 기사 숫자의 기준 연도({ref.group(1)})보다 먼저 나와 원문으로 보지 않음")
+    keep = {k: v for k, v in result.items() if k in ("입력", "시각", "입구", "출처종류", "추출", "지원밖기관", "시간")}
+    return {**keep, "판정": "원출처 미확인", "후보": [{"제목": result.get("보고서"), "주소": result.get("상세페이지")}],
+            "이유": f"같은 숫자가 있는 문서를 찾았지만 {year}년에 나온 문서라 {ref.group(1)}년 숫자의 원문일 수 없습니다."}
 
 
 def _guard_condition(result: dict, quiet: bool = False) -> dict:
