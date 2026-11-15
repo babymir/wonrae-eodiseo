@@ -4,6 +4,7 @@
 실행: python3 도구/영상/그림.py   → 작업/영상/그림/*.png, 작업/영상/그림/쪽넘기기/*.png
 숫자는 제출/기획서.md 의 처음 보는 문장 첫 측정 값과 같아야 한다(바꾸면 둘 다 고칠 것).
 """
+import base64
 import sys
 from pathlib import Path
 
@@ -15,12 +16,20 @@ OUT = ROOT / "작업" / "영상" / "그림"
 FLIP_PDF = ROOT / "작업" / "원본PDF" / "kihasa_30342.pdf"   # 보육 장면의 원 보고서(178쪽에 재료 숫자)
 FLIP_TARGET = 178
 FLIP_FRAMES = 60
+RESULT_PIC = ROOT / "제출" / "그림" / "대표화면.png"   # 마무리 화면 오른쪽: 실제 결과 화면(기획서와 같은 그림)
+
+def _b64(path: Path) -> str:
+    """그림을 HTML 안에 넣는다(빈 페이지에서는 파일 경로 그림을 브라우저가 막음)."""
+    if not path.exists():
+        sys.exit(f"오류: 그림이 없습니다: {path.relative_to(ROOT)} — python3 도구/기획서_PDF.py 를 먼저 실행하세요.")
+    return base64.b64encode(path.read_bytes()).decode()
+
 
 CSS = """
 @font-face { font-family: P; src: local('Pretendard'); }
 * { box-sizing: border-box; margin: 0; }
 body { width: 1920px; height: 1080px; background: #f2f3f5; font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
-       color: #1d2129; display: flex; flex-direction: column; justify-content: center; padding: 0 200px; }
+       color: #1d2129; display: flex; flex-direction: column; justify-content: center; padding: 0 160px; }
 h1 { font-size: 88px; font-weight: 800; letter-spacing: -2px; }
 h2 { font-size: 52px; font-weight: 700; letter-spacing: -1px; margin-bottom: 40px; }
 p.sub { font-size: 36px; color: #4b5260; margin-top: 24px; }
@@ -63,14 +72,21 @@ SLIDES = {
 <div><b>읽기</b><span>Gateway</span><i>PDF·HWP·첨부<br>안 읽히는 PDF는 모델이</i></div>
 <div><b>판정</b><span>Model</span><span>Decisions</span><i>칸별 비교·교차 확인</i></div>
 </div>
-<div class="check">단계 사이마다 코드가 원문 문서를 직접 열어 숫자를 확인 → 문서에 없는 인용은 '원문 확인'으로 내지 않음 · 건당 라이너 API 약 26회</div>""",
-    "마무리": """<h2>숫자를 인용하기 전에, 문장 하나만 넣어 보세요</h2>
-<table>
-<tr><th>기자·편집자</th><td>송고 전에 기사 속 숫자를 원문과 대조</td></tr>
-<tr><th>공공기관 홍보·통계 담당</th><td>우리 기관 통계가 바르게 인용됐는지 점검</td></tr>
-<tr><th>보고서·제안서 쓰는 사람</th><td>옮긴 숫자마다 원문 쪽·문장을 각주로</td></tr>
+<div class="check">단계 사이마다 코드가 원문 문서를 직접 열어 숫자를 확인 → 문서에 없는 인용은 '원문 확인'으로 내지 않음</div>""",
+    "마무리": f"""<div style="display:flex;gap:56px;align-items:center">
+<div style="flex:1.05">
+<p style="font-size:30px;color:#4b5260;margin-bottom:14px">결론</p>
+<h2 style="font-size:56px;line-height:1.3">숫자를 옮기기 전에,<br>먼저 넣어 보세요</h2>
+<table style="font-size:30px">
+<tr><th style="width:38%">찾는 곳</th><td>원문의 <b>쪽과 문장</b>까지</td></tr>
+<tr><th>모를 때</th><td>지어내지 않고 <b>확인할 곳</b> 안내</td></tr>
+<tr><th>걸리는 시간</th><td><b>30분 → 1분 안에</b></td></tr>
 </table>
-<p class="small">github.com/babymir/wonrae-eodiseo</p>""",
+<p class="small">원래 어디서? · github.com/babymir/wonrae-eodiseo</p>
+</div>
+<div style="flex:1;height:820px;overflow:hidden;border:1px solid #c9ced6;background:#fff">
+<img src="data:image/png;base64,{_b64(RESULT_PIC)}" style="width:100%;display:block">
+</div></div>""",
 }
 
 

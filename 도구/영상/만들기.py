@@ -21,6 +21,7 @@ FLIP_SHARE = 3                          # 문제 장면: 앞 3줄 동안 쪽 넘
 MAX_SEC = 300                           # 대회 제한 5분
 FADE = 0.45                             # 장면이 바뀔 때 바탕색으로 흐려졌다 나타나는 시간(초)
 REC_SKIP = 0.5                          # 녹화 앞의 빈 화면(페이지 여는 중) 건너뛰기
+END_HOLD = 2.5                          # 마지막 장면은 사라지지 않고 이만큼 더 머문 뒤 끝남
 
 
 def run(cmd: list[str]) -> None:
@@ -34,12 +35,14 @@ def still(png: Path, sec: float, out: Path) -> None:
          "-vf", f"scale={W}:{H},format=yuv420p", "-an", str(out)])
 
 
-def fade(clip: Path, sec: float) -> None:
-    """장면 앞뒤를 바탕색에서 부드럽게 나타나고 사라지게(11/16: 장면이 '갑자기 바뀌는 느낌')."""
+def fade(clip: Path, sec: float, out: bool = True) -> None:
+    """장면 앞뒤를 바탕색에서 부드럽게 나타나고 사라지게(11/16: 장면이 '갑자기 바뀌는 느낌').
+    out=False 면 나타나기만(마지막 장면은 결과 화면을 남긴 채 끝냄)."""
     tmp = clip.with_name(clip.stem + "_f.mp4")
-    run(["ffmpeg", "-y", "-i", str(clip), "-vf",
-         f"fade=t=in:st=0:d={FADE}:c={BG},fade=t=out:st={max(0, sec - FADE):.3f}:d={FADE}:c={BG},format=yuv420p",
-         "-an", str(tmp)])
+    vf = f"fade=t=in:st=0:d={FADE}:c={BG}"
+    if out:
+        vf += f",fade=t=out:st={max(0, sec - FADE):.3f}:d={FADE}:c={BG}"
+    run(["ffmpeg", "-y", "-i", str(clip), "-vf", vf + ",format=yuv420p", "-an", str(tmp)])
     tmp.replace(clip)
 
 
@@ -78,6 +81,9 @@ def main() -> int:
             starts.append(t)
             t += d + GAP
         sec = max(t - GAP + TAIL if durs else 0, s.get("최소초", 0))
+        last = s is scenes[-1]
+        if last:
+            sec += END_HOLD
         clip = TMP / f"{name}.mp4"
         if s["종류"] == "녹화":
             src = REC / f"{name}.webm"
@@ -97,7 +103,7 @@ def main() -> int:
         else:
             still(PIC / f"{s['그림']}.png", sec, clip)
         if s["종류"] != "문제":   # 문제 장면은 두 조각에 따로 넣었음
-            fade(clip, sec)
+            fade(clip, sec, out=not last)
         clips.append(clip)
         for i, (st, d) in enumerate(zip(starts, durs)):
             audio_parts.append((clock + st, VOICE / f"{name}_{i}.mp3"))
