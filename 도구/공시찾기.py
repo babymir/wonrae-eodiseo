@@ -91,7 +91,30 @@ def find_corp(name: str) -> tuple[str, str] | None:
     if NOT_COMPANY.search(clean) and not (corps.get(clean) or ["", ""])[1]:
         return None   # 공사·공단이라도 상장사(한국전력공사 등)는 DART 공시가 원문(11/16 신규 세트2)
     hit = corps.get(clean) or corps.get(name.strip())
-    return (hit[0], clean) if hit else None
+    if hit:
+        return hit[0], clean
+    return _listed_prefix(clean, corps)
+
+
+PREFIX_MIN_CHARS = 4      # 앞부분 맞추기: 상장사 이름이 이 글자 수 이상이고
+PREFIX_MIN_SHARE = 0.6    # 기사 속 이름의 이 비율 이상일 때만(짧은 이름이 우연히 맞는 것을 막음)
+GROUP_TAIL = re.compile(r"(그룹|계열|계열사)$")
+
+
+def _listed_prefix(clean: str, corps: dict) -> tuple[str, str] | None:
+    """정확히 같은 이름이 없을 때: 기사 속 이름의 앞부분이 상장사 이름이면 그 회사(가장 긴 것).
+    예(11/16 사전 점검 무작위 #24): 기사 '리가켐바이오사이언스' ↔ DART 등록 이름 '리가켐바이오'."""
+    if GROUP_TAIL.search(clean):
+        return None   # '현대자동차그룹'은 회사 하나가 아니라 그룹 — 계열사 공시를 원문으로 보지 않음
+    best = ""
+    for cname, (_, stock, _codes) in corps.items():
+        if (stock and len(cname) > len(best) and clean.startswith(cname) and len(cname) >= PREFIX_MIN_CHARS
+                and len(cname) >= PREFIX_MIN_SHARE * len(clean)):
+            best = cname
+    if not best:
+        return None
+    print(f"    DART 회사 이름: '{clean}'과 같은 이름이 없어 앞부분이 같은 상장사 '{best}'로 찾음")
+    return corps[best][0], best
 
 
 PARTICLE = re.compile(r"(?:의|은|는|이|가|도|과|와|에|을|를|로|으로)$")

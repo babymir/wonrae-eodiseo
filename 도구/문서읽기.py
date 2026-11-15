@@ -111,18 +111,22 @@ def file_text(data: bytes) -> str:
 
 
 JS_FUNC = re.compile(r"function\s+(\w+)\s*\(([^)]*)\)\s*\{(.*?)\}", re.S)
+# 'var downloadItem = function(a, b) { $.ajax({...}) … location.href="/x.jsp?seq=" + b; }' 꼴(11/16 하나금융연구소):
+# 몸통 안에 중괄호가 겹쳐 있어 첫 '}'에서 끊으면 주소 식을 놓친다 → 다음 함수 전까지(최대 JS_BODY_CHARS 글자)를 본다
+JS_VAR_FUNC = re.compile(r"(?:var|let|const)\s+(\w+)\s*=\s*function\s*\(([^)]*)\)\s*\{(.{0,1500}?)(?=\b(?:var|let|const)\s+\w+\s*=\s*function|\bfunction\s+\w+\s*\(|</script>|$)", re.S)
 JS_CONCAT = re.compile(r"(?:[\"'][^\"']*[\"']|\w+)(?:\s*\+\s*(?:[\"'][^\"']*[\"']|\w+))+")
-JS_CALL = re.compile(r"(\w+)\s*\(\s*((?:'[^']*'\s*,?\s*)+)\)")
+JS_CALL = re.compile(r"(\w+)\s*\(\s*((?:(?:'[^']*'|\d+)\s*,?\s*)+)\)")   # 값은 따옴표 글자 또는 숫자
+JS_VALUE = re.compile(r"'([^']*)'|(\d+)")
 
 
 def _js_templates(page_html: str) -> dict[str, tuple[list[str], str]]:
     """내려받기 함수: 이름 → (인자 이름들, 주소 만드는 식). 예) fn_downFile(atchFileId, fileSn) →
     "/cmm/fms/FileDown.do?atchFileId="+atchFileId+"&fileSn="+fileSn (11/14 KB경영연구소·여론조사심의위)."""
     out = {}
-    for name, params, body in JS_FUNC.findall(page_html):
+    for name, params, body in JS_FUNC.findall(page_html) + JS_VAR_FUNC.findall(page_html):
         args = [a.strip() for a in params.split(",") if a.strip()]
         for expr in JS_CONCAT.findall(body):
-            if args and any(a in expr for a in args) and re.search(r"[\"'][^\"']*(?:down|file|atch)[^\"']*[\"']", expr, re.I):
+            if name not in out and args and any(a in expr for a in args) and re.search(r"[\"'][^\"']*(?:down|file|atch)[^\"']*[\"']", expr, re.I):
                 out[name] = (args, expr)
                 break
     return out
@@ -134,7 +138,7 @@ def _js_url(call: str, templates: dict) -> str:
     if not m or m.group(1) not in templates:
         return ""
     args, expr = templates[m.group(1)]
-    values = dict(zip(args, re.findall(r"'([^']*)'", m.group(2))))
+    values = dict(zip(args, [a or b for a, b in JS_VALUE.findall(m.group(2))]))
     parts = []
     for tok in re.split(r"\s*\+\s*", expr):
         if tok[:1] in "\"'":
@@ -153,14 +157,15 @@ def attachments(page_html: str, base_url: str) -> list[tuple[str, str]]:
     links = [(a or b, label) for a, b, label in ANCHOR.findall(page_html)] + [(m.group(1) or m.group(3), m.group(2) or m.group(4) or "")
                                          for m in SCRIPT_FILE.finditer(page_html)]
     templates = _js_templates(page_html)
-    onclicks = re.findall(r"<a\b[^>]*onclick=\"([^\"]*\(\s*'[^\"]*)\"[^>]*>(.*?)</a>", page_html, re.I | re.S)
+    onclicks = re.findall(r"<a\b[^>]*onclick=\"([^\"]*\(\s*['\d][^\"]*)\"[^>]*>(.*?)</a>", page_html, re.I | re.S)
     for href, label in links + onclicks:
         href = href.replace("&amp;", "&").strip()
         if templates and (href.startswith("javascript") or "(" in href):
             href = _js_url(href, templates) or href
         if href.startswith(("javascript", "#", "mailto")) or not ATTACH_HREF.search(href) or NOT_ATTACH.search(href):
             continue
-        if "(" in href or '"' in label or "+" in label:
+        bare = re.sub(r"<(?:i|span|img|em|strong|b)\b[^>]*>|</(?:i|span|em|strong|b)>", "", label)   # 아이콘·글자 꾸밈 태그는 걷고 본다
+        if "(" in href or '"' in bare or "+" in bare:
             continue   # 못 푼 자바스크립트 호출·스크립트 속 HTML 조각
         url = urllib.parse.urljoin(base_url, href)
         if url in seen:
