@@ -101,12 +101,21 @@ def _emit_verdict(result: dict) -> None:
     기록.emit("판정", dict(result))
 
 
+def _use_followed(result: dict, doc: Doc, hit: dict) -> None:
+    """숫자가 기관 누리집에서 이어 읽은 글에 있으면 근거 주소를 그 글로(첫 화면 주소가 아니라)."""
+    if str(doc.pdf).endswith(".txt"):
+        url = 일반경로.followed_url(doc.pdf, hit.get("원문", "")) or 일반경로.followed_url(doc.pdf, result.get("원문인용", ""))
+        if url:
+            result["상세페이지"] = url
+
+
 def found_result(result: dict, doc: Doc, pick: dict, how: str, sentence: str, number: str) -> dict:
     hit = pick["후보"]
     result.update(판정=pick["판정"], 보고서=doc.cand.title, 상세페이지=doc.cand.page_url, PDF=str(doc.pdf),
                   쪽=hit["쪽"], 찾은표기=hit["표기"], 표기종류=hit["종류"], 찾은방법=how,
                   원문인용=pick["원문인용"], 차이=list(pick["차이"]), 확인못한부분=pick["확인못한부분"],
                   칸별비교=pick.get("칸", {}))
+    _use_followed(result, doc, hit)
     if 일반경로.is_snippet(doc.pdf):  # 원문 페이지를 직접 열지 못하고 검색 요약 글로 확인한 경우
         result["찾은방법"] = how + " — 원문 페이지는 자동 접속이 막혀, 라이너 검색 결과의 그 페이지 요약 글로 확인"
         result["확인못한부분"] = ("원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요. "
@@ -470,7 +479,7 @@ def _run_once(result: dict, sentence: str, context: str, article_date: str, forc
         finder = 일반경로.finder
         result["지원밖기관"] = info["기관"] or ("학술 논문" if research else "기관 모름")
         with 기록.step("검색"):
-            general = general + 일반경로.search(info)
+            general = general + 일반경로.search(info, sentence)
         lead = _lead_links(info, general, lead)
         eng = 일반경로.english_keywords(info)
         if eng:  # 외국 원문(영문)에서도 핵심어를 확인할 수 있게(검색은 이미 끝남)
@@ -501,6 +510,11 @@ def _run_once(result: dict, sentence: str, context: str, article_date: str, forc
             dart = 공시찾기.search(info, sentence, article_date)
             priority += [c.file_key for c in dart[:MAX_PRIORITY_EACH]]
             found = dart + found
+        if finder is 일반경로.finder:
+            # 영문 이름으로 새로 찾은 기관 누리집의 첫 화면(새 글 링크를 따라감 — 검색 색인에 아직 없는 새 보고서)
+            hubs = 일반경로.hub_candidates()
+            priority += [c.file_key for c in hubs]
+            found = hubs + found
         if finder is 일반경로.finder:
             # 닐슨코리아 시청률 → 그날 일일 순위 화면(시청률찾기.py)
             ratings = 시청률찾기.search(sentence, article_date)
@@ -698,6 +712,7 @@ def near_result(result: dict, near: dict, number: str) -> dict:
                   찾은방법="글자 찾기 + 라이너 모델(같은 숫자인데 기사가 표현만 바꾼 원문, 두 번 물어 같은 답일 때만)",
                   이유=(f"원문에 같은 숫자({hit['표기']})가 있지만 표현이 다릅니다: 기사 '{near['기사표현']}' ↔ "
                        f"원문 '{near['원문표현']}'. 같은 내용인지 아래 원문을 직접 확인해 주세요."))
+    _use_followed(result, doc, hit)
     if 일반경로.is_snippet(doc.pdf):
         result["확인못한부분"] = "원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요."
     _emit_verdict(result)

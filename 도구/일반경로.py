@@ -180,9 +180,57 @@ def diverse_queries(info: dict, domain: str) -> list[tuple[str, str]]:
     return out
 
 
-def search(info: dict) -> list[dict]:
-    """일반 경로 검색어를 동시에 보낸다. 결과는 합쳐서 돌려준다(중복 주소 제거)."""
+# 문장 속 영문 기관 이름: 괄호 안('에너지전환연구소(Energy Shift Institute·ESI)') 또는 대문자로 시작하는 두 단어 이상
+ENGLISH_NAME = re.compile(r"\(\s*([A-Z][A-Za-z&.'-]*(?:\s+[A-Za-z&.'-]+){1,6})\s*(?:[·,/]|\))"
+                          r"|\b([A-Z][a-z]+(?:\s+(?:of|for|and|the|[A-Z][A-Za-z&-]+)){1,6})\b")
+NAME_STOP = re.compile(r"^(?:The|In|On|At|For|And)\s", re.I)
+
+
+def english_org_names(sentence: str) -> list[str]:
+    out = []
+    for a, b in ENGLISH_NAME.findall(sentence or ""):
+        name = (a or b).strip()
+        if len(name.split()) >= 2 and not NAME_STOP.match(name) and name not in out:
+            out.append(name)
+    return out[:2]
+
+
+def found_now(info: dict) -> bool:
+    return bool(info.get("_누리집찾음"))
+
+
+def hub_candidates() -> list[Candidate]:
+    """영문 이름으로 새로 찾은 기관 누리집의 첫 화면 — 새 글 링크를 따라가려고 꼭 받는다(제목만으로는 순위가 낮음)."""
+    if not _follow["discovered"]:
+        return []
+    url = f"https://{_follow['domain']}/"
+    return [Candidate(f"{_follow['domain']} 첫 화면", url, url, "gen_" + hashlib.sha1(url.encode()).hexdigest()[:12])]
+
+
+def discover_domain(info: dict, sentence: str) -> str:
+    """기관 누리집을 모를 때: 문장 속 영문 기관 이름으로 짧게 검색해, 주소 이름이 그 기관 이름과 맞는 곳을 누리집으로
+    (11/16 사전 점검 인용 #12: '에너지전환연구소(Energy Shift Institute·ESI)' → energyshift.institute). 못 찾으면 ''."""
+    for name in english_org_names(sentence):
+        for r in _one(name, "en"):
+            url = r.get("url") or ""
+            if url and brand_match(url, name) and not is_news_or_social(url):
+                found = host(url).removeprefix("www.")
+                print(f"    기관 누리집을 몰라 영문 이름 '{name}'으로 찾음: {found}")
+                return found
+    return ""
+
+
+def search(info: dict, sentence: str = "") -> list[dict]:
+    """일반 경로 검색어를 동시에 보낸다. 결과는 합쳐서 돌려준다(중복 주소 제거).
+    기관 누리집을 모르면 문장 속 영문 기관 이름으로 먼저 찾아 info['기관누리집']에 넣는다(뒤의 후보 고르기도 씀)."""
+    if not clean_domain(info.get("기관누리집", "")) and sentence:
+        found = discover_domain(info, sentence)
+        if found:
+            info["기관누리집"] = found
+            info["_누리집찾음"] = True
     domain = clean_domain(info.get("기관누리집", ""))
+    set_follow_hint(info, domain, sentence)
+    _follow["discovered"] = bool(domain) and domain == clean_domain(info.get("기관누리집", "")) and found_now(info)
     terms = info.get("보고서") or " ".join(info["핵심어"][:3])
     period = info.get("기준시점", "")
     qs: list[tuple[str, str]] = []
@@ -260,6 +308,66 @@ def clean_url(url: str) -> str:
     return re.sub(r"(?:%3B|;)jsessionid=[^?&#]*", "", url, flags=re.I)
 
 
+# 기관 누리집 첫 화면·목록에서 핵심어가 맞는 같은 누리집 글 따라가기(11/16 사전 점검 인용 #12 ESI: 11/11 보고서가
+# 검색 색인에 아직 없지만 첫 화면에 링크가 있음). 숫자 대조는 그대로라 헛답 위험은 늘지 않는다.
+MAX_FOLLOW = 2
+FOLLOW_MARK = "[이어 읽은 글: "
+_follow: dict = {"domain": "", "words": [], "acronyms": [], "discovered": False}
+
+
+def set_follow_hint(info: dict, domain: str, sentence: str = "") -> None:
+    org = " ".join(english_org_names(sentence)).lower()
+    words = [k for k in info.get("핵심어", []) if len(k) >= 2]
+    words += [w for w in english_keywords(info) if len(w) >= 4 and w.lower() not in org and not w.isupper()]
+    if info.get("보고서"):
+        words.append(info["보고서"])
+    acr = [w for w in re.findall(r"\b[A-Z]{3,}\b", info.get("원어검색어", "")) if w.lower() not in org]
+    _follow.update(domain=domain, words=list(dict.fromkeys(words)), acronyms=list(dict.fromkeys(acr)))
+
+
+def _follow_score(text: str) -> int:
+    low = text.lower()
+    return sum(1 for w in _follow["words"] if w.lower() in low) + 2 * sum(1 for a in _follow["acronyms"] if a in text)
+
+
+def follow_links(page_html: str, base_url: str) -> list[tuple[str, str]]:
+    """기관 누리집 페이지 안의 같은 누리집 링크 중 글자가 핵심어와 맞는 것(점수 2 이상, 높은 순 MAX_FOLLOW 개)."""
+    domain = _follow["domain"]
+    if not domain or not on_domain(base_url, domain):
+        return []
+    scored, seen = [], {base_url.rstrip("/")}
+    for a, b, label in 문서읽기.ANCHOR.findall(page_html):
+        href = (a or b).replace("&amp;", "&").strip()
+        name = re.sub(r"\s+", " ", html_lib.unescape(re.sub(r"<[^>]+>", " ", label))).strip()
+        if not name or href.startswith(("javascript", "#", "mailto")):
+            continue
+        url = urllib.parse.urljoin(base_url, href)
+        if not on_domain(url, domain) or url.rstrip("/") in seen or 문서읽기.ATTACH_HREF.search(url):
+            continue
+        score = _follow_score(name)
+        if score >= 2:
+            seen.add(url.rstrip("/"))
+            scored.append((score, name[:80], url))
+    scored.sort(key=lambda x: -x[0])
+    return [(n, u) for _, n, u in scored[:MAX_FOLLOW]]
+
+
+def followed_url(path: Path, quote: str) -> str:
+    """원문 인용이 '이어 읽은 글' 부분에 있으면 그 글 주소(아니면 '')."""
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return ""
+    pos = text.find((quote or "").strip()[:40])
+    if pos < 0:
+        return ""
+    mark = text.rfind(FOLLOW_MARK, 0, pos)
+    if mark < 0:
+        return ""
+    m = re.match(re.escape(FOLLOW_MARK) + r"[^\]]*? — (\S+)\]", text[mark:mark + 400])
+    return m.group(1) if m else ""
+
+
 def fetch_doc(c: Candidate) -> Path | None:
     """일반 경로 후보를 받는다. 이미 받은 것은 다시 받지 않는다. 실패·빈 페이지면 None.
     - PDF → 원본PDF/<키>.pdf
@@ -304,6 +412,15 @@ def fetch_doc(c: Candidate) -> Path | None:
             if body.strip():
                 print(f"    첨부파일 글자 더함: {name} ({len(body)}자)")
                 text += f"\n[첨부: {name}]\n" + normalize_numbers(body)
+        for name, link in follow_links(page, url):
+            try:
+                sub = fetch_bytes(link)
+            except RuntimeError as e:  # 따라간 글 하나 실패는 건너뜀(이유 출력)
+                print(f"    이어 읽기 실패({name}): {e}")
+                continue
+            if 문서읽기.kind_of(sub) == "html":
+                print(f"    기관 누리집에서 핵심어가 맞는 글을 이어 읽음: {name}")
+                text += f"\n{FOLLOW_MARK}{name} — {link}]\n" + html_text(sub)
     else:
         print(f"    PDF·HWP·웹 페이지가 아니라 건너뜀: {url}")
         return None
