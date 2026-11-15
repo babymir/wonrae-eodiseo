@@ -455,7 +455,7 @@ function render(r, steps, secs, partial) {
   (t["라이너호출"] || []).forEach((c) => { apiCount[apiName(c)] = (apiCount[apiName(c)] || 0) + 1; });
   const apis = Object.keys(apiCount).length ? h("p", { class: "muted" }, "이번 확인에 쓴 라이너 API: " +
     Object.entries(apiCount).map(([k, v]) => `${k} ${v}회`).join(", ")) : null;
-  parts.push(h("details", { class: "trace" }, h("summary", {}, `어떻게 찾았나 (${secs}초)`),
+  parts.push(h("details", { class: "trace" }, h("summary", {}, secs > 0 ? `어떻게 찾았나 (${secs}초)` : "어떻게 찾았나"),
     h("ol", {}, steps.map((s) => h("li", {}, s)), r["찾은방법"] ? h("li", {}, r["찾은방법"]) : null), apis, timing));
 
   // 시연 재생(11/16, 크레딧 소진): 새로 찾은 것이 아니라 실제로 돌려 저장한 결과임을 밝힌다
