@@ -1,7 +1,7 @@
-"""기획서 PDF 만들기(11/16): 제출/기획서.md → 제출/원래어디서_기획서.pdf (대회 제출: PDF, 10MB 이하).
+"""기획서 PDF 만들기(11/16): 제출/기획서_2쪽.md → 제출/원래어디서_기획서.pdf (대회 제출: PDF 1~2쪽, 10MB 이하).
 
 1) 그림: 제출/그림/대표화면.png(시연 재생 화면), 흐름도.png, API.png(영상 그림과 같은 것)
-2) pandoc 으로 HTML 로 바꾸고, 브라우저(Playwright)로 A4 PDF 를 찍는다.
+2) 기획서_2쪽.md(제출용, 대회 안내 1~2쪽) · 기획서.md(상세)를 pandoc 으로 HTML 로 바꾸고, 브라우저(Playwright)로 A4 PDF 를 찍는다.
 먼저 웹서버를 재생 모드로 켠다: ORIGIN_REPLAY=1 ORIGIN_PORT=8766 python3 도구/웹서버.py
 실행: python3 도구/기획서_PDF.py
 """
@@ -10,12 +10,14 @@ import subprocess
 import sys
 from pathlib import Path
 
+import fitz  # PyMuPDF: 쪽수 확인
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 SUBMIT = ROOT / "제출"
-MD = SUBMIT / "기획서.md"
-PDF = SUBMIT / "원래어디서_기획서.pdf"
+# 제출용은 1~2쪽 기획서(대회 안내), 긴 상세 기획서는 따로 PDF
+DOCS = [(SUBMIT / "기획서_2쪽.md", SUBMIT / "원래어디서_기획서.pdf"),
+        (SUBMIT / "기획서.md", SUBMIT / "원래어디서_기획서_상세.pdf")]
 PIC = SUBMIT / "그림"
 URL = "http://127.0.0.1:8766"
 DEMO_BUTTON = 1                      # 대표 화면: '써 보기' 첫 버튼(보육 이용률 격차 — 기사가 계산)
@@ -93,11 +95,6 @@ def main() -> int:
     if not API_PIC.exists():
         sys.exit("오류: API 그림이 없습니다. python3 도구/영상/그림.py 를 먼저 실행하세요.")
     shutil.copy(API_PIC, PIC / "API.png")
-    body = subprocess.run(["pandoc", str(MD), "-f", "gfm", "-t", "html"], capture_output=True, text=True)
-    if body.returncode != 0:
-        sys.exit(f"오류: pandoc 변환 실패: {body.stderr[:300]}")
-    html = (f"<!doctype html><html lang='ko'><meta charset='utf-8'><base href='{SUBMIT.as_uri()}/'>"
-            f"<style>{CSS}</style><body>{body.stdout}</body></html>")
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
         page = browser.new_page()
@@ -108,22 +105,36 @@ def main() -> int:
         page.set_viewport_size({"width": 1200, "height": 400})
         page.set_content(FLOW_HTML)
         page.locator("body").screenshot(path=str(PIC / "흐름도.png"))
-        tmp = SUBMIT / "_기획서_임시.html"
-        tmp.write_text(html, encoding="utf-8")
-        page.goto(tmp.as_uri())
-        page.wait_for_timeout(500)
-        page.pdf(path=str(PDF), format="A4", print_background=True,
-                 display_header_footer=True, header_template="<span></span>",
-                 footer_template="<div style='font-size:8px;width:100%;text-align:center;color:#888'>"
-                                 "<span class='pageNumber'></span> / <span class='totalPages'></span></div>",
-                 margin={"top": "16mm", "bottom": "18mm", "left": "15mm", "right": "15mm"})
-        tmp.unlink()
+        for md, pdf in DOCS:
+            to_pdf(page, md, pdf)
         browser.close()
-    mb = PDF.stat().st_size / 1e6
-    print(f"완성: {PDF.relative_to(ROOT)} ({mb:.1f}MB)")
+    return 0
+
+
+COMPACT_CSS = "body { font-size: 9.6pt; line-height: 1.5; } h2 { margin-top: 11pt; } table { margin: 4pt 0 5pt; }"
+
+
+def to_pdf(page, md: Path, pdf: Path) -> None:
+    body = subprocess.run(["pandoc", str(md), "-f", "gfm", "-t", "html"], capture_output=True, text=True)
+    if body.returncode != 0:
+        sys.exit(f"오류: pandoc 변환 실패({md.name}): {body.stderr[:300]}")
+    html = (f"<!doctype html><html lang='ko'><meta charset='utf-8'><base href='{SUBMIT.as_uri()}/'>"
+            f"<style>{CSS}{COMPACT_CSS if '2쪽' in md.name else ''}</style><body>{body.stdout}</body></html>")
+    tmp = SUBMIT / "_기획서_임시.html"
+    tmp.write_text(html, encoding="utf-8")
+    page.goto(tmp.as_uri())
+    page.wait_for_timeout(500)
+    page.pdf(path=str(pdf), format="A4", print_background=True,
+             display_header_footer=True, header_template="<span></span>",
+             footer_template="<div style='font-size:8px;width:100%;text-align:center;color:#888'>"
+                             "<span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+             margin={"top": "16mm", "bottom": "18mm", "left": "15mm", "right": "15mm"})
+    tmp.unlink()
+    pages = fitz.open(pdf).page_count
+    mb = pdf.stat().st_size / 1e6
+    print(f"완성: {pdf.relative_to(ROOT)} ({pages}쪽, {mb:.1f}MB)")
     if mb > MAX_MB:
         print(f"경고: 대회 제한 {MAX_MB}MB를 넘습니다. 그림 크기를 줄여야 합니다.")
-    return 0
 
 
 if __name__ == "__main__":
