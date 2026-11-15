@@ -9,7 +9,7 @@
   "번호": 1,
   "결과": {
    "입력": "기후부에 따르면 한국이 모아둔 CDM 실적은 총 784만t. 하지만 이는 2030 NDC 국제 감축 목표치의 약 21% 수준일 뿐 아니라, 아직까지 국제 감축 실적으로 인정된 것 역시 없다고 한다.",
-   "시각": "2026-11-14T13:37:37",
+   "시각": "2026-11-14T22:07:29",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -23,63 +23,104 @@
     "숫자": "784만t",
     "핵심어": [
      "청정개발체제",
-     "국제 감축",
      "온실가스 감축 실적",
-     "국제 감축 실적",
-     "온실가스 감축"
+     "온실가스 감축",
+     "해외 사업 실적"
     ],
     "기준시점": "",
     "기관누리집": "me.go.kr",
     "원어검색어": ""
    },
    "지원밖기관": "기후에너지환경부",
+   "기준시점확인": "기사에 기준 시점 없음",
+   "보고서": "온실가스",
+   "상세페이지": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786150",
+   "PDF": "작업/웹문서/gen_54abdcf81de4.txt",
    "판정": "원출처 미확인",
-   "이유": "원 보고서 PDF를 찾지 못함",
+   "계산확인": {
+    "계산됨": false,
+    "후보수": 0,
+    "방법": "코드 계산(조합 없음)"
+   },
+   "확인한문서": [
+    "온실가스"
+   ],
+   "이유": "찾아본 문서 1건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "교토의정서 타결 및 향후 과제",
-     "주소": "https://niwdc.me.go.kr/home/web/board/read.do%3Bjsessionid=aiQ5BHmw46nF0H2aUdLSJ33kTH7u4lboorUfry3K.mehome1?pagerOffset=18080&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardCategoryId=&boardId=82395&decorator="
-    },
-    {
-     "제목": "수도권매립지 매립가스 자원화로 온실가스 1백만톤 감축",
-     "주소": "http://www.me.go.kr/home/web/board/read.do%3Bjsessionid=f8XjINWF0Tqi8PTuHiCIcgkDGZqKDihrs-Pp2twn.mehome2?pagerOffset=6520&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=&orgCd=&boardMasterId=1&boardCategoryId=&boardId=178484&decorator="
-    },
-    {
-     "제목": "기후변화대응 청정개발체제 투자유치 설명회 개최",
-     "주소": "https://me.go.kr/home/web/board/read.do%3Bjsessionid=qEX3at4beE7ymxQY0wa6xzPbU2aZJpq4BwqqXm1D.mehome1?pagerOffset=16810&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardCategoryId=&boardId=83532&decorator="
-    },
-    {
-     "제목": "환경부, 최빈국 온실가스 감축 지원 나선다",
-     "주소": "https://m.me.go.kr/home/web/board/read.do%3Bjsessionid=c0NxY_xar3f-XnqYqF3LZTIbG9fgwRkXiPau6eej.mehome2?pagerOffset=10540&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardId=185886&boardMasterId=939&boardCategoryId=&decorator="
-    },
-    {
-     "제목": "기후변화협약 제8차 당사국 총회 뉴델리에서 개최",
-     "주소": "https://www.me.go.kr/home/web/newsRead.do%3Bjsessionid=hvbOhBb6xMokOwrgO7sBkoqKXQL-Fe3mRqEXEZmo.mehome2?pagerOffset=21060&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10607&orgCd=&condition.fromDate=null&condition.createDeptName=null&condition.inactiveYn=N&condition.code=null&condition.pageIndex=null&condition.toDate=null&condition.boardId=82101&condition.rnSeq=21076&condition.deleteYn=N&boardId=82142&boardMasterId=939"
+     "제목": "온실가스",
+     "주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786150"
     }
    ],
+   "다른후보": [],
+   "확신낮음": false,
    "시간": {
-    "총초": 6.7,
+    "총초": 26.8,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.6,
-     "PDF 받기·글자": 6.1,
+     "후보 찾기": 4.39,
+     "PDF 받기·글자": 8.57,
+     "숫자 찾기": 0.15,
+     "PDF 직접 읽기": 13.42,
+     "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 6.02,
+      "초": 0.67,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.56,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.56,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.2,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.38,
+      "입력토큰": 456,
+      "출력토큰": 64,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.46,
+      "입력토큰": 5058,
+      "출력토큰": 35,
+      "추론토큰": 0
      }
     ]
    }
   },
-  "초": 7
+  "초": 27
  },
  {
   "기관": "무작위",
@@ -91,7 +132,7 @@
   "번호": 2,
   "결과": {
    "입력": "건강보험심사평가원이 조국혁신당 정춘생 의원실에 제출한 자료에 따르면, 불면증 등 수면 장애로 진료를 받은 환자 수는 2021년 102만7693명에서 지난해 128만1695명으로 4년 새 24.7% 증가했다.",
-   "시각": "2026-11-14T13:37:44",
+   "시각": "2026-11-14T22:07:56",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -123,7 +164,7 @@
   "번호": 3,
   "결과": {
    "입력": "국제 통계 분석기관 아워월드인데이터에 따르면 세계 인구 증가율은 1963년 약 2.3%로 정점을 찍은 뒤 하락하기 시작했다.",
-   "시각": "2026-11-14T13:37:44",
+   "시각": "2026-11-14T22:07:56",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -132,19 +173,18 @@
    },
    "출처종류": "보고서·보도자료",
    "추출": {
-    "기관": "아워월드인데이터",
+    "기관": "Our World in Data",
     "보고서": "",
     "숫자": "약 2.3%",
     "핵심어": [
-     "세계 인구",
-     "인구 증가율",
+     "세계 인구 증가율",
      "정점"
     ],
     "기준시점": "1963년",
     "기관누리집": "ourworldindata.org",
-    "원어검색어": "world population growth rate 1963 peak"
+    "원어검색어": "World population growth rate 1963 peak"
    },
-   "지원밖기관": "아워월드인데이터",
+   "지원밖기관": "Our World in Data",
    "기준시점확인": "기사에 기준 시점 없음",
    "판정": "일치",
    "보고서": "Two centuries of rapid global population growth will come ...",
@@ -195,10 +235,10 @@
     "확신도": 0.97,
     "같음": true,
     "축": {
-     "기간": "같음 1.00",
-     "대상": "같음 0.87",
-     "단위": "같음 0.97",
-     "지표": "같음 0.98"
+     "기간": "같음 0.99",
+     "대상": "같음 0.88",
+     "단위": "같음 0.94",
+     "지표": "같음 0.97"
     },
     "다른축": [],
     "사람확인권장": false
@@ -212,35 +252,43 @@
      "숫자쪽": 1
     },
     {
-     "제목": "The global decline of the fertility rate",
-     "상세페이지": "https://ourworldindata.org/global-decline-fertility-rate",
-     "PDF주소": "https://ourworldindata.org/global-decline-fertility-rate",
-     "키": "gen_snip_25dcb392d4b9",
-     "숫자쪽": 1
-    },
-    {
      "제목": "Until the late 1960s, the total fertility rate was five",
      "상세페이지": "https://ourworldindata.org/global-fertility-has-halved",
      "PDF주소": "https://ourworldindata.org/global-fertility-has-halved",
      "키": "gen_snip_24eb2cb43ac0",
      "숫자쪽": 1
+    },
+    {
+     "제목": "The global decline of the fertility rate",
+     "상세페이지": "https://ourworldindata.org/global-decline-fertility-rate",
+     "PDF주소": "https://ourworldindata.org/global-decline-fertility-rate",
+     "키": "gen_snip_25dcb392d4b9",
+     "숫자쪽": 1
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 1.7,
+    "총초": 1.9,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.11,
-     "PDF 받기·글자": 1.09,
-     "숫자 찾기": 0.01,
+     "검색": 0.01,
+     "후보 찾기": 0.29,
+     "PDF 받기·글자": 1.14,
+     "숫자 찾기": 0.02,
      "고르기·판정": 0.01,
-     "교차 확인(Decisions)": 0.45,
+     "교차 확인(Decisions)": 0.42,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.57,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
@@ -250,17 +298,9 @@
       "추론토큰": null
      },
      {
-      "무엇": "Rerank",
-      "모델": "cohere/rerank-v3.5",
-      "초": 0.53,
-      "입력토큰": null,
-      "출력토큰": null,
-      "추론토큰": null
-     },
-     {
       "무엇": "Decisions",
       "모델": "typesafe/jev-1.13",
-      "초": 0.45,
+      "초": 0.42,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -280,7 +320,7 @@
   "번호": 4,
   "결과": {
    "입력": "국제학술지 ‘미국임상영양학저널’에 실린 메타분석은 식사 속도를 실험으로 조절한 연구 22건을 종합했다.",
-   "시각": "2026-11-14T13:37:46",
+   "시각": "2026-11-14T22:07:58",
    "입구": {
     "통과": true,
     "경로": "학술지",
@@ -300,73 +340,94 @@
     "숫자": "22건",
     "핵심어": [
      "식사 속도",
-     "섭취량",
      "메타분석",
      "실험 연구"
     ],
     "기준시점": "",
     "기관누리집": "",
-    "원어검색어": "American Journal of Clinical Nutrition eating rate controlled experiments energy intake meta-analysis 22 studies"
+    "원어검색어": "eating rate food intake 22 experimental studies meta-analysis American Journal of Clinical Nutrition"
    },
    "지원밖기관": "학술 논문",
    "기준시점확인": "기사에 기준 시점 없음",
-   "보고서": "Does eating slowly influence appetite and energy intake when water intake is controlled? (International Journal of Behavioral Nutrition and Physical Activity)",
-   "상세페이지": "https://ijbnpa.biomedcentral.com/counter/pdf/10.1186/1479-5868-9-135",
-   "PDF": "작업/웹문서/gen_f5a4d1770aff.txt",
+   "보고서": "Eating attentively: a systematic review and meta-analysis of the effect of food intake memory and aw (American Journal of Clinical Nutrition)",
+   "상세페이지": "https://academic.oup.com/ajcn/article-pdf/97/4/728/23818729/728.pdf",
+   "PDF": "작업/웹문서/gen_edcb5dfe4aca.txt",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
-    "후보수": 0,
-    "방법": "코드 계산(조합 없음)"
+    "후보수": 1,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "후보 식은 서로 다른 효과크기(SMD)의 비율을 계산한 것으로, 식사 속도를 실험으로 조절한 연구의 건수와는 대상·지표가 다르다."
    },
    "확인한문서": [
-    "Does eating slowly influence appetite and energy intake when water intake is controlled? (International Journal of Behavioral Nutrition and Physical Activity)",
-    "초등학교 고학년 학생들에 있어서 텔레비전 시청 및 컴퓨터 ..."
+    "Eating attentively: a systematic review and meta-analysis of the effect of food intake memory and aw (American Journal of Clinical Nutrition)",
+    "Journal of Human Nutrition and Dietetics (Journal of Human Nutrition and Dietetics)",
+    "『청소년건강행태조사』 통계정보보고서"
    ],
-   "이유": "찾아본 문서 2건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "이유": "찾아본 문서 3건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "Does eating slowly influence appetite and energy intake when water intake is controlled? (International Journal of Behavioral Nutrition and Physical Activity)",
-     "주소": "https://ijbnpa.biomedcentral.com/counter/pdf/10.1186/1479-5868-9-135"
+     "제목": "Eating attentively: a systematic review and meta-analysis of the effect of food intake memory and aw (American Journal of Clinical Nutrition)",
+     "주소": "https://academic.oup.com/ajcn/article-pdf/97/4/728/23818729/728.pdf"
     },
     {
-     "제목": "초등학교 고학년 학생들에 있어서 텔레비전 시청 및 컴퓨터 ...",
-     "주소": "https://www.kjfm.or.kr/upload/pdf/Jkafm029-03-03.pdf"
+     "제목": "Journal of Human Nutrition and Dietetics (Journal of Human Nutrition and Dietetics)",
+     "주소": "https://doi.org/10.1111/(issn)1365-277x"
+    },
+    {
+     "제목": "『청소년건강행태조사』 통계정보보고서",
+     "주소": "https://mods.go.kr/boardDownload.es?bid=12030&list_no=351227&seq=8"
     }
    ],
    "다른후보": [
     {
-     "제목": "초등학교 고학년 학생들에 있어서 텔레비전 시청 및 컴퓨터 ...",
-     "상세페이지": "https://www.kjfm.or.kr/upload/pdf/Jkafm029-03-03.pdf",
-     "PDF주소": "https://www.kjfm.or.kr/upload/pdf/Jkafm029-03-03.pdf",
-     "키": "gen_da6ef890b332",
-     "숫자쪽": 7
+     "제목": "Journal of Human Nutrition and Dietetics (Journal of Human Nutrition and Dietetics)",
+     "상세페이지": "https://doi.org/10.1111/(issn)1365-277x",
+     "PDF주소": "https://doi.org/10.1111/(issn)1365-277x",
+     "키": "gen_a68070db81d0",
+     "숫자쪽": null
+    },
+    {
+     "제목": "『청소년건강행태조사』 통계정보보고서",
+     "상세페이지": "https://mods.go.kr/boardDownload.es?bid=12030&list_no=351227&seq=8",
+     "PDF주소": "https://mods.go.kr/boardDownload.es?bid=12030&list_no=351227&seq=8",
+     "키": "gen_428982dd23eb",
+     "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 4.8,
+    "총초": 29.4,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.72,
-     "PDF 받기·글자": 3.43,
-     "숫자 찾기": 0.03,
-     "고르기·판정": 0.56,
+     "검색": 0.01,
+     "후보 찾기": 2.6,
+     "PDF 받기·글자": 5.65,
+     "숫자 찾기": 0.27,
+     "PDF 직접 읽기": 13.94,
+     "계산 확인": 6.1,
+     "라이너 Deep Research": 0.0,
+     "고르기·판정": 0.54,
      "표현 다름 후보": 0.0,
-     "PDF 직접 읽기": 0.0,
-     "계산 확인": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.57,
+      "초": 0.58,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.35,
+      "입력토큰": 340,
+      "출력토큰": 62,
+      "추론토큰": 0
      },
      {
       "무엇": "Rerank",
@@ -375,11 +436,51 @@
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.75,
+      "입력토큰": 340,
+      "출력토큰": 59,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.53,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.24,
+      "입력토큰": 1310,
+      "출력토큰": 62,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.89,
+      "입력토큰": 3975,
+      "출력토큰": 36,
+      "추론토큰": 0
      }
     ]
    }
   },
-  "초": 5
+  "초": 29
  },
  {
   "기관": "무작위",
@@ -391,7 +492,7 @@
   "번호": 5,
   "결과": {
    "입력": "서울경찰청 광역수사단 금융범죄수사대는 베트남 할롱 지역의 한 빌라를 거점으로 군부대 관계자를 사칭해 건축 시공업자 62명에게서 자재비 15억5000만 원을 가로챈 20, 30대 한국인 9명을 범죄단체조직, 사기 등의 혐의로 구속 송치했다고 이날 밝혔다.",
-   "시각": "2026-11-14T13:37:50",
+   "시각": "2026-11-14T22:08:27",
    "입구": {
     "통과": true,
     "경로": "공식 발표",
@@ -406,46 +507,91 @@
     "핵심어": [
      "군부대 사칭",
      "건축 시공업자",
-     "자재비 사기",
-     "피해액"
+     "자재비 피해액"
     ],
     "기준시점": "",
-    "기관누리집": "",
+    "기관누리집": "smpa.go.kr",
     "원어검색어": ""
    },
    "지원밖기관": "서울경찰청 광역수사단 금융범죄수사대",
+   "기준시점확인": "기사에 기준 시점 없음",
+   "보고서": "계약관리번호 계약체결일자 계약건명 계약금액 계약방법 계약유형 계...",
+   "상세페이지": "https://smpa.go.kr/common/attachfile/attachfileDownload.do?attachNo=00256007",
+   "PDF": "작업/원본PDF/gen_3ade9ecc1a31.pdf",
    "판정": "원출처 미확인",
-   "이유": "원 보고서 PDF를 찾지 못함",
+   "계산확인": {
+    "계산됨": false,
+    "후보수": 8,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "모든 후보는 계약금액·계약번호 등으로 계산한 배수나 비율로, 기사 속 사기 피해금액 15억5000만 원과 대상·지표가 다르다."
+   },
+   "확인한문서": [
+    "계약관리번호 계약체결일자 계약건명 계약금액 계약방법 계약유형 계...",
+    "[보도자료] 규제합리화위원회 제2차 전체회의",
+    "대전안전",
+    "현 부 서 순번계급 성 명 발 령 또 는 제 청",
+    "서울특별시경찰청",
+    "1/33 서울 - smpa.go.kr"
+   ],
+   "이유": "찾아본 문서 6건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "군부대 사칭한 '노쇼' 사기로 15억 가로챈 조직원 구속 송치",
-     "주소": "https://imnews.imbc.com/news/2026/society/article/6865407_36918.html"
+     "제목": "계약관리번호 계약체결일자 계약건명 계약금액 계약방법 계약유형 계...",
+     "주소": "https://smpa.go.kr/common/attachfile/attachfileDownload.do?attachNo=00256007"
     },
     {
-     "제목": "군부대 사칭 '노쇼사기' 9명 송치…15억 가로채",
-     "주소": "https://www.yonhapnewstv.co.kr/news/MYH20261113135501ZJJ"
+     "제목": "[보도자료] 규제합리화위원회 제2차 전체회의",
+     "주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786291"
     },
     {
-     "제목": "'군부대 사칭' 노쇼 사기로 15억 가로챈 일당 9명 구속 송치",
-     "주소": "https://news.kbs.co.kr/news/view.do?ncd=8712117"
+     "제목": "대전안전",
+     "주소": "https://www.dji.re.kr/upload/board/0036/202412181607112472.pdf"
     },
     {
-     "제목": "베트남서 군부대 사칭 15억 '노쇼 사기'…9명 구속 송치",
-     "주소": "https://www.yonhapnewstv.co.kr/news/MYH20261113181501PYu"
+     "제목": "현 부 서 순번계급 성 명 발 령 또 는 제 청",
+     "주소": "https://smpa.go.kr/common/attachfile/attachfileDownload.do?attachNo=00101044"
     },
     {
-     "제목": "군부대 사칭해 \"자재 대신 사달라\"…15억 노쇼 사기, 9명 구속",
-     "주소": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261113_0003866948"
+     "제목": "서울특별시경찰청",
+     "주소": "https://smpa.go.kr/user/nd2456.do"
     }
    ],
+   "다른후보": [
+    {
+     "제목": "[보도자료] 규제합리화위원회 제2차 전체회의",
+     "상세페이지": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786291",
+     "PDF주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786291",
+     "키": "gen_086ba4ac4f37",
+     "숫자쪽": null
+    },
+    {
+     "제목": "대전안전",
+     "상세페이지": "https://www.dji.re.kr/upload/board/0036/202412181607112472.pdf",
+     "PDF주소": "https://www.dji.re.kr/upload/board/0036/202412181607112472.pdf",
+     "키": "gen_1edbf816779c",
+     "숫자쪽": null
+    },
+    {
+     "제목": "현 부 서 순번계급 성 명 발 령 또 는 제 청",
+     "상세페이지": "https://smpa.go.kr/common/attachfile/attachfileDownload.do?attachNo=00101044",
+     "PDF주소": "https://smpa.go.kr/common/attachfile/attachfileDownload.do?attachNo=00101044",
+     "키": "gen_8cbbb0e59fce",
+     "숫자쪽": null
+    }
+   ],
+   "확신낮음": false,
    "시간": {
-    "총초": 0.6,
+    "총초": 28.8,
     "단계초": {
-     "입구 필터": 0.48,
-     "문장 분해": 0.01,
+     "입구 필터": 1.5,
+     "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.11,
-     "PDF 받기·글자": 0.0,
+     "후보 찾기": 4.19,
+     "PDF 받기·글자": 4.27,
+     "숫자 찾기": 0.44,
+     "PDF 직접 읽기": 12.71,
+     "계산 확인": 5.24,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
@@ -456,11 +602,99 @@
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.87,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.08,
+      "입력토큰": 1469,
+      "출력토큰": 64,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 12.71,
+      "입력토큰": 845,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Decisions",
+      "모델": "typesafe/jev-1.13",
+      "초": 0.44,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.57,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-terra",
+      "초": 2.29,
+      "입력토큰": 441,
+      "출력토큰": 41,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Decisions",
+      "모델": "typesafe/jev-1.13",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.77,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.95,
+      "입력토큰": 708,
+      "출력토큰": 63,
+      "추론토큰": 0
      }
     ]
    }
   },
-  "초": 1
+  "초": 29
  },
  {
   "기관": "무작위",
@@ -472,7 +706,7 @@
   "번호": 6,
   "결과": {
    "입력": "최근 통계를 보면 여전히 노인 3명 중 1명 이상은 중위소득의 50%에도 못 미치는 상대적 빈곤 상태에 놓여 있다.",
-   "시각": "2026-11-14T13:37:51",
+   "시각": "2026-11-14T22:08:56",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -483,11 +717,9 @@
    "추출": {
     "기관": "",
     "보고서": "",
-    "숫자": "50%",
+    "숫자": "3명 중 1명 이상",
     "핵심어": [
      "노인",
-     "상대적 빈곤",
-     "중위소득 50% 미만",
      "상대적 빈곤율",
      "중위소득"
     ],
@@ -497,129 +729,91 @@
    },
    "지원밖기관": "기관 모름",
    "기준시점확인": "기사에 기준 시점 없음",
-   "판정": "표현 바뀜",
    "보고서": "Ⅱ 한국의 상대 빈곤율 OECD 4위, 원인 및 시사점",
    "상세페이지": "https://www.ydi.or.kr/board/download/971",
    "PDF": "작업/원본PDF/gen_0515c9f700f6.pdf",
-   "쪽": 1,
-   "찾은표기": "50%",
-   "표기종류": "정확",
-   "찾은방법": "글자 찾기 + 라이너 Rerank 순위 + 라이너 모델 판정",
-   "원문인용": "※ 상대적 빈곤율이란 전체인구 중 기준 중위소득의 50%에 미치지 못하는 인구의 비율을 의미",
-   "차이": [
-    {
-     "항목": "대상",
-     "기사": "노인",
-     "원문": "전체인구",
-     "칸": "대상"
-    }
+   "판정": "원출처 미확인",
+   "계산확인": {
+    "계산됨": false,
+    "후보수": 19,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "‘3명 중 1명 이상’은 노인의 상대적 빈곤율이 33.3% 이상이라는 뜻이며, 후보 식들은 다른 지표의 차이나 OECD 평균 대비 배수이므로 같은 의미가 아니다."
+   },
+   "확인한문서": [
+    "Ⅱ 한국의 상대 빈곤율 OECD 4위, 원인 및 시사점",
+    "고령화사회의 사회경제적 문제와 정책대응방안",
+    "우리나라 빈곤의 실태와 대응방안",
+    "한국의 사회동향 2025",
+    "빈곤 개념 및 측정 동향과 정책적 시사점"
    ],
-   "확인못한부분": "최근 통계에서 노인 3명 중 1명 이상이 상대적 빈곤 상태라는 주장은 해당 후보에서 확인할 수 없음.",
-   "칸별비교": {
-    "지표": {
-     "판단": "같음",
-     "기사": "중위소득의 50%",
-     "원문": "기준 중위소득의 50%"
-    },
-    "대상": {
-     "판단": "다름",
-     "기사": "노인",
-     "원문": "전체인구"
-    },
-    "시점": {
-     "판단": "알수없음",
-     "기사": "최근 통계",
-     "원문": ""
-    },
-    "비교기준": {
-     "판단": "같음",
-     "기사": "중위소득",
-     "원문": "기준 중위소득"
-    },
-    "수준변화": {
-     "판단": "같음",
-     "기사": "50%에도 못 미치는",
-     "원문": "50%에 미치지 못하는"
-    }
-   },
-   "규칙확인": [],
-   "교차확인": {
-    "판정": "일치",
-    "확률": {
-     "일치": 0.42,
-     "표현 바뀜": 0.28,
-     "다른 지표": 0.3
-    },
-    "확신도": 0.13,
-    "같음": false,
-    "축": {
-     "기간": "다름 0.66",
-     "대상": "다름 0.91",
-     "단위": "같음 0.80",
-     "지표": "같음 0.50"
-    },
-    "다른축": [
-     "기간",
-     "대상"
-    ],
-    "사람확인권장": true
-   },
-   "다른숫자로확인": {
-    "처음고른숫자": "3명 중 1명 이상",
-    "확인한숫자": "50%"
-   },
-   "숫자별확인": [
+   "이유": "찾아본 문서 5건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "후보": [
     {
-     "숫자": "3명",
-     "쪽": null
+     "제목": "Ⅱ 한국의 상대 빈곤율 OECD 4위, 원인 및 시사점",
+     "주소": "https://www.ydi.or.kr/board/download/971"
     },
     {
-     "숫자": "1명",
-     "쪽": 4
+     "제목": "고령화사회의 사회경제적 문제와 정책대응방안",
+     "주소": "https://repository.kihasa.re.kr/bitstream/201002/366/1/%EC%97%B0%EA%B5%AC03-14.pdf"
     },
     {
-     "숫자": "50%",
-     "쪽": 1
+     "제목": "우리나라 빈곤의 실태와 대응방안",
+     "주소": "https://nabo.go.kr/board/file/down.do?fid=10142"
+    },
+    {
+     "제목": "한국의 사회동향 2025",
+     "주소": "https://www.mods.go.kr/boardDownload.es?bid=12308&list_no=443099&seq=1"
+    },
+    {
+     "제목": "빈곤 개념 및 측정 동향과 정책적 시사점",
+     "주소": "https://www.kihasa.re.kr/api/kihasa/file/download?seq=28896"
     }
    ],
    "다른후보": [
+    {
+     "제목": "고령화사회의 사회경제적 문제와 정책대응방안",
+     "상세페이지": "https://repository.kihasa.re.kr/bitstream/201002/366/1/%EC%97%B0%EA%B5%AC03-14.pdf",
+     "PDF주소": "https://repository.kihasa.re.kr/bitstream/201002/366/1/%EC%97%B0%EA%B5%AC03-14.pdf",
+     "키": "gen_c863f3bd4508",
+     "숫자쪽": 52
+    },
+    {
+     "제목": "우리나라 빈곤의 실태와 대응방안",
+     "상세페이지": "https://nabo.go.kr/board/file/down.do?fid=10142",
+     "PDF주소": "https://nabo.go.kr/board/file/down.do?fid=10142",
+     "키": "gen_ba82dd84a2b5",
+     "숫자쪽": 33
+    },
     {
      "제목": "한국의 사회동향 2025",
      "상세페이지": "https://www.mods.go.kr/boardDownload.es?bid=12308&list_no=443099&seq=1",
      "PDF주소": "https://www.mods.go.kr/boardDownload.es?bid=12308&list_no=443099&seq=1",
      "키": "gen_6588f47f0235",
      "숫자쪽": 8
-    },
-    {
-     "제목": "영국의 빈곤 측정 방식 및 빈곤 현황",
-     "상세페이지": "https://www.kihasa.re.kr/gssr/assets/pdf/123/journal-13-%EC%97%AC%EB%A6%84-105.pdf",
-     "PDF주소": "https://www.kihasa.re.kr/gssr/assets/pdf/123/journal-13-%EC%97%AC%EB%A6%84-105.pdf",
-     "키": "gen_339a339d7f6e",
-     "숫자쪽": 7
     }
    ],
-   "확신낮음": true,
+   "확신낮음": false,
    "시간": {
-    "총초": 34.2,
+    "총초": 114.8,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 7.25,
-     "숫자 찾기": 0.05,
-     "고르기·판정": 15.73,
-     "표현 다름 후보": 6.38,
-     "PDF 직접 읽기": 4.29,
+     "검색": 0.58,
+     "후보 찾기": 6.15,
+     "PDF 받기·글자": 2.7,
+     "숫자 찾기": 0.72,
+     "고르기·판정": 56.95,
+     "표현 다름 후보": 6.99,
+     "PDF 직접 읽기": 40.38,
      "계산 확인": 0.0,
-     "교차 확인(Decisions)": 0.48,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 7.06,
+      "초": 0.58,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -627,82 +821,26 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.6,
+      "초": 12.69,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
-     },
-     {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6.1-sol",
-      "초": 3.77,
-      "입력토큰": 1728,
-      "출력토큰": 223,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6.1-sol",
-      "초": 4.23,
-      "입력토큰": 1728,
-      "출력토큰": 213,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "표현 다름 후보",
-      "모델": "gpt-6.1-sol",
-      "초": 3.23,
-      "입력토큰": 907,
-      "출력토큰": 100,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "표현 다름 후보",
-      "모델": "gpt-6.1-sol",
-      "초": 3.23,
-      "입력토큰": 907,
-      "출력토큰": 106,
-      "추론토큰": 0
      },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.56,
+      "초": 0.83,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
      },
      {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6.1-sol",
-      "초": 3.57,
-      "입력토큰": 1719,
-      "출력토큰": 190,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6.1-sol",
-      "초": 4.59,
-      "입력토큰": 1719,
-      "출력토큰": 187,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "표현 다름 후보",
-      "모델": "gpt-6.1-sol",
-      "초": 3.1,
-      "입력토큰": 885,
-      "출력토큰": 101,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "표현 다름 후보",
-      "모델": "gpt-6.1-sol",
-      "초": 3.15,
-      "입력토큰": 885,
-      "출력토큰": 97,
-      "추론토큰": 0
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 12.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
      },
      {
       "무엇": "Rerank",
@@ -713,33 +851,17 @@
       "추론토큰": null
      },
      {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6-astra",
-      "초": 4.59,
-      "입력토큰": 2404,
-      "출력토큰": 184,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6-astra",
-      "초": 4.59,
-      "입력토큰": 2404,
-      "출력토큰": 208,
-      "추론토큰": 0
-     },
-     {
       "무엇": "계산 식 고르기",
       "모델": "gpt-6.1-sol",
-      "초": 2.83,
+      "초": 3.24,
       "입력토큰": 1300,
-      "출력토큰": 64,
+      "출력토큰": 67,
       "추론토큰": 0
      },
      {
       "무엇": "PDF 직접 읽기",
       "모델": "google/gemini-3.8-flash",
-      "초": 4.29,
+      "초": 11.37,
       "입력토큰": 2914,
       "출력토큰": 36,
       "추론토큰": 0
@@ -747,23 +869,231 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.59,
+      "초": 0.61,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
      },
      {
-      "무엇": "Decisions",
-      "모델": "typesafe/jev-1.13",
-      "초": 0.48,
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.73,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.9,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.84,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.91,
+      "입력토큰": 1300,
+      "출력토큰": 71,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.41,
+      "입력토큰": 2914,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.57,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.61,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.72,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 7.17,
+      "입력토큰": 3413,
+      "출력토큰": 348,
+      "추론토큰": 106
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 8.03,
+      "입력토큰": 3413,
+      "출력토큰": 461,
+      "추론토큰": 85
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 8.68,
+      "입력토큰": 3413,
+      "출력토큰": 365,
+      "추론토큰": 148
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 2.92,
+      "입력토큰": 1761,
+      "출력토큰": 93,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.15,
+      "입력토큰": 1761,
+      "출력토큰": 94,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.53,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 3.92,
+      "입력토큰": 2785,
+      "출력토큰": 224,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 3.93,
+      "입력토큰": 2785,
+      "출력토큰": 219,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.53,
+      "입력토큰": 1229,
+      "출력토큰": 93,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.83,
+      "입력토큰": 1229,
+      "출력토큰": 82,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.61,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.62,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 3.72,
+      "입력토큰": 3489,
+      "출력토큰": 201,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 4.2,
+      "입력토큰": 3489,
+      "출력토큰": 208,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 4.76,
+      "입력토큰": 1372,
+      "출력토큰": 80,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 14.42,
+      "입력토큰": 6106,
+      "출력토큰": 35,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 15.02,
+      "입력토큰": 21002,
+      "출력토큰": 36,
+      "추론토큰": 0
      }
     ]
    }
   },
-  "초": 34
+  "초": 115
  },
  {
   "기관": "무작위",
@@ -775,7 +1105,7 @@
   "번호": 7,
   "결과": {
    "입력": "법률신문이 공소청에서 받은 자료에 따르면 개정 형소법 시행 전인 2026년 9월 경찰이 신청한 구속영장 3,335건 중 검사가 기각한 경우가 1,275건으로 기각률은 38.2%였다.",
-   "시각": "2026-11-14T13:38:25",
+   "시각": "2026-11-14T22:10:51",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -811,8 +1141,8 @@
    "확인한문서": [
     "스토킹 행위자를 어떻게 통제할 것인가",
     "'반도체 검사 핵심기술' 해외로 빼돌린 전직 직원 3명 덜미",
-    "한-네팔, 기후변화 공동 대응과 국제감축사업 활성화의 길을 열다",
     "「 공 소 청 법 」 및 「 중 대 범 죄 수 사 청 조 직 및 운 영 에 관 ...",
+    "고위공직자범죄수사처 검사의 영장청구권에 관한 검토",
     "모범공무원 추천자 주요공적 공개검증 자료(직제순)",
     "2025년도 법무부 성과관리시행계획",
     "해양경찰 수사의 민주적 통제방안",
@@ -829,12 +1159,12 @@
      "주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785150"
     },
     {
-     "제목": "한-네팔, 기후변화 공동 대응과 국제감축사업 활성화의 길을 열다",
-     "주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789235"
-    },
-    {
      "제목": "「 공 소 청 법 」 및 「 중 대 범 죄 수 사 청 조 직 및 운 영 에 관 ...",
      "주소": "https://opinion.lawmaking.go.kr/file/download/11059888/O9EJDRZR9GF3T1316BUU"
+    },
+    {
+     "제목": "고위공직자범죄수사처 검사의 영장청구권에 관한 검토",
+     "주소": "https://www.spo.go.kr/common/board/Download.do?bcIdx=1016531&cbIdx=1303&streFileNm=024fae39-2f1a-471c-b8e3-54adc2df7513.pdf"
     },
     {
      "제목": "모범공무원 추천자 주요공적 공개검증 자료(직제순)",
@@ -850,35 +1180,68 @@
      "숫자쪽": null
     },
     {
-     "제목": "한-네팔, 기후변화 공동 대응과 국제감축사업 활성화의 길을 열다",
-     "상세페이지": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789235",
-     "PDF주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789235",
-     "키": "gen_815315d19c9a",
-     "숫자쪽": null
-    },
-    {
      "제목": "「 공 소 청 법 」 및 「 중 대 범 죄 수 사 청 조 직 및 운 영 에 관 ...",
      "상세페이지": "https://opinion.lawmaking.go.kr/file/download/11059888/O9EJDRZR9GF3T1316BUU",
      "PDF주소": "https://opinion.lawmaking.go.kr/file/download/11059888/O9EJDRZR9GF3T1316BUU",
      "키": "gen_6aa84214dd86",
      "숫자쪽": null
+    },
+    {
+     "제목": "고위공직자범죄수사처 검사의 영장청구권에 관한 검토",
+     "상세페이지": "https://www.spo.go.kr/common/board/Download.do?bcIdx=1016531&cbIdx=1303&streFileNm=024fae39-2f1a-471c-b8e3-54adc2df7513.pdf",
+     "PDF주소": "https://www.spo.go.kr/common/board/Download.do?bcIdx=1016531&cbIdx=1303&streFileNm=024fae39-2f1a-471c-b8e3-54adc2df7513.pdf",
+     "키": "gen_72f4336df093",
+     "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 16.1,
+    "총초": 47.4,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.39,
-     "PDF 받기·글자": 1.27,
-     "숫자 찾기": 0.55,
-     "PDF 직접 읽기": 13.27,
-     "계산 확인": 0.0,
+     "문장 분해": 3.13,
+     "검색": 6.2,
+     "후보 찾기": 3.63,
+     "PDF 받기·글자": 9.58,
+     "숫자 찾기": 1.56,
+     "PDF 직접 읽기": 19.62,
+     "계산 확인": 1.85,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.59,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.65,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.53,
+      "입력토큰": 2410,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
@@ -888,25 +1251,113 @@
       "추론토큰": null
      },
      {
-      "무엇": "Rerank",
-      "모델": "cohere/rerank-v3.5",
-      "초": 0.51,
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 6.1,
+      "입력토큰": 2410,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.58,
+      "입력토큰": 1492,
+      "출력토큰": 70,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 3.12,
+      "입력토큰": 1492,
+      "출력토큰": 70,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.42,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
      },
      {
-      "무엇": "PDF 직접 읽기",
-      "모델": "google/gemini-3.8-flash",
-      "초": 13.26,
-      "입력토큰": 2410,
-      "출력토큰": 36,
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.72,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.42,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.77,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.96,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.47,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.47,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.52,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-terra",
+      "초": 1.85,
+      "입력토큰": 425,
+      "출력토큰": 44,
       "추론토큰": 0
      }
     ]
    }
   },
-  "초": 16
+  "초": 47
  },
  {
   "기관": "무작위",
@@ -918,7 +1369,7 @@
   "번호": 8,
   "결과": {
    "입력": "통계적으로 부부 기준 서울 지역의 월평균 은퇴 생활비는 약 400만원 선으로, 국민연금으로 약 150만원을 수급한다고 가정할 경우 나머지 250만원을 평생 만들어 내기 위해서는 약 12~15억원 수준의 금융 및 실물 자산이 필요하다고 설명했다.",
-   "시각": "2026-11-14T13:38:41",
+   "시각": "2026-11-14T22:11:39",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -931,53 +1382,393 @@
     "보고서": "",
     "숫자": "약 400만원",
     "핵심어": [
-     "서울 지역",
+     "은퇴 생활비",
+     "필요 자산",
      "부부",
-     "월평균 은퇴 생활비"
+     "서울",
+     "서울 지역"
     ],
     "기준시점": "",
     "기관누리집": "",
     "원어검색어": ""
    },
    "지원밖기관": "기관 모름",
+   "기준시점확인": "기사에 기준 시점 없음",
+   "보고서": "Ⅳ. 노후생활비를 위한 은퇴 시점의 자산 적정성 분석",
+   "상세페이지": "https://www.kiri.or.kr/pdf/%EC%97%B0%EA%B5%AC%EC%9E%90%EB%A3%8C/%EC%97%B0%EA%B5%AC%EB%B3%B4%EA%B3%A0%EC%84%9C/nre2017-18_04.pdf",
+   "PDF": "작업/원본PDF/gen_30f7d51c30cf.pdf",
    "판정": "원출처 미확인",
-   "이유": "원 보고서 PDF를 찾지 못함",
+   "계산확인": {
+    "계산됨": false,
+    "후보수": 24,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "후보들은 집단별 생활비 부족분 등의 수치를 뺀 것으로, 부부 기준 서울 지역의 월평균 은퇴 생활비를 계산한 식이 아니므로 값만 같은 경우다."
+   },
+   "확인한문서": [
+    "Ⅳ. 노후생활비를 위한 은퇴 시점의 자산 적정성 분석",
+    "2026년 기금 자산운용 기본방향",
+    "기금 자산운용지침 작성 가이드라인",
+    "고유사업계정 금융자산 운용지침",
+    "[붙임] 26년 석면피해구제기금 자산운용지침.pdf",
+    "자산운용지침",
+    "자산운용업의 경영현황 분석과 자생력 확보 방향"
+   ],
+   "이유": "찾아본 문서 7건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "노후 생활비 계산, 은퇴 후 실제 필요한 생활비는 어떻게 ...",
-     "주소": "https://www.shinhangroup.com/kr/archive/insight/extend/detail/33235"
+     "제목": "Ⅳ. 노후생활비를 위한 은퇴 시점의 자산 적정성 분석",
+     "주소": "https://www.kiri.or.kr/pdf/%EC%97%B0%EA%B5%AC%EC%9E%90%EB%A3%8C/%EC%97%B0%EA%B5%AC%EB%B3%B4%EA%B3%A0%EC%84%9C/nre2017-18_04.pdf"
     },
     {
-     "제목": "내 노후엔 생활비 얼마나 필요할까? - 미래에셋투자와연금센터",
-     "주소": "https://investpension.miraeasset.com/m/contents/view.do?idx=24134"
+     "제목": "2026년 기금 자산운용 기본방향",
+     "주소": "https://mpb.go.kr/web/main/file/download/uu/fbc9ba42339149ac9ec261ebbfdf4a07"
     },
     {
-     "제목": "서울시 은퇴 후 적정 생활비 통계 - 서울 열린데이터광장",
-     "주소": "https://data.seoul.go.kr/dataList/DT201011F070014/S/2/datasetView.do"
+     "제목": "기금 자산운용지침 작성 가이드라인",
+     "주소": "https://mofe.go.kr/com/cmm/fms/FileDown.do?atchFileId=ATCH_000000000007244&fileSn=1"
     },
     {
-     "제목": "5060+ 노후생활비 얼마나 들까?",
-     "주소": "https://www.nhis.or.kr/static/alim/paper/oldpaper/202306/sub/section3_3.html"
+     "제목": "고유사업계정 금융자산 운용지침",
+     "주소": "https://www.hf.go.kr/ko/sub05/sub05_02_01_05.do?mode=download&articleNo=596347&attachNo=92692"
     },
     {
-     "제목": "국민연금연구원 적정 노후생활비, 부부·1인 월 얼마 (2026)",
-     "주소": "https://cashdirection.kr/retirement-living-cost/"
+     "제목": "[붙임] 26년 석면피해구제기금 자산운용지침.pdf",
+     "주소": "https://www.mcee.go.kr/home/file/readDownloadFile.do?fileId=120085&fileSeq=1"
     }
    ],
+   "다른후보": [
+    {
+     "제목": "2026년 기금 자산운용 기본방향",
+     "상세페이지": "https://mpb.go.kr/web/main/file/download/uu/fbc9ba42339149ac9ec261ebbfdf4a07",
+     "PDF주소": "https://mpb.go.kr/web/main/file/download/uu/fbc9ba42339149ac9ec261ebbfdf4a07",
+     "키": "gen_4342370591c4",
+     "숫자쪽": 15
+    },
+    {
+     "제목": "기금 자산운용지침 작성 가이드라인",
+     "상세페이지": "https://mofe.go.kr/com/cmm/fms/FileDown.do?atchFileId=ATCH_000000000007244&fileSn=1",
+     "PDF주소": "https://mofe.go.kr/com/cmm/fms/FileDown.do?atchFileId=ATCH_000000000007244&fileSn=1",
+     "키": "gen_1034e9b6082c",
+     "숫자쪽": null
+    },
+    {
+     "제목": "고유사업계정 금융자산 운용지침",
+     "상세페이지": "https://www.hf.go.kr/ko/sub05/sub05_02_01_05.do?mode=download&articleNo=596347&attachNo=92692",
+     "PDF주소": "https://www.hf.go.kr/ko/sub05/sub05_02_01_05.do?mode=download&articleNo=596347&attachNo=92692",
+     "키": "gen_54541fa634dd",
+     "숫자쪽": null
+    }
+   ],
+   "확신낮음": false,
    "시간": {
-    "총초": 0.0,
+    "총초": 99.1,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 0.0,
+     "문장 분해": 2.54,
+     "검색": 6.79,
+     "후보 찾기": 0.45,
+     "PDF 받기·글자": 1.53,
+     "숫자 찾기": 1.87,
+     "고르기·판정": 52.83,
+     "표현 다름 후보": 0.0,
+     "PDF 직접 읽기": 11.68,
+     "계산 확인": 20.49,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
-    "라이너호출": []
+    "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.62,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 4.63,
+      "입력토큰": 2908,
+      "출력토큰": 223,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 4.63,
+      "입력토큰": 2908,
+      "출력토큰": 223,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.04,
+      "입력토큰": 1403,
+      "출력토큰": 62,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 4.93,
+      "입력토큰": 4546,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 5.59,
+      "입력토큰": 10930,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.99,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.61,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.73,
+      "입력토큰": 1401,
+      "출력토큰": 64,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.58,
+      "입력토큰": 1445,
+      "출력토큰": 71,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.59,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.26,
+      "입력토큰": 1456,
+      "출력토큰": 63,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.72,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.6,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 11.91,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 12.2,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.04,
+      "입력토큰": 1403,
+      "출력토큰": 64,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 5.93,
+      "입력토큰": 10930,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 5.95,
+      "입력토큰": 4546,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.56,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.57,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.96,
+      "입력토큰": 1401,
+      "출력토큰": 62,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 4.03,
+      "입력토큰": 1445,
+      "출력토큰": 70,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.48,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.81,
+      "입력토큰": 1456,
+      "출력토큰": 62,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-sol",
+      "초": 2.03,
+      "입력토큰": 1331,
+      "출력토큰": 61,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.54,
+      "입력토큰": 1331,
+      "출력토큰": 59,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.46,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.25,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.76,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.02,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 4.33,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     }
+    ]
    }
   },
-  "초": 0
+  "초": 99
  },
  {
   "기관": "무작위",
@@ -989,7 +1780,7 @@
   "번호": 9,
   "결과": {
    "입력": "소식통들에 따르면 쿼드 4개국 정상은 인도·태평양 지역의 신뢰할 수 있는 AI 인프라 구축을 위해 총 8500만달러(약 1140억원) 규모의 기술·재정 지원 계획을 발표할 예정이다.",
-   "시각": "2026-11-14T13:38:41",
+   "시각": "2026-11-14T22:13:18",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -998,7 +1789,7 @@
    },
    "출처종류": "보고서·보도자료",
    "추출": {
-    "기관": "",
+    "기관": "쿼드",
     "보고서": "",
     "숫자": "8500만달러",
     "핵심어": [
@@ -1008,52 +1799,204 @@
     ],
     "기준시점": "",
     "기관누리집": "",
-    "원어검색어": ""
+    "원어검색어": "Quad Indo-Pacific trusted AI infrastructure funding"
    },
-   "지원밖기관": "기관 모름",
+   "지원밖기관": "쿼드",
+   "기준시점확인": "기사에 기준 시점 없음",
+   "보고서": "인도태평양 시대 한ㆍ인도 경제협력의 방향과 과제",
+   "상세페이지": "https://www.kiep.go.kr/galleryDownload.es?bid=0002&list_no=11328&seq=1",
+   "PDF": "작업/원본PDF/gen_183af9834206.pdf",
    "판정": "원출처 미확인",
-   "이유": "원 보고서 PDF를 찾지 못함",
+   "계산확인": {
+    "계산됨": false,
+    "후보수": 0,
+    "방법": "코드 계산(조합 없음)"
+   },
+   "확인한문서": [
+    "인도태평양 시대 한ㆍ인도 경제협력의 방향과 과제",
+    "대서양 세력의 인도·태평양 전략과 한국의 지 ..."
+   ],
+   "이유": "찾아본 문서 2건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "Quad pledges over $85M for trusted AI",
-     "주소": "https://technode.global/2026/11/02/quad-85m-trusted-ai-indo-pacific/"
+     "제목": "인도태평양 시대 한ㆍ인도 경제협력의 방향과 과제",
+     "주소": "https://www.kiep.go.kr/galleryDownload.es?bid=0002&list_no=11328&seq=1"
     },
     {
-     "제목": "Quad pledges more than $85 million for trusted AI access ...",
-     "주소": "https://superpowerdaily.com/posts/quad-pledges-more-than-85-million-for-trusted-ai-access-across-the-indo-pacific"
-    },
-    {
-     "제목": "Edge AI Package for the Indo-Pacific",
-     "주소": "https://www.state.gov/pax-silica/edge-ai-package-for-the-indo-pacific"
-    },
-    {
-     "제목": "Explainer: US infrastructure initiatives in the Indo-Pacific",
-     "주소": "https://www.ussc.edu.au/explainer-us-infrastructure-initiatives-in-the-indo-pacific"
-    },
-    {
-     "제목": "Quad Ministers Pledge $85M for Trusted AI in Indo-Pacific",
-     "주소": "https://emergent.sh/news/quad-ministers-pledge-85m-trusted-ai-indo"
+     "제목": "대서양 세력의 인도·태평양 전략과 한국의 지 ...",
+     "주소": "https://www.inss.re.kr/common/download.do?atchFileId=F20221108091501394&fileSn=0"
     }
    ],
+   "다른후보": [
+    {
+     "제목": "대서양 세력의 인도·태평양 전략과 한국의 지 ...",
+     "상세페이지": "https://www.inss.re.kr/common/download.do?atchFileId=F20221108091501394&fileSn=0",
+     "PDF주소": "https://www.inss.re.kr/common/download.do?atchFileId=F20221108091501394&fileSn=0",
+     "키": "gen_fef96ba9a14e",
+     "숫자쪽": null
+    }
+   ],
+   "확신낮음": false,
    "안내": {
     "유형": "업계·관계자 자료",
     "설명": "업계·관계자가 기자에게 준 자료로 보입니다. 공개된 원문이 없을 가능성이 큽니다.",
     "링크": []
    },
    "시간": {
-    "총초": 0.0,
+    "총초": 40.6,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 0.0,
+     "문장 분해": 2.02,
+     "검색": 6.9,
+     "후보 찾기": 0.86,
+     "PDF 받기·글자": 3.24,
+     "숫자 찾기": 0.33,
+     "PDF 직접 읽기": 26.43,
+     "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
-    "라이너호출": []
+    "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.67,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 7.86,
+      "입력토큰": 3517,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 14.33,
+      "입력토큰": 11077,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.56,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 4.52,
+      "입력토큰": 3517,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 5.02,
+      "입력토큰": 11077,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-sol",
+      "초": 1.85,
+      "입력토큰": 1203,
+      "출력토큰": 98,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-sol",
+      "초": 2.01,
+      "입력토큰": 1203,
+      "출력토큰": 101,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.66,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.74,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.75,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.77,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.77,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.87,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 4.22,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 6.98,
+      "입력토큰": 16237,
+      "출력토큰": 36,
+      "추론토큰": 0
+     }
+    ]
    }
   },
-  "초": 0
+  "초": 41
  },
  {
   "기관": "무작위",
@@ -1065,7 +2008,7 @@
   "번호": 10,
   "결과": {
    "입력": "내국인 보유 상장주식의 절반 이상이 상위 1% 손에 있다는 집계가 있다.",
-   "시각": "2026-11-14T13:38:41",
+   "시각": "2026-11-14T22:13:58",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -1079,10 +2022,10 @@
     "숫자": "절반 이상",
     "핵심어": [
      "내국인",
-     "상장주식 보유",
+     "상장주식",
      "상위 1%",
      "보유 비중",
-     "상장주식"
+     "상장주식 보유"
     ],
     "기준시점": "",
     "기관누리집": "",
@@ -1101,30 +2044,47 @@
    },
    "확인한문서": [
     "주식투자 인구의 구조적 증가와 시사점",
-    "분위별 자산·소득 분포 분석 및 국제비교",
-    "Ⅰ. 금융안정 상황"
+    "코스닥시장 신규상장경로 비교분석",
+    "20170405_공단보도자료배포계획v2.pdf",
+    "Ⅰ. 금융안정 상황",
+    "보도자료 작성요령 교육"
    ],
-   "이유": "찾아본 문서 3건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "이유": "150초 안에 원문 대조를 마치지 못했습니다(누리집 응답이 느리거나 문서가 큼). 지금까지 찾은 후보 문서를 보여 드립니다. 잠시 뒤 다시 확인하면 저장된 자료로 더 빨리 끝납니다.",
    "후보": [
+    {
+     "제목": "Ⅰ. 금융안정 상황",
+     "주소": "https://www.bok.or.kr/portal/cmmn/file/fileDown.do?atchFileId=08fc6e2fd52a40ffaf25d0877a39e42d&fileSn=2"
+    },
     {
      "제목": "주식투자 인구의 구조적 증가와 시사점",
      "주소": "https://www.kiri.or.kr/report/downloadFile.do?docId=813139"
     },
     {
-     "제목": "분위별 자산·소득 분포 분석 및 국제비교",
-     "주소": "https://www.nabo.go.kr/board/file/down.do?fid=33316633"
+     "제목": "보도자료 작성요령 교육",
+     "주소": "https://www.nl.go.kr/NL/onlineFileIdDownload.do?fileId=FILE-00010310930"
     },
     {
-     "제목": "Ⅰ. 금융안정 상황",
-     "주소": "https://www.bok.or.kr/portal/cmmn/file/fileDown.do?atchFileId=08fc6e2fd52a40ffaf25d0877a39e42d&fileSn=2"
+     "제목": "20170405_공단보도자료배포계획v2.pdf",
+     "주소": "https://www.sjfmc.or.kr/download/viewer/1543069976843/index.html"
+    },
+    {
+     "제목": "코스닥시장 신규상장경로 비교분석",
+     "주소": "https://www.kcmi.re.kr/common/downloadw?fid=22331&fgu=002002&fty=004003"
     }
    ],
    "다른후보": [
     {
-     "제목": "분위별 자산·소득 분포 분석 및 국제비교",
-     "상세페이지": "https://www.nabo.go.kr/board/file/down.do?fid=33316633",
-     "PDF주소": "https://www.nabo.go.kr/board/file/down.do?fid=33316633",
-     "키": "gen_1c2b723ed0b6",
+     "제목": "코스닥시장 신규상장경로 비교분석",
+     "상세페이지": "https://www.kcmi.re.kr/common/downloadw?fid=22331&fgu=002002&fty=004003",
+     "PDF주소": "https://www.kcmi.re.kr/common/downloadw?fid=22331&fgu=002002&fty=004003",
+     "키": "gen_6cc402d9d956",
+     "숫자쪽": null
+    },
+    {
+     "제목": "20170405_공단보도자료배포계획v2.pdf",
+     "상세페이지": "https://www.sjfmc.or.kr/download/viewer/1543069976843/index.html",
+     "PDF주소": "https://www.sjfmc.or.kr/download/viewer/1543069976843/index.html",
+     "키": "gen_cb35084a11f4",
      "숫자쪽": null
     },
     {
@@ -1136,22 +2096,39 @@
     }
    ],
    "확신낮음": false,
+   "시간초과": true,
    "시간": {
-    "총초": 29.5,
+    "총초": 198.1,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 0.64,
-     "숫자 찾기": 0.41,
-     "고르기·판정": 2.15,
-     "표현 다름 후보": 0.0,
-     "PDF 직접 읽기": 26.16,
-     "계산 확인": 0.0,
-     "확인할 곳 안내": 0.0
+     "문장 분해": 2.16,
+     "검색": 8.05,
+     "후보 찾기": 0.72,
+     "PDF 받기·글자": 31.88,
+     "숫자 찾기": 1.19,
+     "고르기·판정": 20.08,
+     "표현 다름 후보": 10.82,
+     "PDF 직접 읽기": 57.48,
+     "계산 확인": 7.02,
+     "라이너 Deep Research": 0.0
     },
     "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.72,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.23,
+      "입력토큰": 5555,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
@@ -1161,17 +2138,9 @@
       "추론토큰": null
      },
      {
-      "무엇": "PDF 직접 읽기",
-      "모델": "google/gemini-3.8-flash",
-      "초": 13.3,
-      "입력토큰": 5555,
-      "출력토큰": 36,
-      "추론토큰": 0
-     },
-     {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.54,
+      "초": 0.71,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1179,15 +2148,7 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.79,
-      "입력토큰": null,
-      "출력토큰": null,
-      "추론토큰": null
-     },
-     {
-      "무엇": "Rerank",
-      "모델": "cohere/rerank-v3.5",
-      "초": 0.79,
+      "초": 0.86,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1195,23 +2156,263 @@
      {
       "무엇": "계산 식 고르기",
       "모델": "gpt-6.1-sol",
-      "초": 2.92,
+      "초": 2.88,
       "입력토큰": 1561,
-      "출력토큰": 72,
+      "출력토큰": 73,
       "추론토큰": 0
      },
      {
       "무엇": "PDF 직접 읽기",
       "모델": "google/gemini-3.8-flash",
-      "초": 12.83,
-      "입력토큰": 5553,
+      "초": 6.76,
+      "입력토큰": 2935,
       "출력토큰": 36,
       "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.68,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.15,
+      "입력토큰": 2006,
+      "출력토큰": 73,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.89,
+      "입력토큰": 2006,
+      "출력토큰": 94,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.61,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.65,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.42,
+      "입력토큰": 1308,
+      "출력토큰": 68,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-sol",
+      "초": 1.91,
+      "입력토큰": 1468,
+      "출력토큰": 79,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-sol",
+      "초": 2.15,
+      "입력토큰": 1468,
+      "출력토큰": 79,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.25,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.88,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.21,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.25,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.6,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.01,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.03,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 5.16,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.85,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.65,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 4.81,
+      "입력토큰": 2118,
+      "출력토큰": 204,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 5.12,
+      "입력토큰": 2118,
+      "출력토큰": 213,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.17,
+      "입력토큰": 578,
+      "출력토큰": 99,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.72,
+      "입력토큰": 578,
+      "출력토큰": 83,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.4,
+      "입력토큰": 10875,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 46.24,
+      "입력토큰": 5023,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 4.25,
+      "입력토큰": 3434,
+      "출력토큰": 183,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 4.3,
+      "입력토큰": 3434,
+      "출력토큰": 208,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 2.92,
+      "입력토큰": 1636,
+      "출력토큰": 73,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 3.2,
+      "입력토큰": 1636,
+      "출력토큰": 82,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.64,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
      }
     ]
    }
   },
-  "초": 30
+  "초": 198
  },
  {
   "기관": "무작위",
@@ -1223,7 +2424,7 @@
   "번호": 11,
   "결과": {
    "입력": "미국 노동부 노동통계국(BLS)은 현지시간 13일 10월 생산자물가지수(PPI)가 전월 대비 0.3% 상승했다고 발표했다.",
-   "시각": "2026-11-14T13:39:11",
+   "시각": "2026-11-14T22:17:16",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -1237,11 +2438,13 @@
     "숫자": "0.3%",
     "핵심어": [
      "생산자물가지수",
-     "전월 대비 상승률"
+     "전월 대비 상승률",
+     "전월 대비",
+     "상승률"
     ],
     "기준시점": "2026년 10월",
     "기관누리집": "bls.gov",
-    "원어검색어": "Producer Price Index October 2026 monthly increase"
+    "원어검색어": "Producer Price Index October 2026 month over month"
    },
    "지원밖기관": "미국 노동부 노동통계국",
    "기준시점확인": "2/2",
@@ -1289,16 +2492,16 @@
     "판정": "일치",
     "확률": {
      "일치": 0.63,
-     "표현 바뀜": 0.24,
-     "다른 지표": 0.13
+     "표현 바뀜": 0.26,
+     "다른 지표": 0.11
     },
     "확신도": 0.44,
     "같음": true,
     "축": {
-     "기간": "같음 0.89",
-     "대상": "같음 0.71",
-     "단위": "같음 1.00",
-     "지표": "같음 0.73"
+     "기간": "같음 0.87",
+     "대상": "같음 0.70",
+     "단위": "같음 0.99",
+     "지표": "같음 0.67"
     },
     "다른축": [],
     "사람확인권장": true
@@ -1312,39 +2515,39 @@
      "숫자쪽": 1
     },
     {
-     "제목": "Producer Price Index News Release - 2026 M10 Results",
-     "상세페이지": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
-     "PDF주소": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
-     "키": "gen_504ffcd04ff0",
-     "숫자쪽": null
-    },
-    {
      "제목": "October 2026 PPI Detailed Report",
      "상세페이지": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
      "PDF주소": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
      "키": "gen_snip_df8c9d0d948f",
      "숫자쪽": 1
+    },
+    {
+     "제목": "October 2026 PPI Detailed Report",
+     "상세페이지": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
+     "PDF주소": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
+     "키": "gen_df8c9d0d948f",
+     "숫자쪽": 1
     }
    ],
    "확신낮음": true,
    "시간": {
-    "총초": 1.9,
+    "총초": 2.7,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 1.25,
+     "후보 찾기": 0.29,
+     "PDF 받기·글자": 1.88,
      "숫자 찾기": 0.0,
-     "고르기·판정": 0.01,
-     "교차 확인(Decisions)": 0.5,
+     "고르기·판정": 0.0,
+     "교차 확인(Decisions)": 0.48,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.58,
+      "초": 0.71,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1352,7 +2555,7 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.66,
+      "초": 1.15,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1360,7 +2563,7 @@
      {
       "무엇": "Decisions",
       "모델": "typesafe/jev-1.13",
-      "초": 0.5,
+      "초": 0.48,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1368,7 +2571,7 @@
     ]
    }
   },
-  "초": 2
+  "초": 3
  },
  {
   "기관": "무작위",
@@ -1380,7 +2583,7 @@
   "번호": 12,
   "결과": {
    "입력": "조란 맘다니 뉴욕시장은 12일 기자회견에서 전날 오후 발생한 3층짜리 건물 붕괴 사고로 어린이 2명과 성인 6명이 숨졌다고 밝혔다.",
-   "시각": "2026-11-14T13:39:13",
+   "시각": "2026-11-14T22:17:19",
    "입구": {
     "통과": true,
     "경로": "공식 발표",
@@ -1389,55 +2592,58 @@
    },
    "출처종류": "보고서·보도자료",
    "추출": {
-    "기관": "뉴욕시장",
+    "기관": "뉴욕시장실",
     "보고서": "",
     "숫자": "어린이 2명과 성인 6명",
     "핵심어": [
+     "건물 붕괴 사망자",
+     "사망자 수",
      "사망자",
      "건물 붕괴"
     ],
-    "기준시점": "",
+    "기준시점": "전날 오후",
     "기관누리집": "nyc.gov",
     "원어검색어": ""
    },
-   "지원밖기관": "뉴욕시장",
+   "지원밖기관": "뉴욕시장실",
    "기준시점확인": "기사에 기준 시점 없음",
-   "보고서": "charged - Bronx District Attorney - NYC.gov",
-   "상세페이지": "https://www.bronxda.nyc.gov/downloads/pdf/pr/2023/19-2023--Fatal-Building-Collapse.pdf",
-   "PDF": "작업/원본PDF/gen_8b8eb875da21.pdf",
+   "보고서": "PR13-04-063.pdf - New York City Comptroller - NYC.gov",
+   "상세페이지": "https://comptroller.nyc.gov/wp-content/uploads/2013/07/PR13-04-063.pdf",
+   "PDF": "작업/원본PDF/gen_a371ea8467a6.pdf",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
-    "후보수": 0,
-    "방법": "코드 계산(조합 없음)"
+    "후보수": 4,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "모든 후보는 문서번호·날짜·전화번호를 임의로 계산한 것으로, 해당 건물 붕괴 사고의 어린이·성인 사망자 수와 대상·기간·지표가 일치하지 않는다."
    },
    "확인한문서": [
-    "charged - Bronx District Attorney - NYC.gov",
+    "PR13-04-063.pdf - New York City Comptroller - NYC.gov",
+    "Mayor Mamdani, FDNY Commissioner Bonsignore provide ...",
     "246 Spring Street Investigation",
-    "Facade Fatality Report",
-    "const r uct ion - saf et y REPORT 2025",
+    "Construction Related Accident Reports - Buildings",
     "Press Release - Buildings",
-    "CONSTRUCTION SAFETY",
-    "Buildings",
-    "Audit Report on the Department of Buildings' Compliance ..."
+    "New York City Construction Safety Report",
+    "Proceedings: Expert Panel on Public Health Registries",
+    "Sandy and Its Impacts"
    ],
    "이유": "찾아본 문서 8건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "charged - Bronx District Attorney - NYC.gov",
-     "주소": "https://www.bronxda.nyc.gov/downloads/pdf/pr/2023/19-2023--Fatal-Building-Collapse.pdf"
+     "제목": "PR13-04-063.pdf - New York City Comptroller - NYC.gov",
+     "주소": "https://comptroller.nyc.gov/wp-content/uploads/2013/07/PR13-04-063.pdf"
+    },
+    {
+     "제목": "Mayor Mamdani, FDNY Commissioner Bonsignore provide ...",
+     "주소": "https://www.nyc.gov/site/fdny/news/PI5626/mayor-zohran-mamdani-fdny-commissioner-lillian-bonsignore-provide-on-deadly-building"
     },
     {
      "제목": "246 Spring Street Investigation",
      "주소": "https://www.nyc.gov/html/records/pdf/govpub/246_Spring_Street_Investigation_Part_1.pdf"
     },
     {
-     "제목": "Facade Fatality Report",
-     "주소": "https://www.nyc.gov/assets/doi/reports/pdf/2015/2015-11-17-Facade_fatality_report_111615_appendices.pdf"
-    },
-    {
-     "제목": "const r uct ion - saf et y REPORT 2025",
-     "주소": "https://www.nyc.gov/assets/buildings/pdf/csr2025.pdf"
+     "제목": "Construction Related Accident Reports - Buildings",
+     "주소": "https://www.nyc.gov/site/buildings/dob/construction-related-accident-reports.page"
     },
     {
      "제목": "Press Release - Buildings",
@@ -1446,6 +2652,13 @@
    ],
    "다른후보": [
     {
+     "제목": "Mayor Mamdani, FDNY Commissioner Bonsignore provide ...",
+     "상세페이지": "https://www.nyc.gov/site/fdny/news/PI5626/mayor-zohran-mamdani-fdny-commissioner-lillian-bonsignore-provide-on-deadly-building",
+     "PDF주소": "https://www.nyc.gov/site/fdny/news/PI5626/mayor-zohran-mamdani-fdny-commissioner-lillian-bonsignore-provide-on-deadly-building",
+     "키": "gen_93fc7e86e87d",
+     "숫자쪽": null
+    },
+    {
      "제목": "246 Spring Street Investigation",
      "상세페이지": "https://www.nyc.gov/html/records/pdf/govpub/246_Spring_Street_Investigation_Part_1.pdf",
      "PDF주소": "https://www.nyc.gov/html/records/pdf/govpub/246_Spring_Street_Investigation_Part_1.pdf",
@@ -1453,39 +2666,33 @@
      "숫자쪽": null
     },
     {
-     "제목": "Facade Fatality Report",
-     "상세페이지": "https://www.nyc.gov/assets/doi/reports/pdf/2015/2015-11-17-Facade_fatality_report_111615_appendices.pdf",
-     "PDF주소": "https://www.nyc.gov/assets/doi/reports/pdf/2015/2015-11-17-Facade_fatality_report_111615_appendices.pdf",
-     "키": "gen_433c872dcb9b",
-     "숫자쪽": null
-    },
-    {
-     "제목": "const r uct ion - saf et y REPORT 2025",
-     "상세페이지": "https://www.nyc.gov/assets/buildings/pdf/csr2025.pdf",
-     "PDF주소": "https://www.nyc.gov/assets/buildings/pdf/csr2025.pdf",
-     "키": "gen_fd583cdbb364",
+     "제목": "Construction Related Accident Reports - Buildings",
+     "상세페이지": "https://www.nyc.gov/site/buildings/dob/construction-related-accident-reports.page",
+     "PDF주소": "https://www.nyc.gov/site/buildings/dob/construction-related-accident-reports.page",
+     "키": "gen_a7b4ae5d7354",
      "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 15.7,
+    "총초": 60.1,
     "단계초": {
-     "입구 필터": 0.48,
-     "문장 분해": 0.01,
-     "검색": 0.0,
-     "후보 찾기": 0.09,
-     "PDF 받기·글자": 1.46,
-     "숫자 찾기": 0.12,
-     "PDF 직접 읽기": 13.23,
-     "계산 확인": 0.0,
+     "입구 필터": 2.19,
+     "문장 분해": 2.68,
+     "검색": 9.03,
+     "후보 찾기": 3.35,
+     "PDF 받기·글자": 12.39,
+     "숫자 찾기": 0.6,
+     "PDF 직접 읽기": 25.49,
+     "계산 확인": 3.24,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Decisions",
       "모델": "typesafe/jev-1.13",
-      "초": 0.48,
+      "초": 0.5,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1493,7 +2700,7 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.7,
+      "초": 0.55,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1501,23 +2708,207 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.56,
+      "초": 0.55,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.24,
+      "입력토큰": 651,
+      "출력토큰": 69,
+      "추론토큰": 0
      },
      {
       "무엇": "PDF 직접 읽기",
       "모델": "google/gemini-3.8-flash",
-      "초": 13.22,
-      "입력토큰": 2347,
+      "초": 13.03,
+      "입력토큰": 787,
       "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Decisions",
+      "모델": "typesafe/jev-1.13",
+      "초": 0.5,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.97,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.25,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.53,
+      "입력토큰": 651,
+      "출력토큰": 68,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 12.46,
+      "입력토큰": 787,
+      "출력토큰": 137,
+      "추론토큰": 101
+     },
+     {
+      "무엇": "Decisions",
+      "모델": "typesafe/jev-1.13",
+      "초": 1.19,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.61,
+      "입력토큰": 1358,
+      "출력토큰": 86,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-luna",
+      "초": 2.68,
+      "입력토큰": 1358,
+      "출력토큰": 71,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.06,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.49,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.02,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.21,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.25,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.73,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.73,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.13,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.2,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.79,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 6.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.61,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.24,
+      "입력토큰": 296,
+      "출력토큰": 61,
       "추론토큰": 0
      }
     ]
    }
   },
-  "초": 16
+  "초": 60
  },
  {
   "기관": "무작위",
@@ -1529,7 +2920,7 @@
   "번호": 13,
   "결과": {
    "입력": "11월 4일부터 6일까지 무선형 인슐린펌프 사용 경험이 있는 환자와 보호자 330명이 온라인 설문에 참여했으며, 유효 응답 326명을 분석했다.",
-   "시각": "2026-11-14T13:39:28",
+   "시각": "2026-11-14T22:18:19",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -1540,56 +2931,114 @@
    "추출": {
     "기관": "",
     "보고서": "",
-    "숫자": "326명",
+    "숫자": "330명",
     "핵심어": [
      "무선형 인슐린펌프",
      "환자와 보호자",
-     "유효 응답",
-     "환자·보호자"
+     "온라인 설문 참여자"
     ],
     "기준시점": "2026년 11월 4일~6일",
     "기관누리집": "",
     "원어검색어": ""
    },
    "지원밖기관": "기관 모름",
+   "기준시점확인": "0/2",
+   "보고서": "운영지침 및 서비스 체계(정신건강복지센터 중심)",
+   "상세페이지": "https://gnmhc.or.kr/board/bbs_download.php?code=050201&no=118&sd=/bbsDown/050201&dn=1&fn=2",
+   "PDF": "작업/원본PDF/gen_907adf36c174.pdf",
    "판정": "원출처 미확인",
-   "이유": "원 보고서 PDF를 찾지 못함",
+   "계산확인": {
+    "계산됨": false,
+    "후보수": 0,
+    "방법": "코드 계산(조합 없음)"
+   },
+   "확인한문서": [
+    "운영지침 및 서비스 체계(정신건강복지센터 중심)"
+   ],
+   "이유": "찾아본 문서 1건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "만족도 높은 무선형 인슐린펌프…환자·보호자 79% “비용 ...",
-     "주소": "http://www.docdocdoc.co.kr/news/articleViewAmp.html?idxno=3044558"
-    },
-    {
-     "제목": "편리한 무선형 인슐린펌프는 그림의 떡…\"지원 확대해야\"",
-     "주소": "https://koreanpda.org/posts/o7trV8q"
-    },
-    {
-     "제목": "줄 없어 활동 편한 '패치형 인슐린펌프'···국내 당뇨 환자는 ...",
-     "주소": "https://www.womaneconomy.co.kr/news/articleViewAmp.html?idxno=261113"
-    },
-    {
-     "제목": "무선형 인슐린펌프 사용 경험자 96% “지원 확대되면 ...",
-     "주소": "https://www.dangnyoshinmun.co.kr/news/article.html?no=24784"
-    },
-    {
-     "제목": "인슐린펌프 환자 60% “비용때문에 중단 고민”",
-     "주소": "https://www.dailymedi.com/news/news_view.php?wr_id=942571"
+     "제목": "운영지침 및 서비스 체계(정신건강복지센터 중심)",
+     "주소": "https://gnmhc.or.kr/board/bbs_download.php?code=050201&no=118&sd=/bbsDown/050201&dn=1&fn=2"
     }
    ],
+   "다른후보": [],
+   "확신낮음": false,
    "시간": {
-    "총초": 0.0,
+    "총초": 33.3,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 0.0,
+     "문장 분해": 2.75,
+     "검색": 5.64,
+     "후보 찾기": 0.43,
+     "PDF 받기·글자": 0.03,
+     "숫자 찾기": 0.02,
+     "PDF 직접 읽기": 24.3,
+     "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
-    "라이너호출": []
+    "라이너호출": [
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 6.68,
+      "입력토큰": 22602,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 17.6,
+      "입력토큰": 22602,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.43,
+      "입력토큰": 1487,
+      "출력토큰": 79,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.75,
+      "입력토큰": 1487,
+      "출력토큰": 80,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.33,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.45,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 3.17,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     }
+    ]
    }
   },
-  "초": 0
+  "초": 33
  },
  {
   "기관": "무작위",
@@ -1601,7 +3050,7 @@
   "번호": 14,
   "결과": {
    "입력": "2026년 중국 쓰촨대 연구진이 영국 바이오뱅크에 등록된 여성 9만2777명을 대상으로 분석한 결과, 가당 음료를 마신 여성은 전혀 마시지 않는 여성보다 자궁내막암 발생 위험이 29% 높았다.",
-   "시각": "2026-11-14T13:39:28",
+   "시각": "2026-11-14T22:18:53",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -1617,20 +3066,23 @@
      "가당 음료",
      "자궁내막암",
      "발생 위험",
-     "sugar",
-     "sweetened",
+     "가당 음료 섭취",
+     "자궁내막암 발생 위험",
+     "Sichuan",
+     "University",
+     "Biobank",
+     "sugar-sweetened",
      "beverages",
      "endometrial",
      "cancer",
-     "Biobank",
-     "women"
+     "risk"
     ],
-    "기준시점": "",
+    "기준시점": "2026년",
     "기관누리집": "scu.edu.cn",
-    "원어검색어": "sugar sweetened beverages endometrial cancer UK Biobank women"
+    "원어검색어": "Sichuan University UK Biobank sugar-sweetened beverages endometrial cancer risk 2026"
    },
    "지원밖기관": "쓰촨대학교",
-   "기준시점확인": "기사에 기준 시점 없음",
+   "기준시점확인": "1/1",
    "판정": "일치",
    "보고서": "Higher consumption of sugar-sweetened beverages is associated with an increased risk of endometrial cancer: a prospective cohort study of 92,777 women from the UK Biobank.",
    "상세페이지": "https://pubmed.ncbi.nlm.nih.gov/41573798/",
@@ -1673,17 +3125,17 @@
    "교차확인": {
     "판정": "일치",
     "확률": {
-     "일치": 0.85,
-     "표현 바뀜": 0.07,
-     "다른 지표": 0.08
+     "일치": 0.89,
+     "표현 바뀜": 0.05,
+     "다른 지표": 0.06
     },
-    "확신도": 0.77,
+    "확신도": 0.83,
     "같음": true,
     "축": {
-     "기간": "다름 0.93",
+     "기간": "다름 0.89",
      "대상": "같음 0.99",
-     "단위": "다름 0.63",
-     "지표": "같음 0.71"
+     "단위": "다름 0.66",
+     "지표": "같음 0.76"
     },
     "다른축": [
      "기간",
@@ -1714,37 +3166,45 @@
      "숫자쪽": null
     },
     {
-     "제목": "Sweetened Beverage Intake and Incident Chronic Kidney Disease in the UK Biobank Study (JAMA Network Open)",
-     "상세페이지": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2815563/heo_2024_oi_231677_1708501375.60227.pdf",
-     "PDF주소": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2815563/heo_2024_oi_231677_1708501375.60227.pdf",
-     "키": "gen_73fbb25f4813",
+     "제목": "校友会- 四川大学",
+     "상세페이지": "https://scuaa.scu.edu.cn/__local/8/56/32/725350407AE3C0601D15A88A0B6_C188F4EC_38E8685.pdf",
+     "PDF주소": "https://scuaa.scu.edu.cn/__local/8/56/32/725350407AE3C0601D15A88A0B6_C188F4EC_38E8685.pdf",
+     "키": "gen_0d8448d6daef",
      "숫자쪽": null
     },
     {
-     "제목": "The associations of sugar-sweetened, artificially sweetened and naturally sweet juices with all-caus (BMC Medicine)",
-     "상세페이지": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-020-01554-5",
-     "PDF주소": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-020-01554-5",
-     "키": "gen_0b4bad8147c2",
+     "제목": "高糖饮食与炎症性疾病研究进展",
+     "상세페이지": "http://ykxb.scu.edu.cn/cn/article/doi/10.12182/20220560103?viewType=citedby-info",
+     "PDF주소": "http://ykxb.scu.edu.cn/cn/article/doi/10.12182/20220560103?viewType=citedby-info",
+     "키": "gen_88e174b3d7e4",
      "숫자쪽": null
     }
    ],
    "확신낮음": true,
    "시간": {
-    "총초": 7.9,
+    "총초": 8.5,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.76,
-     "PDF 받기·글자": 2.16,
-     "숫자 찾기": 0.79,
+     "후보 찾기": 1.39,
+     "PDF 받기·글자": 2.9,
+     "숫자 찾기": 0.04,
      "PDF 직접 읽기": 0.0,
-     "계산 확인": 3.06,
-     "고르기·판정": 0.64,
+     "계산 확인": 3.02,
+     "고르기·판정": 0.63,
      "교차 확인(Decisions)": 0.45,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 1.02,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
@@ -1756,9 +3216,9 @@
      {
       "무엇": "계산 식 고르기",
       "모델": "gpt-6.1-sol",
-      "초": 3.06,
+      "초": 2.93,
       "입력토큰": 1001,
-      "출력토큰": 71,
+      "출력토큰": 72,
       "추론토큰": 0
      },
      {
@@ -1780,7 +3240,7 @@
     ]
    }
   },
-  "초": 8
+  "초": 9
  },
  {
   "기관": "무작위",
@@ -1792,7 +3252,7 @@
   "번호": 15,
   "결과": {
    "입력": "신한카드가 집계한 남대문시장 자유상가 일대 관광 연관 업종의 올해 1~9월 카드 매출은 1091억8100만원으로 작년 같은 기간보다 7.5% 늘었다.",
-   "시각": "2026-11-14T13:39:36",
+   "시각": "2026-11-14T22:19:01",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -1805,6 +3265,7 @@
     "보고서": "",
     "숫자": "1091억8100만원",
     "핵심어": [
+     "남대문시장 자유상가",
      "관광 연관 업종",
      "카드 매출"
     ],
@@ -1813,59 +3274,61 @@
     "원어검색어": ""
    },
    "지원밖기관": "신한카드",
-   "기준시점확인": "2/2",
-   "보고서": "2026 < 신한카드 < 회사소개",
-   "상세페이지": "https://www.shinhancard.com/pconts/company/html/intro/history/yearSh/shc2026.html",
-   "PDF": "작업/웹문서/gen_40a5d129b897.txt",
+   "기준시점확인": "1/2",
+   "보고서": "신한카드 반기보고서 (2026.06) (20260814)",
+   "상세페이지": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003533",
+   "PDF": "작업/웹문서/gen_dart_20260814003533.txt",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
-    "후보수": 0,
-    "방법": "코드 계산(조합 없음)"
+    "후보수": 1,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "후보는 반기 외환거래이익 수치로 계산한 비율로, 올해 1~9월 남대문시장 자유상가 일대 관광 연관 업종 카드 매출액과 대상·기간·지표가 모두 다르다."
    },
    "확인한문서": [
-    "2026 < 신한카드 < 회사소개",
     "신한카드 반기보고서 (2026.06) (20260814)",
-    "트렌드정보 | 혜택",
+    "2026년 동행축제 고유가로 힘든 고객님",
+    "전통시장사랑 체크카드",
     "공공정책 분석 지원 - 관광 분석 < ShinhanCard BIG DATA",
-    "신한카드 2025 지속가능경영보고서"
+    "보도자료 < 홍보/브랜드보도자료 < 회사소개",
+    "신용카드 해외 이용도 증가세"
    ],
-   "이유": "찾아본 문서 5건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "이유": "찾아본 문서 6건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
-    {
-     "제목": "2026 < 신한카드 < 회사소개",
-     "주소": "https://www.shinhancard.com/pconts/company/html/intro/history/yearSh/shc2026.html"
-    },
     {
      "제목": "신한카드 반기보고서 (2026.06) (20260814)",
      "주소": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003533"
     },
     {
-     "제목": "트렌드정보 | 혜택",
-     "주소": "https://www.shinhancard.com/pconts/html/benefit/info/trendis/CONFM50041/CONFM50041R01.html"
+     "제목": "2026년 동행축제 고유가로 힘든 고객님",
+     "주소": "https://www.shinhancard.com/pconts/html/benefit/event/1238379_2239.html"
+    },
+    {
+     "제목": "전통시장사랑 체크카드",
+     "주소": "https://www.shinhancard.com/pconts/html/card/apply/check/1232098_2206.html"
     },
     {
      "제목": "공공정책 분석 지원 - 관광 분석 < ShinhanCard BIG DATA",
      "주소": "https://www.shinhancard.com/pconts/bdinfo/html/public/support02.html"
     },
     {
-     "제목": "신한카드 2025 지속가능경영보고서",
-     "주소": "https://www.shinhancard.com/pconts/download/company/SHC_2025_Sustainability_Report_KOR.pdf"
+     "제목": "보도자료 < 홍보/브랜드보도자료 < 회사소개",
+     "주소": "https://www.shinhancard.com/mob/MOBFM12006N/MOBFM12006R01.shc?year=2022"
     }
    ],
    "다른후보": [
     {
-     "제목": "신한카드 반기보고서 (2026.06) (20260814)",
-     "상세페이지": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003533",
-     "PDF주소": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003533",
-     "키": "gen_dart_20260814003533",
+     "제목": "2026년 동행축제 고유가로 힘든 고객님",
+     "상세페이지": "https://www.shinhancard.com/pconts/html/benefit/event/1238379_2239.html",
+     "PDF주소": "https://www.shinhancard.com/pconts/html/benefit/event/1238379_2239.html",
+     "키": "gen_9d820c6bc4f7",
      "숫자쪽": null
     },
     {
-     "제목": "트렌드정보 | 혜택",
-     "상세페이지": "https://www.shinhancard.com/pconts/html/benefit/info/trendis/CONFM50041/CONFM50041R01.html",
-     "PDF주소": "https://www.shinhancard.com/pconts/html/benefit/info/trendis/CONFM50041/CONFM50041R01.html",
-     "키": "gen_abed03df55b8",
+     "제목": "전통시장사랑 체크카드",
+     "상세페이지": "https://www.shinhancard.com/pconts/html/card/apply/check/1232098_2206.html",
+     "PDF주소": "https://www.shinhancard.com/pconts/html/card/apply/check/1232098_2206.html",
+     "키": "gen_bec57d5f534e",
      "숫자쪽": null
     },
     {
@@ -1878,23 +3341,72 @@
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 2.6,
+    "총초": 17.7,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
+     "문장 분해": 0.01,
      "검색": 0.0,
-     "후보 찾기": 0.86,
-     "PDF 받기·글자": 0.62,
-     "숫자 찾기": 0.56,
+     "후보 찾기": 1.63,
+     "PDF 받기·글자": 9.52,
+     "숫자 찾기": 1.25,
      "PDF 직접 읽기": 0.0,
-     "계산 확인": 0.0,
+     "계산 확인": 3.74,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.55,
+      "초": 0.5,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.63,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.62,
+      "입력토큰": 449,
+      "출력토큰": 75,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.57,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.42,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.6,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.56,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -1902,7 +3414,7 @@
     ]
    }
   },
-  "초": 3
+  "초": 18
  },
  {
   "기관": "무작위",
@@ -1914,7 +3426,7 @@
   "번호": 16,
   "결과": {
    "입력": "미 노동부 노동통게국은 현지시간 13일, 미국의 10월 생산자물가지수가 전년 대비 6.5% 상승했다고 밝혔는데, 이는 지난 2022년 11월(7.4%) 이후 가장 높은 상승률입니다.",
-   "시각": "2026-11-14T13:39:39",
+   "시각": "2026-11-14T22:19:19",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -1924,7 +3436,7 @@
    "출처종류": "보고서·보도자료",
    "추출": {
     "기관": "미국 노동부 노동통계국",
-    "보고서": "",
+    "보고서": "생산자물가지수",
     "숫자": "6.5%",
     "핵심어": [
      "생산자물가지수",
@@ -1932,31 +3444,32 @@
     ],
     "기준시점": "2026년 10월",
     "기관누리집": "bls.gov",
-    "원어검색어": "Producer Price Index October 2026 year-over-year"
+    "원어검색어": "Producer Price Index year-over-year October 2026"
    },
    "지원밖기관": "미국 노동부 노동통계국",
    "기준시점확인": "2/2",
+   "제목확인": "기사가 밝힌 보고서 '생산자물가지수'를 찾지 못해, 가장 가까운 후보로 확인했습니다.",
    "판정": "일치",
-   "보고서": "Producer Price Index Home",
-   "상세페이지": "https://www.bls.gov/ppi/",
-   "PDF": "작업/웹문서/gen_110e6d5d3ce6.txt",
+   "보고서": "Producer Price Index News Release summary",
+   "상세페이지": "https://www.bls.gov/news.release/ppi.nr0.htm",
+   "PDF": "작업/웹문서/gen_snip_268099e27423.txt",
    "쪽": 1,
    "찾은표기": "6.5%",
    "표기종류": "정확",
-   "찾은방법": "글자 찾기 + 라이너 Rerank 순위 + 라이너 모델 판정 — 원문 페이지는 자동 접속이 막혀, 라이너 검색 결과의 그 페이지 요약 글로 확인",
-   "원문인용": "Prices for final demand advanced 6.5% for the 12 months ended in October.",
+   "찾은방법": "글자 찾기 + 라이너 Rerank 순위 + 라이너 모델 판정 — 원문 페이지는 자동 접속이 막혀, 라이너 검색 결과의 그 페이지 요약 글로 확인 — 라이너 Deep Research 가 지목한 원 출처를 받아 우리가 직접 대조",
+   "원문인용": "[라이너 검색 요약] On an unadjusted basis, the index for final demand increased 6.5% for the 12 months ended in October, the largest 12-month rise since moving up 7.4 ...",
    "차이": [],
-   "확인못한부분": "원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요. 현지시간 13일 발표했다는 점과 지난 2022년 11월(7.4%) 이후 가장 높은 상승률이라는 주장은 제공된 원문에서 확인할 수 없음.",
+   "확인못한부분": "원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요. 미 노동부 노동통계국의 현지시간 13일 발표 여부와 지난 2022년 11월(7.4%) 이후 가장 높은 상승률이라는 주장은 제공된 원문만으로 완전히 확인할 수 없음.",
    "칸별비교": {
     "지표": {
      "판단": "동의어",
      "기사": "생산자물가지수가 전년 대비 6.5% 상승",
-     "원문": "Prices for final demand advanced 6.5%"
+     "원문": "the index for final demand increased 6.5%"
     },
     "대상": {
-     "판단": "동의어",
-     "기사": "미국의 10월 생산자물가지수",
-     "원문": "Prices for final demand"
+     "판단": "알수없음",
+     "기사": "미국의",
+     "원문": "final demand"
     },
     "시점": {
      "판단": "같음",
@@ -1971,24 +3484,24 @@
     "수준변화": {
      "판단": "동의어",
      "기사": "6.5% 상승",
-     "원문": "advanced 6.5%"
+     "원문": "increased 6.5%"
     }
    },
    "규칙확인": [],
    "교차확인": {
     "판정": "일치",
     "확률": {
-     "일치": 0.57,
-     "표현 바뀜": 0.29,
-     "다른 지표": 0.14
+     "일치": 0.49,
+     "표현 바뀜": 0.28,
+     "다른 지표": 0.23
     },
-    "확신도": 0.35,
+    "확신도": 0.24,
     "같음": true,
     "축": {
-     "기간": "같음 0.90",
-     "대상": "같음 0.74",
-     "단위": "같음 0.99",
-     "지표": "같음 0.75"
+     "기간": "같음 0.85",
+     "대상": "같음 0.56",
+     "단위": "같음 1.00",
+     "지표": "같음 0.52"
     },
     "다른축": [],
     "사람확인권장": true
@@ -2008,6 +3521,13 @@
      "제목": "Producer Price Indexes - October 2026",
      "상세페이지": "https://www.bls.gov/news.release/pdf/ppi.pdf",
      "PDF주소": "https://www.bls.gov/news.release/pdf/ppi.pdf",
+     "키": "gen_snip_cd35d0ffa4d5",
+     "숫자쪽": null
+    },
+    {
+     "제목": "Producer Price Indexes - October 2026",
+     "상세페이지": "https://www.bls.gov/news.release/pdf/ppi.pdf",
+     "PDF주소": "https://www.bls.gov/news.release/pdf/ppi.pdf",
      "키": "gen_cd35d0ffa4d5",
      "숫자쪽": null
     },
@@ -2017,28 +3537,30 @@
      "PDF주소": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
      "키": "gen_df8c9d0d948f",
      "숫자쪽": null
-    },
-    {
-     "제목": "Producer Price Index News Release - 2026 M10 Results",
-     "상세페이지": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
-     "PDF주소": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
-     "키": "gen_504ffcd04ff0",
-     "숫자쪽": null
     }
    ],
    "확신낮음": true,
+   "딥리서치후보": [
+    "https://www.bls.gov/ppi/",
+    "https://www.bls.gov/news.release/ppi.nr0.htm",
+    "https://www.bls.gov/news.release/pdf/ppi.pdf",
+    "https://www.bls.gov/news.release/archives/ppi_11132026.htm"
+   ],
    "시간": {
-    "총초": 1.7,
+    "총초": 9.5,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.11,
-     "PDF 받기·글자": 1.13,
+     "후보 찾기": 0.57,
+     "PDF 받기·글자": 8.48,
      "숫자 찾기": 0.0,
-     "고르기·판정": 0.01,
+     "고르기·판정": 0.02,
      "표현 다름 후보": 0.0,
-     "교차 확인(Decisions)": 0.47,
+     "PDF 직접 읽기": 0.0,
+     "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
+     "교차 확인(Decisions)": 0.42,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
@@ -2053,7 +3575,23 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.58,
+      "초": 6.78,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.6,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2061,7 +3599,7 @@
      {
       "무엇": "Decisions",
       "모델": "typesafe/jev-1.13",
-      "초": 0.47,
+      "초": 0.42,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2069,7 +3607,7 @@
     ]
    }
   },
-  "초": 2
+  "초": 10
  },
  {
   "기관": "무작위",
@@ -2081,7 +3619,7 @@
   "번호": 17,
   "결과": {
    "입력": "모바일인덱스에 따르면 지난달 네이버지도의 월간활성이용자수(MAU)는 3121만1614명, 티맵은 1511만1615명, 카카오맵은 1383만5562명으로 집계됐다.",
-   "시각": "2026-11-14T13:39:41",
+   "시각": "2026-11-14T22:19:28",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -2095,8 +3633,7 @@
     "숫자": "3121만1614명",
     "핵심어": [
      "네이버지도",
-     "월간활성이용자수",
-     "MAU"
+     "월간활성이용자수"
     ],
     "기준시점": "2026년 10월",
     "기관누리집": "mobileindex.com",
@@ -2115,76 +3652,118 @@
    },
    "확인한문서": [
     "네이버 지도는 사람을 모으고 티맵은 시간을 붙잡는다.",
-    "모바일인덱스",
-    "대한민국 모바일 앱 순위",
     "트립닷컴은 사용자 수 17.8배 격차를 어떻게 이겨냈을까?",
-    "모바일 시장의 모든 데이터, 한 곳에서｜모바일인덱스 INSIGHT"
+    "4월 월간 인기 모바일 앱 순위 총정리",
+    "8월 월간 인기 모바일 앱 순위 총정리",
+    "8월 월간 인기 모바일 앱 순위 총정리",
+    "2025 상반기 모바일 앱 총결산 리포트"
    ],
-   "이유": "찾아본 문서 5건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "이유": "찾아본 문서 6건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
      "제목": "네이버 지도는 사람을 모으고 티맵은 시간을 붙잡는다.",
      "주소": "https://insight-report.mobileindex.com/post/outsanding-0618"
     },
     {
-     "제목": "모바일인덱스",
-     "주소": "https://www.mobileindex.com/insight-report"
-    },
-    {
-     "제목": "대한민국 모바일 앱 순위",
-     "주소": "https://insight-report.mobileindex.com/post/2025-app-charts"
-    },
-    {
      "제목": "트립닷컴은 사용자 수 17.8배 격차를 어떻게 이겨냈을까?",
      "주소": "https://insight-report.mobileindex.com/post/outsanding-0729"
     },
     {
-     "제목": "모바일 시장의 모든 데이터, 한 곳에서｜모바일인덱스 INSIGHT",
-     "주소": "https://www.mobileindex.com/"
+     "제목": "4월 월간 인기 모바일 앱 순위 총정리",
+     "주소": "https://www.mobileindex.com/home/blog/post/4%EC%9B%94-%EC%9B%94%EA%B0%84-%EC%9D%B8%EA%B8%B0-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EC%88%9C%EC%9C%84-%EC%B4%9D%EC%A0%95%EB%A6%AC"
+    },
+    {
+     "제목": "8월 월간 인기 모바일 앱 순위 총정리",
+     "주소": "https://insight-report.mobileindex.com/post/apprank"
+    },
+    {
+     "제목": "8월 월간 인기 모바일 앱 순위 총정리",
+     "주소": "https://www.mobileindex.com/home/blog/post/apprank"
     }
    ],
    "다른후보": [
-    {
-     "제목": "모바일인덱스",
-     "상세페이지": "https://www.mobileindex.com/insight-report",
-     "PDF주소": "https://www.mobileindex.com/insight-report",
-     "키": "gen_1a803c2ec686",
-     "숫자쪽": null
-    },
-    {
-     "제목": "대한민국 모바일 앱 순위",
-     "상세페이지": "https://insight-report.mobileindex.com/post/2025-app-charts",
-     "PDF주소": "https://insight-report.mobileindex.com/post/2025-app-charts",
-     "키": "gen_89bd1dfdeecb",
-     "숫자쪽": null
-    },
     {
      "제목": "트립닷컴은 사용자 수 17.8배 격차를 어떻게 이겨냈을까?",
      "상세페이지": "https://insight-report.mobileindex.com/post/outsanding-0729",
      "PDF주소": "https://insight-report.mobileindex.com/post/outsanding-0729",
      "키": "gen_4c1da022e15e",
      "숫자쪽": null
+    },
+    {
+     "제목": "4월 월간 인기 모바일 앱 순위 총정리",
+     "상세페이지": "https://www.mobileindex.com/home/blog/post/4%EC%9B%94-%EC%9B%94%EA%B0%84-%EC%9D%B8%EA%B8%B0-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EC%88%9C%EC%9C%84-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+     "PDF주소": "https://www.mobileindex.com/home/blog/post/4%EC%9B%94-%EC%9B%94%EA%B0%84-%EC%9D%B8%EA%B8%B0-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EC%88%9C%EC%9C%84-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+     "키": "gen_0fdb54586a0d",
+     "숫자쪽": null
+    },
+    {
+     "제목": "8월 월간 인기 모바일 앱 순위 총정리",
+     "상세페이지": "https://insight-report.mobileindex.com/post/apprank",
+     "PDF주소": "https://insight-report.mobileindex.com/post/apprank",
+     "키": "gen_779d7377255e",
+     "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 2.6,
+    "총초": 12.2,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
+     "문장 분해": 0.01,
      "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 2.25,
-     "숫자 찾기": 0.05,
+     "후보 찾기": 0.97,
+     "PDF 받기·글자": 10.67,
+     "숫자 찾기": 0.09,
      "PDF 직접 읽기": 0.0,
-     "계산 확인": 0.0,
+     "계산 확인": 0.07,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 1.62,
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.43,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 1.37,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.64,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.6,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2192,7 +3771,7 @@
     ]
    }
   },
-  "초": 3
+  "초": 12
  },
  {
   "기관": "무작위",
@@ -2204,7 +3783,7 @@
   "번호": 18,
   "결과": {
    "입력": "연방선거관리위원회(FEC)에 따르면 2025~26년 그가 모은 선거자금 가운데 200달러 이하 소액 헌금 비중은 65%에 달한다.",
-   "시각": "2026-11-14T13:39:43",
+   "시각": "2026-11-14T22:19:40",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -2217,11 +3796,11 @@
     "보고서": "",
     "숫자": "65%",
     "핵심어": [
-     "소액 헌금",
-     "선거자금",
-     "오카시오-코르테스",
      "알렉산드리아 오카시오-코르테스",
-     "소액 헌금 비중"
+     "소액 헌금",
+     "선거자금 비중",
+     "선거자금",
+     "헌금 비중"
     ],
     "기준시점": "2025~2026년",
     "기관누리집": "fec.gov",
@@ -2249,15 +3828,17 @@
     ],
     "후보수": 2,
     "방법": "코드 계산 + 라이너 모델 고르기",
-    "이유": "소액 헌금액(Unitemized individual contributions)을 전체 헌금액(Total contributions)으로 나눈 비율이므로, 개인 헌금만을 분모로 삼은 1번보다 기사 지표에 부합한다."
+    "이유": "전체 모금액 중 소액 헌금 비중이므로 소액 개인 헌금액을 전체 기부금(Total contributions)으로 나눈 2번이 맞고, 1번은 개인 기부금만을 분모로 삼는다."
    },
    "확인한문서": [
     "ALEXANDRIA OCASIO-CORTEZ FOR CONGRESS",
+    "Statistical Summary of 15-Month Campaign Activity of the ...",
     "OCASIO-CORTEZ, ALEXANDRIA - Candidate overview",
-    "긴급 시장상황점검회의 개최",
-    "시장상황점검회의 개최",
-    "국내외 주식시장 변동성 확대로 단계별 대응조치 가동",
-    "한-네팔, 기후변화 공동 대응과 국제감축사업 활성화의 길을 열다"
+    "Candidate | Contribution limits",
+    "Congressional Candidate Table 8b",
+    "Candidate | Types of contributions",
+    "Individual Contributions",
+    "Who can and can't contribute to a campaign"
    ],
    "숫자별확인": [
     {
@@ -2271,6 +3852,13 @@
    ],
    "다른후보": [
     {
+     "제목": "Statistical Summary of 15-Month Campaign Activity of the ...",
+     "상세페이지": "https://www.fec.gov/updates/statistical-summary-of-15-month-campaign-activity-of-the-2025-2026-election-cycle/",
+     "PDF주소": "https://www.fec.gov/updates/statistical-summary-of-15-month-campaign-activity-of-the-2025-2026-election-cycle/",
+     "키": "gen_ac7d840ef57d",
+     "숫자쪽": null
+    },
+    {
      "제목": "OCASIO-CORTEZ, ALEXANDRIA - Candidate overview",
      "상세페이지": "https://www.fec.gov/data/candidate/H8NY15148/",
      "PDF주소": "https://www.fec.gov/data/candidate/H8NY15148/",
@@ -2278,39 +3866,40 @@
      "숫자쪽": null
     },
     {
-     "제목": "긴급 시장상황점검회의 개최",
-     "상세페이지": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788234",
-     "PDF주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788234",
-     "키": "gen_bd2852e3ddf4",
-     "숫자쪽": null
-    },
-    {
-     "제목": "시장상황점검회의 개최",
-     "상세페이지": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788086",
-     "PDF주소": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788086",
-     "키": "gen_b76ebe25e1cf",
+     "제목": "Candidate | Contribution limits",
+     "상세페이지": "https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/contribution-limits/",
+     "PDF주소": "https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/contribution-limits/",
+     "키": "gen_e5dca427af2c",
      "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 5.8,
+    "총초": 12.8,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.72,
-     "PDF 받기·글자": 0.56,
-     "숫자 찾기": 0.03,
+     "후보 찾기": 1.5,
+     "PDF 받기·글자": 6.55,
+     "숫자 찾기": 0.06,
      "PDF 직접 읽기": 0.0,
-     "계산 확인": 4.42,
+     "계산 확인": 4.62,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.55,
+      "초": 5.91,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.62,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2318,15 +3907,15 @@
      {
       "무엇": "계산 식 고르기",
       "모델": "gpt-6.1-sol",
-      "초": 4.42,
+      "초": 4.62,
       "입력토큰": 503,
-      "출력토큰": 111,
-      "추론토큰": 39
+      "출력토큰": 125,
+      "추론토큰": 49
      }
     ]
    }
   },
-  "초": 6
+  "초": 13
  },
  {
   "기관": "무작위",
@@ -2338,7 +3927,7 @@
   "번호": 19,
   "결과": {
    "입력": "웨이모 조사에선 자율주행차의 대물·대인 보험 청구가 각각 88%, 92% 줄었다.",
-   "시각": "2026-11-14T13:39:49",
+   "시각": "2026-11-14T22:19:53",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -2347,7 +3936,7 @@
    },
    "출처종류": "보고서·보도자료",
    "추출": {
-    "기관": "Waymo",
+    "기관": "웨이모",
     "보고서": "",
     "숫자": "88%",
     "핵심어": [
@@ -2359,7 +3948,7 @@
     "기관누리집": "waymo.com",
     "원어검색어": "Waymo autonomous vehicles property damage insurance claims reduction"
    },
-   "지원밖기관": "Waymo",
+   "지원밖기관": "웨이모",
    "기준시점확인": "기사에 기준 시점 없음",
    "판정": "일치",
    "보고서": "Waymo Safety Impact",
@@ -2403,11 +3992,11 @@
    "교차확인": {
     "판정": "일치",
     "확률": {
-     "일치": 0.98,
+     "일치": 0.97,
      "표현 바뀜": 0.02,
-     "다른 지표": 0
+     "다른 지표": 0.01
     },
-    "확신도": 0.97,
+    "확신도": 0.96,
     "같음": true,
     "축": {
      "기간": "같음 0.90",
@@ -2453,23 +4042,23 @@
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 6.5,
+    "총초": 2.0,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.11,
-     "PDF 받기·글자": 2.92,
+     "후보 찾기": 0.27,
+     "PDF 받기·글자": 1.18,
      "숫자 찾기": 0.1,
-     "고르기·판정": 2.93,
-     "교차 확인(Decisions)": 0.43,
+     "고르기·판정": 0.01,
+     "교차 확인(Decisions)": 0.41,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.77,
+      "초": 0.6,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2477,31 +4066,15 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.62,
+      "초": 0.54,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
      },
      {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6.1-sol",
-      "초": 2.87,
-      "입력토큰": 1243,
-      "출력토큰": 179,
-      "추론토큰": 0
-     },
-     {
-      "무엇": "고르기·판정",
-      "모델": "gpt-6.1-sol",
-      "초": 2.92,
-      "입력토큰": 1243,
-      "출력토큰": 179,
-      "추론토큰": 0
-     },
-     {
       "무엇": "Decisions",
       "모델": "typesafe/jev-1.13",
-      "초": 0.43,
+      "초": 0.41,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2509,7 +4082,7 @@
     ]
    }
   },
-  "초": 7
+  "초": 2
  },
  {
   "기관": "무작위",
@@ -2521,7 +4094,7 @@
   "번호": 20,
   "결과": {
    "입력": "[파리=신화/뉴시스] 유세진 기자 = 프랑스 국립통계경제연구소(Insee)는 13일 프랑스의 10월 소비자물가지수(CPI)가 전년 동기 대비 3.4% 급등하며 9월의 3.1%에서 상승세가 가속화됐다고 밝혔다.",
-   "시각": "2026-11-14T13:39:55",
+   "시각": "2026-11-14T22:19:55",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -2539,26 +4112,26 @@
     ],
     "기준시점": "2026년 10월",
     "기관누리집": "insee.fr",
-    "원어검색어": "indice des prix à la consommation octobre 2026 variation annuelle"
+    "원어검색어": "indice des prix à la consommation octobre 2026 hausse annuelle"
    },
    "지원밖기관": "프랑스 국립통계경제연구소",
    "기준시점확인": "2/2",
    "판정": "일치",
    "보고서": "En octobre 2026, les prix à la consommation augmentent ...",
    "상세페이지": "https://www.insee.fr/fr/statistiques/9131332",
-   "PDF": "작업/웹문서/gen_snip_5a8ca8694362.txt",
+   "PDF": "작업/웹문서/gen_5a8ca8694362.txt",
    "쪽": 1,
    "찾은표기": "3.4%",
    "표기종류": "정확",
-   "찾은방법": "글자 찾기 + 라이너 Rerank 순위 + 라이너 모델 판정 — 원문 페이지는 자동 접속이 막혀, 라이너 검색 결과의 그 페이지 요약 글로 확인",
-   "원문인용": "Évolution mensuelle : +0.4% en octobre ; variation sur un an : +3.4%.",
+   "찾은방법": "글자 찾기 + 라이너 Rerank 순위 + 라이너 모델 판정",
+   "원문인용": "Sur un an, les prix à la consommation augmentent de 3.4% en octobre 2026, après +3.1%\n en septembre.",
    "차이": [],
-   "확인못한부분": "원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요. 13일 발표했다는 내용과 9월의 3.1%에서 상승세가 가속화됐다는 내용은 제시된 원문에서 확인할 수 없다.",
+   "확인못한부분": "프랑스 국립통계경제연구소가 13일 발표했다는 내용은 선택한 후보에서 확인할 수 없음.",
    "칸별비교": {
     "지표": {
      "판단": "동의어",
      "기사": "소비자물가지수(CPI)",
-     "원문": "l'indice des prix à la consommation (IPC)"
+     "원문": "les prix à la consommation"
     },
     "대상": {
      "판단": "알수없음",
@@ -2566,36 +4139,36 @@
      "원문": ""
     },
     "시점": {
-     "판단": "알수없음",
+     "판단": "같음",
      "기사": "10월",
-     "원문": "En octobre 2026"
+     "원문": "en octobre 2026"
     },
     "비교기준": {
      "판단": "동의어",
      "기사": "전년 동기 대비",
-     "원문": "variation sur un an"
+     "원문": "Sur un an"
     },
     "수준변화": {
-     "판단": "같음",
+     "판단": "동의어",
      "기사": "3.4% 급등",
-     "원문": "variation sur un an : +3.4%"
+     "원문": "augmentent de 3.4%"
     }
    },
    "규칙확인": [],
    "교차확인": {
     "판정": "일치",
     "확률": {
-     "일치": 0.91,
-     "표현 바뀜": 0.06,
-     "다른 지표": 0.03
+     "일치": 0.99,
+     "표현 바뀜": 0.01,
+     "다른 지표": 0
     },
-    "확신도": 0.86,
+    "확신도": 0.98,
     "같음": true,
     "축": {
-     "기간": "같음 0.88",
-     "대상": "같음 0.95",
-     "단위": "같음 0.95",
-     "지표": "같음 0.81"
+     "기간": "같음 0.94",
+     "대상": "같음 0.99",
+     "단위": "같음 1.00",
+     "지표": "같음 1.00"
     },
     "다른축": [],
     "사람확인권장": false
@@ -2607,7 +4180,7 @@
     },
     {
      "숫자": "3.1%",
-     "쪽": null
+     "쪽": 1
     }
    ],
    "다른후보": [
@@ -2615,7 +4188,7 @@
      "제목": "En octobre 2026, les prix à la consommation augmentent ...",
      "상세페이지": "https://www.insee.fr/fr/statistiques/9131332",
      "PDF주소": "https://www.insee.fr/fr/statistiques/9131332",
-     "키": "gen_5a8ca8694362",
+     "키": "gen_snip_5a8ca8694362",
      "숫자쪽": 1
     },
     {
@@ -2635,23 +4208,23 @@
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 8.2,
+    "총초": 8.3,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 7.66,
-     "숫자 찾기": 0.05,
-     "고르기·판정": 0.01,
-     "교차 확인(Decisions)": 0.43,
+     "후보 찾기": 0.15,
+     "PDF 받기·글자": 7.07,
+     "숫자 찾기": 0.04,
+     "고르기·판정": 0.54,
+     "교차 확인(Decisions)": 0.46,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.52,
+      "초": 0.5,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2659,7 +4232,15 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.51,
+      "초": 6.55,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2667,7 +4248,7 @@
      {
       "무엇": "Decisions",
       "모델": "typesafe/jev-1.13",
-      "초": 0.43,
+      "초": 0.46,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -2687,7 +4268,7 @@
   "번호": 21,
   "결과": {
    "입력": "연합인포맥스의 해외금리 일중 화면(화면번호 6532)에 따르면 13일(미국 동부시간) 오전 9시 11분 현재 뉴욕 채권시장에서 10년물 국채금리는 직전 거래일 오후 3시 기준가보다 5.80bp 오른 5.164%를 가리켰다.",
-   "시각": "2026-11-14T13:40:04",
+   "시각": "2026-11-14T22:20:04",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -2701,19 +4282,18 @@
     "숫자": "5.164%",
     "핵심어": [
      "미국 국채",
-     "10년물",
-     "국채금리"
+     "10년물 국채금리"
     ],
-    "기준시점": "2026년 11월 13일 오전 9시 11분 미국 동부시간",
-    "기관누리집": "news.einfomax.co.kr",
+    "기준시점": "2026년 11월 13일 오전 9시 11분",
+    "기관누리집": "infomax.co.kr",
     "원어검색어": ""
    },
    "지원밖기관": "연합인포맥스",
-   "기준시점확인": "1/2",
+   "기준시점확인": "2/2",
    "제목확인": "기사가 밝힌 보고서 '해외금리 일중 화면'를 찾지 못해, 가장 가까운 후보로 확인했습니다.",
-   "보고서": "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 ...",
-   "상세페이지": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4444767",
-   "PDF": "작업/웹문서/gen_22c18721f7a0.txt",
+   "보고서": "제 목 : 2026년 10월 이후 국제금융·외환시장 동향",
+   "상세페이지": "https://eiec.kdi.re.kr/policy/callDownload.do?num=289451&filenum=1&dtime=20261112181248",
+   "PDF": "작업/원본PDF/gen_b3720ad798f0.pdf",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
@@ -2721,58 +4301,38 @@
     "방법": "코드 계산(조합 없음)"
    },
    "확인한문서": [
-    "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 ...",
     "제 목 : 2026년 10월 이후 국제금융·외환시장 동향",
-    "[오늘의 채권ㆍ외환 메모] (11월13일)",
-    "[뉴욕 마켓 브리핑] (13일)",
-    "美 10년물 금리, 뜨거운 CPI에 5% 돌파…약 3년래 처음",
-    "S&P500 선물, 엔비디아 충격 딛고 상승…美 국채금리",
-    "[뉴욕채권] 단기물 급락 속 플랫…美 CPI에 다음주 금리 인상 ' ...",
-    "연합인포맥스"
+    "2026년은 선진 국채시장의 원년, 국채 ...",
+    "2026년 하반기 거시경제 전망 및 주요 이슈*"
    ],
-   "이유": "찾아본 문서 8건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "이유": "찾아본 문서 3건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
-    {
-     "제목": "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 ...",
-     "주소": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4444767"
-    },
     {
      "제목": "제 목 : 2026년 10월 이후 국제금융·외환시장 동향",
      "주소": "https://eiec.kdi.re.kr/policy/callDownload.do?num=289451&filenum=1&dtime=20261112181248"
     },
     {
-     "제목": "[오늘의 채권ㆍ외환 메모] (11월13일)",
-     "주소": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444578"
+     "제목": "2026년은 선진 국채시장의 원년, 국채 ...",
+     "주소": "https://mofe.go.kr/com/cmm/fms/FileDown.do%3Bjsessionid=X7_x6D6dd-IW9PMVBBU0GMkf8I5lb2SIq4IB1rQ5.node30?atchFileId=ATCH_000000000030526&fileSn=2"
     },
     {
-     "제목": "[뉴욕 마켓 브리핑] (13일)",
-     "주소": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444576"
-    },
-    {
-     "제목": "美 10년물 금리, 뜨거운 CPI에 5% 돌파…약 3년래 처음",
-     "주소": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434533"
+     "제목": "2026년 하반기 거시경제 전망 및 주요 이슈*",
+     "주소": "https://www.kcmi.re.kr/common/downloadw?fid=29006&fgu=002001016&fty=004003"
     }
    ],
    "다른후보": [
     {
-     "제목": "제 목 : 2026년 10월 이후 국제금융·외환시장 동향",
-     "상세페이지": "https://eiec.kdi.re.kr/policy/callDownload.do?num=289451&filenum=1&dtime=20261112181248",
-     "PDF주소": "https://eiec.kdi.re.kr/policy/callDownload.do?num=289451&filenum=1&dtime=20261112181248",
-     "키": "gen_b3720ad798f0",
+     "제목": "2026년은 선진 국채시장의 원년, 국채 ...",
+     "상세페이지": "https://mofe.go.kr/com/cmm/fms/FileDown.do%3Bjsessionid=X7_x6D6dd-IW9PMVBBU0GMkf8I5lb2SIq4IB1rQ5.node30?atchFileId=ATCH_000000000030526&fileSn=2",
+     "PDF주소": "https://mofe.go.kr/com/cmm/fms/FileDown.do%3Bjsessionid=X7_x6D6dd-IW9PMVBBU0GMkf8I5lb2SIq4IB1rQ5.node30?atchFileId=ATCH_000000000030526&fileSn=2",
+     "키": "gen_9bd62d0ddf97",
      "숫자쪽": null
     },
     {
-     "제목": "[오늘의 채권ㆍ외환 메모] (11월13일)",
-     "상세페이지": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444578",
-     "PDF주소": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444578",
-     "키": "gen_a5dcf13d937b",
-     "숫자쪽": null
-    },
-    {
-     "제목": "[뉴욕 마켓 브리핑] (13일)",
-     "상세페이지": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444576",
-     "PDF주소": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444576",
-     "키": "gen_1260e2a53bb1",
+     "제목": "2026년 하반기 거시경제 전망 및 주요 이슈*",
+     "상세페이지": "https://www.kcmi.re.kr/common/downloadw?fid=29006&fgu=002001016&fty=004003",
+     "PDF주소": "https://www.kcmi.re.kr/common/downloadw?fid=29006&fgu=002001016&fty=004003",
+     "키": "gen_c955305051e7",
      "숫자쪽": null
     }
    ],
@@ -2788,27 +4348,22 @@
     ]
    },
    "시간": {
-    "총초": 3.0,
+    "총초": 38.7,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 2.79,
-     "숫자 찾기": 0.02,
-     "PDF 직접 읽기": 0.0,
-     "계산 확인": 0.0,
+     "문장 분해": 3.34,
+     "검색": 2.85,
+     "후보 찾기": 1.19,
+     "PDF 받기·글자": 4.44,
+     "숫자 찾기": 0.07,
+     "고르기·판정": 243.88,
+     "표현 다름 후보": 2.83,
+     "PDF 직접 읽기": 26.55,
+     "계산 확인": 2.62,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
-     {
-      "무엇": "Rerank",
-      "모델": "cohere/rerank-v3.5",
-      "초": 0.72,
-      "입력토큰": null,
-      "출력토큰": null,
-      "추론토큰": null
-     },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
@@ -2816,11 +4371,195 @@
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 233.15,
+      "입력토큰": 1756,
+      "출력토큰": 184,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 233.92,
+      "입력토큰": 2024,
+      "출력토큰": 182,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 2.71,
+      "입력토큰": 914,
+      "출력토큰": 98,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "표현 다름 후보",
+      "모델": "gpt-6.1-sol",
+      "초": 2.83,
+      "입력토큰": 914,
+      "출력토큰": 90,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.62,
+      "입력토큰": 5621,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 3.12,
+      "입력토큰": 2422,
+      "출력토큰": 183,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 3.32,
+      "입력토큰": 2422,
+      "출력토큰": 180,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.52,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6.1-sol",
+      "초": 3.31,
+      "입력토큰": 3263,
+      "출력토큰": 189,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "고르기·판정",
+      "모델": "gpt-6-astra",
+      "초": 4.87,
+      "입력토큰": 3531,
+      "출력토큰": 193,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.53,
+      "입력토큰": 1276,
+      "출력토큰": 68,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 12.96,
+      "입력토큰": 5621,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.63,
+      "입력토큰": 1388,
+      "출력토큰": 100,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 3.34,
+      "입력토큰": 1388,
+      "출력토큰": 105,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.66,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.65,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.66,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.68,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.83,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.64,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.6,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
      }
     ]
    }
   },
-  "초": 3
+  "초": 39
  },
  {
   "기관": "무작위",
@@ -2832,59 +4571,21 @@
   "번호": 22,
   "결과": {
    "입력": "박 씨는 \"거의 단타 위주로 하며 심심하니까 일종의 머니게임처럼 하는 편\"이라며 \"하루에 많이 벌 때는 600만 원도 벌고, 잃을 때도 600만 원 정도 잃는다\"고 밝혔다.",
-   "시각": "2026-11-14T13:40:07",
+   "시각": "2026-11-14T22:20:42",
    "입구": {
-    "통과": true,
-    "경로": "공식 발표",
-    "방법": "규칙",
-    "이유": "기관·회사가 발표한 숫자라 원 보도자료·공시에서 찾음"
+    "통과": false,
+    "종류": "확인 대상 아님",
+    "경로": "개인 사례",
+    "방법": "라이너 Decisions",
+    "이유": "한 사람의 사례를 전하는 문장이라 통계 원문과 대조할 대상이 아닙니다. (통계 사실일 확률 0.00, '개인 사례' 0.52)"
    },
-   "출처종류": "보고서·보도자료",
-   "추출": {
-    "기관": "",
-    "보고서": "",
-    "숫자": "600만 원",
-    "핵심어": [
-     "주식 단타",
-     "하루 수익"
-    ],
-    "기준시점": "",
-    "기관누리집": "",
-    "원어검색어": ""
-   },
-   "지원밖기관": "기관 모름",
-   "판정": "원출처 미확인",
-   "이유": "원 보고서 PDF를 찾지 못함",
-   "후보": [
-    {
-     "제목": "\"하루 600만원도 벌었다\"…주식 올인한 '단타' 여성, 현재 계좌는",
-     "주소": "https://www.edaily.co.kr/News/Read?newsId=03785126645645392&mediaCodeNo=257"
-    },
-    {
-     "제목": "주식투자, 단타매매로 하루 100만원 번다?",
-     "주소": "https://www.khan.co.kr/article/201210091545018"
-    },
-    {
-     "제목": "주식투자/단타매매 기법",
-     "주소": "https://namu.wiki/w/%EC%A3%BC%EC%8B%9D%ED%88%AC%EC%9E%90/%EB%8B%A8%ED%83%80%EB%A7%A4%EB%A7%A4%20%EA%B8%B0%EB%B2%95"
-    },
-    {
-     "제목": "단타왕, 매일 4~8% 수익 노하우 공개",
-     "주소": "https://m.newsprime.co.kr/section_view.html?no=59426"
-    },
-    {
-     "제목": "[영상] “아내가 단타에 중독 됐다” 하루 600만원도 벌지만 ...",
-     "주소": "https://www.sedaily.com/article/20113896"
-    }
-   ],
+   "판정": "확인 대상 아님",
+   "이유": "개인 사례: 한 사람의 사례를 전하는 문장이라 통계 원문과 대조할 대상이 아닙니다. (통계 사실일 확률 0.00, '개인 사례' 0.52)",
+   "후보": [],
    "시간": {
     "총초": 0.4,
     "단계초": {
      "입구 필터": 0.43,
-     "문장 분해": 0.01,
-     "검색": 0.0,
-     "후보 찾기": 0.0,
-     "PDF 받기·글자": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
@@ -2911,7 +4612,7 @@
   "번호": 23,
   "결과": {
    "입력": "건강보험심사평가원에 따르면 건선 진료 환자는 2021년부터 2025년까지 매년 15만명을 넘었으며, 지난해에는 15만4987명으로 집계됐다.",
-   "시각": "2026-11-14T13:40:07",
+   "시각": "2026-11-14T22:20:43",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -2925,8 +4626,7 @@
     "숫자": "15만4987명",
     "핵심어": [
      "건선",
-     "진료 환자",
-     "건선 진료 환자 수"
+     "진료 환자"
     ],
     "기준시점": "2025년",
     "기관누리집": "hira.or.kr",
@@ -2934,90 +4634,92 @@
    },
    "지원밖기관": "건강보험심사평가원",
    "기준시점확인": "1/1",
-   "보고서": "보험인정기준 상세내용",
-   "상세페이지": "https://www.hira.or.kr/rc/insu/insuadtcrtr/InsuAdtCrtrPopup.do?mtgHmeDd=20250601&sno=1&mtgMtrRegSno=0009",
-   "PDF": "작업/웹문서/gen_d7342494056a.txt",
+   "보고서": "「요양급여의 적용기준 및 방법에 관한 세부사항」일부개정",
+   "상세페이지": "https://www.hira.or.kr/bbs/bbsCDownLoad.do?apndNo=2&apndBrdBltNo=52907&apndBrdTyNo=19&apndBltNo=482",
+   "PDF": "작업/원본PDF/gen_f387996a7344.pdf",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
-    "후보수": 0,
-    "방법": "코드 계산(조합 없음)"
+    "후보수": 2,
+    "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
+    "이유": "두 식 모두 약제 용량(mg)을 뺀 것으로, 지난해 건선 진료 환자 수 15만4987명과 대상·기간·지표가 다르다."
    },
    "확인한문서": [
-    "보험인정기준 상세내용",
-    "2025년『생활 속 질병·진료행위 통계』",
-    "통계자료 < 통계자료실 < 연구 · 통계 < 의료정보 < ...",
     "「요양급여의 적용기준 및 방법에 관한 세부사항」일부개정",
-    "2025 보건의료 통계정보집",
+    "2025년 제2차 약제급여평가위원회 심의결과 공개",
+    "통계자료 < 통계자료실 < 연구 · 통계 < 의료정보 < ...",
     "의료급여 실무편람",
-    "급성기 환자 퇴원지원 및 지역사회 연계활동 제2단계 시범 ...",
-    "생활 속 질병통계"
+    "심사평가원, '심장질환 진료 현황' 발표",
+    "생활 속 질병통계",
+    "건강보험요양급여비용의 내역",
+    "청구방법"
    ],
    "이유": "찾아본 문서 8건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
-    {
-     "제목": "보험인정기준 상세내용",
-     "주소": "https://www.hira.or.kr/rc/insu/insuadtcrtr/InsuAdtCrtrPopup.do?mtgHmeDd=20250601&sno=1&mtgMtrRegSno=0009"
-    },
-    {
-     "제목": "2025년『생활 속 질병·진료행위 통계』",
-     "주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000&brdScnBltNo=4&brdBltNo=2436&pageIndex=1&pageIndex2=1"
-    },
-    {
-     "제목": "통계자료 < 통계자료실 < 연구 · 통계 < 의료정보 < ...",
-     "주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000"
-    },
     {
      "제목": "「요양급여의 적용기준 및 방법에 관한 세부사항」일부개정",
      "주소": "https://www.hira.or.kr/bbs/bbsCDownLoad.do?apndNo=2&apndBrdBltNo=52907&apndBrdTyNo=19&apndBltNo=482"
     },
     {
-     "제목": "2025 보건의료 통계정보집",
-     "주소": "https://www.hira.or.kr/ebooksc/2025/12/BZ202512182687663.pdf"
+     "제목": "2025년 제2차 약제급여평가위원회 심의결과 공개",
+     "주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020041000100&brdScnBltNo=4&brdBltNo=11413&pageIndex=1&pageIndex2=1"
+    },
+    {
+     "제목": "통계자료 < 통계자료실 < 연구 · 통계 < 의료정보 < ...",
+     "주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000&WT.gnb=%ED%86%B5%EA%B3%84%EC%9E%90%EB%A3%8C%EC%8B%A4"
+    },
+    {
+     "제목": "의료급여 실무편람",
+     "주소": "https://www.hira.or.kr/ebooksc/2025/03/BZ202503311390224.pdf"
+    },
+    {
+     "제목": "심사평가원, '심장질환 진료 현황' 발표",
+     "주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020041000100&brdScnBltNo=4&brdBltNo=11037"
     }
    ],
    "다른후보": [
     {
-     "제목": "2025년『생활 속 질병·진료행위 통계』",
-     "상세페이지": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000&brdScnBltNo=4&brdBltNo=2436&pageIndex=1&pageIndex2=1",
-     "PDF주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000&brdScnBltNo=4&brdBltNo=2436&pageIndex=1&pageIndex2=1",
-     "키": "gen_4ad29796c02b",
+     "제목": "2025년 제2차 약제급여평가위원회 심의결과 공개",
+     "상세페이지": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020041000100&brdScnBltNo=4&brdBltNo=11413&pageIndex=1&pageIndex2=1",
+     "PDF주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020041000100&brdScnBltNo=4&brdBltNo=11413&pageIndex=1&pageIndex2=1",
+     "키": "gen_cf4a0cf24f55",
      "숫자쪽": null
     },
     {
      "제목": "통계자료 < 통계자료실 < 연구 · 통계 < 의료정보 < ...",
-     "상세페이지": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000",
-     "PDF주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000",
-     "키": "gen_72ffa40f4309",
+     "상세페이지": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000&WT.gnb=%ED%86%B5%EA%B3%84%EC%9E%90%EB%A3%8C%EC%8B%A4",
+     "PDF주소": "https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020045010000&WT.gnb=%ED%86%B5%EA%B3%84%EC%9E%90%EB%A3%8C%EC%8B%A4",
+     "키": "gen_c9434c48d33a",
      "숫자쪽": null
     },
     {
-     "제목": "「요양급여의 적용기준 및 방법에 관한 세부사항」일부개정",
-     "상세페이지": "https://www.hira.or.kr/bbs/bbsCDownLoad.do?apndNo=2&apndBrdBltNo=52907&apndBrdTyNo=19&apndBltNo=482",
-     "PDF주소": "https://www.hira.or.kr/bbs/bbsCDownLoad.do?apndNo=2&apndBrdBltNo=52907&apndBrdTyNo=19&apndBltNo=482",
-     "키": "gen_f387996a7344",
+     "제목": "의료급여 실무편람",
+     "상세페이지": "https://www.hira.or.kr/ebooksc/2025/03/BZ202503311390224.pdf",
+     "PDF주소": "https://www.hira.or.kr/ebooksc/2025/03/BZ202503311390224.pdf",
+     "키": "gen_68f14b41748b",
      "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 2.9,
+    "총초": 46.0,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
-     "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 1.44,
-     "숫자 찾기": 1.27,
-     "PDF 직접 읽기": 0.0,
+     "문장 분해": 2.43,
+     "검색": 2.54,
+     "후보 찾기": 0.83,
+     "PDF 받기·글자": 10.16,
+     "숫자 찾기": 6.37,
+     "PDF 직접 읽기": 21.84,
      "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.6,
+      "초": 0.53,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3025,7 +4727,111 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.59,
+      "초": 0.63,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.82,
+      "입력토큰": 626,
+      "출력토큰": 59,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.49,
+      "입력토큰": 6121,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 14.51,
+      "입력토큰": 29529,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.58,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.86,
+      "입력토큰": 626,
+      "출력토큰": 60,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 4.75,
+      "입력토큰": 6121,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 7.13,
+      "입력토큰": 29529,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-luna",
+      "초": 2.29,
+      "입력토큰": 1447,
+      "출력토큰": 73,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6-luna",
+      "초": 2.42,
+      "입력토큰": 1447,
+      "출력토큰": 73,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "검색",
+      "모델": "liner-search",
+      "초": 2.52,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.64,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.63,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3033,7 +4839,7 @@
     ]
    }
   },
-  "초": 3
+  "초": 46
  },
  {
   "기관": "무작위",
@@ -3045,7 +4851,7 @@
   "번호": 24,
   "결과": {
    "입력": "기대득점 대비 실제 득점 차이는 -5.38로, 해당 통계에서 전체 763명 가운데 최하위에 머물렀다.",
-   "시각": "2026-11-14T13:40:10",
+   "시각": "2026-11-14T22:21:29",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3135,23 +4941,24 @@
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 7.5,
+    "총초": 10.3,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
+     "문장 분해": 0.01,
      "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 7.34,
+     "후보 찾기": 0.8,
+     "PDF 받기·글자": 9.46,
      "숫자 찾기": 0.0,
      "PDF 직접 읽기": 0.0,
      "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.55,
+      "초": 0.71,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3159,7 +4966,39 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 6.52,
+      "초": 0.68,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.57,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.61,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.33,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3167,7 +5006,7 @@
     ]
    }
   },
-  "초": 7
+  "초": 10
  },
  {
   "기관": "무작위",
@@ -3179,7 +5018,7 @@
   "번호": 25,
   "결과": {
    "입력": "유럽인 10명 중 7명이 유럽연합(EU)의 독자적인 군대 창설을 지지한다는 조사 결과가 나왔다.",
-   "시각": "2026-11-14T13:40:17",
+   "시각": "2026-11-14T22:21:39",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3192,21 +5031,22 @@
     "보고서": "2026 트렌드 보고서",
     "숫자": "10명 중 7명",
     "핵심어": [
-     "유럽연합 독자 군대",
-     "창설 지지",
-     "유럽인",
-     "EU 독자 군대"
+     "유럽연합",
+     "독자적 군대 창설",
+     "지지율",
+     "EU 독자 군대",
+     "창설 지지"
     ],
     "기준시점": "",
     "기관누리집": "globsec.org",
-    "원어검색어": "GLOBSEC Trends 2026 European Union army support"
+    "원어검색어": "GLOBSEC Trends 2026 European Union independent army support"
    },
    "지원밖기관": "GLOBSEC",
    "기준시점확인": "기사에 기준 시점 없음",
    "제목확인": "기사가 밝힌 보고서 '2026 트렌드 보고서'를 찾지 못해, 가장 가까운 후보로 확인했습니다.",
-   "보고서": "European Defence Initiative | Future of Security, GLOBSEC",
-   "상세페이지": "https://www.globsec.org/european-defence-initiative",
-   "PDF": "작업/웹문서/gen_e46ab5f58c7f.txt",
+   "보고서": "The Reality Check",
+   "상세페이지": "https://www.globsec.org/sites/default/files/2026-11/GLOBSEC%20Trends%202026.pdf",
+   "PDF": "작업/웹문서/gen_9101d6667e92.txt",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
@@ -3214,28 +5054,24 @@
     "방법": "코드 계산(조합 없음)"
    },
    "확인한문서": [
-    "European Defence Initiative | Future of Security, GLOBSEC",
     "The Reality Check",
-    "NATO Ankara Summit: Public Backs Defence Spending & ...",
+    "GLOBSEC Trends",
     "GLOBSEC Trends 2026: The Reality Check",
     "GLOBSEC Forum 2026",
-    "GLOBSEC Trends",
     "Home | GLOBSEC - A Global Think Tank: Ideas Shaping the ...",
-    "Official Welcome - GLOBSEC Forum 2026"
+    "State of the European Union 2026: GLOBSEC Experts React",
+    "Official Welcome - GLOBSEC Forum 2026",
+    "Europe's New Security Reality - GLOBSEC Forum 2026"
    ],
    "이유": "찾아본 문서 8건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
-    {
-     "제목": "European Defence Initiative | Future of Security, GLOBSEC",
-     "주소": "https://www.globsec.org/european-defence-initiative"
-    },
     {
      "제목": "The Reality Check",
      "주소": "https://www.globsec.org/sites/default/files/2026-11/GLOBSEC%20Trends%202026.pdf"
     },
     {
-     "제목": "NATO Ankara Summit: Public Backs Defence Spending & ...",
-     "주소": "https://www.globsec.org/what-we-do/commentaries/road-nato-ankara-summit-public-supports-increased-defence-spending-and"
+     "제목": "GLOBSEC Trends",
+     "주소": "https://www.globsec.org/what-we-do/projects/globsec-trends"
     },
     {
      "제목": "GLOBSEC Trends 2026: The Reality Check",
@@ -3244,21 +5080,18 @@
     {
      "제목": "GLOBSEC Forum 2026",
      "주소": "https://www.globsec.org/what-we-do/events/globsec-forum-2026"
+    },
+    {
+     "제목": "Home | GLOBSEC - A Global Think Tank: Ideas Shaping the ...",
+     "주소": "https://www.globsec.org/"
     }
    ],
    "다른후보": [
     {
-     "제목": "The Reality Check",
-     "상세페이지": "https://www.globsec.org/sites/default/files/2026-11/GLOBSEC%20Trends%202026.pdf",
-     "PDF주소": "https://www.globsec.org/sites/default/files/2026-11/GLOBSEC%20Trends%202026.pdf",
-     "키": "gen_9101d6667e92",
-     "숫자쪽": null
-    },
-    {
-     "제목": "NATO Ankara Summit: Public Backs Defence Spending & ...",
-     "상세페이지": "https://www.globsec.org/what-we-do/commentaries/road-nato-ankara-summit-public-supports-increased-defence-spending-and",
-     "PDF주소": "https://www.globsec.org/what-we-do/commentaries/road-nato-ankara-summit-public-supports-increased-defence-spending-and",
-     "키": "gen_0bca6e473525",
+     "제목": "GLOBSEC Trends",
+     "상세페이지": "https://www.globsec.org/what-we-do/projects/globsec-trends",
+     "PDF주소": "https://www.globsec.org/what-we-do/projects/globsec-trends",
+     "키": "gen_7c547d297895",
      "숫자쪽": null
     },
     {
@@ -3267,27 +5100,35 @@
      "PDF주소": "https://www.globsec.org/globsec-trends-2026",
      "키": "gen_934da87ea068",
      "숫자쪽": null
+    },
+    {
+     "제목": "GLOBSEC Forum 2026",
+     "상세페이지": "https://www.globsec.org/what-we-do/events/globsec-forum-2026",
+     "PDF주소": "https://www.globsec.org/what-we-do/events/globsec-forum-2026",
+     "키": "gen_ebf857080db5",
+     "숫자쪽": null
     }
    ],
    "확신낮음": true,
    "시간": {
-    "총초": 1.5,
+    "총초": 10.7,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
+     "문장 분해": 0.01,
      "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 1.36,
-     "숫자 찾기": 0.0,
+     "후보 찾기": 0.78,
+     "PDF 받기·글자": 9.82,
+     "숫자 찾기": 0.02,
      "PDF 직접 읽기": 0.0,
      "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.6,
+      "초": 0.64,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3295,7 +5136,39 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.55,
+      "초": 0.71,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.64,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.65,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.64,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.52,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3303,7 +5176,7 @@
     ]
    }
   },
-  "초": 1
+  "초": 11
  },
  {
   "기관": "무작위",
@@ -3315,7 +5188,7 @@
   "번호": 26,
   "결과": {
    "입력": "마틴 하인리히 민주당 상원의원은 그리드 스트래티지스의 분석을 인용, 이른바 ‘인허가 개혁법’으로 불리는 ‘생활비 부담 완화와 일자리 창출법’(BAAJA법)을 시행하면 데이터센터 사업자는 향후 10년간 현행 제도보다 350억 달러(약 47조원)를 더 부담하게 된다고 밝혔다.",
-   "시각": "2026-11-14T13:40:19",
+   "시각": "2026-11-14T22:21:50",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3347,7 +5220,7 @@
   "번호": 27,
   "결과": {
    "입력": "법무부 예측에 따르면 쓰고 남은 기금 여유자금은 2026년 516억 원이던 것이, 2027년엔 332억으로 줄고, 2028년에는 53억 원만 남는다.",
-   "시각": "2026-11-14T13:40:19",
+   "시각": "2026-11-14T22:21:50",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3361,8 +5234,7 @@
     "숫자": "53억 원",
     "핵심어": [
      "범죄피해자보호기금",
-     "여유자금",
-     "전망"
+     "여유자금"
     ],
     "기준시점": "2028년",
     "기관누리집": "moj.go.kr",
@@ -3379,19 +5251,17 @@
     "계산됨": false,
     "후보수": 6,
     "방법": "코드 계산 + 라이너 모델 고르기(맞는 식 없음)",
-    "이유": "모든 후보가 게시일·게시물 수·조회수 등 무관한 숫자의 연산으로, 2028년 기금 여유자금 잔액을 계산한 식이 아니다."
+    "이유": "모든 후보는 게시물 날짜·게시물 수·조회수로 계산한 값으로, 2028년 기금 여유자금 잔액과 대상·기간·지표가 다르다."
    },
    "확인한문서": [
     "법령/자료>자료실>재정정보>세입·세출 예산 현황>목록",
     "2027년도 법무부 예산 및 기금운용계획(안)",
-    "법무부 소개>기관소개>예산",
     "보도자료 - 2027년도 법무부 예산 및 기금운용계획(안) ...",
-    "범죄피해자보호기금 2024년 연간 자산운용계획",
-    "범죄피해자보호기금",
-    "기금존치 평가보고서",
-    "목 차"
+    "보도자료 - 2027년도 법무부 예산 및 기금운용계획(안)",
+    "법무뉴스>보도자료>보도자료>전국민 안심체계 구축을 위한 ...",
+    "범죄피해자 지원 스마일공익신탁' 여덟 번째 나눔 실시>&apos"
    ],
-   "이유": "찾아본 문서 8건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
+   "이유": "찾아본 문서 6건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
      "제목": "법령/자료>자료실>재정정보>세입·세출 예산 현황>목록",
@@ -3402,16 +5272,16 @@
      "주소": "https://www.moj.go.kr/bbs/moj/182/610021/artclView.do"
     },
     {
-     "제목": "법무부 소개>기관소개>예산",
-     "주소": "https://www.moj.go.kr/moj/260/subview.do"
-    },
-    {
      "제목": "보도자료 - 2027년도 법무부 예산 및 기금운용계획(안) ...",
      "주소": "https://www.moj.go.kr/moj/221/subview.do%3Bjsessionid=E27NTxuYvCAoN7tFMq9mS6mwg9BO_HdhtI9q2dKx.wizard-21-mnph7?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTgyJTJGNjEwMDIxJTJGYXJ0Y2xWaWV3LmRvJTNG"
     },
     {
-     "제목": "범죄피해자보호기금 2024년 연간 자산운용계획",
-     "주소": "https://immigration.go.kr/bbs/moj/171/476234/download.do"
+     "제목": "보도자료 - 2027년도 법무부 예산 및 기금운용계획(안)",
+     "주소": "https://www.moj.go.kr/bbs/moj/182/610021/artclView.do?layout=unknown"
+    },
+    {
+     "제목": "법무뉴스>보도자료>보도자료>전국민 안심체계 구축을 위한 ...",
+     "주소": "https://www.moj.go.kr/moj/221/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTgyJTJGNTg3MDk1JTJGYXJ0Y2xWaWV3LmRvJTNG"
     }
    ],
    "다른후보": [
@@ -3423,39 +5293,40 @@
      "숫자쪽": null
     },
     {
-     "제목": "법무부 소개>기관소개>예산",
-     "상세페이지": "https://www.moj.go.kr/moj/260/subview.do",
-     "PDF주소": "https://www.moj.go.kr/moj/260/subview.do",
-     "키": "gen_11d5fcd8057c",
-     "숫자쪽": null
-    },
-    {
      "제목": "보도자료 - 2027년도 법무부 예산 및 기금운용계획(안) ...",
      "상세페이지": "https://www.moj.go.kr/moj/221/subview.do%3Bjsessionid=E27NTxuYvCAoN7tFMq9mS6mwg9BO_HdhtI9q2dKx.wizard-21-mnph7?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTgyJTJGNjEwMDIxJTJGYXJ0Y2xWaWV3LmRvJTNG",
      "PDF주소": "https://www.moj.go.kr/moj/221/subview.do%3Bjsessionid=E27NTxuYvCAoN7tFMq9mS6mwg9BO_HdhtI9q2dKx.wizard-21-mnph7?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTgyJTJGNjEwMDIxJTJGYXJ0Y2xWaWV3LmRvJTNG",
      "키": "gen_a257c79fcf8f",
      "숫자쪽": null
+    },
+    {
+     "제목": "보도자료 - 2027년도 법무부 예산 및 기금운용계획(안)",
+     "상세페이지": "https://www.moj.go.kr/bbs/moj/182/610021/artclView.do?layout=unknown",
+     "PDF주소": "https://www.moj.go.kr/bbs/moj/182/610021/artclView.do?layout=unknown",
+     "키": "gen_fb75ade23d10",
+     "숫자쪽": null
     }
    ],
    "확신낮음": true,
    "시간": {
-    "총초": 11.1,
+    "총초": 41.4,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
+     "문장 분해": 2.64,
      "검색": 0.0,
-     "후보 찾기": 1.0,
-     "PDF 받기·글자": 6.61,
-     "숫자 찾기": 0.33,
-     "PDF 직접 읽기": 0.0,
-     "계산 확인": 2.84,
+     "후보 찾기": 4.7,
+     "PDF 받기·글자": 15.3,
+     "숫자 찾기": 0.21,
+     "PDF 직접 읽기": 13.04,
+     "계산 확인": 5.25,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.57,
+      "초": 0.61,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3463,7 +5334,7 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 5.95,
+      "초": 6.86,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3471,15 +5342,87 @@
      {
       "무엇": "계산 식 고르기",
       "모델": "gpt-6.1-sol",
-      "초": 2.84,
+      "초": 2.61,
       "입력토큰": 1358,
-      "출력토큰": 61,
+      "출력토큰": 63,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.6,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 5.87,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.09,
+      "입력토큰": 910,
+      "출력토큰": 58,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.04,
+      "입력토큰": 1870,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.64,
+      "입력토큰": 1465,
+      "출력토큰": 85,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "문장 분해",
+      "모델": "gpt-6.1-terra",
+      "초": 2.64,
+      "입력토큰": 1465,
+      "출력토큰": 85,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.59,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.66,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.64,
+      "입력토큰": 1358,
+      "출력토큰": 66,
       "추론토큰": 0
      }
     ]
    }
   },
-  "초": 11
+  "초": 41
  },
  {
   "기관": "무작위",
@@ -3491,7 +5434,7 @@
   "번호": 28,
   "결과": {
    "입력": "전 세계적으로 볼 때 온실가스 중 농업 분야가 차지하는 비중이 약 24%에 달한다는 분석이 있다.",
-   "시각": "2026-11-14T13:40:30",
+   "시각": "2026-11-14T22:22:31",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3500,127 +5443,90 @@
    },
    "출처종류": "보고서·보도자료",
    "추출": {
-    "기관": "유엔 식량농업기구(FAO)",
-    "보고서": "Climate Change and Food Security: Risks and Responses",
+    "기관": "기후변화에 관한 정부간 협의체(IPCC)",
+    "보고서": "기후변화와 토지 특별보고서",
     "숫자": "약 24%",
     "핵심어": [
      "농업",
-     "온실가스 배출 비중"
+     "온실가스 배출 비중",
+     "농업 분야"
     ],
     "기준시점": "",
-    "기관누리집": "fao.org",
-    "원어검색어": "FAO agriculture greenhouse gas emissions share 24 percent"
+    "기관누리집": "ipcc.ch",
+    "원어검색어": "IPCC Special Report on Climate Change and Land agriculture greenhouse gas emissions 24%"
    },
-   "지원밖기관": "유엔 식량농업기구(FAO)",
+   "지원밖기관": "기후변화에 관한 정부간 협의체(IPCC)",
    "기준시점확인": "기사에 기준 시점 없음",
-   "제목확인": "기사가 밝힌 보고서 'Climate Change and Food Security: Risks and Responses'를 찾지 못해, 가장 가까운 후보로 확인했습니다.",
-   "판정": "표현 바뀜",
-   "보고서": "Emissions due to agriculture - FAO Knowledge Repository",
-   "상세페이지": "https://openknowledge.fao.org/server/api/core/bitstreams/cc09fbbc-eb1d-436b-a88a-bed42a1f12f3/content",
-   "PDF": "작업/웹문서/gen_snip_e84597607174.txt",
-   "쪽": 1,
+   "제목확인": "기사가 밝힌 보고서 '기후변화와 토지 특별보고서'를 찾지 못해, 가장 가까운 후보로 확인했습니다.",
+   "판정": "표현 다름 후보",
+   "보고서": "기후변화 2014",
+   "상세페이지": "https://www.ipcc.ch/site/assets/uploads/2018/02/ar5_SYR_Korean_Edition_Longer_report.pdf",
+   "PDF": "작업/원본PDF/gen_11662feffa7f.pdf",
+   "쪽": 64,
    "찾은표기": "24%",
    "표기종류": "정확",
-   "찾은방법": "글자 찾기 + 라이너 Rerank 순위 + 라이너 모델 판정 — 원문 페이지는 자동 접속이 막혀, 라이너 검색 결과의 그 페이지 요약 글로 확인",
-   "원문인용": "In 2018, agriculture and related land use emissions accounted for 17% of global GHG emissions from all sectors, down from 24% in the 2000s.",
-   "차이": [
-    {
-     "항목": "대상",
-     "기사": "전 세계적으로 볼 때 ... 농업 분야",
-     "원문": "agriculture and related land use emissions",
-     "칸": "대상"
-    }
-   ],
-   "확인못한부분": "원문 페이지를 직접 열지 못해 검색 요약 글로 확인했습니다. 링크를 열어 직접 확인해 주세요. 기사는 원문의 '농업 및 관련 토지 이용'을 '농업 분야'로 표현했으며, 24%의 기준 시점인 2000년대를 명시하지 않았다.",
-   "칸별비교": {
-    "지표": {
-     "판단": "같음",
-     "기사": "온실가스 중 농업 분야가 차지하는 비중",
-     "원문": "agriculture and related land use emissions accounted for 17% of global GHG emissions from all sectors, down from 24%"
-    },
-    "대상": {
-     "판단": "다름",
-     "기사": "전 세계적으로 볼 때 ... 농업 분야",
-     "원문": "agriculture and related land use emissions"
-    },
-    "시점": {
-     "판단": "알수없음",
-     "기사": "시점 명시 없음",
-     "원문": "in the 2000s"
-    },
-    "비교기준": {
-     "판단": "같음",
-     "기사": "비교 없는 비중",
-     "원문": "24% in the 2000s"
-    },
-    "수준변화": {
-     "판단": "같음",
-     "기사": "비중이 약 24%에 달한다",
-     "원문": "24% in the 2000s"
-    }
+   "원문인용": "q 증가하였다. 이러한 증가치는 에너지(47%), 산업(30%), 운송(11%), 건설(3%) 부문에서 기인한 것이다(중간 신뢰도). 건설과 산업 부문은 간접 배출량에 대한 기여도가 높다 (높은 신뢰도). 2000 년 이래로, 온실가스 배출량은 농업, 산림, 및 기타 토지 이용(AFOLU)22 을 제외하고 모든 부문에서 증가해 왔다. 2010 년의 온실가스 배출량 중 35%는 에너지 부문, 24%(순배출)는 AFOLU, 21%는 산업, 14%는 운송, 6.4%는 건설부문에서 비롯된 것이다. 전기와 열 생산으로 인한 배출량이 최종에너지를 사용하는 부문에서 기인한 것일 때(예: 간접적 배출), 전지구 온실가스 배출량에서 산업과 건설 부문이 차지하는 부분은 각각 31%, 19%로 증가한다 (그림 1.7). {WGIII SPM.3, 7.3, 8.1, 9.2, 10.3, 11.2} GWP10",
+   "표현차이": {
+    "기사": "농업 분야",
+    "원문": "농업, 산림, 및 기타 토지 이용(AFOLU)"
    },
-   "규칙확인": [],
-   "교차확인": {
-    "판정": "표현 바뀜",
-    "확률": {
-     "일치": 0.02,
-     "표현 바뀜": 0.9,
-     "다른 지표": 0.08
-    },
-    "확신도": 0.85,
-    "같음": true,
-    "축": {
-     "기간": "다름 0.99",
-     "대상": "다름 0.51",
-     "단위": "같음 0.99",
-     "지표": "다름 0.61"
-    },
-    "다른축": [
-     "기간",
-     "대상",
-     "지표"
-    ],
-    "사람확인권장": false
-   },
+   "찾은방법": "글자 찾기 + 라이너 모델(같은 숫자인데 기사가 표현만 바꾼 원문, 두 번 물어 같은 답일 때만)",
+   "이유": "원문에 같은 숫자(24%)가 있지만 표현이 다릅니다: 기사 '농업 분야' ↔ 원문 '농업, 산림, 및 기타 토지 이용(AFOLU)'. 같은 내용인지 아래 원문을 직접 확인해 주세요.",
    "다른후보": [
     {
-     "제목": "Climate change and food security: risks and responses",
-     "상세페이지": "https://openknowledge.fao.org/server/api/core/bitstreams/a4fd8ac5-4582-4a66-91b0-55abf642a400/content",
-     "PDF주소": "https://openknowledge.fao.org/server/api/core/bitstreams/a4fd8ac5-4582-4a66-91b0-55abf642a400/content",
-     "키": "gen_9642e43409ca",
+     "제목": "기후변화 2007: 종합 보고서",
+     "상세페이지": "https://www.ipcc.ch/site/assets/uploads/2021/03/ar4-syr_full_kr.pdf",
+     "PDF주소": "https://www.ipcc.ch/site/assets/uploads/2021/03/ar4-syr_full_kr.pdf",
+     "키": "gen_d399cbe980e9",
      "숫자쪽": null
     },
     {
-     "제목": "The share of agri-food systems in total greenhouse gas ...",
-     "상세페이지": "https://openknowledge.fao.org/server/api/core/bitstreams/ffb21ed0-05dd-46b1-b16c-50c9d47a6676/content",
-     "PDF주소": "https://openknowledge.fao.org/server/api/core/bitstreams/ffb21ed0-05dd-46b1-b16c-50c9d47a6676/content",
-     "키": "gen_snip_ef18f94c1eea",
-     "숫자쪽": 1
+     "제목": "자주 묻는 질문 (FAQ)",
+     "상세페이지": "https://www.ipcc.ch/site/assets/uploads/2021/03/AR4_WGI_faq.pdf",
+     "PDF주소": "https://www.ipcc.ch/site/assets/uploads/2021/03/AR4_WGI_faq.pdf",
+     "키": "gen_89880cc68c7a",
+     "숫자쪽": null
     },
     {
-     "제목": "Greenhouse gas emissions from agrifood systems",
-     "상세페이지": "https://openknowledge.fao.org/server/api/core/bitstreams/111b7ee8-282b-42ff-ad95-cccecd90f8ea/content",
-     "PDF주소": "https://openknowledge.fao.org/server/api/core/bitstreams/111b7ee8-282b-42ff-ad95-cccecd90f8ea/content",
-     "키": "gen_snip_04adf6a92e27",
-     "숫자쪽": 1
+     "제목": "IPCC Special Report on Climate Change and Land",
+     "상세페이지": "https://www.ipcc.ch/site/assets/uploads/2019/08/SRCCL-leaflet.pdf",
+     "PDF주소": "https://www.ipcc.ch/site/assets/uploads/2019/08/SRCCL-leaflet.pdf",
+     "키": "gen_758a934c9506",
+     "숫자쪽": null
     }
    ],
    "확신낮음": true,
    "시간": {
-    "총초": 2.7,
+    "총초": 31.1,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 1.27,
-     "숫자 찾기": 0.32,
-     "고르기·판정": 0.11,
-     "표현 다름 후보": 0.02,
-     "교차 확인(Decisions)": 0.49,
+     "후보 찾기": 0.14,
+     "PDF 받기·글자": 1.65,
+     "숫자 찾기": 12.67,
+     "고르기·판정": 2.71,
+     "표현 다름 후보": 0.0,
+     "PDF 직접 읽기": 12.87,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.63,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.63,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
@@ -3632,15 +5538,39 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.65,
+      "초": 0.84,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
      },
      {
-      "무엇": "Decisions",
-      "모델": "typesafe/jev-1.13",
-      "초": 0.49,
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 3.18,
+      "입력토큰": 1358,
+      "출력토큰": 75,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "PDF 직접 읽기",
+      "모델": "google/gemini-3.8-flash",
+      "초": 13.92,
+      "입력토큰": 7157,
+      "출력토큰": 36,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.66,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.55,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3648,7 +5578,7 @@
     ]
    }
   },
-  "초": 3
+  "초": 31
  },
  {
   "기관": "무작위",
@@ -3660,7 +5590,7 @@
   "번호": 29,
   "결과": {
    "입력": "서비스 장애 추적 사이트인 다운디텍터에 따르면 미국에서 오후 1시를 전후해 약 13만8000건의 사용자 신고가 접수됐다.",
-   "시각": "2026-11-14T13:40:33",
+   "시각": "2026-11-14T22:23:02",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3669,24 +5599,24 @@
    },
    "출처종류": "보고서·보도자료",
    "추출": {
-    "기관": "Downdetector",
+    "기관": "다운디텍터",
     "보고서": "",
     "숫자": "약 13만8000건",
     "핵심어": [
+     "미국",
      "아웃룩",
      "서비스 장애",
-     "사용자 신고",
-     "미국"
+     "사용자 신고"
     ],
-    "기준시점": "2026년 11월 12일",
+    "기준시점": "2026년 11월 12일 오후 1시 전후",
     "기관누리집": "downdetector.com",
-    "원어검색어": "Outlook outage user reports United States November 12 2026"
+    "원어검색어": "Outlook outage user reports United States November 12 2026 Downdetector"
    },
-   "지원밖기관": "Downdetector",
+   "지원밖기관": "다운디텍터",
    "기준시점확인": "1/2",
-   "보고서": "Microsoft Outlook down? Current problems and outages",
-   "상세페이지": "https://vn.downdetector.com/en/status/outlook/",
-   "PDF": "작업/웹문서/gen_9bb62184356f.txt",
+   "보고서": "Sam's Club down? Current problems and outages | US",
+   "상세페이지": "https://downdetector.com/status/sams-club/",
+   "PDF": "작업/웹문서/gen_78e634099321.txt",
    "판정": "원출처 미확인",
    "계산확인": {
     "계산됨": false,
@@ -3694,36 +5624,36 @@
     "방법": "코드 계산(조합 없음)"
    },
    "확인한문서": [
-    "Microsoft Outlook down? Current problems and outages",
+    "Sam's Club down? Current problems and outages | US",
     "Microsoft Outlook down? Current problems and outages | US",
+    "Gmail down? Current problems and outages | US",
     "Microsoft Outlook down? Current problems and outages | CA",
-    "Zoom down? Current problems and outages | US",
-    "Among Us down? Current problems and outages",
-    "Microsoft 365 down? Current problems and outages | US",
-    "Capital One down? Current problems and outages | US",
-    "Straight Talk down? Current problems and outages | US"
+    "AOL down? Current problems and outages | US",
+    "Microsoft Outlook down? Current problems and outages | US",
+    "Spectrum down? Current problems and outages | US",
+    "Microsoft 365 down? Current problems and outages | US"
    ],
    "이유": "찾아본 문서 8건에서 기사 숫자를 찾지 못했습니다. 이 문서들이 기사가 인용한 원 자료라고 확인되지 않아 '원문에 없음'으로 판단하지 않았습니다. 아래 후보 링크를 직접 확인해 주세요.",
    "후보": [
     {
-     "제목": "Microsoft Outlook down? Current problems and outages",
-     "주소": "https://vn.downdetector.com/en/status/outlook/"
+     "제목": "Sam's Club down? Current problems and outages | US",
+     "주소": "https://downdetector.com/status/sams-club/"
     },
     {
      "제목": "Microsoft Outlook down? Current problems and outages | US",
      "주소": "https://downdetector.com/status/outlook/"
     },
     {
+     "제목": "Gmail down? Current problems and outages | US",
+     "주소": "https://downdetector.com/status/gmail/"
+    },
+    {
      "제목": "Microsoft Outlook down? Current problems and outages | CA",
      "주소": "https://downdetector.com/c/33005/?v=2023"
     },
     {
-     "제목": "Zoom down? Current problems and outages | US",
-     "주소": "https://downdetector.com/status/zoom/"
-    },
-    {
-     "제목": "Among Us down? Current problems and outages",
-     "주소": "https://downdetector.com/status/among-us/"
+     "제목": "AOL down? Current problems and outages | US",
+     "주소": "https://downdetector.com/status/aol/"
     }
    ],
    "다른후보": [
@@ -3735,39 +5665,40 @@
      "숫자쪽": null
     },
     {
+     "제목": "Gmail down? Current problems and outages | US",
+     "상세페이지": "https://downdetector.com/status/gmail/",
+     "PDF주소": "https://downdetector.com/status/gmail/",
+     "키": "gen_1fe52bbd6b10",
+     "숫자쪽": null
+    },
+    {
      "제목": "Microsoft Outlook down? Current problems and outages | CA",
      "상세페이지": "https://downdetector.com/c/33005/?v=2023",
      "PDF주소": "https://downdetector.com/c/33005/?v=2023",
      "키": "gen_125b3631524a",
      "숫자쪽": null
-    },
-    {
-     "제목": "Zoom down? Current problems and outages | US",
-     "상세페이지": "https://downdetector.com/status/zoom/",
-     "PDF주소": "https://downdetector.com/status/zoom/",
-     "키": "gen_bf9e7111aa3b",
-     "숫자쪽": null
     }
    ],
    "확신낮음": false,
    "시간": {
-    "총초": 1.4,
+    "총초": 10.5,
     "단계초": {
      "입구 필터": 0.0,
-     "문장 분해": 0.0,
+     "문장 분해": 0.01,
      "검색": 0.0,
-     "후보 찾기": 0.1,
-     "PDF 받기·글자": 1.21,
-     "숫자 찾기": 0.02,
+     "후보 찾기": 0.81,
+     "PDF 받기·글자": 9.5,
+     "숫자 찾기": 0.04,
      "PDF 직접 읽기": 0.0,
      "계산 확인": 0.0,
+     "라이너 Deep Research": 0.0,
      "확인할 곳 안내": 0.0
     },
     "라이너호출": [
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.5,
+      "초": 0.62,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3779,11 +5710,51 @@
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
+     },
+     {
+      "무엇": "계산 식 고르기",
+      "모델": "gpt-6.1-sol",
+      "초": 2.99,
+      "입력토큰": 1356,
+      "출력토큰": 81,
+      "추론토큰": 0
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.74,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 6.37,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.53,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
+     },
+     {
+      "무엇": "Rerank",
+      "모델": "cohere/rerank-v3.5",
+      "초": 0.54,
+      "입력토큰": null,
+      "출력토큰": null,
+      "추론토큰": null
      }
     ]
    }
   },
-  "초": 1
+  "초": 11
  },
  {
   "기관": "무작위",
@@ -3795,7 +5766,7 @@
   "번호": 30,
   "결과": {
    "입력": "지난달 오만을 제외한 걸프 지역의 석유 공급량은 하루 1840만배럴로 이란전쟁 이전 수준과의 격차를 26% 수준까지 좁힌 것으로 집계됐다.",
-   "시각": "2026-11-14T13:40:34",
+   "시각": "2026-11-14T22:23:13",
    "입구": {
     "통과": true,
     "경로": "통계 사실",
@@ -3809,12 +5780,12 @@
     "숫자": "하루 1840만배럴",
     "핵심어": [
      "걸프 지역",
-     "오만 제외",
-     "석유 공급량"
+     "석유 공급량",
+     "오만 제외"
     ],
     "기준시점": "2026년 10월",
     "기관누리집": "iea.org",
-    "원어검색어": "Oil Market Report November 2026 Gulf oil supply excluding Oman October"
+    "원어검색어": "IEA Oil Market Report November 2026 Gulf oil supply excluding Oman"
    },
    "지원밖기관": "국제에너지기구",
    "기준시점확인": "2/2",
@@ -3849,24 +5820,24 @@
      "숫자쪽": null
     },
     {
-     "제목": "Oil Market Report – November 2026 - Event",
-     "상세페이지": "https://www.iea.org/events/oil-market-report-november-2026",
-     "PDF주소": "https://www.iea.org/events/oil-market-report-november-2026",
-     "키": "gen_81f031ef37cb",
+     "제목": "Gas Market Report, Q2-2026",
+     "상세페이지": "https://www.iea.org/files/8a1b93f9-d096-4dcd-b29a-77613f201ecc/GasMarketReport,Q2-2026.pdf",
+     "PDF주소": "https://www.iea.org/files/8a1b93f9-d096-4dcd-b29a-77613f201ecc/GasMarketReport,Q2-2026.pdf",
+     "키": "gen_9fde48891977",
      "숫자쪽": null
     }
    ],
    "확신낮음": true,
    "시간": {
-    "총초": 8.6,
+    "총초": 2.7,
     "단계초": {
      "입구 필터": 0.0,
      "문장 분해": 0.0,
      "검색": 0.0,
-     "후보 찾기": 0.11,
-     "PDF 받기·글자": 7.35,
-     "숫자 찾기": 0.41,
-     "고르기·판정": 0.6,
+     "후보 찾기": 0.27,
+     "PDF 받기·글자": 1.27,
+     "숫자 찾기": 0.78,
+     "고르기·판정": 0.02,
      "표현 다름 후보": 0.0,
      "PDF 직접 읽기": 0.0,
      "확인할 곳 안내": 0.0
@@ -3875,15 +5846,7 @@
      {
       "무엇": "Rerank",
       "모델": "cohere/rerank-v3.5",
-      "초": 0.55,
-      "입력토큰": null,
-      "출력토큰": null,
-      "추론토큰": null
-     },
-     {
-      "무엇": "Rerank",
-      "모델": "cohere/rerank-v3.5",
-      "초": 6.77,
+      "초": 0.66,
       "입력토큰": null,
       "출력토큰": null,
       "추론토큰": null
@@ -3899,6 +5862,6 @@
     ]
    }
   },
-  "초": 9
+  "초": 3
  }
 ]

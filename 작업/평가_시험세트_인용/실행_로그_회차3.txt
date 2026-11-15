@@ -1,0 +1,1961 @@
+
+===== 1/30 [무작위] 정부는 또 수도권 공공기관 350여개를 대상으로 올해 4분기 중 이전 계획을 확정하기로 하고 전체 공공기관의 20%에 달하는 
+[0] 입구 필터: 확인 대상 아님 — 앞으로의 전망·목표를 말하는 문장이라 이미 나온 통계 원문과 대조할 대상이 아닙니다. (통계 사실일 확률 0.00, '전망·목표' 0.95)
+    걸린 시간 0.5초 — 단계별 {'입구 필터': 0.5, '확인할 곳 안내': 0.0}
+
+===== 2/30 [무작위] 질병관리청이 2025년 6월 발표한 자료를 보면 하루 평균 음료 섭취량은 2019년 223.5g에서 2023년 274.6g으로
+[1] 라이너 모델 분해: {'기관': '질병관리청', '보고서': '', '숫자': '274.6g', '핵심어': ['하루 평균', '음료 섭취량'], '기준시점': '2023년', '기관누리집': 'kdca.go.kr', '원어검색어': ''}
+    라이너 검색 '274.6g 하루 평균 음료 섭취량 질병관리청' → 10건
+    라이너 검색 '질병관리청 하루 평균 음료 섭취량 274.6g' → 10건
+    라이너 검색 'site:kdca.go.kr 하루 평균' (일반 경로) → 19건
+    라이너 검색 'site:kdca.go.kr filetype:pdf 하루 평균 음료 섭취량 2023년' (일반 경로) → 13건
+    라이너 검색 'site:kdca.go.kr 음료 섭취량' (일반 경로) → 16건
+    라이너 검색 '질병관리청 하루 평균 보도자료' (일반 경로) → 10건
+    라이너 검색 '하루 평균 2023년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:kdca.go.kr 하루 평균 음료 섭취량 2023년' (일반 경로) → 19건
+    라이너 검색 '질병관리청 하루 평균 음료 섭취량 2023년 filetype:pdf' (일반 경로) → 9건
+    정책브리핑 보도자료 검색 '하루 평균 음료 섭취량' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '하루 평균' (2026-09-16~2026-11-16) → 25건
+    정책브리핑 설명자료 검색 '하루 평균 음료 섭취량' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '하루 평균' (2026-09-16~2026-11-16) → 2건
+[2] None 원 보고서 후보 26건
+    후보: 고혈압 환자의 식이요법 - 국가건강정보포털 - 질병관리청 — gen_e47a1f2d6db3.txt, 4쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 이상지질혈증 식사요법 - 국가건강정보포털 - 질병관리청 — gen_c8a22c57a280.txt, 4쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 보도자료(전체) - [12.5.금.조간] 청소년건강행태조사 2025년 . — gen_8ddd5da88f76.txt, 15쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 음주 | 국가건강정보포털 - 질병관리청 — gen_98e64b84188a.txt, 9쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 청소년의 카페인 음료 섭취 - 국가건강정보포털 - 질병관리청 — gen_52c0afe30645.txt, 3쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 식이영양 - 국가건강정보포털 - 질병관리청 — gen_bccfae4caf13.txt, 11쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 국민건강영양조사 2023년 결과 발표 — gen_69d3a5fe2966.pdf, 9쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 청소년건강행태조사 2025년 주요결과 발표 — gen_f04aa19513c1.pdf, 8쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳
+[3] gen_98e64b84188a.txt: 숫자 후보 0곳
+[3] gen_e47a1f2d6db3.txt: 숫자 후보 0곳
+[3] gen_c8a22c57a280.txt: 숫자 후보 0곳
+[3] gen_f04aa19513c1.pdf: 숫자 후보 0곳
+[3] gen_8ddd5da88f76.txt: 숫자 후보 0곳
+[3] gen_bccfae4caf13.txt: 숫자 후보 0곳
+[3] gen_52c0afe30645.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_69d3a5fe2966.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 9쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(24.8초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '질병관리청', '보고서': '국민건강통계플러스', '숫자': '274.6g', '핵심어': ['하루 평균', '음료 섭취량'], '기준시점': '2023년', '기관누리집': 'kdca.go.kr', '원어검색어': ''}
+    라이너 검색 '274.6g 하루 평균 음료 섭취량 질병관리청' → 10건
+    라이너 검색 '질병관리청 국민건강통계플러스 하루 평균 음료 섭취량 274.6g' → 10건
+    라이너 검색 'site:kdca.go.kr filetype:pdf 국민건강통계플러스 2023년' (일반 경로) → 18건
+    라이너 검색 'site:kdca.go.kr 하루 평균' (일반 경로) → 19건
+    라이너 검색 '질병관리청 국민건강통계플러스 2023년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '질병관리청 하루 평균 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:kdca.go.kr 국민건강통계플러스 2023년' (일반 경로) → 18건
+    라이너 검색 '하루 평균 2023년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:kdca.go.kr 음료 섭취량' (일반 경로) → 18건
+    정책브리핑 보도자료 검색 '국민건강통계플러스' (2025-11-15~2026-11-16) → 1건
+    정책브리핑 설명자료 검색 '국민건강통계플러스' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '하루 평균 음료 섭취량' (2026-09-16~2026-11-16) → 0건
+[2] None 원 보고서 후보 24건
+    후보: 홍보자료 목록 — gen_58e09dea9f6c.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 홍보자료 상세 — gen_1c74d90dc9cf.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00    후보: 청소년건강행태조사 — gen_0033fd97cff7.txt, 3쪽, 기준시점 일치 1/1, 제목 비슷함 0.25
+    후보: 질병관리청 국민건강영양조사 — gen_77107be9521a.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.38
+    후보: 식이영양 - 국가건강정보포털 - 질병관리청 — gen_bccfae4caf13.txt, 11쪽, 기준시점 일치 0/1, 제목 비슷함 0.12
+    후보: 국민건강영양조사 2023년 결과 발표 — gen_69d3a5fe2966.pdf, 9쪽, 기준시점 일치 1/1, 제목 비슷함 0.50
+    후보: Vol. 18, No. 33, August 21, 2025 — gen_86ee726c89db.pdf, 40쪽, 기준시점 일치 1/1, 제목 비슷함 0.12
+    후보: 「2024년 국민건강영양조사」 결과 발표 만성질환 유병률 ... — gen_64759c5a65d2.pdf, 10쪽, 기준시점 일치 0/1, 제목 비슷함 0.38
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_1c74d90dc9cf.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_1c74d90dc9cf.txt: 숫자 후보 0곳
+[3] gen_58e09dea9f6c.txt: 숫자 후보 0곳
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳
+[3] gen_0033fd97cff7.txt: 숫자 후보 0곳
+[3] gen_86ee726c89db.pdf: 숫자 후보 0곳
+[3] gen_77107be9521a.txt: 숫자 후보 0곳
+[3] gen_bccfae4caf13.txt: 숫자 후보 0곳
+[3] gen_64759c5a65d2.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_1c74d90dc9cf.txt 직접 읽기(계산 확인도 동시에)
+    문장 속 다른 숫자 '23%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_1c74d90dc9cf.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_1c74d90dc9cf.txt: 숫자 후보 0곳
+[3] gen_58e09dea9f6c.txt: 숫자 후보 0곳
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳
+[3] gen_0033fd97cff7.txt: 숫자 후보 1곳
+[3] gen_86ee726c89db.pdf: 숫자 후보 0곳
+[3] gen_77107be9521a.txt: 숫자 후보 0곳
+[3] gen_bccfae4caf13.txt: 숫자 후보 0곳
+[3] gen_64759c5a65d2.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_1c74d90dc9cf.txt 직접 읽기(계산 확인도 동시에)
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.seoulnutri.co.kr/food-db/4/download.do', 'https://www.datasom.co.kr/news/articleView.html?id']
+    Deep Research 가 지목한 원 출처 2곳을 받아 직접 확인: ['https://knhanes.kdca.go.kr/knhanes/', 'https://www.kdca.go.kr/board.es?mid=a20602000000&bid=0034&nP']
+[1] 라이너 모델 분해: {'기관': '질병관리청', '보고서': '국민건강영양조사', '숫자': '274.6g', '핵심어': ['하루 평균', '음료 섭취량'], '기준시점': '2023년', '기관누리집': 'kdca.go.kr', '원어검색어': ''}
+    라이너 검색 '274.6g 하루 평균 음료 섭취량 질병관리청' → 10건
+    라이너 검색 '질병관리청 국민건강영양조사 하루 평균 음료 섭취량 274.6g' → 10건
+    라이너 검색 'site:kdca.go.kr 하루 평균' (일반 경로) → 19건
+    라이너 검색 'site:kdca.go.kr 음료 섭취량' (일반 경로) → 20건
+    라이너 검색 'site:kdca.go.kr filetype:pdf 국민건강영양조사 2023년' (일반 경로) → 19건
+    라이너 검색 '질병관리청 하루 평균 보도자료' (일반 경로) → 10건
+    라이너 검색 '하루 평균 2023년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:kdca.go.kr 국민건강영양조사 2023년' (일반 경로) → 15건
+    라이너 검색 '질병관리청 국민건강영양조사 2023년 filetype:pdf' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '국민건강영양조사' (2025-11-15~2026-11-16) → 46건
+    정책브리핑 설명자료 검색 '국민건강영양조사' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '하루 평균 음료 섭취량' (2026-09-16~2026-11-16) → 0건
+[2] None 원 보고서 후보 25건
+    후보: 질병관리청 국민건강영양조사 — gen_77107be9521a.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    후보: 국민건강영양조사 — gen_a08973296fc8.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    후보: 국민건강영양조사 2023년 결과 발표 — gen_69d3a5fe2966.pdf, 9쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: '조용한 뼈 도둑' 골다공증 예방관리, 일상 속 작은 실천에서 ... — gen_d5ffee22f669.pdf, 8쪽, 기준시점 일치 1/1, 제목 비슷함 0.29
+    글자가 너무 적어 건너뜀(0자): https://knhanes.kdca.go.kr/knhanes/postSendPage.do?url=/surveyIntr/otln.do&postparam=%7B%22menuId%22:%2210011002%22%7D
+    받기 실패: 기관 누리집 받기 실패(HTTP 404): https://www.kdca.go.kr/board.es?mid=a20602000000&bid=0034&nPage=2
+    후보: 노인의 영양 - 국가건강정보포털 - 질병관리청 — gen_595ba4cc84a3.txt, 4쪽, 기준시점 일치 1/1, 제목 비슷함 0.29
+    첨부파일 글자 더함: 다운받기 (11862자)
+    첨부파일 글자 더함: 다운받기 (13519자)
+    첨부파일 글자 더함: 다운받기 (153025자)
+    후보: 보도자료 - [9.30.수.석간] 「2025년 국민건강영양조사」 결과 . — gen_8fc73fb9523e.txt, 64쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    라이너 Rerank 로 후보 보고서 6건 순위 매김
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳
+[3] gen_a08973296fc8.txt: 숫자 후보 0곳
+[3] gen_77107be9521a.txt: 숫자 후보 0곳
+[3] gen_8fc73fb9523e.txt: 숫자 후보 0곳
+[3] gen_d5ffee22f669.pdf: 숫자 후보 0곳
+[3] gen_595ba4cc84a3.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_69d3a5fe2966.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 9쪽 읽기에서 못 찾음
+    문장 속 다른 숫자 '23%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_69d3a5fe2966.pdf: 숫자 후보 0곳
+[3] gen_a08973296fc8.txt: 숫자 후보 0곳
+[3] gen_77107be9521a.txt: 숫자 후보 0곳
+[3] gen_8fc73fb9523e.txt: 숫자 후보 4곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 26개
+    라이너 Rerank 로 숫자 후보 4곳 순위 매김 (1위 관련도 0.61)
+[3] gen_d5ffee22f669.pdf: 숫자 후보 0곳
+[3] gen_595ba4cc84a3.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_69d3a5fe2966.pdf 직접 읽기(계산 확인도 동시에)
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 2개
+    걸린 시간 107.8초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.2, '검색': 22.62, '후보 찾기': 3.23, 'PDF 받기·글자': 8.39, '숫자 찾기': 0.23, 'PDF 직접 읽기': 19.88, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '고르기·판정': 8.8, '표현 다름 후보': 7.05, '라이너 Deep Research': 40.12}
+
+===== 3/30 [무작위] 동남지방통계청 자료를 보면, 지난달 경남의 실업자도 만 명 증가한 3만 5천 명으로, 실업률이 1.9%로 상승했습니다.
+[1] 라이너 모델 분해: {'기관': '동남지방통계청', '보고서': '', '숫자': '1.9%', '핵심어': ['실업자', '경남', '경상남도', '실업률'], '기준시점': '2026년 10월', '기관누리집': 'kostat.go.kr', '원어검색어': ''}
+    라이너 검색 '1.9% 실업자 경남 경상남도 동남지방통계청' → 10건
+    라이너 검색 '동남지방통계청 실업자 경남 경상남도 실업률 1.9%' → 10건
+    라이너 검색 '실업자 2026년 10월 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:kostat.go.kr 실업자 경남 경상남도 2026년 10월' (일반 경로) → 19건
+    라이너 검색 'site:kostat.go.kr 경남' (일반 경로) → 19건
+    라이너 검색 '동남지방통계청 실업자 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:kostat.go.kr 실업자' (일반 경로) → 17건
+    라이너 검색 'site:kostat.go.kr filetype:pdf 실업자 경남 경상남도 2026년 10월' (일반 경로) → 15건
+    라이너 검색 '동남지방통계청 실업자 경남 경상남도 2026년 10월 filetype:pdf' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '실업자 경남' (2026-09-15~2026-11-15) → 0건
+    정책브리핑 보도자료 검색 '실업자' (2026-09-15~2026-11-15) → 2건
+    정책브리핑 설명자료 검색 '실업자 경남' (2026-09-15~2026-11-15) → 0건
+    정책브리핑 설명자료 검색 '실업자' (2026-09-15~2026-11-15) → 0건
+[2] None 원 보고서 후보 24건
+    보도 설명자료라 후보에서 뺌: 2024년 10월 부산· 울산· 경남지역 고용동향 | 전체 | 보도자료
+    후보: 2024년 10월 부산· 울산· 경남지역 고용동향 | 전체 | 보도자료 — gen_snip_f59ae1db2225.txt, 1쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    글자가 너무 적어 건너뜀(72자): https://sri.kostat.go.kr/attachPreview.es?bid=5125&list_no=371604&seq=3
+    글자가 너무 적어 건너뜀(72자): https://www.kostat.go.kr/attachPreview.es?bid=5167&list_no=354582&seq=2
+    글자가 너무 적어 건너뜀(72자): https://www.kostat.go.kr/attachPreview.es?bid=5125&list_no=363049&seq=3
+    글자가 너무 적어 건너뜀(72자): https://sri.kostat.go.kr/attachPreview.es?bid=5125&list_no=368801&seq=1
+    글자가 너무 적어 건너뜀(72자): https://www.kostat.go.kr/attachPreview.es?bid=5167&list_no=350906&seq=1
+    첨부파일 글자 더함: ssec2610(통합).pdf (296112자)
+    첨부파일 글자 더함: ssec2610.hwpx (37749자)
+    첨부파일 글자 더함: ssec2610(통계표).pdf (180852자)
+    후보: 2026년 10월 고용동향 — gen_4e864ba84c67.txt, 176쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 2건 순위 매김
+[3] gen_4e864ba84c67.txt: 숫자 후보 13곳
+    라이너 Rerank 로 숫자 후보 13곳 순위 매김 (1위 관련도 0.36)
+[3] gen_snip_f59ae1db2225.txt: 숫자 후보 1곳
+    규칙 확인: 증감 방향이 반대 → '일치'를 '표현 바뀜'으로
+    라이너 Decisions 교차 확인: 일치 (확신도 0.38) → 다름, 축별로 다름: 단위
+    걸린 시간 29.6초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.74, '검색': 6.23, '후보 찾기': 1.1, 'PDF 받기·글자': 4.13, '숫자 찾기': 0.11, '고르기·판정': 10.84, '표현 다름 후보': 3.83, '교차 확인(Decisions)': 0.47, '확인할 곳 안내': 0.0}
+
+===== 4/30 [무작위] 유출된 러시아 통계청 자료에 따르면 2022년 우크라이나 침공 이후 올해 여름까지 전쟁에 따른 러시아 측 사망자가 최소 45만
+[1] 라이너 모델 분해: {'기관': '러시아 연방 국가통계청', '보고서': '', '숫자': '최소 45만 명', '핵심어': ['러시아 측 사망자', '우크라이나 전쟁', '전쟁 사망자', '우크라이나 침공'], '기준시점': '2022년~2026년 여름', '기관누리집': 'rosstat.gov.ru', '원어검색어': 'Росстат утечка данные погибшие война Украина 2026'}
+    라이너 검색 '러시아 연방 국가통계청 러시아 측 사망자 우크라이나 전쟁 전쟁 사망자 우크라이나 침공 최소 45만 명' → 10건
+    라이너 검색 '최소 45만 명 러시아 측 사망자 우크라이나 전쟁 전쟁 사망자 러시아 연방 국가통계청' → 10건
+    라이너 검색 'site:rosstat.gov.ru 러시아 측 사망자' (일반 경로) → 15건
+    라이너 검색 'site:rosstat.gov.ru 러시아 측 사망자 우크라이나 전쟁 전쟁 사망자 2022년~2026년 여름' (일반 경로) → 12건
+    라이너 검색 '러시아 측 사망자 2022년~2026년 여름 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '러시아 연방 국가통계청 러시아 측 사망자 보도자료' (일반 경로) → 10건
+    라이너 검색 'Росстат утечка данные погибшие война Украина 2026' (일반 경로, 영어) → 10건
+    라이너 검색 'site:rosstat.gov.ru 우크라이나 전쟁' (일반 경로) → 4건
+    라이너 검색 'site:rosstat.gov.ru Росстат утечка данные погибшие война Украина 2026' (일반 경로, 영어) → 20건
+    라이너 검색 '러시아 연방 국가통계청 러시아 측 사망자 우크라이나 전쟁 전쟁 사망자 2022년~2026년 여름 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:rosstat.gov.ru filetype:pdf 러시아 측 사망자 우크라이나 전쟁 전쟁 사망자 2022년~2026년 여름' (일반 경로) → 0건
+    정책브리핑 보도자료 검색 '러시아 측 사망자 우크라이나 전쟁' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '러시아 측 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '우크라이나 전쟁' (2026-09-14~2026-11-14) → 8건
+    정책브리핑 설명자료 검색 '러시아 측 사망자 우크라이나 전쟁' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 설명자료 검색 '러시아 측 사망자' (2026-09-14~2026-11-14) → 0건
+[2] None 원 보고서 후보 24건
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/168751 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/176278 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/94975 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/storage/mediabank/osn-07-2026.pdf — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/236405 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/bgd/regl/b11_34/IssWWW.exe/Stg/d01/01-88.htm — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 받기가 45초 안에 끝나지 않아 끊음: https://95.rosstat.gov.ru/storage/mediabank/Rosstat_Tsifry_Pobedy(1).pdf
+    받기 실패: 기관 누리집 받기가 45초 안에 끝나지 않아 끊음: https://23.rosstat.gov.ru/storage/mediabank/metod_nas(1).pdf
+    안내: 국가통계 원자료 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(33.2초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '러시아 연방통계청', '보고서': '', '숫자': '최소 45만 명', '핵심어': ['우크라이나 전쟁', '러시아 측 사망자'], '기준시점': '2022년 2월 24일~2026년 여름', '기관누리집': 'rosstat.gov.ru', '원어검색어': 'Росстат утечка данные свидетельства о смерти война Украина август 2026 450 тысяч'}
+    라이너 검색 '러시아 연방통계청 우크라이나 전쟁 러시아 측 사망자 최소 45만 명' → 10건
+    라이너 검색 '최소 45만 명 우크라이나 전쟁 러시아 측 사망자 러시아 연방통계청' → 10건
+    라이너 검색 'site:rosstat.gov.ru 러시아 측 사망자' (일반 경로) → 15건
+    라이너 검색 '우크라이나 전쟁 2022년 2월 24일~2026년 여름 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '러시아 연방통계청 우크라이나 전쟁 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:rosstat.gov.ru Росстат утечка данные свидетельства о смерти война Украина август 2026 450 тысяч' (일반 경로, 영어) → 20건
+    라이너 검색 'site:rosstat.gov.ru 우크라이나 전쟁 러시아 측 사망자 2022년 2월 24일~2026년 여름' (일반 경로) → 10건
+    라이너 검색 'Росстат утечка данные свидетельства о смерти война Украина август 2026 450 тысяч' (일반 경로, 영어) → 10건
+    라이너 검색 'site:rosstat.gov.ru filetype:pdf 우크라이나 전쟁 러시아 측 사망자 2022년 2월 24일~2026년 여름' (일반 경로) → 0건
+    라이너 검색 '러시아 연방통계청 우크라이나 전쟁 러시아 측 사망자 2022년 2월 24일~2026년 여름 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:rosstat.gov.ru 우크라이나 전쟁' (일반 경로) → 4건
+    정책브리핑 보도자료 검색 '우크라이나 전쟁 러시아 측 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '우크라이나 전쟁' (2026-09-14~2026-11-14) → 8건
+    정책브리핑 설명자료 검색 '우크라이나 전쟁 러시아 측 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 설명자료 검색 '우크라이나 전쟁' (2026-09-14~2026-11-14) → 3건
+[2] None 원 보고서 후보 26건
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/176278 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/206140 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/94975 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/bgd/regl/b11_34/IssWWW.exe/Stg/d01/01-88.htm — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/ — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 받기가 45초 안에 끝나지 않아 끊음: https://55.rosstat.gov.ru/storage/mediabank/konf-2024_sbornik.pdf
+    받기 실패: 기관 누리집 받기가 45초 안에 끝나지 않아 끊음: https://31.rosstat.gov.ru/storage/mediabank/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D1%82%202024.pdf
+    받기 실패: 기관 누리집 받기가 45초 안에 끝나지 않아 끊음: https://26.rosstat.gov.ru/storage/mediabank/OSET_2025.pdf
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.edwardconard.com/macro-roundup/russia-']
+    Deep Research 인용 문장을 라이너 검색으로 다시 찾아 원 출처 검색 요약 1건 확보
+    Deep Research 가 지목한 원 출처 2곳을 받아 직접 확인: ['https://www.ft.com/content/7377e093-d58e-4303-853a-5aa82b6a7', 'https://www.ft.com/content/7377e093-d58e-4303-853a-5aa82b6a7']
+[1] 라이너 모델 분해: {'기관': '러시아 연방국가통계청', '보고서': '', '숫자': '최소 45만 명', '핵심어': ['러시아 측 사망자', '전쟁 사망자', '러시아', '우크라이나 침공'], '기준시점': '2022년~2026년 여름', '기관누리집': 'rosstat.gov.ru', '원어검색어': 'Росстат утечка данных погибшие война Украина лето 2026'}
+    라이너 검색 '러시아 연방국가통계청 러시아 측 사망자 전쟁 사망자 러시아 우크라이나 침공 최소 45만 명' → 10건
+    라이너 검색 '최소 45만 명 러시아 측 사망자 전쟁 사망자 러시아 러시아 연방국가통계청' → 10건
+    라이너 검색 'site:rosstat.gov.ru Росстат утечка данных погибшие война Украина лето 2026' (일반 경로, 영어) → 16건
+    라이너 검색 'site:rosstat.gov.ru filetype:pdf 러시아 측 사망자 전쟁 사망자 러시아 2022년~2026년 여름' (일반 경로) → 0건
+    라이너 검색 '러시아 측 사망자 2022년~2026년 여름 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:rosstat.gov.ru 러시아 측 사망자' (일반 경로) → 18건
+    라이너 검색 '러시아 연방국가통계청 러시아 측 사망자 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:rosstat.gov.ru 전쟁 사망자' (일반 경로) → 19건
+    라이너 검색 'Росстат утечка данных погибшие война Украина лето 2026' (일반 경로, 영어) → 10건
+    라이너 검색 '러시아 연방국가통계청 러시아 측 사망자 전쟁 사망자 러시아 2022년~2026년 여름 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:rosstat.gov.ru 러시아 측 사망자 전쟁 사망자 러시아 2022년~2026년 여름' (일반 경로) → 0건
+    정책브리핑 보도자료 검색 '러시아 측 사망자 전쟁 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '러시아 측 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '전쟁 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '러시아' (2026-09-14~2026-11-14) → 30건
+    정책브리핑 설명자료 검색 '러시아 측 사망자 전쟁 사망자' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 설명자료 검색 '러시아 측 사망자' (2026-09-14~2026-11-14) → 0건
+[2] None 원 보고서 후보 26건
+    후보: Russia loses almost half a million lives — gen_snip_8270efa4595b.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Russia loses almost half a million lives — gen_8270efa4595b.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/176278 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/94975 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/236405 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/folder/313/document/168751 — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 연결 실패: https://rosstat.gov.ru/bgd/regl/b11_34/IssWWW.exe/Stg/d01/01-88.htm — curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+    받기 실패: 기관 누리집 받기가 45초 안에 끝나지 않아 끊음: https://95.rosstat.gov.ru/storage/mediabank/Rosstat_Tsifry_Pobedy(1).pdf
+    라이너 Rerank 로 후보 보고서 2건 순위 매김
+[3] gen_snip_8270efa4595b.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_snip_8270efa4595b.txt: 숫자 후보 0곳
+[3] gen_8270efa4595b.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_snip_8270efa4595b.txt 직접 읽기(계산 확인도 동시에)
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 국가통계 원자료 — 링크 1개
+    걸린 시간 117.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.51, '검색': 23.35, '후보 찾기': 4.38, 'PDF 받기·글자': 50.89, '확인할 곳 안내': 6.16, '라이너 Deep Research': 42.31, '숫자 찾기': 0.0, 'PDF 직접 읽기': 0.0, '계산 확인': 0.0}
+
+===== 5/30 [무작위] CBS가 확보한 심사자료와 국회·공정위 관계자 설명을 종합하면, 지난 12일 정무위원회는 경제분석운영 예산을 정부안 14억 5
+[1] 라이너 모델 분해: {'기관': '국회 정무위원회', '보고서': '', '숫자': '3억 9400만 원', '핵심어': ['경제분석운영 예산', '정부안 대비 증액', '경제분석운영', '예산 증액', '정부안'], '기준시점': '2027년', '기관누리집': 'assembly.go.kr', '원어검색어': ''}
+    라이너 검색 '3억 9400만 원 경제분석운영 예산 정부안 대비 증액 경제분석운영 국회 정무위원회' → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 정부안 대비 증액 경제분석운영 예산 증액 정부안 3억 9400만 원' → 10건
+    라이너 검색 'site:assembly.go.kr 경제분석운영 예산' (일반 경로) → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 정부안 대비 증액 경제분석운영 2027년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr 경제분석운영 예산 정부안 대비 증액 경제분석운영 2027년' (일반 경로) → 9건
+    라이너 검색 'site:assembly.go.kr 정부안 대비 증액' (일반 경로) → 9건
+    라이너 검색 '경제분석운영 예산 2027년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr filetype:pdf 경제분석운영 예산 정부안 대비 증액 경제분석운영 2027년' (일반 경로) → 0건
+    정책브리핑 보도자료 검색 '경제분석운영 예산 정부안 대비 증액' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '경제분석운영 예산' (2026-09-16~2026-11-16) → 9건
+    정책브리핑 설명자료 검색 '경제분석운영 예산 정부안 대비 증액' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '경제분석운영 예산' (2026-09-16~2026-11-16) → 2건
+[2] None 원 보고서 후보 12건
+    보도 설명자료라 후보에서 뺌: (설명자료) (설명) 정부는 미래환경산업 및 기후테크 분야 스타트업의 육
+    후보: 인구전략위원회, 인구의 판을 바꾸는'국가인구전략' 추진 — gen_deb1d7bea41b.txt, 22쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 국민을 위한 특별한 성과로 데이터·통계 혁신을 이끈다 — gen_163bf5e67e71.txt, 4쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 제12회 국민 삶의 질 측정 포럼 보도자료 — gen_9ddc6f5156b3.txt, 6쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 년 예산 년 만에 법정기한 내 2026 , 5 여야 간 합의하여 국회 . — gen_e2ab8dae6b2f.pdf, 11쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 주간업무계획 — gen_9ff5b4d3255a.pdf, 55쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 결산 연계 2027년도 예산안 분석 — gen_74856fddee92.pdf, 275쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 2023년도 예산안 위원회별 분석 — gen_db93c27b4be0.pdf, 208쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_74856fddee92.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_74856fddee92.pdf: 숫자 후보 0곳
+[3] gen_9ff5b4d3255a.pdf: 숫자 후보 0곳
+[3] gen_e2ab8dae6b2f.pdf: 숫자 후보 0곳
+[3] gen_163bf5e67e71.txt: 숫자 후보 0곳
+[3] gen_9ddc6f5156b3.txt: 숫자 후보 0곳
+[3] gen_deb1d7bea41b.txt: 숫자 후보 0곳
+[3] gen_db93c27b4be0.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_74856fddee92.pdf 직접 읽기(계산 확인도 동시에)
+    275쪽 중 14쪽만 잘라 보냄: [1, 2, 17, 20, 90, 146, 215, 254, 255, 256, 257, 258, 259, 260]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 292개
+    게이트웨이 모델: 14쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 3개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(31.9초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '국회 정무위원회', '보고서': '', '숫자': '3억 9400만 원', '핵심어': ['경제분석운영 예산', '정부안 대비 증액', '공정거래위원회'], '기준시점': '2027년', '기관누리집': 'assembly.go.kr', '원어검색어': ''}
+    라이너 검색 '3억 9400만 원 경제분석운영 예산 정부안 대비 증액 공정거래위원회 국회 정무위원회' → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 정부안 대비 증액 공정거래위원회 3억 9400만 원' → 10건
+    라이너 검색 '경제분석운영 예산 2027년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr 경제분석운영 예산 정부안 대비 증액 공정거래위원회 2027년' (일반 경로) → 9건
+    라이너 검색 'site:assembly.go.kr 경제분석운영 예산' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr filetype:pdf 경제분석운영 예산 정부안 대비 증액 공정거래위원회 2027년' (일반 경로) → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 정부안 대비 증액 공정거래위원회 2027년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr 정부안 대비 증액' (일반 경로) → 9건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 보도자료' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '경제분석운영 예산 정부안 대비 증액' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '경제분석운영 예산' (2026-09-16~2026-11-16) → 9건
+    정책브리핑 설명자료 검색 '경제분석운영 예산 정부안 대비 증액' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '경제분석운영 예산' (2026-09-16~2026-11-16) → 2건
+[2] None 원 보고서 후보 15건
+    후보: 년 예산 년 만에 법정기한 내 2026 , 5 여야 간 합의하여 국회 . — gen_e2ab8dae6b2f.pdf, 11쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2017년도 예산안 위원회별 분석 — gen_8d2211cdd6b7.pdf, 133쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2027년 — gen_7873a89ea53e.pdf, 88쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 결산 연계 2027년도 예산안 분석 — gen_74856fddee92.pdf, 275쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 주간업무계획 — gen_9ff5b4d3255a.pdf, 55쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 2027년도 예산안 위원회별 분석 — gen_361c15654941.pdf, 511쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 2023년도 국정감사 결과보고서(안) — gen_dd91427f4d13.pdf, 197쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 정책동향 「새정부 경제정책방향」 후속조치 계획 — gen_672b635c5c17.pdf, 30쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_361c15654941.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_361c15654941.pdf: 숫자 후보 0곳
+[3] gen_74856fddee92.pdf: 숫자 후보 0곳
+[3] gen_672b635c5c17.pdf: 숫자 후보 0곳
+[3] gen_7873a89ea53e.pdf: 숫자 후보 0곳
+[3] gen_9ff5b4d3255a.pdf: 숫자 후보 0곳
+[3] gen_e2ab8dae6b2f.pdf: 숫자 후보 0곳
+[3] gen_8d2211cdd6b7.pdf: 숫자 후보 0곳
+[3] gen_dd91427f4d13.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_361c15654941.pdf 직접 읽기(계산 확인도 동시에)
+    511쪽 중 2쪽만 잘라 보냄: [1, 2]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 217개
+    게이트웨이 모델: 2쪽 읽기에서 못 찾음
+    Deep Research 가 지목한 원 출처 4곳을 받아 직접 확인: ['https://www.ftc.go.kr/www/selectBbsNttView.do?pageUnit=10&pa', 'https://www.ftc.go.kr/www/selectBbsNttView.do?pageUnit=10&pa', 'http://nas.na.go.kr/nas/main/contents.do?menuNo=1800113', 'https://budget.na.go.kr/cmmit/empList/empList/empList.do?men']
+[1] 라이너 모델 분해: {'기관': '국회 정무위원회', '보고서': '', '숫자': '3억 9400만 원', '핵심어': ['경제분석운영 예산', '정부안 대비 증액', '경제분석운영', '예산 증액'], '기준시점': '2027년', '기관누리집': 'assembly.go.kr', '원어검색어': ''}
+    라이너 검색 '3억 9400만 원 경제분석운영 예산 정부안 대비 증액 경제분석운영 국회 정무위원회' → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 정부안 대비 증액 경제분석운영 예산 증액 3억 9400만 원' → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 정부안 대비 증액 경제분석운영 2027년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr 정부안 대비 증액' (일반 경로) → 0건
+    라이너 검색 'site:assembly.go.kr 경제분석운영 예산' (일반 경로) → 10건
+    라이너 검색 'site:assembly.go.kr filetype:pdf 경제분석운영 예산 정부안 대비 증액 경제분석운영 2027년' (일반 경로) → 9건
+    라이너 검색 'site:assembly.go.kr 경제분석운영 예산 정부안 대비 증액 경제분석운영 2027년' (일반 경로) → 10건
+    라이너 검색 '국회 정무위원회 경제분석운영 예산 보도자료' (일반 경로) → 10건
+    라이너 검색 '경제분석운영 예산 2027년 통계 발표 자료' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '경제분석운영 예산 정부안 대비 증액' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '경제분석운영 예산' (2026-09-16~2026-11-16) → 9건
+    정책브리핑 설명자료 검색 '경제분석운영 예산 정부안 대비 증액' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '경제분석운영 예산' (2026-09-16~2026-11-16) → 2건
+[2] None 원 보고서 후보 16건
+    후보: 입법·행정예고 — gen_b3bd3c4e3bea.txt, 14쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2023년도 예산안 위원회별 분석 — gen_db93c27b4be0.pdf, 208쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 년 예산 년 만에 법정기한 내 2026 , 5 여야 간 합의하여 국회 . — gen_e2ab8dae6b2f.pdf, 11쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 결산 연계 2027년도 예산안 분석 — gen_74856fddee92.pdf, 275쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 주간업무계획 — gen_9ff5b4d3255a.pdf, 55쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 예산안 · 결산 심사 | 의정활동 지원 | 국회사무처 — gen_acc4653346d6.txt, 6쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    첨부파일 글자 더함: 공정거래위원회 일반임기제 5급(경제분석) 서류전형 합격자 및 면접시험 공고.hwpx &nbsp; (hwpx, 61.3KB) (1418자)
+    후보: 위원회 직원 - 목록화면 | 위원회 구성 | 위원회 소개 | 예산결산특별 — gen_3f45c7f78a30.txt, 8쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    첨부파일 글자 더함: 공정거래위원회 일반임기제 5급(경제분석) 서류전형 합격자 및 면접시험 공고.pdf &nbsp; (pdf, 117.4KB) (2534자)
+    후보: 공지·공고 — gen_b2da9136e67e.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_74856fddee92.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_74856fddee92.pdf: 숫자 후보 0곳
+[3] gen_9ff5b4d3255a.pdf: 숫자 후보 0곳
+[3] gen_e2ab8dae6b2f.pdf: 숫자 후보 0곳
+[3] gen_b2da9136e67e.txt: 숫자 후보 0곳
+[3] gen_3f45c7f78a30.txt: 숫자 후보 0곳
+[3] gen_acc4653346d6.txt: 숫자 후보 0곳
+[3] gen_b3bd3c4e3bea.txt: 숫자 후보 0곳
+[3] gen_db93c27b4be0.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_74856fddee92.pdf 직접 읽기(계산 확인도 동시에)
+    275쪽 중 4쪽만 잘라 보냄: [1, 2, 17, 146]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 292개
+    게이트웨이 모델: 4쪽 읽기에서 못 찾음
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 3개
+    걸린 시간 110.3초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.96, '검색': 24.29, '후보 찾기': 3.78, 'PDF 받기·글자': 9.32, '숫자 찾기': 3.22, 'PDF 직접 읽기': 42.63, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 39.53}
+
+===== 6/30 [무작위] 2025년 별도 재무제표 기준 매출 상위 100대 상장사의 올해 반기보고서를 분석한 결과, 여성 임원은 491명으로 지난해(4
+[1] 라이너 모델 분해: {'기관': '한국CXO연구소', '보고서': '2026년 국내 100대 기업 여성 임원 현황 조사', '숫자': '491명', '핵심어': ['100대 상장사', '여성 임원 수'], '기준시점': '2026년 상반기', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '491명 100대 상장사 여성 임원 수 한국CXO연구소' → 10건
+    라이너 검색 '한국CXO연구소 2026년 국내 100대 기업 여성 임원 현황 조사 100대 상장사 여성 임원 수 491명' → 10건
+    라이너 검색 '한국CXO연구소 100대 상장사 보도자료' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 2026년 국내 100대 기업 여성 임원 현황 조사 2026년 상반기 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 여성 임원 수' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 100대 상장사' (일반 경로) → 10건
+    라이너 검색 '100대 상장사 2026년 상반기 통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 0건
+    안내: 원문 위치 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(8.4초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '한국CXO연구소', '보고서': '2026년 국내 100대 기업 여성 임원 현황 조사', '숫자': '491명', '핵심어': ['100대 기업', '여성 임원', '임원 수', '100대 상장사'], '기준시점': '2026년 상반기', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '491명 100대 기업 여성 임원 임원 수 한국CXO연구소' → 10건
+    라이너 검색 '한국CXO연구소 2026년 국내 100대 기업 여성 임원 현황 조사 100대 기업 여성 임원 임원 수 100대 상장사 491명' → 10건
+    라이너 검색 '한국CXO연구소 2026년 국내 100대 기업 여성 임원 현황 조사 2026년 상반기 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 여성 임원' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 100대 기업 보도자료' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 100대 기업' (일반 경로) → 10건
+    라이너 검색 '100대 기업 2026년 상반기 통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 1건
+    후보: 2026년 상반기 창업기업동향 발표 — gen_00afd504244c.pdf, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.08
+[3] gen_00afd504244c.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_00afd504244c.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_00afd504244c.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 1개
+    게이트웨이 모델: 1쪽 읽기에서 못 찾음
+    문장 속 다른 숫자 '3.2%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_00afd504244c.pdf: 숫자 후보 1곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_00afd504244c.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 18개
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.insight.co.kr/news/581227', 'https://kr.investing.com/news/stock-market-news/ar']
+    Deep Research 가 지목한 원 출처 0곳을 받아 직접 확인: []
+[1] 라이너 모델 분해: {'기관': '한국CXO연구소', '보고서': '2026년 국내 100대 기업 여성 임원 현황 조사', '숫자': '491명', '핵심어': ['100대 상장사', '여성 임원 수', '여성 임원', '임원 수'], '기준시점': '2026년 상반기', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '한국CXO연구소 2026년 국내 100대 기업 여성 임원 현황 조사 100대 상장사 여성 임원 수 여성 임원 임원 수 491명' → 10건
+    라이너 검색 '491명 100대 상장사 여성 임원 수 여성 임원 한국CXO연구소' → 10건
+    라이너 검색 '한국CXO연구소 100대 상장사' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 100대 상장사 보도자료' (일반 경로) → 10건
+    라이너 검색 '100대 상장사 2026년 상반기 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 여성 임원 수' (일반 경로) → 10건
+    라이너 검색 '한국CXO연구소 2026년 국내 100대 기업 여성 임원 현황 조사 2026년 상반기 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 1건
+    후보: 2026년 상반기 노동시장 평가와 하반기 전망 — gen_f16db792d662.pdf, 30쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+[3] gen_f16db792d662.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_f16db792d662.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_f16db792d662.pdf 직접 읽기(계산 확인도 동시에)
+    PDF 전체(30쪽)도 동시에 보냄
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 9개
+    게이트웨이 모델: 30쪽 읽기에서 못 찾음
+    문장 속 다른 숫자 '15명'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_f16db792d662.pdf: 숫자 후보 3곳
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.04)
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_f16db792d662.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 277개
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 1개
+    걸린 시간 89.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.33, '검색': 17.61, '후보 찾기': 0.86, 'PDF 받기·글자': 0.11, '확인할 곳 안내': 0.0, '숫자 찾기': 0.03, 'PDF 직접 읽기': 28.09, '계산 확인': 6.17, '고르기·판정': 7.81, '표현 다름 후보': 7.34, '라이너 Deep Research': 41.68}
+
+===== 7/30 [무작위] 10월 하순 기준 한국농수산식품유통공사에서 조사한 김장 비용(4인가구 기준)은 전년 및 평년보다 각각 4%, 5% 내외 감소한
+[1] 라이너 모델 분해: {'기관': '한국농수산식품유통공사', '보고서': '', '숫자': '4%', '핵심어': ['김장 비용', '4인 가구', '전년 대비 감소율'], '기준시점': '2026년 10월 하순', '기관누리집': 'at.or.kr', '원어검색어': ''}
+    라이너 검색 '4% 김장 비용 4인 가구 전년 대비 감소율 한국농수산식품유통공사' → 10건
+    라이너 검색 '한국농수산식품유통공사 김장 비용 4인 가구 전년 대비 감소율 4%' → 10건
+    라이너 검색 '한국농수산식품유통공사 김장 비용 4인 가구 전년 대비 감소율 2026년 10월 하순 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:at.or.kr 김장 비용' (일반 경로) → 9건
+    라이너 검색 '김장 비용 2026년 10월 하순 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:at.or.kr 김장 비용 4인 가구 전년 대비 감소율 2026년 10월 하순' (일반 경로) → 9건
+    라이너 검색 '한국농수산식품유통공사 김장 비용 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:at.or.kr filetype:pdf 김장 비용 4인 가구 전년 대비 감소율 2026년 10월 하순' (일반 경로) → 9건
+    라이너 검색 'site:at.or.kr 4인 가구' (일반 경로) → 12건
+[2] None 원 보고서 후보 6건
+    후보: 모바일 통합검색 — gen_39173b56b555.txt, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 공공부문 단체급식 확대를 위한 현황조사 및 신규시장 진출방안 — gen_8012ecf7ad5b.pdf, 36쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 보도자료 - 김장비용 (최종)[1].hwp — gen_3aba3382db41.pdf, 2쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: · 가계동향조사 용어집 — gen_33b79d66af95.pdf, 8쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 식품 지출 동향과 2025년 4분기 — gen_27b8632fd90f.pdf, 3쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 가계의 소비구조, 소비불평등, 한계소비성향의 변화와 ... — gen_62be662d13ce.pdf, 201쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 6건 순위 매김
+[3] gen_3aba3382db41.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_3aba3382db41.pdf: 숫자 후보 0곳
+[3] gen_27b8632fd90f.pdf: 숫자 후보 15곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 207개
+    라이너 Rerank 로 숫자 후보 15곳 순위 매김 (1위 관련도 0.60)
+[3] gen_62be662d13ce.pdf: 숫자 후보 40곳
+    라이너 Rerank 로 숫자 후보 40곳 순위 매김 (1위 관련도 0.19)
+[3] gen_39173b56b555.txt: 숫자 후보 0곳
+[3] gen_33b79d66af95.pdf: 숫자 후보 0곳
+[3] gen_8012ecf7ad5b.pdf: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.04)
+    게이트웨이 모델: 2쪽 읽기에서 못 찾음
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_3aba3382db41.pdf 직접 읽기(계산 확인도 동시에)
+    문장 속 다른 숫자 '5%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_3aba3382db41.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_3aba3382db41.pdf: 숫자 후보 0곳
+[3] gen_27b8632fd90f.pdf: 숫자 후보 13곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 164개
+    라이너 Rerank 로 숫자 후보 13곳 순위 매김 (1위 관련도 0.50)
+[3] gen_62be662d13ce.pdf: 숫자 후보 40곳
+    라이너 Rerank 로 숫자 후보 40곳 순위 매김 (1위 관련도 0.18)
+[3] gen_39173b56b555.txt: 숫자 후보 0곳
+[3] gen_33b79d66af95.pdf: 숫자 후보 0곳
+[3] gen_8012ecf7ad5b.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_3aba3382db41.pdf 직접 읽기(계산 확인도 동시에)
+    안내: 원문 위치 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(37.2초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '한국농수산식품유통공사', '보고서': '', '숫자': '4%', '핵심어': ['4인 가구', '김장 비용', '전년 대비 감소율'], '기준시점': '2026년 10월 하순', '기관누리집': 'at.or.kr', '원어검색어': ''}
+    라이너 검색 '4% 4인 가구 김장 비용 전년 대비 감소율 한국농수산식품유통공사' → 10건
+    라이너 검색 '한국농수산식품유통공사 4인 가구 김장 비용 전년 대비 감소율 4%' → 10건
+    라이너 검색 'site:at.or.kr 김장 비용' (일반 경로) → 9건
+    라이너 검색 'site:at.or.kr 4인 가구 김장 비용 전년 대비 감소율 2026년 10월 하순' (일반 경로) → 9건
+    라이너 검색 '한국농수산식품유통공사 4인 가구 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:at.or.kr 4인 가구' (일반 경로) → 11건
+    라이너 검색 '4인 가구 2026년 10월 하순 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:at.or.kr filetype:pdf 4인 가구 김장 비용 전년 대비 감소율 2026년 10월 하순' (일반 경로) → 9건
+    라이너 검색 '한국농수산식품유통공사 4인 가구 김장 비용 전년 대비 감소율 2026년 10월 하순 filetype:pdf' (일반 경로) → 8건
+[2] None 원 보고서 후보 11건
+    후보: 2026년 소비자 김장 의향 및 주요 채소류 공급 전망 — gen_f5c6813e4b51.pdf, 24쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    글자가 너무 적어 건너뜀(22자): https://www.mofe.go.kr/com/synap/synapView.do?atchFileId=ATCH_000000000032769&fileSn=1
+    글자가 너무 적어 건너뜀(0자): https://her.re.kr/include/download.php?filedata=4576%7Cfer-58-4-483.pdf
+    후보: 농축수산물 가격 동향 및 수급대책 — gen_882a76f273a9.pdf, 7쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 통계로 본 2026년 상반기 식품제조업 동향 — gen_673adbc77efc.pdf, 5쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 통계로 본 2025년~2026년 1분기 식품제조업 동향 — gen_9024a0652a19.pdf, 5쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: [2026 과채-합본] 7월 — gen_1b297e492b4b.pdf, 16쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: 1인 가구 증가에 따른 식품시장 영향과 정책과제 — gen_1542d017f33c.pdf, 241쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 6건 순위 매김
+[3] gen_9024a0652a19.pdf: 숫자 후보 10곳
+    라이너 Rerank 로 숫자 후보 10곳 순위 매김 (1위 관련도 0.10)
+[3] gen_1b297e492b4b.pdf: 숫자 후보 22곳
+    라이너 Rerank 로 숫자 후보 22곳 순위 매김 (1위 관련도 0.14)
+[3] gen_f5c6813e4b51.pdf: 숫자 후보 16곳
+    라이너 Rerank 로 숫자 후보 16곳 순위 매김 (1위 관련도 0.97)
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.etoday.co.kr/news/view/2646151', 'https://www.nongmin.com/article/20261111500428']
+    라이너 Decisions 교차 확인: 일치 (확신도 1.00) → 같음
+    Deep Research 가 지목한 원 출처 2곳을 받아 직접 확인: ['https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000208087&', 'http://at.or.kr']
+[1] 라이너 모델 분해: {'기관': '한국농수산식품유통공사', '보고서': '', '숫자': '4%', '핵심어': ['김장 비용', '4인 가구', '전년 대비', '4인가구', '전년 대비 감소'], '기준시점': '2026년 10월 하순', '기관누리집': 'at.or.kr', '원어검색어': ''}
+    라이너 검색 '4% 김장 비용 4인 가구 전년 대비 한국농수산식품유통공사' → 10건
+    라이너 검색 '한국농수산식품유통공사 김장 비용 4인 가구 전년 대비 4인가구 전년 대비 감소 4%' → 10건
+    라이너 검색 'site:at.or.kr 4인 가구' (일반 경로) → 2건
+    라이너 검색 'site:at.or.kr 김장 비용' (일반 경로) → 10건
+    라이너 검색 'site:at.or.kr 김장 비용 4인 가구 전년 대비 2026년 10월 하순' (일반 경로) → 9건
+    라이너 검색 'site:at.or.kr filetype:pdf 김장 비용 4인 가구 전년 대비 2026년 10월 하순' (일반 경로) → 10건
+    라이너 검색 '한국농수산식품유통공사 김장 비용 보도자료' (일반 경로) → 10건
+    라이너 검색 '김장 비용 2026년 10월 하순 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '한국농수산식품유통공사 김장 비용 4인 가구 전년 대비 2026년 10월 하순 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 13건
+    후보: 한국농수산식품유통공사 - aT — gen_a4b203b1f6db.txt, 4쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: 2026년 소비자 김장 의향 및 주요 채소류 공급 전망 — gen_bb2badb17fa1.txt, 2쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: 보도자료 - 김장비용 (최종)[1].hwp — gen_3aba3382db41.pdf, 2쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 김장재료 수급안정 대책 — gen_39bf66b56f4c.pdf, 5쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: 2026년도 주요 업무계획 — gen_721228de8ae6.pdf, 432쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 김장비용은 평년 수준에서 안정될 전망 — gen_516fa8076d6a.pdf, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 제 8 장 - 농업관측센터 — gen_83e11492d079.pdf, 60쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 경영실적 평가보고서 — gen_6abf0c002031.pdf, 173쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_39bf66b56f4c.pdf: 숫자 후보 4곳
+    라이너 Rerank 로 숫자 후보 4곳 순위 매김 (1위 관련도 0.91)
+    라이너 Decisions 교차 확인: 일치 (확신도 0.68) → 같음
+    걸린 시간 110.3초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.68, '검색': 20.24, '후보 찾기': 0.89, 'PDF 받기·글자': 21.09, '숫자 찾기': 1.29, '고르기·판정': 45.85, '표현 다름 후보': 6.83, 'PDF 직접 읽기': 0.0, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 41.18, '교차 확인(Decisions)': 1.32}
+
+===== 8/30 [무작위] 하나증권이 최근 발표한 '2027년 건설업 전망' 보고서에 따르면 2030년까지 약 4GW 규모의 데이터센터 개발 수요가 발생
+[1] 라이너 모델 분해: {'기관': '하나증권', '보고서': '2027년 건설업 전망', '숫자': '30조~40조원', '핵심어': ['데이터센터', '추가 수주 규모', '추가 수주'], '기준시점': '2030년까지', '기관누리집': 'hanaw.com', '원어검색어': ''}
+    라이너 검색 '하나증권 2027년 건설업 전망 데이터센터 추가 수주 규모 추가 수주 30조~40조원' → 10건
+    라이너 검색 '30조~40조원 데이터센터 추가 수주 규모 추가 수주 하나증권' → 10건
+    라이너 검색 'site:hanaw.com 데이터센터' (일반 경로) → 20건
+    라이너 검색 'site:hanaw.com 2027년 건설업 전망 2030년까지' (일반 경로) → 20건
+    라이너 검색 '하나증권 데이터센터 보도자료' (일반 경로) → 10건
+    라이너 검색 '하나증권 2027년 건설업 전망 2030년까지 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '데이터센터 2030년까지 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:hanaw.com 추가 수주 규모' (일반 경로) → 20건
+    라이너 검색 'site:hanaw.com filetype:pdf 2027년 건설업 전망 2030년까지' (일반 경로) → 20건
+[2] None 원 보고서 후보 20건
+    후보: 데이터센터 Overweight — gen_7eb2bc496e09.pdf, 95쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 국내 투자의 확대에 건설 수혜(DC/LH) — gen_3cf0d786758e.pdf, 11쪽, 기준시점 일치 1/1, 제목 비슷함 0.50
+    후보: 데이터센터 Overweight — gen_baf7c7aee13a.pdf, 91쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 건설(Overweight): 2027년의 무대는 국내다! — gen_8375769e00e5.pdf, 68쪽, 기준시점 일치 0/1, 제목 비슷함 0.25
+    후보: 한국 데이터센터 당위성에 주목 — gen_def873d734d5.pdf, 11쪽, 기준시점 일치 1/1, 제목 비슷함 0.50
+    후보: 현대건설 4세대 SMR 수주 기대 — gen_347c2e7e967c.pdf, 11쪽, 기준시점 일치 1/1, 제목 비슷함 0.50
+    후보: 윤곽이 나타나는 국내 데이터센터 투자 — gen_4b592701967a.pdf, 11쪽, 기준시점 일치 0/1, 제목 비슷함 0.50
+    후보: 하나증권 리서치센터 2025년 산업 테마 가이드 — gen_9ebdb8a34180.pdf, 54쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_def873d734d5.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_def873d734d5.pdf: 숫자 후보 0곳
+[3] gen_347c2e7e967c.pdf: 숫자 후보 0곳
+[3] gen_4b592701967a.pdf: 숫자 후보 0곳
+[3] gen_3cf0d786758e.pdf: 숫자 후보 3곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 10개
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.22)
+[3] gen_7eb2bc496e09.pdf: 숫자 후보 1곳
+    게이트웨이 모델: 11쪽 읽기에서 못 찾음
+[3] gen_8375769e00e5.pdf: 숫자 후보 4곳
+    라이너 Rerank 로 숫자 후보 4곳 순위 매김 (1위 관련도 0.94)
+    라이너 Decisions 교차 확인: 일치 (확신도 0.89) → 같음
+    걸린 시간 35.5초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.8, '검색': 5.6, '후보 찾기': 0.31, 'PDF 받기·글자': 3.18, '숫자 찾기': 0.69, '고르기·판정': 14.41, '표현 다름 후보': 7.98, '교차 확인(Decisions)': 0.46, '확인할 곳 안내': 0.0}
+
+===== 9/30 [무작위] 보고서에 따르면 대만은 반도체 수출 호조에 힘입어 경제성장률이 2023년 1.1%에서 2024년 5.3%, 2025년 8.8%
+[1] 라이너 모델 분해: {'기관': '한국은행', '보고서': '대만 반도체 경기 호황의 특징과 우리 경제에 대한 시사점', '숫자': '8.8%', '핵심어': ['대만', '경제성장률'], '기준시점': '2025년', '기관누리집': 'bok.or.kr', '원어검색어': ''}
+    라이너 검색 '8.8% 대만 경제성장률 한국은행' → 10건
+    라이너 검색 '한국은행 대만 반도체 경기 호황의 특징과 우리 경제에 대한 시사점 대만 경제성장률 8.8%' → 10건
+    라이너 검색 'site:bok.or.kr 대만' (일반 경로) → 19건
+    라이너 검색 'site:bok.or.kr 경제성장률' (일반 경로) → 19건
+    라이너 검색 '한국은행 대만 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:bok.or.kr 대만 반도체 경기 호황의 특징과 우리 경제에 대한 시사점 2025년' (일반 경로) → 20건
+    라이너 검색 'site:bok.or.kr filetype:pdf 대만 반도체 경기 호황의 특징과 우리 경제에 대한 시사점 2025년' (일반 경로) → 17건
+    라이너 검색 '대만 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '한국은행 대만 반도체 경기 호황의 특징과 우리 경제에 대한 시사점 2025년 filetype:pdf' (일반 경로) → 10건
+    DART '한국은행' 공시 0건 중 보고서·실적 0건
+[2] None 원 보고서 후보 20건
+    후보: 궁금한은| 반도체 호황, 우리 지갑도 두둑해질까? 한국은행 ... — gen_8b93d6af3854.txt, 2쪽, 기준시점 일치 1/1, 제목 비슷함 0.23
+    후보: 대만 반도체 경기 호황의 특징과 우리경제에 대한 시사점 — gen_00a7fad7a347.txt, 5쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: [제748회] 세계 반도체시장의 호황 배경 및 시사점 — gen_1e9419013df4.txt, 10쪽, 기준시점 일치 0/1, 제목 비슷함 0.27
+    받기 실패: 기관 누리집 받기 실패(HTTP 400): https://file-cdn.bok.or.kr/portal/57a2f420e26141f39682fdb4696208b2/7/tempFile.pdf?token=st=1794069561~exp=1794073161~acl=/portal/57a2f420e26141f39682fdb4696208b2/7/tempFile.pdf*~hmac=1ed7819e23a88bc1dcf5a4f180fcd8dfebdaffa5ae231fc61d23bed454ffebfc
+    받기 실패: 기관 누리집 받기 실패(HTTP 400): https://file-cdn.bok.or.kr/portal/dfe965a8e38a4e4b9fd1a6989a7ee18e/1/3aa17ed0ffd64f55b9c74755d3c622ae.pdf?token=st=1794549009~exp=1794552609~acl=/portal/dfe965a8e38a4e4b9fd1a6989a7ee18e/1/3aa17ed0ffd64f55b9c74755d3c622ae.pdf*~hmac=7fcd2ed232ee9e2f2b90b0c525c0587d3d268403b1b9d16ea775bf65fa838417
+    후보: 금융통화위원회(정기) 의사록 — gen_5bf7b86cdf13.pdf, 43쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 지역경제 연구 — gen_b0273b42efd2.pdf, 49쪽, 기준시점 일치 0/1, 제목 비슷함 0.23
+    후보: 금융통화위원회(정기) 의사록 — gen_19987d2c098e.pdf, 41쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 6건 순위 매김
+[3] gen_00a7fad7a347.txt: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.95)
+    라이너 Decisions 교차 확인: 일치 (확신도 0.94) → 같음
+    걸린 시간 15.8초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.6, '검색': 6.16, '후보 찾기': 0.72, 'PDF 받기·글자': 1.43, '숫자 찾기': 0.09, '고르기·판정': 4.27, '교차 확인(Decisions)': 0.46, '확인할 곳 안내': 0.0}
+
+===== 10/30 [무작위] 이곳이 속한 하우텡주는 남아공 통계청(Statistics South Africa)이 지난해 발표한 자료 기준으로 2023년 전
+[1] 라이너 모델 분해: {'기관': 'Statistics South Africa', '보고서': '', '숫자': '약 36%', '핵심어': ['가계 소비지출', '전국 비중', '하우텡주'], '기준시점': '2023년', '기관누리집': 'statssa.gov.za', '원어검색어': 'Gauteng household consumption expenditure 2023 share'}
+    라이너 검색 'Statistics South Africa 가계 소비지출 전국 비중 하우텡주 약 36%' → 10건
+    라이너 검색 '약 36% 가계 소비지출 전국 비중 하우텡주 Statistics South Africa' → 10건
+    라이너 검색 'Statistics South Africa 가계 소비지출 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za 가계 소비지출 전국 비중 하우텡주 2023년' (일반 경로) → 19건
+    라이너 검색 'Gauteng household consumption expenditure 2023 share' (일반 경로, 영어) → 10건
+    라이너 검색 'site:statssa.gov.za 전국 비중' (일반 경로) → 19건
+    라이너 검색 'site:statssa.gov.za filetype:pdf 가계 소비지출 전국 비중 하우텡주 2023년' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za 가계 소비지출' (일반 경로) → 10건
+    라이너 검색 '가계 소비지출 2023년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za Gauteng household consumption expenditure 2023 share' (일반 경로, 영어) → 17건
+    라이너 검색 'Statistics South Africa 가계 소비지출 전국 비중 하우텡주 2023년 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: South African Households Spend R3 Trilli — gen_snip_32d2afe46e8a.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: The state of South African households in — gen_snip_754b8a153c8a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: General Household Survey — gen_bc45a0632c64.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: General Household Survey — gen_64d517f36512.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    글자가 너무 적어 건너뜀(0자): https://www.statssa.gov.za/?p=17283
+    글자가 너무 적어 건너뜀(0자): https://www.statssa.gov.za/?p=17981
+    글자가 너무 적어 건너뜀(0자): https://www.statssa.gov.za/publications/Report-03-10-06/Report-03-10-062023.pdf
+    글자가 너무 적어 건너뜀(0자): https://www.statssa.gov.za/publications/Report%2004-04-04/GDP%20benchmarking%202026%20(Media%20presentation).pdf
+    라이너 Rerank 로 후보 보고서 4건 순위 매김
+[3] gen_snip_754b8a153c8a.txt: 숫자 후보 1곳
+[3] gen_64d517f36512.txt: 숫자 후보 0곳
+[3] gen_snip_32d2afe46e8a.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.72) → 같음, 축별로 다름: 기간
+    걸린 시간 24.1초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.53, '검색': 6.34, '후보 찾기': 0.3, 'PDF 받기·글자': 2.57, '숫자 찾기': 0.0, '고르기·판정': 8.62, '표현 다름 후보': 3.26, '교차 확인(Decisions)': 0.51, '확인할 곳 안내': 0.0}
+
+===== 11/30 [무작위] 한국농촌경제연구소의 2025 농어촌서비스 이행실태 보고서에 따르면 전북지역 법정 마을 중 식품 판매시설이 있는 지역은 42%에
+[1] 라이너 모델 분해: {'기관': '한국농촌경제연구원', '보고서': '2025 농어촌서비스 이행실태 보고서', '숫자': '42%', '핵심어': ['식품 판매시설', '법정 마을'], '기준시점': '2025년', '기관누리집': 'krei.re.kr', '원어검색어': ''}
+    라이너 검색 '한국농촌경제연구원 2025 농어촌서비스 이행실태 보고서 식품 판매시설 법정 마을 42%' → 10건
+    라이너 검색 '42% 식품 판매시설 법정 마을 한국농촌경제연구원' → 10건
+    라이너 검색 '한국농촌경제연구원 식품 판매시설 보도자료' (일반 경로) → 10건
+    라이너 검색 '한국농촌경제연구원 2025 농어촌서비스 이행실태 보고서 2025년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:krei.re.kr filetype:pdf 2025 농어촌서비스 이행실태 보고서 2025년' (일반 경로) → 20건
+    라이너 검색 'site:krei.re.kr 식품 판매시설' (일반 경로) → 20건
+    라이너 검색 'site:krei.re.kr 법정 마을' (일반 경로) → 20건
+    라이너 검색 'site:krei.re.kr 2025 농어촌서비스 이행실태 보고서 2025년' (일반 경로) → 16건
+    라이너 검색 '식품 판매시설 2025년 통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: 한국농촌경제연구원 — gen_c681f30d2736.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.89
+    후보: 농어촌 서비스기준 점검·평가 — gen_fb70430ab60c.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.89
+    후보: 연구보고서 — gen_36477e417f67.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.44
+    후보: 2025 농어촌서비스기준 이행실태 점검·평가 — gen_52049b229c6a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 2024 농어촌서비스기준 이행실태 점검·평가 — gen_cabe52ba1157.txt, 2쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 2025 농어업인 삶의 질 향상 위원회 전문지원기관 연차보고서 — gen_ff6ee4a8e853.pdf, 97쪽, 기준시점 일치 0/1, 제목 비슷함 0.11
+    글자가 너무 적어 건너뜀(18자): https://www.krei.re.kr/committee/index.do
+    후보: 제4차 농어업인 삶의 질 향상 기본계획 종합평가 — gen_9aa7f9dedd25.pdf, 184쪽, 기준시점 일치 0/1, 제목 비슷함 0.11
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 1개
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳
+[3] gen_c681f30d2736.txt: 숫자 후보 0곳
+[3] gen_cabe52ba1157.txt: 숫자 후보 0곳
+[3] gen_36477e417f67.txt: 숫자 후보 0곳
+[3] gen_ff6ee4a8e853.pdf: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.10)
+[3] gen_9aa7f9dedd25.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fb70430ab60c.txt 직접 읽기(계산 확인도 동시에)
+    문장 속 다른 숫자 '20%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳
+[3] gen_c681f30d2736.txt: 숫자 후보 0곳
+[3] gen_cabe52ba1157.txt: 숫자 후보 0곳
+[3] gen_36477e417f67.txt: 숫자 후보 0곳
+[3] gen_ff6ee4a8e853.pdf: 숫자 후보 1곳
+[3] gen_9aa7f9dedd25.pdf: 숫자 후보 1곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fb70430ab60c.txt 직접 읽기(계산 확인도 동시에)
+    안내: 원문 위치 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(41.2초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '한국농촌경제연구원', '보고서': '2025 농어촌서비스기준 이행실태 점검·평가', '숫자': '42%', '핵심어': ['전북지역', '법정 마을', '식품 판매시설', '전북지역 법정마을', '시설 보유 비율'], '기준시점': '2025년', '기관누리집': 'krei.re.kr', '원어검색어': ''}
+    라이너 검색 '42% 전북지역 법정 마을 식품 판매시설 한국농촌경제연구원' → 10건
+    라이너 검색 '한국농촌경제연구원 2025 농어촌서비스기준 이행실태 점검·평가 전북지역 법정 마을 식품 판매시설 전북지역 법정마을 시설 보유 비율 42%' → 10건
+    라이너 검색 '한국농촌경제연구원 전북지역 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:krei.re.kr 법정 마을' (일반 경로) → 20건
+    라이너 검색 'site:krei.re.kr 전북지역' (일반 경로) → 20건
+    라이너 검색 '전북지역 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:krei.re.kr 2025 농어촌서비스기준 이행실태 점검·평가 2025년' (일반 경로) → 16건
+    라이너 검색 'site:krei.re.kr filetype:pdf 2025 농어촌서비스기준 이행실태 점검·평가 2025년' (일반 경로) → 16건
+    라이너 검색 '한국농촌경제연구원 2025 농어촌서비스기준 이행실태 점검·평가 2025년 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: 농어촌 서비스기준 점검·평가 — gen_fb70430ab60c.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 농어촌서비스기준 개선 방안 연구 — gen_e09bbf30a7eb.txt, 2쪽, 기준시점 일치 1/1, 제목 비슷함 0.53
+    후보: 2025 농어촌서비스기준 이행실태 점검·평가 — gen_52049b229c6a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 2025 농어업인 삶의 질 향상 위원회 전문지원기관 연차보고서 — gen_ff6ee4a8e853.pdf, 97쪽, 기준시점 일치 0/1, 제목 비슷함 0.07
+    후보: 연구보고서 — gen_36477e417f67.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.20
+    후보: 농어촌 서비스기준 점검·평가 — gen_b161710fc457.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 한국농촌경제연구원 — gen_c681f30d2736.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    글자가 너무 적어 건너뜀(18자): https://www.krei.re.kr/committee/index.do
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳
+[3] gen_b161710fc457.txt: 숫자 후보 0곳
+[3] gen_c681f30d2736.txt: 숫자 후보 0곳
+[3] gen_e09bbf30a7eb.txt: 숫자 후보 0곳
+[3] gen_36477e417f67.txt: 숫자 후보 0곳
+[3] gen_ff6ee4a8e853.pdf: 숫자 후보 3곳
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.10)
+    Deep Research 가 지목한 원 출처 2곳을 받아 직접 확인: ['https://www.krei.re.kr/krei/page/53?cmd=view&biblioId=545536', 'https://www.krei.re.kr/committee/page/427?cmd=view&pst=50587']
+[1] 라이너 모델 분해: {'기관': '한국농촌경제연구원', '보고서': '2025 농어촌서비스 이행실태 보고서', '숫자': '42%', '핵심어': ['식품 판매시설', '법정 마을'], '기준시점': '2025년', '기관누리집': 'krei.re.kr', '원어검색어': ''}
+    라이너 검색 '한국농촌경제연구원 2025 농어촌서비스 이행실태 보고서 식품 판매시설 법정 마을 42%' → 10건
+    라이너 검색 '42% 식품 판매시설 법정 마을 한국농촌경제연구원' → 10건
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_52049b229c6a.txt 직접 읽기(계산 확인도 동시에)
+    문장 속 다른 숫자 '20%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 6개
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳
+[3] gen_b161710fc457.txt: 숫자 후보 0곳
+[3] gen_c681f30d2736.txt: 숫자 후보 0곳
+[3] gen_e09bbf30a7eb.txt: 숫자 후보 0곳
+[3] gen_36477e417f67.txt: 숫자 후보 0곳
+[3] gen_ff6ee4a8e853.pdf: 숫자 후보 1곳
+    라이너 검색 '한국농촌경제연구원 식품 판매시설 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:krei.re.kr filetype:pdf 2025 농어촌서비스 이행실태 보고서 2025년' (일반 경로) → 20건
+    라이너 검색 '한국농촌경제연구원 2025 농어촌서비스 이행실태 보고서 2025년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '식품 판매시설 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:krei.re.kr 식품 판매시설' (일반 경로) → 20건
+    라이너 검색 'site:krei.re.kr 2025 농어촌서비스 이행실태 보고서 2025년' (일반 경로) → 16건
+    라이너 검색 'site:krei.re.kr 법정 마을' (일반 경로) → 20건
+[2] None 원 보고서 후보 20건
+    후보: 농어촌 서비스기준 점검·평가 — gen_fb70430ab60c.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.89
+    후보: 한국농촌경제연구원 — gen_c681f30d2736.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.89    후보: 연구보고서 — gen_36477e417f67.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.44
+    후보: 2025 농어촌서비스기준 이행실태 점검·평가 — gen_52049b229c6a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 2024 농어촌서비스기준 이행실태 점검·평가 — gen_cabe52ba1157.txt, 2쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 2025 농어업인 삶의 질 향상 위원회 전문지원기관 연차보고서 — gen_ff6ee4a8e853.pdf, 97쪽, 기준시점 일치 0/1, 제목 비슷함 0.11
+    후보: 인구감소 시대, 농촌 삶의 질 향상 정책 개선방안 연구 — gen_58384fd3d66d.pdf, 182쪽, 기준시점 일치 0/1, 제목 비슷함 0.11
+    글자가 너무 적어 건너뜀(18자): https://www.krei.re.kr/committee/index.do
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 1개
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳
+[3] gen_c681f30d2736.txt: 숫자 후보 0곳
+[3] gen_cabe52ba1157.txt: 숫자 후보 0곳
+[3] gen_36477e417f67.txt: 숫자 후보 0곳
+[3] gen_ff6ee4a8e853.pdf: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.10)
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_52049b229c6a.txt 직접 읽기(계산 확인도 동시에)
+[3] gen_58384fd3d66d.pdf: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.07)
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fb70430ab60c.txt 직접 읽기(계산 확인도 동시에)
+    문장 속 다른 숫자 '20%'가 후보 문서에 있어 그 숫자로 다시 대조
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_fb70430ab60c.txt: 숫자 후보 0곳
+[3] gen_52049b229c6a.txt: 숫자 후보 0곳
+[3] gen_c681f30d2736.txt: 숫자 후보 0곳
+[3] gen_cabe52ba1157.txt: 숫자 후보 0곳
+[3] gen_36477e417f67.txt: 숫자 후보 0곳
+[3] gen_ff6ee4a8e853.pdf: 숫자 후보 1곳
+[3] gen_58384fd3d66d.pdf: 숫자 후보 6곳
+    라이너 Rerank 로 숫자 후보 6곳 순위 매김 (1위 관련도 0.50)
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fb70430ab60c.txt 직접 읽기(계산 확인도 동시에)
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 1개
+    걸린 시간 100.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 6.97, '검색': 19.12, '후보 찾기': 0.9, 'PDF 받기·글자': 14.76, '숫자 찾기': 0.84, '고르기·판정': 43.09, '표현 다름 후보': 27.62, 'PDF 직접 읽기': 0.0, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 6.63}
+
+===== 12/30 [무작위] 지난 11일 아시아 에너지금융 싱크탱크 에너지전환연구소(Energy Shift Institute·ESI)는 보고서를 내고 한국
+[1] 라이너 모델 분해: {'기관': '에너지전환연구소', '보고서': '', '숫자': '4.1%', '핵심어': ['한국전력공사', '설비투자', '재생에너지', '재생에너지 비중'], '기준시점': '2026년', '기관누리집': '', '원어검색어': 'Energy Shift Institute KEPCO renewable energy capital expenditure 2026'}
+    라이너 검색 '4.1% 한국전력공사 설비투자 재생에너지 에너지전환연구소' → 10건
+    라이너 검색 '에너지전환연구소 한국전력공사 설비투자 재생에너지 재생에너지 비중 4.1%' → 10건
+    라이너 검색 'Energy Shift Institute' (일반 경로, 영어) → 10건
+    기관 누리집을 몰라 영문 이름 'Energy Shift Institute'으로 찾음: energyshift.institute
+    라이너 검색 'Energy Shift Institute KEPCO renewable energy capital expenditure 2026' (일반 경로, 영어) → 10건
+    라이너 검색 'site:energyshift.institute Energy Shift Institute KEPCO renewable energy capital expenditure 2026' (일반 경로, 영어) → 11건
+    라이너 검색 'site:energyshift.institute 설비투자' (일반 경로) → 10건
+    라이너 검색 'site:energyshift.institute 한국전력공사' (일반 경로) → 12건
+    라이너 검색 '에너지전환연구소 한국전력공사 설비투자 재생에너지 2026년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:energyshift.institute filetype:pdf 한국전력공사 설비투자 재생에너지 2026년' (일반 경로) → 1건
+    라이너 검색 '에너지전환연구소 한국전력공사 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:energyshift.institute 한국전력공사 설비투자 재생에너지 2026년' (일반 경로) → 0건
+    라이너 검색 '한국전력공사 2026년 통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 11건
+    후보: Asia Energy Finance: Navigating the Tran — gen_ec987968bb77.txt, 9쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: energyshift.institute 첫 화면 — gen_ec987968bb77.txt, 9쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 국내 저탄소 에너지 확대 및 조달을 위한 과제와 잠재적 해결 ... — gen_2337f74d18fc.pdf, 16쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 제10차 전력수급기본계획 — gen_d3c89e8b7e2f.pdf, 113쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 재생에너지 활성화 및 에너지전환 기반 조성 — gen_5faf23e38915.pdf, 30쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2026년도 전력산업기반조성사업 시행계획 — gen_73087e747a4c.pdf, 68쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 신·재생에너지 발전비중 최초로 10% 돌파 — gen_390305d6b20c.pdf, 5쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Media Coverage of ESI Views: Insights an — gen_9e1b1da41e37.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_ec987968bb77.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.97) → 같음
+    걸린 시간 19.4초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.6, '검색': 7.43, '후보 찾기': 0.29, 'PDF 받기·글자': 3.7, '숫자 찾기': 0.26, '고르기·판정': 4.57, '교차 확인(Decisions)': 0.52, '확인할 곳 안내': 0.0}
+
+===== 13/30 [무작위] 시장조사기업 가트너의 글로벌 반도체 시장분석 보고서에 따르면, 엔비디아는 데이터센터용 AI 가속기 시장에서 80% 이상 점유율
+[1] 라이너 모델 분해: {'기관': '가트너', '보고서': '글로벌 반도체 시장분석 보고서', '숫자': '80% 이상', '핵심어': ['데이터센터', 'AI 가속기', '시장점유율', '시장 점유율'], '기준시점': '', '기관누리집': 'gartner.com', '원어검색어': 'Gartner global semiconductor market analysis Nvidia data center AI accelerator market share'}
+    라이너 검색 '가트너 글로벌 반도체 시장분석 보고서 데이터센터 AI 가속기 시장점유율 시장 점유율 80% 이상' → 10건
+    라이너 검색 '80% 이상 데이터센터 AI 가속기 시장점유율 가트너' → 10건
+    라이너 검색 'site:gartner.com Gartner global semiconductor market analysis Nvidia data center AI accelerator market share' (일반 경로, 영어) → 19건
+    라이너 검색 '가트너 글로벌 반도체 시장분석 보고서  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'Gartner global semiconductor market analysis Nvidia data center AI accelerator market share' (일반 경로, 영어) → 10건
+    라이너 검색 '데이터센터  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:gartner.com AI 가속기' (일반 경로) → 10건
+    라이너 검색 'site:gartner.com 데이터센터' (일반 경로) → 18건
+    라이너 검색 'site:gartner.com filetype:pdf 글로벌 반도체 시장분석 보고서' (일반 경로) → 1건
+    라이너 검색 'site:gartner.com 글로벌 반도체 시장분석 보고서' (일반 경로) → 12건
+    라이너 검색 '가트너 데이터센터 보도자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_624cada297e9.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_4509d522e81a.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Semiconductors and Electronics, Worldwid — gen_7eca56573658.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_cc96adb0969f.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Forecasts Worldwide Semiconducto — gen_5a6c9d69dad6.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Market Share Analysis: Semiconductors, W — gen_b79d8f8a4dc2.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    자동 접속이 막혀 라이너 검색 요약 글로 대조: https://www.gartner.com/en/documents/6161223
+    후보: Forecast Analysis: Semiconductors and El — gen_f537710feb44.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    자동 접속이 막혀 라이너 검색 요약 글로 대조: https://investor.gartner.com/static-files/5daec00a-8331-443e-9238-9f4e5deb965c
+    후보: united states - Investor Relations | Gar — gen_7c04ad860d46.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_b79d8f8a4dc2.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_b79d8f8a4dc2.txt: 숫자 후보 0곳
+[3] gen_cc96adb0969f.txt: 숫자 후보 0곳
+[3] gen_5a6c9d69dad6.txt: 숫자 후보 0곳
+[3] gen_4509d522e81a.txt: 숫자 후보 0곳
+[3] gen_624cada297e9.txt: 숫자 후보 0곳
+[3] gen_7eca56573658.txt: 숫자 후보 0곳
+[3] gen_f537710feb44.txt: 숫자 후보 0곳
+[3] gen_7c04ad860d46.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_b79d8f8a4dc2.txt 직접 읽기(계산 확인도 동시에)
+    안내: 원문 위치 — 링크 2개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(10.2초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '가트너', '보고서': '', '숫자': '80% 이상', '핵심어': ['데이터센터', 'AI 가속기', '시장 점유율', '엔비디아', '시장점유율'], '기준시점': '', '기관누리집': 'gartner.com', '원어검색어': 'Gartner global semiconductor data center AI accelerator Nvidia market share'}
+    라이너 검색 '가트너 데이터센터 AI 가속기 시장 점유율 엔비디아 시장점유율 80% 이상' → 10건
+    라이너 검색 '80% 이상 데이터센터 AI 가속기 시장 점유율 가트너' → 10건
+    라이너 검색 '가트너 데이터센터 보도자료' (일반 경로) → 10건
+    라이너 검색 'Gartner global semiconductor data center AI accelerator Nvidia market share' (일반 경로, 영어) → 10건
+    라이너 검색 'site:gartner.com 데이터센터 AI 가속기 시장 점유율' (일반 경로) → 10건
+    라이너 검색 'site:gartner.com Gartner global semiconductor data center AI accelerator Nvidia market share' (일반 경로, 영어) → 19건
+    라이너 검색 'site:gartner.com AI 가속기' (일반 경로) → 10건
+    라이너 검색 'site:gartner.com filetype:pdf 데이터센터 AI 가속기 시장 점유율' (일반 경로) → 0건
+    라이너 검색 'site:gartner.com 데이터센터' (일반 경로) → 18건
+    라이너 검색 '데이터센터  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '가트너 데이터센터 AI 가속기 시장 점유율  filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: Market Share Analysis: Semiconductors, W — gen_b79d8f8a4dc2.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_4509d522e81a.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_cc96adb0969f.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Identifies the Companies to Beat — gen_c0e3f8338df2.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Forecast Analysis: AI Semiconductors, Wo — gen_fda7ba0f07ff.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Over $3.5 Trillion of AI In — gen_2d0cdd147321.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Forecasts Worldwide AI Chips Rev — gen_0a3d5cff3c62.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    자동 접속이 막혀 라이너 검색 요약 글로 대조: https://www.gartner.com/en/newsroom/press-releases/2026-07-20-gartner-forecasts-worldwide-ai-platforms-and-models-market-to-grow-63-percent-in-2026
+    후보: Gartner Forecasts Worldwide AI Platforms — gen_e526356b4e4d.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_b79d8f8a4dc2.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_b79d8f8a4dc2.txt: 숫자 후보 0곳
+[3] gen_fda7ba0f07ff.txt: 숫자 후보 0곳
+[3] gen_c0e3f8338df2.txt: 숫자 후보 0곳
+[3] gen_0a3d5cff3c62.txt: 숫자 후보 0곳
+[3] gen_cc96adb0969f.txt: 숫자 후보 0곳
+[3] gen_4509d522e81a.txt: 숫자 후보 0곳
+[3] gen_e526356b4e4d.txt: 숫자 후보 0곳
+[3] gen_2d0cdd147321.txt: 숫자 후보 1곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_b79d8f8a4dc2.txt 직접 읽기(계산 확인도 동시에)
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.fiercesensors.com/electronics/nvidia-h']
+    Deep Research 가 지목한 원 출처 3곳을 받아 직접 확인: ['https://www.gartner.com/en/newsroom/press-releases/2026-04-0', 'https://www.gartner.com/en/documents/5641891', 'https://www.semi.org/sites/semi.org/files/2025-09/1%20%EA%B9']
+[1] 라이너 모델 분해: {'기관': '가트너', '보고서': '글로벌 반도체 시장분석 보고서', '숫자': '80% 이상', '핵심어': ['데이터센터', 'AI 가속기', '시장 점유율'], '기준시점': '', '기관누리집': 'gartner.com', '원어검색어': 'Gartner global semiconductor market analysis Nvidia data center AI accelerator market share'}
+    라이너 검색 '가트너 글로벌 반도체 시장분석 보고서 데이터센터 AI 가속기 시장 점유율 80% 이상' → 10건
+    라이너 검색 '80% 이상 데이터센터 AI 가속기 시장 점유율 가트너' → 10건
+    라이너 검색 'site:gartner.com Gartner global semiconductor market analysis Nvidia data center AI accelerator market share' (일반 경로, 영어) → 19건
+    라이너 검색 '가트너 글로벌 반도체 시장분석 보고서  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'Gartner global semiconductor market analysis Nvidia data center AI accelerator market share' (일반 경로, 영어) → 10건
+    라이너 검색 '데이터센터  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '가트너 데이터센터 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:gartner.com AI 가속기' (일반 경로) → 10건
+    라이너 검색 'site:gartner.com 글로벌 반도체 시장분석 보고서' (일반 경로) → 11건
+    라이너 검색 'site:gartner.com filetype:pdf 글로벌 반도체 시장분석 보고서' (일반 경로) → 1건
+    라이너 검색 'site:gartner.com 데이터센터' (일반 경로) → 17건
+[2] None 원 보고서 후보 22건
+    후보: Forecast Analysis: AI Semiconductors, Wo — gen_fda7ba0f07ff.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Forecasts Worldwide Semiconducto — gen_5a6c9d69dad6.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Market Share Analysis: Semiconductors, W — gen_b79d8f8a4dc2.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Identifies the Companies to Beat — gen_c0e3f8338df2.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_4509d522e81a.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Gartner Says Worldwide Semiconductor Rev — gen_cc96adb0969f.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    자동 접속이 막혀 라이너 검색 요약 글로 대조: https://www.semi.org/sites/semi.org/files/2025-09/1%20%EA%B9%80%EC%88%98%EA%B2%B8_IDC%20Semiconductor%20Market%20Outlook.pdf
+    후보: IDC Semiconductor Market Outlook — gen_2abc42f0eef7.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    자동 접속이 막혀 라이너 검색 요약 글로 대조: https://www.gartner.com/en/newsroom/press-releases/2026-04-08-gartner-forecasts-worldwide-semiconductor-revenue-to-exceed-us-dollars-one-point-3-trillion-in-2026
+    후보: Gartner Forecasts Worldwide Semiconducto — gen_f874f972fe79.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_2abc42f0eef7.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_2abc42f0eef7.txt: 숫자 후보 0곳
+[3] gen_b79d8f8a4dc2.txt: 숫자 후보 0곳
+[3] gen_fda7ba0f07ff.txt: 숫자 후보 0곳
+[3] gen_c0e3f8338df2.txt: 숫자 후보 0곳
+[3] gen_cc96adb0969f.txt: 숫자 후보 0곳
+[3] gen_5a6c9d69dad6.txt: 숫자 후보 0곳
+[3] gen_4509d522e81a.txt: 숫자 후보 0곳
+[3] gen_f874f972fe79.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_2abc42f0eef7.txt 직접 읽기(계산 확인도 동시에)
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 3개
+    걸린 시간 91.7초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.85, '검색': 18.45, '후보 찾기': 0.89, 'PDF 받기·글자': 4.24, '숫자 찾기': 0.0, 'PDF 직접 읽기': 0.0, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '고르기·판정': 3.74, '표현 다름 후보': 3.43, '라이너 Deep Research': 63.01}
+
+===== 14/30 [무작위] 15일 고용노동부·금융감독원의 ‘2025년 퇴직연금 투자 백서'에 따르면 지난해 퇴직연금 전체 수익률은 6.47%였다.
+[1] 라이너 모델 분해: {'기관': '고용노동부·금융감독원', '보고서': '2025년 퇴직연금 투자 백서', '숫자': '6.47%', '핵심어': ['퇴직연금', '전체 수익률'], '기준시점': '2024년', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '6.47% 퇴직연금 전체 수익률 고용노동부·금융감독원' → 10건
+    라이너 검색 '고용노동부·금융감독원 2025년 퇴직연금 투자 백서 퇴직연금 전체 수익률 6.47%' → 10건
+    라이너 검색 '고용노동부·금융감독원 퇴직연금 보도자료' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 2025년 퇴직연금 투자 백서 2024년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 퇴직연금' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 전체 수익률' (일반 경로) → 10건
+    라이너 검색 '퇴직연금 2024년 통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 2건
+    후보: 퇴직연금 수익률 제고와 TDF의 역할* — gen_850bd659bf09.pdf, 6쪽, 기준시점 일치 1/1, 제목 비슷함 0.57
+    후보: 년 우리나라 퇴직연금 투자 백서 2024 — gen_477de8682a2c.pdf, 30쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    라이너 Rerank 로 후보 보고서 2건 순위 매김
+[3] gen_477de8682a2c.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    30쪽 중 12쪽만 잘라 보냄: [1, 2, 3, 4, 5, 6, 7, 8, 11, 13, 22, 23]
+[3] gen_477de8682a2c.pdf: 숫자 후보 0곳
+[3] gen_850bd659bf09.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_477de8682a2c.pdf 직접 읽기(계산 확인도 동시에)
+    PDF 전체(30쪽)도 동시에 보냄
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 13개
+    게이트웨이 모델: 12쪽 읽기에서 못 찾음
+    게이트웨이 모델: 30쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 3개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(28.2초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+    보고서 이름을 기사 따옴표 속 제목으로 고정: '2025년 퇴직연금 투자 백서' (모델: '2025년 우리나라 퇴직연금 투자 백서')
+[1] 라이너 모델 분해: {'기관': '고용노동부·금융감독원', '보고서': '2025년 퇴직연금 투자 백서', '숫자': '6.47%', '핵심어': ['퇴직연금', '전체 수익률'], '기준시점': '2025년', '기관누리집': 'moel.go.kr, fss.or.kr', '원어검색어': ''}
+    Deep Research 가 지목한 원 출처 1곳을 받아 직접 확인: ['https://www.moel.go.kr/common/downloadFile.do?file_seq=20260']
+    라이너 검색 '6.47% 퇴직연금 전체 수익률 고용노동부·금융감독원' → 10건
+    라이너 검색 '고용노동부·금융감독원 2025년 퇴직연금 투자 백서 퇴직연금 전체 수익률 6.47%' → 10건
+[1] 라이너 모델 분해: {'기관': '고용노동부·금융감독원', '보고서': '2025년 퇴직연금 투자 백서', '숫자': '6.47%', '핵심어': ['퇴직연금', '전체 수익률'], '기준시점': '2025년', '기관누리집': 'moel.go.kr, fss.or.kr', '원어검색어': ''}
+    라이너 검색 '고용노동부·금융감독원 퇴직연금 보도자료' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 전체 수익률' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 퇴직연금' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 2025년 퇴직연금 투자 백서 2025년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 2025년 퇴직연금 투자 백서 퇴직연금 전체 수익률 6.47%' → 10건
+    라이너 검색 '퇴직연금 2025년 통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 5건
+    후보: 년 우리나라 퇴직연금 투자 백서 2024 — gen_477de8682a2c.pdf, 30쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    후보: 퇴직연금 및 연금계좌 적립 확대를 위한 정책 제언 — gen_039a34641bed.pdf, 81쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    후보: <2025년 우리나라 퇴직연금 투자 백서> — gen_b3accc1e1272.pdf, 29쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    라이너 검색 '6.47% 퇴직연금 전체 수익률 고용노동부·금융감독원' → 10건
+    후보: 퇴직연금 수익률의 특성과 시사점 — gen_855c1b54831b.pdf, 20쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    후보: 2020년도 퇴직연금 적립금 운용현황 통계 — gen_00c1a39ab10e.pdf, 22쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    라이너 검색 '고용노동부·금융감독원 퇴직연금 보도자료' (일반 경로) → 10건
+    라이너 검색 '퇴직연금 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 Rerank 로 후보 보고서 5건 순위 매김
+[3] gen_b3accc1e1272.pdf: 숫자 후보 11곳
+    라이너 검색 '고용노동부·금융감독원 퇴직연금' (일반 경로) → 10건
+    라이너 Rerank 로 숫자 후보 11곳 순위 매김 (1위 관련도 0.83)
+    라이너 검색 '고용노동부·금융감독원 전체 수익률' (일반 경로) → 10건
+    라이너 검색 '고용노동부·금융감독원 2025년 퇴직연금 투자 백서 2025년 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 5건
+    후보: <2025년 우리나라 퇴직연금 투자 백서> — gen_b3accc1e1272.pdf, 29쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    후보: 퇴직연금 수익률 제고와 TDF의 역할* — gen_850bd659bf09.pdf, 6쪽, 기준시점 일치 1/1, 제목 비슷함 0.57
+    후보: 년 우리나라 퇴직연금 투자 백서 2024 — gen_477de8682a2c.pdf, 30쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    후보: 2020년도 퇴직연금 적립금 운용현황 통계 — gen_00c1a39ab10e.pdf, 22쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    후보: <2025년 우리나라 퇴직연금 투자 백서> — gen_b6e87896c856.pdf, 29쪽, 기준시점 일치 1/1, 제목 비슷함 1.00
+    라이너 Rerank 로 후보 보고서 5건 순위 매김
+[3] gen_b6e87896c856.pdf: 숫자 후보 11곳
+    라이너 Rerank 로 숫자 후보 11곳 순위 매김 (1위 관련도 0.83)
+    라이너 Decisions 교차 확인: 일치 (확신도 0.46) → 같음
+    라이너 Decisions 교차 확인: 일치 (확신도 0.48) → 같음
+    걸린 시간 52.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 8.13, '검색': 22.23, '후보 찾기': 0.9, 'PDF 받기·글자': 5.03, '숫자 찾기': 0.16, 'PDF 직접 읽기': 15.61, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 0.0, '고르기·판정': 15.93, '교차 확인(Decisions)': 0.98}
+
+===== 15/30 [무작위] 전국대학생연대 경주지부 준비위원회(이하 경주지부)는 지난 11일 오후 경주시청 앞에서 기자회견을 열고 대학생 306명이 참여한
+[1] 라이너 모델 분해: {'기관': '전국대학생연대 경주지부 준비위원회', '보고서': '대학생 7대 요구안 투표', '숫자': '306명', '핵심어': ['대학생', '요구안 투표', '참여자', '경주지역 대학생', '정책 요구안'], '기준시점': '', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '306명 대학생 요구안 투표 참여자 전국대학생연대 경주지부 준비위원회' → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 7대 요구안 투표 대학생 요구안 투표 참여자 경주지역 대학생 정책 요구안 306명' → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 요구안 투표' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 7대 요구안 투표  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '대학생  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 보도자료' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '대학생 7대 요구안 투표' (2025-11-12~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '대학생 요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '대학생' (2026-09-13~2026-11-13) → 53건
+    정책브리핑 설명자료 검색 '대학생 7대 요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 설명자료 검색 '대학생 요구안 투표' (2026-09-13~2026-11-13) → 0건
+[2] None 원 보고서 후보 7건
+    후보: 「2026 인도-인권 상호대화」 3차 행사 개최 — gen_bb1b8f386eda.txt, 2쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 농구 관람부터 고충상담, 고용정보까지 한 번에! 달리는 국민신문고, 창원 — gen_dc7a4814f15a.txt, 3쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 공익광고로 우리 사회의 선을 잇는다 — gen_f6bc7e3b19d8.txt, 4쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 노동세계와 노동문화 — gen_64c63a221454.pdf, 490쪽, 기준시점 일치 0/0, 제목 비슷함 0.25
+    후보: 첫단추꿰다 — gen_fc1b44a1c93c.pdf, 20쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 노동조합 내부 민주주의와 현장조직 — gen_b547c7412c66.pdf, 240쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    첨부파일 글자 더함: 261113 조간 (보도) AI 안전 국민 모니터링단 「AI 안전 지킴이」 출범(수정).hwpx (2534자)
+    후보: 인공지능 안전 국민 점검단 「인공지능 안전 지킴이」 출범 — gen_8414c1e377b4.txt, 2쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_64c63a221454.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_64c63a221454.pdf: 숫자 후보 0곳
+[3] gen_dc7a4814f15a.txt: 숫자 후보 0곳
+[3] gen_f6bc7e3b19d8.txt: 숫자 후보 0곳
+[3] gen_8414c1e377b4.txt: 숫자 후보 0곳
+[3] gen_bb1b8f386eda.txt: 숫자 후보 0곳
+[3] gen_fc1b44a1c93c.pdf: 숫자 후보 0곳
+[3] gen_b547c7412c66.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_64c63a221454.pdf 직접 읽기(계산 확인도 동시에)
+    490쪽 중 13쪽만 잘라 보냄: [1, 2, 22, 208, 218, 221, 244, 246, 369, 408, 439, 440, 471]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 13쪽 읽기에서 못 찾음
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(26.9초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '전국대학생연대 경주지부 준비위원회', '보고서': '대학생 7대 요구안 투표', '숫자': '306명', '핵심어': ['경주지역 대학생', '요구안 투표', '참여자 수', '참여자'], '기준시점': '2026년 10월', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '306명 경주지역 대학생 요구안 투표 참여자 수 전국대학생연대 경주지부 준비위원회' → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 7대 요구안 투표 경주지역 대학생 요구안 투표 참여자 수 참여자 306명' → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 요구안 투표' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 경주지역 대학생' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 경주지역 대학생 보도자료' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 7대 요구안 투표 2026년 10월 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '경주지역 대학생 2026년 10월 통계 발표 자료' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '대학생 7대 요구안 투표' (2025-11-12~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '경주지역 대학생 요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '경주지역 대학생' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '참여자 수' (2026-09-13~2026-11-13) → 89건
+    정책브리핑 설명자료 검색 '대학생 7대 요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 설명자료 검색 '경주지역 대학생 요구안 투표' (2026-09-13~2026-11-13) → 0건
+[2] None 원 보고서 후보 8건
+    후보: 산림청, '산림보호 한걸음, 푸른 숲의 밑거름'유관기관 합동 온라인 캠페 — gen_bdf05d245595.txt, 2쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 방위사업 자료열람, 더 넓은 공간에서 더 여유롭게 — gen_9176c6818999.txt, 2쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 북부지방산림청, 11월 숲가꾸기 체험행사 개최 — gen_717164cf9ec7.txt, 2쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 부여국유림관리소, 가을철 영농부산물 파쇄 캠페인 실시 — gen_b053e9d9fce7.txt, 1쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 2025년 자체평가 결과보고서 — gen_dbe97178ba09.pdf, 1167쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 업 무 연 락 - 영주시의회 — gen_c20d90d07136.pdf, 597쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 발간사 | 1 - 증평군의회 — gen_459a31d6958c.pdf, 380쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 한국물리학회 발자취 (2002-2021) — gen_c15f7dfc5cd5.pdf, 878쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_bdf05d245595.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_bdf05d245595.txt: 숫자 후보 0곳
+[3] gen_9176c6818999.txt: 숫자 후보 0곳
+[3] gen_717164cf9ec7.txt: 숫자 후보 0곳
+[3] gen_dbe97178ba09.pdf: 숫자 후보 0곳
+[3] gen_c20d90d07136.pdf: 숫자 후보 0곳
+[3] gen_459a31d6958c.pdf: 숫자 후보 1곳
+[3] gen_c15f7dfc5cd5.pdf: 숫자 후보 0곳
+[3] gen_b053e9d9fce7.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_bdf05d245595.txt 직접 읽기(계산 확인도 동시에)
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.xn--oi2b09s4ud8oc7zo.com/news/article.', 'https://www.gjfocus.co.kr/news/articleView.html?id', 'https://www.gjfocus.co.kr/news/articleView.html?id', 'https://www.hidomin.com/news/articleView.html?idxn']
+    Deep Research 가 지목한 원 출처 0곳을 받아 직접 확인: []
+[1] 라이너 모델 분해: {'기관': '전국대학생연대 경주지부 준비위원회', '보고서': '대학생 7대 요구안 투표', '숫자': '306명', '핵심어': ['대학생', '요구안 투표', '참여자', '경주지역 대학생', '정책 요구안 투표'], '기준시점': '', '기관누리집': '', '원어검색어': ''}
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 7대 요구안 투표 대학생 요구안 투표 참여자 경주지역 대학생 정책 요구안 투표 306명' → 10건
+    라이너 검색 '306명 대학생 요구안 투표 참여자 전국대학생연대 경주지부 준비위원회' → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 요구안 투표' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 보도자료' (일반 경로) → 10건
+    라이너 검색 '대학생  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '전국대학생연대 경주지부 준비위원회 대학생 7대 요구안 투표  filetype:pdf' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '대학생 7대 요구안 투표' (2025-11-12~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '대학생 요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 보도자료 검색 '대학생' (2026-09-13~2026-11-13) → 53건
+    정책브리핑 설명자료 검색 '대학생 7대 요구안 투표' (2026-09-13~2026-11-13) → 0건
+    정책브리핑 설명자료 검색 '대학생 요구안 투표' (2026-09-13~2026-11-13) → 0건
+[2] None 원 보고서 후보 7건
+    후보: 인공지능 안전 국민 점검단 「인공지능 안전 지킴이」 출범 — gen_8414c1e377b4.txt, 2쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 공익광고로 우리 사회의 선을 잇는다 — gen_f6bc7e3b19d8.txt, 4쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 「2026 인도-인권 상호대화」 3차 행사 개최 — gen_bb1b8f386eda.txt, 2쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 농구 관람부터 고충상담, 고용정보까지 한 번에! 달리는 국민신문고, 창원 — gen_dc7a4814f15a.txt, 3쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 노동조합 내부 민주주의와 현장조직 — gen_b547c7412c66.pdf, 240쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 노동세계와 노동문화 — gen_64c63a221454.pdf, 490쪽, 기준시점 일치 0/0, 제목 비슷함 0.25
+    후보: 첫단추꿰다 — gen_fc1b44a1c93c.pdf, 20쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_64c63a221454.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_64c63a221454.pdf: 숫자 후보 0곳
+[3] gen_dc7a4814f15a.txt: 숫자 후보 0곳
+[3] gen_f6bc7e3b19d8.txt: 숫자 후보 0곳
+[3] gen_8414c1e377b4.txt: 숫자 후보 0곳
+[3] gen_bb1b8f386eda.txt: 숫자 후보 0곳
+[3] gen_fc1b44a1c93c.pdf: 숫자 후보 0곳
+[3] gen_b547c7412c66.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_64c63a221454.pdf 직접 읽기(계산 확인도 동시에)
+    490쪽 중 13쪽만 잘라 보냄: [1, 2, 22, 208, 218, 221, 244, 246, 369, 408, 439, 440, 471]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 13쪽 읽기에서 못 찾음
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    걸린 시간 90.6초 — 단계별 {'입구 필터': 1.58, '문장 분해': 7.39, '검색': 17.47, '후보 찾기': 4.78, 'PDF 받기·글자': 12.26, '숫자 찾기': 1.8, 'PDF 직접 읽기': 28.61, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '고르기·판정': 4.04, '표현 다름 후보': 0.0, '라이너 Deep Research': 30.89}
+
+===== 16/30 [무작위] 한국사회여론연구소(KSOI, 9~10일) 조사에서는 찬성 37.3%, 반대 45.3%였다.
+[1] 라이너 모델 분해: {'기관': '한국사회여론연구소', '보고서': '', '숫자': '45.3%', '핵심어': ['조작기소 특검법', '반대 응답'], '기준시점': '2026년 11월 9~10일', '기관누리집': 'ksoi.org', '원어검색어': ''}
+    라이너 검색 '45.3% 조작기소 특검법 반대 응답 한국사회여론연구소' → 10건
+    라이너 검색 '한국사회여론연구소 조작기소 특검법 반대 응답 45.3%' → 10건
+    라이너 검색 'site:ksoi.org 조작기소 특검법' (일반 경로) → 10건
+    라이너 검색 'site:ksoi.org 조작기소 특검법 반대 응답 2026년 11월 9~10일' (일반 경로) → 10건
+    라이너 검색 'site:ksoi.org filetype:pdf 조작기소 특검법 반대 응답 2026년 11월 9~10일' (일반 경로) → 10건
+    라이너 검색 'site:ksoi.org 반대 응답' (일반 경로) → 19건
+    라이너 검색 '조작기소 특검법 2026년 11월 9~10일 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '한국사회여론연구소 조작기소 특검법 반대 응답 2026년 11월 9~10일 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '한국사회여론연구소 조작기소 특검법 보도자료' (일반 경로) → 10건
+    여론조사심의위 등록 검색(조사기관 '한국사회여론연구소', 의뢰자 '', 2026-10-23~2026-11-13) → 2건
+[2] None 원 보고서 후보 16건
+    후보: 언론보도 - 기사 — gen_e611fab88b78.txt, 1쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: < 6월 3주차 > 포털 뉴스편집권 폐지 — gen_4ca5bb00cfd7.txt, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 언론보도 - 기사 — gen_snip_e611fab88b78.txt, 1쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: <12월 4주차> 박근혜 전 대통령 사면 — gen_6b2a3d075b9b.txt, 1쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: [2019년 4월 정례조사] 패스트트랙 지정 법안 관련 — gen_b35dcfb556f3.txt, 2쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 여론조사 등록 19589 — 261028_결과보고서_KSOI_34차 정기 — gen_7db39d2cc590.pdf, 37쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 여론조사 등록 19609 — 261111_결과보고서_KSOI_35차 정기 — gen_22b6c4299cb7.pdf, 37쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    글자가 너무 적어 건너뜀(0자): http://www.ksoi.org/logout.cm?back_url=LzMzLz9xPVlUb3lPbnR6T2pFeU9pSnJaWGwzYjNKa1gzUjVjR1VpTzNNNk16b2lZV3hzSWp0ek9qUTZJbkJoWjJVaU8yazZNVEE3ZlElM0QlM0QmYm1vZGU9dmlldyZpZHg9NTYwNzY4MyZ0PWJvYXJk
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_snip_e611fab88b78.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.97) → 같음
+    걸린 시간 17.9초 — 단계별 {'입구 필터': 0.0, '문장 분해': 3.11, '검색': 7.4, '후보 찾기': 1.1, 'PDF 받기·글자': 1.42, '숫자 찾기': 0.07, '고르기·판정': 4.26, '교차 확인(Decisions)': 0.41, '확인할 곳 안내': 0.0}
+
+===== 17/30 [무작위] 예일대 예산연구소가 지난 7월 발표한 '현행 세제에서 AI의 미래는 어떻게 전개되나' 보고서에 따르면 AI가 연 3.3% 성장
+[1] 라이너 모델 분해: {'기관': 'The Budget Lab at Yale', '보고서': '현행 세제에서 AI의 미래는 어떻게 전개되나', '숫자': '2160억달러', '핵심어': ['연방 세수 증가분', 'AI 고성장 시나리오'], '기준시점': '2030년', '기관누리집': 'budgetlab.yale.edu', '원어검색어': "Yale Budget Lab How Will AI's Future Unfold Under the Current Tax Code federal revenue 2030"}
+    라이너 검색 '2160억달러 연방 세수 증가분 AI 고성장 시나리오 The Budget Lab at Yale' → 10건
+    라이너 검색 'The Budget Lab at Yale 현행 세제에서 AI의 미래는 어떻게 전개되나 연방 세수 증가분 AI 고성장 시나리오 2160억달러' → 10건
+    라이너 검색 'site:budgetlab.yale.edu filetype:pdf 현행 세제에서 AI의 미래는 어떻게 전개되나 2030년' (일반 경로) → 1건
+    라이너 검색 '연방 세수 증가분 2030년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:budgetlab.yale.edu 현행 세제에서 AI의 미래는 어떻게 전개되나 2030년' (일반 경로) → 10건
+    라이너 검색 'Yale Budget Lab How Will AI's Future Unfold Under the Current Tax Code federal revenue 2030' (일반 경로, 영어) → 10건
+    라이너 검색 'The Budget Lab at Yale 현행 세제에서 AI의 미래는 어떻게 전개되나 2030년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:budgetlab.yale.edu 연방 세수 증가분' (일반 경로) → 10건
+    라이너 검색 'site:budgetlab.yale.edu AI 고성장 시나리오' (일반 경로) → 10건
+    라이너 검색 'The Budget Lab at Yale 연방 세수 증가분 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:budgetlab.yale.edu Yale Budget Lab How Will AI's Future Unfold Under the Current Tax Code federal revenue 2030' (일반 경로, 영어) → 19건
+[2] None 원 보고서 후보 20건
+    후보: How potential AI futures would play out  — gen_snip_cd91dbe3d69d.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.06
+    후보: How potential AI futures interact with t — gen_f227b4a32068.txt, 94쪽, 기준시점 일치 0/1, 제목 비슷함 0.06
+    후보: How potential AI futures would play out  — gen_ef640c1dc9e4.txt, 139쪽, 기준시점 일치 1/1, 제목 비슷함 0.06
+    후보: Artificial Intelligence | The Budget Lab — gen_584a9cd3445c.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.06
+    후보: Taxes | The Budget Lab - Yale University — gen_b93236bc6dfa.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: How potential AI futures would play out  — gen_cd91dbe3d69d.pdf, 22쪽, 기준시점 일치 1/1, 제목 비슷함 0.06
+    후보: How potential AI futures interact with t — gen_1e3790598a17.pdf, 12쪽, 기준시점 일치 0/1, 제목 비슷함 0.06
+    기관 누리집에서 핵심어가 맞는 글을 이어 읽음: Scores November 20, 2025 Budgetary Effects of Federal Unemployment Tax Act Refor
+    기관 누리집에서 핵심어가 맞는 글을 이어 읽음: Scores April 8, 2025 The Potential Impact of IRS-ICE Data Sharing on Tax Complia
+    후보: Taxes | The Budget Lab - Yale University — gen_f94276527294.txt, 6쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_ef640c1dc9e4.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_ef640c1dc9e4.txt: 숫자 후보 0곳
+[3] gen_cd91dbe3d69d.pdf: 숫자 후보 0곳
+[3] gen_584a9cd3445c.txt: 숫자 후보 0곳
+[3] gen_snip_cd91dbe3d69d.txt: 숫자 후보 1곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 1개
+    라이너 Decisions 교차 확인: 일치 (확신도 0.62) → 같음, 축별로 다름: 기간·단위
+    걸린 시간 26.4초 — 단계별 {'입구 필터': 0.0, '문장 분해': 3.79, '검색': 8.52, '후보 찾기': 0.32, 'PDF 받기·글자': 5.56, '숫자 찾기': 0.8, '고르기·판정': 6.44, '교차 확인(Decisions)': 0.47, '확인할 곳 안내': 0.0}
+
+===== 18/30 [무작위] 통계청 자료에 따르면 2024년 기준 전국 주택의 28.0%가 준공 후 30년 이상 된 주택이며, 2026년 기준 욕실 시장 
+[1] 라이너 모델 분해: {'기관': '통계청', '보고서': '', '숫자': '28.0%', '핵심어': ['전국 주택', '준공 후 30년 이상 주택', '노후 주택 비율'], '기준시점': '2024년', '기관누리집': 'kostat.go.kr', '원어검색어': ''}
+    발간 목록 후보: 2024년 주택소유통계 결과
+    발간 목록 후보: 2025 인구주택총조사 100세 이상 고령자조사 집계 결과
+    라이너 검색 'site:mods.go.kr filetype:pdf 전국 주택 준공 후 30년 이상 주택 2024년' → 10건
+    라이너 검색 '통계청 전국 주택 준공 후 30년 이상 주택 노후 주택 비율 28.0%' → 10건
+    라이너 검색 '28.0% 전국 주택 준공 후 30년 이상 주택 노후 주택 비율 통계청' → 10건
+    라이너 검색 'site:mods.go.kr 전국 주택 준공 후 30년 이상 주택 2024년 전국 주택 준공 후 30년 이상 주택 노후 주택 비율' → 10건
+    라이너 검색 'site:mods.go.kr 전국 주택 준공 후 30년 이상 주택 전국 주택 준공 후 30년 이상 주택' (최근 한 달) → 10건
+[2] 국가데이터처 원 보고서 후보 16건
+    후보: 한국의 사회동향 2025 — gen_f61a269cf9bc.pdf, 13쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 한국의 사회동향 2025 — gen_8257e44749a8.pdf, 11쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 2024년 주택소유통계 결과 — mods_439298.pdf, 65쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 2024년 주요업무 추진계획 — gen_44b1c6ec5860.pdf, 26쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: 2025 인구주택총조사 100세 이상 고령자조사 집계 결과 — mods_446542.pdf, 27쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2022 사회동향 8-1장.indd — gen_1bc436cb811a.pdf, 12쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: [주거_동향]주거 영역의 주요 동향 | 전체보기 | 영역별 | 한국의사회 — mods_428640.pdf, 14쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2025년 주요업무 추진계획 — gen_855422bc06a3.pdf, 20쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] mods_439298.pdf: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.14)
+[3] gen_8257e44749a8.pdf: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.52) → 같음
+    걸린 시간 25.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.56, '검색': 4.73, '후보 찾기': 1.05, 'PDF 받기·글자': 3.15, '숫자 찾기': 0.15, '고르기·판정': 8.97, '표현 다름 후보': 3.6, '교차 확인(Decisions)': 0.89, '확인할 곳 안내': 0.0}
+
+===== 19/30 [무작위] 15일 국립중앙의료원 중앙응급의료센터가 공개한 '2025 응급의료 현황통계' 보고서에 따르면 지난해 182개 센터급 이상 응급
+[1] 라이너 모델 분해: {'기관': '국립중앙의료원 중앙응급의료센터', '보고서': '2025 응급의료 현황통계', '숫자': '432만784명(건)', '핵심어': ['센터급 이상 응급의료기관', '이용 환자 수'], '기준시점': '2025년', '기관누리집': 'e-gen.or.kr', '원어검색어': ''}
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 2025 응급의료 현황통계 센터급 이상 응급의료기관 이용 환자 수 432만784명(건)' → 10건
+    라이너 검색 '432만784명(건) 센터급 이상 응급의료기관 이용 환자 수 국립중앙의료원 중앙응급의료센터' → 10건
+    라이너 검색 '센터급 이상 응급의료기관 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 센터급 이상 응급의료기관 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr filetype:pdf 2025 응급의료 현황통계 2025년' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr 센터급 이상 응급의료기관' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr 2025 응급의료 현황통계 2025년' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr 이용 환자 수' (일반 경로) → 10건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 2025 응급의료 현황통계 2025년 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 4건
+    후보: 2025년 제1차 경기도 응급의료위원회 — gen_a6891b300d99.pdf, 28쪽, 기준시점 일치 1/1, 제목 비슷함 0.43
+    후보: 『응급의료 현황통계』 통계정보보고서 — gen_ed4c78c81a7f.pdf, 67쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    후보: Organization | The National Emergency Me — gen_c220b9c1e49d.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Main | The National Emergency Medical Ce — gen_6ef35682719e.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 4건 순위 매김
+[3] gen_ed4c78c81a7f.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    67쪽 중 3쪽만 잘라 보냄: [1, 2, 38][3] gen_ed4c78c81a7f.pdf: 숫자 후보 0곳
+[3] gen_6ef35682719e.txt: 숫자 후보 0곳
+[3] gen_c220b9c1e49d.txt: 숫자 후보 0곳
+[3] gen_a6891b300d99.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_ed4c78c81a7f.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 3쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 2개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(24.9초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+    Deep Research 가 지목한 원 출처 2곳을 받아 직접 확인: ['https://e-medis.nemc.or.kr/', 'https://e-medis.nemc.or.kr/portal/bbs/notice/selectBulletinP']
+[1] 라이너 모델 분해: {'기관': '국립중앙의료원 중앙응급의료센터', '보고서': '2025 응급의료 현황통계', '숫자': '432만784명(건)', '핵심어': ['센터급 이상 응급의료기관', '응급실 내원환자 수', '응급실 이용 환자수'], '기준시점': '2025년', '기관누리집': 'e-gen.or.kr', '원어검색어': ''}
+[1] 라이너 모델 분해: {'기관': '국립중앙의료원 중앙응급의료센터', '보고서': '2025 응급의료 현황통계', '숫자': '432만784명(건)', '핵심어': ['응급의료기관 이용 환자', '센터급 이상', '센터급 이상 응급의료기관', '응급실 이용 환자'], '기준시점': '2025년', '기관누리집': 'nmc.or.kr', '원어검색어': ''}
+    라이너 검색 '432만784명(건) 센터급 이상 응급의료기관 응급실 내원환자 수 응급실 이용 환자수 국립중앙의료원 중앙응급의료센터' → 10건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 2025 응급의료 현황통계 센터급 이상 응급의료기관 응급실 내원환자 수 응급실 이용 환자수 432만784명(건)' → 10건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 2025 응급의료 현황통계 응급의료기관 이용 환자 센터급 이상 센터급 이상 응급의료기관 응급실 이용 환자 432만784명(건)' → 10건
+    라이너 검색 '센터급 이상 응급의료기관 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr 2025 응급의료 현황통계 2025년' (일반 경로) → 10건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 센터급 이상 응급의료기관 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr 센터급 이상 응급의료기관' (일반 경로) → 0건
+    라이너 검색 '432만784명(건) 응급의료기관 이용 환자 센터급 이상 센터급 이상 응급의료기관 국립중앙의료원 중앙응급의료센터' → 10건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 2025 응급의료 현황통계 2025년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr filetype:pdf 2025 응급의료 현황통계 2025년' (일반 경로) → 10건
+    라이너 검색 'site:e-gen.or.kr 응급실 내원환자 수' (일반 경로) → 10건
+[2] None 원 보고서 후보 3건
+    후보: 『응급의료 현황통계』 통계정보보고서 — gen_ed4c78c81a7f.pdf, 67쪽, 기준시점 일치 0/1, 제목 비슷함 1.00
+    후보: 『2025 응급의료 통계연보』작성을 위한 응급의료시설 응급실 ... — gen_1bbfb226a24b.pdf, 8쪽, 기준시점 일치 1/1, 제목 비슷함 0.57
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 응급의료기관 이용 환자 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:nmc.or.kr 센터급 이상' (일반 경로) → 19건
+    라이너 검색 '국립중앙의료원 중앙응급의료센터 2025 응급의료 현황통계 2025년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '응급의료기관 이용 환자 2025년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:nmc.or.kr 응급의료기관 이용 환자' (일반 경로) → 14건
+    라이너 검색 'site:nmc.or.kr filetype:pdf 2025 응급의료 현황통계 2025년' (일반 경로) → 11건
+    후보: 미리보기 — gen_a1ef304e01bf.pdf, 304쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 3건 순위 매김
+[3] gen_ed4c78c81a7f.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_ed4c78c81a7f.pdf: 숫자 후보 0곳
+[3] gen_1bbfb226a24b.pdf: 숫자 후보 0곳
+[3] gen_a1ef304e01bf.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_ed4c78c81a7f.pdf 직접 읽기(계산 확인도 동시에)    67쪽 중 3쪽만 잘라 보냄: [1, 2, 38]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    라이너 검색 'site:nmc.or.kr 2025 응급의료 현황통계 2025년' (일반 경로) → 18건
+[2] None 원 보고서 후보 22건
+    후보: 보도자료 | 대표홈페이지 — gen_3c2aa02c937e.txt, 13쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    후보: 응급의료통계 | 대표홈페이지 — gen_62ac52b83f19.txt, 13쪽, 기준시점 일치 0/1, 제목 비슷함 0.57
+    후보: 중앙응급의료센터 | 대표홈페이지 — gen_b93aa99d909d.txt, 14쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    후보: 응급의료모니터링시스템 | 대표홈페이지 — gen_a74e88b36624.txt, 13쪽, 기준시점 일치 0/1, 제목 비슷함 0.43
+    후보: 중앙응급의료센터 통계 — gen_127077ece4de.txt, 13쪽, 기준시점 일치 0/1, 제목 비슷함 0.57
+    후보: 공지사항 상세 - 응급의료통계포털 — gen_82c84fe3410b.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.57
+    첨부파일 글자 더함: ENGLISH (32276자)
+    후보: 국립중앙의료원, '2025년 NMC 응급의료센터 질 향상 워크숍' ... — gen_6878dc1c59cf.txt, 13쪽, 기준시점 일치 1/1, 제목 비슷함 0.43
+    게이트웨이 모델: 3쪽 읽기에서 못 찾음
+    첨부파일 글자 더함: 2024 응급의료 통계연보 (4425948자)
+    문서 1건이 60초 안에 받기·읽기를 못 끝내 빼고 계속
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_6878dc1c59cf.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_6878dc1c59cf.txt: 숫자 후보 0곳
+[3] gen_62ac52b83f19.txt: 숫자 후보 0곳
+[3] gen_82c84fe3410b.txt: 숫자 후보 0곳
+[3] gen_127077ece4de.txt: 숫자 후보 0곳
+[3] gen_a74e88b36624.txt: 숫자 후보 0곳
+[3] gen_b93aa99d909d.txt: 숫자 후보 0곳    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_3c2aa02c937e.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_6878dc1c59cf.txt 직접 읽기(계산 확인도 동시에)
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 2개
+    걸린 시간 101.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 8.5, '검색': 22.78, '후보 찾기': 0.91, 'PDF 받기·글자': 66.55, '숫자 찾기': 0.5, 'PDF 직접 읽기': 26.31, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 0.39}
+
+===== 20/30 [무작위] 남아공 통계청이 지난해 발표한 자료에 따르면 요하네스버그가 속한 하우텡주는 2023년 기준 전국 가계 소비지출의 약 36%를 
+[1] 라이너 모델 분해: {'기관': 'Statistics South Africa', '보고서': '', '숫자': '약 36%', '핵심어': ['가계 소비지출', '하우텡주 비중', '하우텡주', '전국 비중'], '기준시점': '2023년', '기관누리집': 'statssa.gov.za', '원어검색어': 'Gauteng household consumption expenditure 2023'}
+    라이너 검색 'Statistics South Africa 가계 소비지출 하우텡주 비중 하우텡주 전국 비중 약 36%' → 10건
+    라이너 검색 '약 36% 가계 소비지출 하우텡주 비중 하우텡주 Statistics South Africa' → 10건
+    라이너 검색 'site:statssa.gov.za filetype:pdf 가계 소비지출 하우텡주 비중 하우텡주 2023년' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za 하우텡주 비중' (일반 경로) → 10건
+    라이너 검색 '가계 소비지출 2023년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'Statistics South Africa 가계 소비지출 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za Gauteng household consumption expenditure 2023' (일반 경로, 영어) → 17건
+    라이너 검색 'site:statssa.gov.za 가계 소비지출' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za 가계 소비지출 하우텡주 비중 하우텡주 2023년' (일반 경로) → 10건
+    라이너 검색 'Statistics South Africa 가계 소비지출 하우텡주 비중 하우텡주 2023년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'Gauteng household consumption expenditure 2023' (일반 경로, 영어) → 10건
+[2] None 원 보고서 후보 20건
+    후보: South African Households Spend R3 Trilli — gen_snip_32d2afe46e8a.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Income and Expenditure Survey of Househo — gen_snip_42139ce67cda.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: The state of South African households in — gen_snip_754b8a153c8a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Income & Expenditure Survey (IES) 2022/2 — gen_snip_8ef7eb37d9c2.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    글자가 너무 적어 건너뜀(83자): https://www.statssa.gov.za/?p=17995
+    글자가 너무 적어 건너뜀(0자): https://www.statssa.gov.za/publications/P0100/P01002022.pdf
+    글자가 너무 적어 건너뜀(83자): https://www.statssa.gov.za/?p=17283
+    글자가 너무 적어 건너뜀(83자): https://www.statssa.gov.za/?p=17981
+    라이너 Rerank 로 후보 보고서 4건 순위 매김
+[3] gen_snip_8ef7eb37d9c2.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.97) → 같음
+    걸린 시간 17.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.57, '검색': 6.49, '후보 찾기': 0.31, 'PDF 받기·글자': 2.82, '숫자 찾기': 0.0, '고르기·판정': 4.53, '교차 확인(Decisions)': 0.48, '확인할 곳 안내': 0.0}
+
+===== 21/30 [무작위] UNEP에 따르면 지구 온도 상승 폭을 50% 확률로 금세기 중반 1.7∼1.8도로 묶고 2100년 1.5도 이하로 되돌리는 
+[1] 라이너 모델 분해: {'기관': '유엔환경계획', '보고서': '', '숫자': '18%', '핵심어': ['2030년 온실가스 배출량', '감축률', '1.5도 경로'], '기준시점': '2030년', '기관누리집': 'unep.org', '원어검색어': 'UNEP emissions gap report 2030 greenhouse gas emissions 18% reduction 1.5°C overshoot'}
+    라이너 검색 '유엔환경계획 2030년 온실가스 배출량 감축률 1.5도 경로 18%' → 10건
+    라이너 검색 '18% 2030년 온실가스 배출량 감축률 1.5도 경로 유엔환경계획' → 10건
+    라이너 검색 'site:unep.org 2030년 온실가스 배출량' (일반 경로) → 11건
+    라이너 검색 'UNEP emissions gap report 2030 greenhouse gas emissions 18% reduction 1.5°C overshoot' (일반 경로, 영어) → 10건
+    라이너 검색 '유엔환경계획 2030년 온실가스 배출량 보도자료' (일반 경로) → 10건
+    라이너 검색 '2030년 온실가스 배출량 2030년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:unep.org 감축률' (일반 경로) → 11건
+    라이너 검색 'site:unep.org filetype:pdf 2030년 온실가스 배출량 감축률 1.5도 경로 2030년' (일반 경로) → 19건
+    라이너 검색 'site:unep.org UNEP emissions gap report 2030 greenhouse gas emissions 18% reduction 1.5°C overshoot' (일반 경로, 영어) → 18건
+    라이너 검색 'site:unep.org 2030년 온실가스 배출량 감축률 1.5도 경로 2030년' (일반 경로) → 20건
+    라이너 검색 '유엔환경계획 2030년 온실가스 배출량 감축률 1.5도 경로 2030년 filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: Emissions Gap Report 2026 — gen_snip_e41c1163234f.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: As temperatures spike, this new report o — gen_snip_cfa04c38690d.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Emissions Gap Report 2026 — gen_e41c1163234f.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Emissions Gap Report 2026 KEY MESSAGES — gen_snip_15aa48476cf4.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Emissions Gap Report 2026 KEY MESSAGES - — gen_snip_a498caad544a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: New UNEP report lays out emission cuts n — gen_snip_766857a4d3ec.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: The point of return - Wedocs.unep.org. — gen_snip_66a79da0abd3.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: New UNEP report lays out emission cuts n — gen_766857a4d3ec.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_snip_a498caad544a.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 표현 바뀜 (확신도 0.60) → 다름, 축별로 다름: 기간·대상·지표
+    걸린 시간 16.5초 — 단계별 {'입구 필터': 0.0, '문장 분해': 1.99, '검색': 7.96, '후보 찾기': 0.3, 'PDF 받기·글자': 1.25, '숫자 찾기': 0.0, '고르기·판정': 4.55, '교차 확인(Decisions)': 0.44, '확인할 곳 안내': 0.0}
+
+===== 22/30 [무작위] 또한 포르투갈 정부에 따르면 주택 임대료도 2020년 이후 68% 급등했다.
+[1] 라이너 모델 분해: {'기관': '포르투갈 정부', '보고서': '', '숫자': '68%', '핵심어': ['주택 임대료', '상승률', '임대료 상승률'], '기준시점': '2020년 이후', '기관누리집': 'portugal.gov.pt', '원어검색어': 'Portugal rendas habitacionais aumento desde 2020 68%'}
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 임대료 상승률 68%' → 10건
+    라이너 검색 '68% 주택 임대료 상승률 임대료 상승률 포르투갈 정부' → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 보도자료' (일반 경로) → 10건
+    라이너 검색 'Portugal rendas habitacionais aumento desde 2020 68%' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt 상승률' (일반 경로) → 20건
+    라이너 검색 'site:portugal.gov.pt filetype:pdf 주택 임대료 상승률 임대료 상승률 2020년 이후' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료 상승률 임대료 상승률 2020년 이후' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료' (일반 경로) → 10건
+    라이너 검색 '주택 임대료 2020년 이후 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt Portugal rendas habitacionais aumento desde 2020 68%' (일반 경로, 영어) → 20건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 임대료 상승률 2020년 이후 filetype:pdf' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 2건
+    정책브리핑 설명자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 1건
+[2] None 원 보고서 후보 26건
+    후보: Council of Ministers approves housing me — gen_4c5b39f89538.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Governo apresenta choque fiscal para com — gen_2ab0d01ae90f.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Comunicado do Conselho de Ministros de 2 — gen_5f407e1202e1.txt, 4쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Garantia de uma renda justa - Perguntas  — gen_f0861f0bbe5f.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: VERSÃO SIMPLIFICADA — gen_fd41c9be05b4.pdf, 34쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: RELATÓRIO — gen_afc607902380.pdf, 466쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: PE 2021-2025 — gen_31a62fb92efb.pdf, 98쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: (ATUALIZAÇÃO DE ABRIL 2018) — gen_a0e42e8fc34b.pdf, 100쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳
+[3] gen_a0e42e8fc34b.pdf: 숫자 후보 0곳
+[3] gen_31a62fb92efb.pdf: 숫자 후보 0곳
+[3] gen_4c5b39f89538.txt: 숫자 후보 0곳
+[3] gen_f0861f0bbe5f.txt: 숫자 후보 0곳
+[3] gen_2ab0d01ae90f.txt: 숫자 후보 0곳
+[3] gen_5f407e1202e1.txt: 숫자 후보 0곳
+[3] gen_afc607902380.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fd41c9be05b4.pdf 직접 읽기(계산 확인도 동시에)
+    34쪽 중 14쪽만 잘라 보냄: [1, 2, 5, 7, 9, 12, 15, 17, 18, 19, 25, 26, 27, 29]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    PDF 전체(34쪽)도 동시에 보냄
+    게이트웨이 모델: 14쪽 읽기에서 못 찾음
+    게이트웨이 모델: 34쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(39.2초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '포르투갈 정부', '보고서': '', '숫자': '68%', '핵심어': ['주택 임대료', '상승률'], '기준시점': '2020년 이후', '기관누리집': 'portugal.gov.pt', '원어검색어': 'rendas habitação aumento 68% desde 2020 Portugal'}
+    라이너 검색 '68% 주택 임대료 상승률 포르투갈 정부' → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 68%' → 10건
+    라이너 검색 'site:portugal.gov.pt 상승률' (일반 경로) → 20건
+    라이너 검색 'site:portugal.gov.pt rendas habitação aumento 68% desde 2020 Portugal' (일반 경로, 영어) → 10건
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.dn.pt/sociedade/mexidas-no-arrendament', 'https://www.ine.pt/ngt_server/attachfileu.jsp?look', 'https://www.pcp.pt/assegurar-direito-habitacao-par']
+    라이너 검색 'site:portugal.gov.pt 주택 임대료' (일반 경로) → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 2020년 이후 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '주택 임대료 2020년 이후 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 보도자료' (일반 경로) → 10건
+    라이너 검색 'rendas habitação aumento 68% desde 2020 Portugal' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt filetype:pdf 주택 임대료 상승률 2020년 이후' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료 상승률 2020년 이후' (일반 경로) → 20건
+    정책브리핑 보도자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 2건
+    정책브리핑 설명자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 1건
+[2] None 원 보고서 후보 26건
+    후보: Governo apresenta choque fiscal para com — gen_2ab0d01ae90f.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Arrendamento: Governo aprova reforma par — gen_9b65e78bb987.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Mais Habitação - Propostas de Lei — gen_c429ac41fbf9.pdf, 24쪽, 기준시점 일치 0/1, 제목 비슷함 0.00    후보: (ATUALIZAÇÃO DE ABRIL 2018) — gen_a0e42e8fc34b.pdf, 100쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: VERSÃO SIMPLIFICADA — gen_fd41c9be05b4.pdf, 34쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: RELATÓRIO — gen_afc607902380.pdf, 466쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Regime excecional para as situações de m — gen_69cd1b9ef959.pdf, 10쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Regime Excecional e Temporário de Pagame — gen_a283aaf7409a.pdf, 6쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳
+[3] gen_69cd1b9ef959.pdf: 숫자 후보 0곳
+[3] gen_a283aaf7409a.pdf: 숫자 후보 0곳
+[3] gen_a0e42e8fc34b.pdf: 숫자 후보 0곳
+[3] gen_9b65e78bb987.txt: 숫자 후보 0곳
+[3] gen_c429ac41fbf9.pdf: 숫자 후보 0곳
+[3] gen_2ab0d01ae90f.txt: 숫자 후보 0곳
+[3] gen_afc607902380.pdf: 숫자 후보 1곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    34쪽 중 14쪽만 잘라 보냄: [1, 2, 5, 9, 12, 15, 17, 18, 21, 23, 25, 26, 27, 29]
+    PDF 전체(34쪽)도 동시에 보냄
+    Deep Research 가 지목한 원 출처 0곳을 받아 직접 확인: []
+[1] 라이너 모델 분해: {'기관': '포르투갈 정부', '보고서': '', '숫자': '68%', '핵심어': ['주택 임대료', '임대료 상승률', '상승률'], '기준시점': '2020년 이후', '기관누리집': 'portugal.gov.pt', '원어검색어': 'Portugal rendas habitação aumento 68% desde 2020'}
+    라이너 검색 '68% 주택 임대료 임대료 상승률 상승률 포르투갈 정부' → 10건
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fd41c9be05b4.pdf 직접 읽기(계산 확인도 동시에)
+    라이너 검색 '포르투갈 정부 주택 임대료 임대료 상승률 상승률 68%' → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 보도자료' (일반 경로) → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 임대료 상승률 상승률 2020년 이후 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt Portugal rendas habitação aumento 68% desde 2020' (일반 경로, 영어) → 10건
+    라이너 검색 'Portugal rendas habitação aumento 68% desde 2020' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt filetype:pdf 주택 임대료 임대료 상승률 상승률 2020년 이후' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료 임대료 상승률 상승률 2020년 이후' (일반 경로) → 2건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 임대료 상승률' (일반 경로) → 15건
+    라이너 검색 '주택 임대료 2020년 이후 통계 발표 자료' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '주택 임대료 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 2건
+    정책브리핑 설명자료 검색 '주택 임대료 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 1건
+[2] None 원 보고서 후보 26건
+    후보: Governo apresenta choque fiscal para com — gen_2ab0d01ae90f.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Comunicado do Conselho de Ministros de 2 — gen_5f407e1202e1.txt, 4쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Arrendamento: Governo aprova reforma par — gen_9b65e78bb987.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Redução dos impostos sobre o arrendament — gen_535cb6572dca.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Inquilinos vão ter novos apoios à renda  — gen_abdeddd98500.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Conselho de Ministros aprova medidas no  — gen_ca03d207d2a5.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Comunicado do Conselho de Ministros de 9 — gen_5915b02d0f1d.txt, 3쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Senhorios com contratos antigos vão ter  — gen_66d6dffa29a9.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_9b65e78bb987.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 14쪽 읽기에서 못 찾음
+    게이트웨이 모델: 34쪽 읽기에서 못 찾음
+[3] gen_9b65e78bb987.txt: 숫자 후보 0곳
+[3] gen_ca03d207d2a5.txt: 숫자 후보 0곳
+[3] gen_abdeddd98500.txt: 숫자 후보 0곳
+[3] gen_2ab0d01ae90f.txt: 숫자 후보 0곳
+[3] gen_535cb6572dca.txt: 숫자 후보 0곳
+[3] gen_5915b02d0f1d.txt: 숫자 후보 0곳
+[3] gen_66d6dffa29a9.txt: 숫자 후보 0곳
+[3] gen_5f407e1202e1.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_9b65e78bb987.txt 직접 읽기(계산 확인도 동시에)
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 3개
+    걸린 시간 70.9초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.34, '검색': 21.49, '후보 찾기': 3.72, 'PDF 받기·글자': 12.65, '숫자 찾기': 2.97, 'PDF 직접 읽기': 29.81, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 7.38, '고르기·판정': 4.23, '표현 다름 후보': 3.17}
+
+===== 23/30 [무작위] 15일 하나금융연구소가 발간한 '함께 굴려가는 결혼생활' 보고서에 따르면 20~34세 기혼가구의 25%가 생활비 등 일부 항목
+[1] 라이너 모델 분해: {'기관': '하나금융연구소', '보고서': '함께 굴려가는 결혼생활', '숫자': '25%', '핵심어': ['20~34세 기혼가구', '자산 공동 관리', '응답 비중'], '기준시점': '', '기관누리집': 'hanaif.re.kr', '원어검색어': ''}
+    라이너 검색 '25% 20~34세 기혼가구 자산 공동 관리 응답 비중 하나금융연구소' → 10건
+    라이너 검색 '하나금융연구소 함께 굴려가는 결혼생활 20~34세 기혼가구 자산 공동 관리 응답 비중 25%' → 10건
+    라이너 검색 'site:hanaif.re.kr 20~34세 기혼가구' (일반 경로) → 10건
+    라이너 검색 'site:hanaif.re.kr 함께 굴려가는 결혼생활' (일반 경로) → 17건
+    라이너 검색 'site:hanaif.re.kr 자산 공동 관리' (일반 경로) → 20건
+    라이너 검색 '하나금융연구소 20~34세 기혼가구 보도자료' (일반 경로) → 10건
+    라이너 검색 '20~34세 기혼가구  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '하나금융연구소 함께 굴려가는 결혼생활  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:hanaif.re.kr filetype:pdf 함께 굴려가는 결혼생활' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: 금융소비자보고서 — gen_e513b621fec4.txt, 7쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 금융소비트렌드 — gen_442ad858974d.txt, 6쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 하나Knowledge+ — gen_9ff60bf0679e.txt, 2쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 연구보고서 — gen_54c51d217558.txt, 2쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 하나금융연구소 — gen_fe093785c066.txt, 7쪽, 기준시점 일치 0/0, 제목 비슷함 1.00
+    후보: 진화하는 금융사기, 모두의 경계가 필요한 시점 — gen_5a5ec247a862.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 대한민국 부유층의 자산관리 — gen_f637d88337a0.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    첨부파일 글자 더함: 보고서 다운로드(PDF) (280264자)
+    후보: 대한민국 금융소비자 보고서 2025 — gen_793991fa62f1.txt, 98쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_fe093785c066.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.26) → 같음, 축별로 다름: 대상
+    걸린 시간 20.7초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.3, '검색': 7.66, '후보 찾기': 0.29, 'PDF 받기·글자': 4.0, '숫자 찾기': 0.07, '고르기·판정': 5.71, '교차 확인(Decisions)': 0.56, '확인할 곳 안내': 0.0}
+
+===== 24/30 [무작위] 또한 포르투갈 정부에 따르면 주택 임대료도 2020년 이후 68% 급등했습니다.
+[1] 라이너 모델 분해: {'기관': '포르투갈 정부', '보고서': '', '숫자': '68%', '핵심어': ['주택 임대료', '상승률'], '기준시점': '2020년 이후', '기관누리집': 'portugal.gov.pt', '원어검색어': 'Portugal rendas habitação aumento 68% desde 2020'}
+    라이너 검색 '68% 주택 임대료 상승률 포르투갈 정부' → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 68%' → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 보도자료' (일반 경로) → 10건
+    라이너 검색 'Portugal rendas habitação aumento 68% desde 2020' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료' (일반 경로) → 16건
+    라이너 검색 'site:portugal.gov.pt filetype:pdf 주택 임대료 상승률 2020년 이후' (일반 경로) → 0건
+    라이너 검색 '주택 임대료 2020년 이후 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt Portugal rendas habitação aumento 68% desde 2020' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료 상승률 2020년 이후' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 상승률' (일반 경로) → 20건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 2020년 이후 filetype:pdf' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 2건
+    정책브리핑 설명자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 1건
+[2] None 원 보고서 후보 26건
+    후보: Arrendamento: Governo aprova reforma par — gen_9b65e78bb987.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Governo apresenta choque fiscal para com — gen_2ab0d01ae90f.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Comunicado do Conselho de Ministros de 2 — gen_5f407e1202e1.txt, 4쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Governo reduz carga fiscal para acelerar — gen_4bc9f0031055.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Habitação: Governo adota medidas para au — gen_c6a0d5ee01c2.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Pacote fiscal para habitação aprovado no — gen_1ab7152d7b2f.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: PE 2021-2025 — gen_31a62fb92efb.pdf, 98쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: COMISSÃO EUROPEIA Bruxelas, 16.6.2021 SW — gen_b91d22726f73.pdf, 119쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_b91d22726f73.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_b91d22726f73.pdf: 숫자 후보 0곳
+[3] gen_31a62fb92efb.pdf: 숫자 후보 0곳
+[3] gen_c6a0d5ee01c2.txt: 숫자 후보 0곳
+[3] gen_9b65e78bb987.txt: 숫자 후보 0곳
+[3] gen_4bc9f0031055.txt: 숫자 후보 0곳
+[3] gen_1ab7152d7b2f.txt: 숫자 후보 0곳
+[3] gen_2ab0d01ae90f.txt: 숫자 후보 0곳
+[3] gen_5f407e1202e1.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_b91d22726f73.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 4개
+    119쪽 중 14쪽만 잘라 보냄: [1, 2, 7, 14, 28, 30, 53, 54, 63, 68, 74, 77, 79, 106]
+    게이트웨이 모델: 14쪽 읽기에서 못 찾음
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(26.5초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+[1] 라이너 모델 분해: {'기관': '포르투갈 정부', '보고서': '', '숫자': '68%', '핵심어': ['주택 임대료', '상승률'], '기준시점': '2020년 이후', '기관누리집': 'portugal.gov.pt', '원어검색어': 'Portugal rendas habitação aumento 68% desde 2020'}
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 68%' → 10건
+    라이너 검색 '68% 주택 임대료 상승률 포르투갈 정부' → 10건
+    라이너 검색 '주택 임대료 2020년 이후 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 보도자료' (일반 경로) → 10건
+    라이너 검색 'Portugal rendas habitação aumento 68% desde 2020' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 상승률' (일반 경로) → 19건
+    라이너 검색 'site:portugal.gov.pt Portugal rendas habitação aumento 68% desde 2020' (일반 경로, 영어) → 19건
+    라이너 검색 'site:portugal.gov.pt filetype:pdf 주택 임대료 상승률 2020년 이후' (일반 경로) → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 2020년 이후 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료 상승률 2020년 이후' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 2건
+    정책브리핑 설명자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 1건
+[2] None 원 보고서 후보 26건
+    후보: Arrendamento: Governo aprova reforma par — gen_9b65e78bb987.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Mais Habitação - Propostas de Lei — gen_c429ac41fbf9.pdf, 24쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: VERSÃO SIMPLIFICADA — gen_fd41c9be05b4.pdf, 34쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: ANÁLISE DE IMPACTO DE PRIVACIDADE — gen_6d5afbcf4bbf.pdf, 231쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Retribuição Mínima Mensal Garantida — gen_7cbb29594a07.pdf, 90쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: 2,2% 6,7% 0,8% — gen_56df275afb39.pdf, 49쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Retribuição Mínima Mensal Garantida — gen_3421e3af55eb.pdf, 90쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: RELATÓRIO — gen_afc607902380.pdf, 466쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳
+[3] gen_6d5afbcf4bbf.pdf: 숫자 후보 0곳
+[3] gen_9b65e78bb987.txt: 숫자 후보 0곳
+[3] gen_56df275afb39.pdf: 숫자 후보 0곳
+[3] gen_c429ac41fbf9.pdf: 숫자 후보 0곳
+[3] gen_afc607902380.pdf: 숫자 후보 1곳
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    34쪽 중 14쪽만 잘라 보냄: [1, 2, 5, 9, 12, 15, 17, 18, 21, 23, 25, 26, 27, 29]
+    PDF 전체(34쪽)도 동시에 보냄
+[3] gen_3421e3af55eb.pdf: 숫자 후보 0곳
+[3] gen_7cbb29594a07.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fd41c9be05b4.pdf 직접 읽기(계산 확인도 동시에)
+    게이트웨이 모델: 14쪽 읽기에서 못 찾음
+    게이트웨이 모델: 34쪽 읽기에서 못 찾음
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://www.kvue.com/article/syndication/associate', 'https://www.washingtonpost.com/business/2026/10/27', 'https://report.az/en/other-countries/tens-of-thous', 'https://www.ine.pt/ngt_server/attachfileu.jsp?look']
+    Deep Research 가 지목한 원 출처 0곳을 받아 직접 확인: []
+[1] 라이너 모델 분해: {'기관': '포르투갈 정부', '보고서': '', '숫자': '68%', '핵심어': ['주택 임대료', '상승률', '임대료 상승'], '기준시점': '2020년 이후', '기관누리집': 'portugal.gov.pt', '원어검색어': 'Portugal rendas habitação aumento 2020 68%'}
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 임대료 상승 68%' → 10건
+    라이너 검색 '68% 주택 임대료 상승률 임대료 상승 포르투갈 정부' → 10건
+    라이너 검색 '포르투갈 정부 주택 임대료 보도자료' (일반 경로) → 10건
+    라이너 검색 '주택 임대료 2020년 이후 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료 상승률 임대료 상승 2020년 이후' (일반 경로) → 0건
+    라이너 검색 'Portugal rendas habitação aumento 2020 68%' (일반 경로, 영어) → 10건
+    라이너 검색 'site:portugal.gov.pt 상승률' (일반 경로) → 20건
+    라이너 검색 'site:portugal.gov.pt 주택 임대료' (일반 경로) → 20건
+    라이너 검색 '포르투갈 정부 주택 임대료 상승률 임대료 상승 2020년 이후 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:portugal.gov.pt Portugal rendas habitação aumento 2020 68%' (일반 경로, 영어) → 19건
+    라이너 검색 'site:portugal.gov.pt filetype:pdf 주택 임대료 상승률 임대료 상승 2020년 이후' (일반 경로) → 7건
+    정책브리핑 보도자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 보도자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 2건
+    정책브리핑 설명자료 검색 '주택 임대료 상승률' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '주택 임대료' (2026-09-16~2026-11-16) → 1건
+[2] None 원 보고서 후보 26건
+    후보: Arrendamento: Governo aprova reforma par — gen_9b65e78bb987.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Governo apresenta choque fiscal para com — gen_2ab0d01ae90f.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Redução dos impostos sobre o arrendament — gen_535cb6572dca.txt, 2쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: Retribuição Mínima Mensal Garantida — gen_7cbb29594a07.pdf, 90쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: VERSÃO SIMPLIFICADA — gen_fd41c9be05b4.pdf, 34쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: Retribuição Mínima Mensal Garantida — gen_3421e3af55eb.pdf, 90쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: ANÁLISE DE IMPACTO DE PRIVACIDADE — gen_6d5afbcf4bbf.pdf, 231쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: (ATUALIZAÇÃO DE ABRIL 2018) — gen_a0e42e8fc34b.pdf, 100쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_fd41c9be05b4.pdf: 숫자 후보 0곳
+[3] gen_a0e42e8fc34b.pdf: 숫자 후보 0곳
+[3] gen_6d5afbcf4bbf.pdf: 숫자 후보 0곳
+[3] gen_9b65e78bb987.txt: 숫자 후보 0곳
+[3] gen_2ab0d01ae90f.txt: 숫자 후보 0곳
+[3] gen_535cb6572dca.txt: 숫자 후보 0곳
+[3] gen_3421e3af55eb.pdf: 숫자 후보 0곳
+[3] gen_7cbb29594a07.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_fd41c9be05b4.pdf 직접 읽기(계산 확인도 동시에)
+    34쪽 중 14쪽만 잘라 보냄: [1, 2, 5, 9, 12, 15, 17, 18, 21, 23, 25, 26, 27, 29]
+    PDF 전체(34쪽)도 동시에 보냄
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+    게이트웨이 모델: 14쪽 읽기에서 못 찾음
+    게이트웨이 모델: 34쪽 읽기에서 못 찾음
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 1개
+    걸린 시간 130.7초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.89, '검색': 26.07, '후보 찾기': 3.57, 'PDF 받기·글자': 4.05, '숫자 찾기': 3.2, 'PDF 직접 읽기': 35.61, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '고르기·판정': 3.51, '표현 다름 후보': 3.26, '라이너 Deep Research': 63.64}
+
+===== 25/30 [무작위] 연방 소비자권익보호·복지감독청 산하 중앙역학연구소에 따르면 HIV 감염이 일반화 단계에 접어든 27개 지역에서는 임산부의 1%
+    고른 숫자 '1% 이상'는 기준값이라 주장 숫자 '27개'로 바꿈
+[1] 라이너 모델 분해: {'기관': '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소', '보고서': '', '숫자': '27개', '핵심어': ['27개 지역', '임산부', 'HIV 양성률', '일반화 단계 지역'], '기준시점': '', '기관누리집': 'pcr.ru', '원어검색어': 'Центральный НИИ эпидемиологии 27 регионов генерализованная эпидемия ВИЧ беременные более 1%'}
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 27개 지역 임산부 HIV 양성률 일반화 단계 지역 27개' → 10건
+    라이너 검색 '27개 27개 지역 임산부 HIV 양성률 러시아 연방 소비자권익보호·복지감독청 중앙역학연구소' → 10건
+    라이너 검색 'site:pcr.ru 임산부' (일반 경로) → 0건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 27개 지역 임산부 HIV 양성률  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:pcr.ru 27개 지역 임산부 HIV 양성률' (일반 경로) → 10건
+    라이너 검색 '27개 지역  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'Центральный НИИ эпидемиологии 27 регионов генерализованная эпидемия ВИЧ беременные более 1%' (일반 경로, 영어) → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 27개 지역 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:pcr.ru filetype:pdf 27개 지역 임산부 HIV 양성률' (일반 경로) → 10건
+    라이너 검색 'site:pcr.ru Центральный НИИ эпидемиологии 27 регионов генерализованная эпидемия ВИЧ беременные более 1%' (일반 경로, 영어) → 10건
+    라이너 검색 'site:pcr.ru 27개 지역' (일반 경로) → 0건
+[2] None 원 보고서 후보 6건
+    후보: PDF - 한국형사·법무정책연구원 — gen_1018e0a39a81.pdf, 616쪽, 기준시점 일치 0/0, 제목 비슷함 0.00    후보: 초위험사회의 새로운 안전망: — gen_e4065948e37e.pdf, 202쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 코로나19 이후의 러시아 소비시장 트렌드 — gen_8888f453399b.pdf, 25쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 주요 여성 정책 — gen_64c4af43fcde.pdf, 34쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 아동인권정책 기본계획수립 방안 — gen_ba385425baea.pdf, 255쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 아시아 사회보장제도 비교연구 — gen_902f6c0a8b2d.pdf, 300쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 6건 순위 매김
+[3] gen_64c4af43fcde.pdf: 숫자 후보 1곳
+[3] gen_902f6c0a8b2d.pdf: 숫자 후보 3곳
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.03)
+[3] gen_1018e0a39a81.pdf: 숫자 후보 3곳
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.02)
+[3] gen_8888f453399b.pdf: 숫자 후보 0곳
+[3] gen_e4065948e37e.pdf: 숫자 후보 5곳
+    라이너 Rerank 로 숫자 후보 5곳 순위 매김 (1위 관련도 0.02)
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_64c4af43fcde.pdf 직접 읽기(계산 확인도 동시에)
+    34쪽 중 6쪽만 잘라 보냄: [1, 2, 14, 15, 27, 28]
+    PDF 전체(34쪽)도 동시에 보냄
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 51개
+    게이트웨이 모델: 6쪽 읽기에서 못 찾음
+    게이트웨이 모델: 34쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 1개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(55.8초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+    고른 숫자 '1% 이상'는 기준값이라 주장 숫자 '27개'로 바꿈
+[1] 라이너 모델 분해: {'기관': '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소', '보고서': '', '숫자': '27개', '핵심어': ['임산부', 'HIV 양성률', '일반화된 HIV 유행'], '기준시점': '', '기관누리집': '', '원어검색어': 'ЦНИИ эпидемиологии Роспотребнадзора ВИЧ беременные более 1% 27 регионов'}
+    라이너 검색 '27개 임산부 HIV 양성률 일반화된 HIV 유행 러시아 연방 소비자권익보호·복지감독청 중앙역학연구소' → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 임산부 HIV 양성률 일반화된 HIV 유행 27개' → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 임산부 보도자료' (일반 경로) → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 임산부' (일반 경로) → 10건
+    라이너 검색 'ЦНИИ эпидемиологии Роспотребнадзора ВИЧ беременные более 1% 27 регионов' (일반 경로, 영어) → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 HIV 양성률' (일반 경로) → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 중앙역학연구소 임산부 HIV 양성률 일반화된 HIV 유행  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '임산부  통계 발표 자료' (일반 경로) → 10건
+[2] None 원 보고서 후보 11건
+    후보: 초위험사회의 새로운 안전망: — gen_e4065948e37e.pdf, 202쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 또한, 243개 지자체의 출생아수.합계출산율, 가임기여성인구수. — gen_dbe1b79d24c4.pdf, 4쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: HIV/AIDS 예방 및 대응 국가전략 개발에 관한 연구 — gen_a1bee97feca2.pdf, 266쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 2025 건강보험심사평가원 기능과 역할 — gen_74ffa2e06453.pdf, 818쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 건강iN — gen_207a16fcb54b.pdf, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 국민의 건강수준 제고를 위한 건강형평성 모니터링 및 사업 개발 — gen_e3ade2b80abc.pdf, 469쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    기관 누리집·공공기관이 아닌 주소(기사 등)는 후보에서 뺌: ['https://25.rospotrebnadzor.ru/dokumenty/DOC/%D0%93', 'https://base.garant.ru/72288240/', 'https://www.dw.com/ru/rospotrebnadzor-generalizova', 'https://medvestnik.ru/content/news/v-rossii-na-odi']
+    Deep Research 가 지목한 원 출처 0곳을 받아 직접 확인: []
+    후보: 대한화학요법학회 50 년사 1958~2008 「항생제 등 화학요법제의 화 — gen_24b9ed4a9ad8.pdf, 481쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 포스트 코로나 시대의 청소년정책 대응 방안 연구 — gen_0f844fca785c.pdf, 394쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    고른 숫자 '1% 이상'는 기준값이라 주장 숫자 '27개'로 바꿈
+[1] 라이너 모델 분해: {'기관': '러시아 연방 소비자권익보호·복지감독청 산하 중앙역학연구소', '보고서': '', '숫자': '27개', '핵심어': ['임산부', 'HIV 양성률', '일반화 단계'], '기준시점': '', '기관누리집': 'crie.ru', '원어검색어': 'Центральный НИИ эпидемиологии ВИЧ беременные 27 регионов 1%'}
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_207a16fcb54b.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 0개
+[3] gen_207a16fcb54b.pdf: 숫자 후보 0곳
+[3] gen_a1bee97feca2.pdf: 숫자 후보 5곳
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 산하 중앙역학연구소 임산부 HIV 양성률 일반화 단계 27개' → 10건
+    라이너 Rerank 로 숫자 후보 5곳 순위 매김 (1위 관련도 0.07)
+    라이너 검색 '27개 임산부 HIV 양성률 일반화 단계 러시아 연방 소비자권익보호·복지감독청 산하 중앙역학연구소' → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 산하 중앙역학연구소 임산부 보도자료' (일반 경로) → 10건
+    라이너 검색 'Центральный НИИ эпидемиологии ВИЧ беременные 27 регионов 1%' (일반 경로, 영어) → 10건
+    라이너 검색 'site:crie.ru HIV 양성률' (일반 경로) → 10건
+    라이너 검색 '임산부  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:crie.ru 임산부 HIV 양성률 일반화 단계' (일반 경로) → 10건
+    라이너 검색 'site:crie.ru Центральный НИИ эпидемиологии ВИЧ беременные 27 регионов 1%' (일반 경로, 영어) → 20건
+    라이너 검색 'site:crie.ru filetype:pdf 임산부 HIV 양성률 일반화 단계' (일반 경로) → 10건
+    라이너 검색 'site:crie.ru 임산부' (일반 경로) → 10건
+    라이너 검색 '러시아 연방 소비자권익보호·복지감독청 산하 중앙역학연구소 임산부 HIV 양성률 일반화 단계  filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: 323-126-1-PB.pdf — gen_812523ab8f5b.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Федеральное бюджетное учреждение науки — gen_379096713dd8.pdf, 187쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+[3] gen_dbe1b79d24c4.pdf: 숫자 후보 0곳
+[3] gen_0f844fca785c.pdf: 숫자 후보 0곳
+[3] gen_74ffa2e06453.pdf: 숫자 후보 0곳
+[3] gen_e4065948e37e.pdf: 숫자 후보 0곳
+[3] gen_e3ade2b80abc.pdf: 숫자 후보 1곳
+    PDF·HWP·웹 페이지가 아니라 건너뜀: https://microbiol.crie.ru/jour/article/download/226/331
+    PDF·HWP·웹 페이지가 아니라 건너뜀: https://virusjour.crie.ru/jour/article/download/16911/1106
+    후보: 28-27-1-PB.pdf — gen_75d12741b5da.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    PDF·HWP·웹 페이지가 아니라 건너뜀: https://microbiol.crie.ru/jour/article/download/323/127
+    받기 실패: 기관 누리집 받기 실패(HTTP 404): https://www.crie.ru/pdf/avtoref1(kurarkina).pdf
+    후보: доктора медицинских наук, профессора — gen_5d03d5b7cbeb.pdf, 10쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 4건 순위 매김
+[3] gen_379096713dd8.pdf: 숫자 후보 3곳
+    게이트웨이 모델: 1쪽 읽기에서 못 찾음
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.03)
+[3] gen_24b9ed4a9ad8.pdf: 숫자 후보 3곳
+    라이너 Rerank 로 숫자 후보 3곳 순위 매김 (1위 관련도 0.06)
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_207a16fcb54b.pdf 직접 읽기(계산 확인도 동시에)
+[3] gen_5d03d5b7cbeb.pdf: 숫자 후보 0곳
+[3] gen_75d12741b5da.txt: 숫자 후보 0곳
+[3] gen_812523ab8f5b.txt: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_379096713dd8.pdf 직접 읽기(계산 확인도 동시에)
+    187쪽 중 2쪽만 잘라 보냄: [1, 2]
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 4개
+    게이트웨이 모델: 2쪽 읽기에서 못 찾음
+    Deep Research 후보에서도 확인하지 못함 → 1차 결과 유지
+    안내: 원문 위치 — 링크 1개
+    걸린 시간 125.9초 — 단계별 {'입구 필터': 0.0, '문장 분해': 7.44, '검색': 20.96, '후보 찾기': 0.88, 'PDF 받기·글자': 35.36, '숫자 찾기': 1.29, '고르기·판정': 40.02, '표현 다름 후보': 16.72, 'PDF 직접 읽기': 28.44, '계산 확인': 0.0, '확인할 곳 안내': 0.0, '라이너 Deep Research': 21.15}
+
+===== 26/30 [무작위] 금융정보분석원(FIU)의 실태조사에 따르면, 올해 6월 말 기준 가상자산 이용자 계정의 77.2%는 보유자산이 100만원 미만
+[1] 라이너 모델 분해: {'기관': '금융정보분석원', '보고서': '가상자산사업자 실태조사', '숫자': '77.2%', '핵심어': ['가상자산 이용자 계정', '보유자산', '100만원 미만'], '기준시점': '2026년 6월 말', '기관누리집': 'fiu.go.kr', '원어검색어': ''}
+    라이너 검색 '77.2% 가상자산 이용자 계정 보유자산 100만원 미만 금융정보분석원' → 10건
+    라이너 검색 '금융정보분석원 가상자산사업자 실태조사 가상자산 이용자 계정 보유자산 100만원 미만 77.2%' → 10건
+    라이너 검색 '금융정보분석원 가상자산 이용자 계정 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:fiu.go.kr filetype:pdf 가상자산사업자 실태조사 2026년 6월 말' (일반 경로) → 10건
+    라이너 검색 '가상자산 이용자 계정 2026년 6월 말 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:fiu.go.kr 보유자산' (일반 경로) → 9건
+    라이너 검색 '금융정보분석원 가상자산사업자 실태조사 2026년 6월 말 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:fiu.go.kr 가상자산 이용자 계정' (일반 경로) → 9건
+    라이너 검색 'site:fiu.go.kr 가상자산사업자 실태조사 2026년 6월 말' (일반 경로) → 10건
+    정책브리핑 보도자료 검색 '가상자산사업자 실태조사' (2025-11-15~2026-11-16) → 6건
+    정책브리핑 설명자료 검색 '가상자산사업자 실태조사' (2026-09-16~2026-11-16) → 0건
+    정책브리핑 설명자료 검색 '가상자산 이용자 계정 보유자산' (2026-09-16~2026-11-16) → 0건
+[2] None 원 보고서 후보 6건
+    후보: '26년 상반기 — gen_d5b77d2f0904.txt, 25쪽, 기준시점 일치 2/2, 제목 비슷함 1.00
+    후보: 기후·환경과 에너지, 하나의 엔진으로... 국민이 체감하는 탈탄소 녹색문 — gen_5293d1be3729.txt, 9쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: 조달청 4월 대형사업 평가 총 27건 진행 예정 — gen_256b863923a6.txt, 12쪽, 기준시점 일치 1/2, 제목 비슷함 0.10
+    후보: AI시대, 거세지는 침해위협에 맞서 全 금융권이 튼튼한 보안체계로 무장하 — gen_74369967fe8e.txt, 11쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: 22년 하반기 가상자산사업자 실태조사 결과 — gen_da1c664dca5b.pdf, 19쪽, 기준시점 일치 0/2, 제목 비슷함 1.00
+    후보: '26년 상반기 가상자산사업자 실태조사 결과 — gen_167c593a86d4.pdf, 21쪽, 기준시점 일치 2/2, 제목 비슷함 1.00
+    라이너 Rerank 로 후보 보고서 6건 순위 매김
+[3] gen_167c593a86d4.pdf: 숫자 후보 2곳
+    라이너 Rerank 로 숫자 후보 2곳 순위 매김 (1위 관련도 0.86)
+    고르기 답이 갈려(선택 1·2) 한 번 더 물음 → 2
+    라이너 Decisions 교차 확인: 일치 (확신도 0.89) → 같음
+    걸린 시간 19.9초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.21, '검색': 5.78, '후보 찾기': 0.99, 'PDF 받기·글자': 0.76, '숫자 찾기': 0.05, '고르기·판정': 9.59, '교차 확인(Decisions)': 0.46, '확인할 곳 안내': 0.0}
+
+===== 27/30 [무작위] 공단이 발표한 지난 1월 기준 안내에 따르면 재산세 과세표준 합계가 6억원을 초과하거나, 사업·근로소득을 제외한 연간 종합소득
+[1] 라이너 모델 분해: {'기관': '국민연금공단', '보고서': '', '숫자': '6억원', '핵심어': ['재산세 과세표준', '지원 제외 기준'], '기준시점': '2026년 1월', '기관누리집': 'nps.or.kr', '원어검색어': ''}
+    라이너 검색 '6억원 재산세 과세표준 지원 제외 기준 국민연금공단' → 10건
+    라이너 검색 '국민연금공단 재산세 과세표준 지원 제외 기준 6억원' → 10건
+    라이너 검색 'site:nps.or.kr 지원 제외 기준' (일반 경로) → 17건
+    라이너 검색 'site:nps.or.kr 재산세 과세표준' (일반 경로) → 20건
+    라이너 검색 '국민연금공단 재산세 과세표준 보도자료' (일반 경로) → 10건
+    라이너 검색 '재산세 과세표준 2026년 1월 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 '국민연금공단 재산세 과세표준 지원 제외 기준 2026년 1월 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:nps.or.kr filetype:pdf 재산세 과세표준 지원 제외 기준 2026년 1월' (일반 경로) → 12건
+    라이너 검색 'site:nps.or.kr 재산세 과세표준 지원 제외 기준 2026년 1월' (일반 경로) → 17건
+[2] None 원 보고서 후보 20건
+    후보: 농어업인에 대한 연금보험료 국고보조 — gen_snip_f788a0eaa3ab.txt, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 가사근로자 연금보험료지원 — gen_9b524a794e57.txt, 7쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 지역가입자 연금보험료 지원 — gen_snip_d96ddf0ff843.txt, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 국민참여 > 상담센터 > 자주찾는 질문(FAQ) > 생애주기 — gen_snip_1622e3da1297.txt, 1쪽, 기준시점 일치 2/2, 제목 비슷함 0.00
+    후보: ᮮᮣᜒᱯ̂ ⷄⷿⷆⷊⷃⷾⷋ ᵪ ᯊ — gen_snip_4e4fb54f12c0.txt, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: 가사근로자 연금보험료지원 — gen_snip_9b524a794e57.txt, 1쪽, 기준시점 일치 1/2, 제목 비슷함 0.00
+    후보: www.nps.or.kr — gen_snip_035e760fe36e.txt, 1쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    후보: www.nps.or.kr — gen_035e760fe36e.pdf, 16쪽, 기준시점 일치 0/2, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 8건 순위 매김
+[3] gen_snip_1622e3da1297.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.79) → 같음, 축별로 다름: 기간
+    기준값 '6억원'로만 맞춘 결과라 원문 확인으로 보지 않음
+    걸린 시간 17.9초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.36, '검색': 7.68, '후보 찾기': 0.3, 'PDF 받기·글자': 2.63, '숫자 찾기': 0.02, '고르기·판정': 4.47, '교차 확인(Decisions)': 0.45, '확인할 곳 안내': 0.0}
+
+===== 28/30 [무작위] 남아공 통계청이 지난해 발표한 자료에 따르면 요하네스버그가 속한 하우텡주는 2023년 기준 전국 가계 소비지출의 약 36%를 
+[1] 라이너 모델 분해: {'기관': '남아프리카공화국 통계청', '보고서': '', '숫자': '약 36%', '핵심어': ['하우텡주', '가계 소비지출', '전국 비중'], '기준시점': '2023년', '기관누리집': 'statssa.gov.za', '원어검색어': 'Gauteng household consumption expenditure share 2023'}
+    라이너 검색 '약 36% 하우텡주 가계 소비지출 전국 비중 남아프리카공화국 통계청' → 10건
+    라이너 검색 '남아프리카공화국 통계청 하우텡주 가계 소비지출 전국 비중 약 36%' → 10건
+    라이너 검색 '하우텡주 2023년 통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za Gauteng household consumption expenditure share 2023' (일반 경로, 영어) → 17건
+    라이너 검색 '남아프리카공화국 통계청 하우텡주 보도자료' (일반 경로) → 10건
+    라이너 검색 'Gauteng household consumption expenditure share 2023' (일반 경로, 영어) → 10건
+    라이너 검색 'site:statssa.gov.za 가계 소비지출' (일반 경로) → 10건
+    라이너 검색 '남아프리카공화국 통계청 하우텡주 가계 소비지출 전국 비중 2023년 filetype:pdf' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za filetype:pdf 하우텡주 가계 소비지출 전국 비중 2023년' (일반 경로) → 10건
+    라이너 검색 'site:statssa.gov.za 하우텡주 가계 소비지출 전국 비중 2023년' (일반 경로) → 12건
+    라이너 검색 'site:statssa.gov.za 하우텡주' (일반 경로) → 14건
+    정책브리핑 보도자료 검색 '하우텡주 가계 소비지출' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '하우텡주' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 보도자료 검색 '가계 소비지출' (2026-09-14~2026-11-14) → 1건
+    정책브리핑 설명자료 검색 '하우텡주 가계 소비지출' (2026-09-14~2026-11-14) → 0건
+    정책브리핑 설명자료 검색 '하우텡주' (2026-09-14~2026-11-14) → 0건
+[2] None 원 보고서 후보 24건
+    후보: Income & Expenditure Survey (IES) 2022/2 — gen_snip_8ef7eb37d9c2.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: South African Households Spend R3 Trilli — gen_snip_32d2afe46e8a.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    후보: The state of South African households in — gen_snip_754b8a153c8a.txt, 1쪽, 기준시점 일치 1/1, 제목 비슷함 0.00
+    후보: General Household Survey — gen_bc45a0632c64.txt, 1쪽, 기준시점 일치 0/1, 제목 비슷함 0.00
+    글자가 너무 적어 건너뜀(83자): https://www.statssa.gov.za/?p=17981
+    글자가 너무 적어 건너뜀(82자): https://www.statssa.gov.za/?p=17283
+    글자가 너무 적어 건너뜀(0자): https://www.statssa.gov.za/publications/P0318/P03182021.pdf
+    글자가 너무 적어 건너뜀(83자): https://www.statssa.gov.za/?p=17995
+    라이너 Rerank 로 후보 보고서 4건 순위 매김
+[3] gen_snip_8ef7eb37d9c2.txt: 숫자 후보 1곳
+    라이너 Decisions 교차 확인: 일치 (확신도 0.97) → 같음
+    걸린 시간 19.2초 — 단계별 {'입구 필터': 0.0, '문장 분해': 2.57, '검색': 6.87, '후보 찾기': 1.33, 'PDF 받기·글자': 3.07, '숫자 찾기': 0.0, '고르기·판정': 4.81, '교차 확인(Decisions)': 0.51, '확인할 곳 안내': 0.0}
+
+===== 29/30 [무작위] 연구소 설립 이후 정량조사 15건, 정성조사 12건 등 총 27건의 연구를 진행했으며, 누적 참여 인원은 약 7600명이다.
+[0] 입구 필터: 확인 대상 아님 — 제도를 바꾸자는 제안을 전하는 문장입니다. 숫자는 제안 내용이라 통계 원문과 대조할 대상이 아닙니다.
+    걸린 시간 0.0초 — 단계별 {'입구 필터': 0.0, '확인할 곳 안내': 0.0}
+
+===== 30/30 [무작위] 한편 한국세무사회의 진상조사 요청과 정부의 엄정 대응 예고 속에 시험 주관 기관인 한국산업인력공단은 당시 시험 감독위원 4명에
+    라이너 Deep Research 실패: HTTPError: HTTP Error 402: Payment Required
+[1] 라이너 모델 분해: {'기관': '한국산업인력공단', '보고서': '', '숫자': '4명', '핵심어': ['세무사 시험', '시험 감독위원', '특이 사항 확인'], '기준시점': '', '기관누리집': 'hrdkorea.or.kr', '원어검색어': ''}
+    라이너 검색 '한국산업인력공단 세무사 시험 시험 감독위원 특이 사항 확인 4명' → 10건
+    라이너 검색 '4명 세무사 시험 시험 감독위원 특이 사항 확인 한국산업인력공단' → 10건
+    라이너 검색 '한국산업인력공단 세무사 시험 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:hrdkorea.or.kr 시험 감독위원' (일반 경로) → 20건
+    라이너 검색 'site:hrdkorea.or.kr 세무사 시험' (일반 경로) → 20건
+    라이너 검색 'site:hrdkorea.or.kr filetype:pdf 세무사 시험 시험 감독위원 특이 사항 확인' (일반 경로) → 16건
+    라이너 검색 '세무사 시험  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:hrdkorea.or.kr 세무사 시험 시험 감독위원 특이 사항 확인' (일반 경로) → 20건
+    라이너 검색 '한국산업인력공단 세무사 시험 시험 감독위원 특이 사항 확인  filetype:pdf' (일반 경로) → 10건
+[2] None 원 보고서 후보 20건
+    후보: 검색결과 '세무사'에 대한 통합검색결과는 총 172건 입니다. — gen_0151ea40179e.txt, 4쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    보도 설명자료라 후보에서 뺌: 제63회 세무사시험 스마트안경 의혹 관련 설명
+    후보: ㅇ 2021년 실시된 제58회 - 세무사 2차 시험의 난이도 및 채점관리 — gen_248bc782824c.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: Sheet2 — gen_7df14a197995.txt, 30쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 접수번호 접수일 청구제목 결정구분 처리상태 ... — gen_da92f3080efe.pdf, 5쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 정보공개 공개 및 비공개 목록(2016) — gen_0c36e72f539e.pdf, 7쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 지속가능경영 운영규칙 — gen_759997e6590b.pdf, 74쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: NCS기반 재설계 자격수준과 NCS수준의 적합성 개발 연구 — gen_c20035bd5654.pdf, 220쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_248bc782824c.txt: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 7개
+[3] gen_248bc782824c.txt: 숫자 후보 0곳
+[3] gen_da92f3080efe.pdf: 숫자 후보 0곳
+[3] gen_7df14a197995.txt: 숫자 후보 0곳
+[3] gen_0c36e72f539e.pdf: 숫자 후보 0곳
+[3] gen_0151ea40179e.txt: 숫자 후보 0곳
+[3] gen_759997e6590b.pdf: 숫자 후보 0곳
+[3] gen_c20035bd5654.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_248bc782824c.txt 직접 읽기(계산 확인도 동시에)
+    안내: 원문 위치 — 링크 3개
+    1차에서 원문을 못 찾아 중간 답을 먼저 보여 줌(25.9초) — 라이너 Deep Research로 더 찾는 중
+[2라운드] 다른 기사들의 제목·요약으로 기관·보고서를 다시 뽑아 한 번 더 찾음
+[딥리서치] 우리 방식으로 못 찾아 라이너 Deep Research 에 원 출처를 물음
+    Deep Research 가 지목한 원 출처 주소가 없음
+[1] 라이너 모델 분해: {'기관': '한국산업인력공단', '보고서': '', '숫자': '4명', '핵심어': ['세무사 시험', '시험 감독위원', '특이 사항 확인'], '기준시점': '', '기관누리집': 'hrdkorea.or.kr', '원어검색어': ''}
+    라이너 검색 '한국산업인력공단 세무사 시험 시험 감독위원 특이 사항 확인 4명' → 10건
+    라이너 검색 '4명 세무사 시험 시험 감독위원 특이 사항 확인 한국산업인력공단' → 10건
+    라이너 검색 실패 'site:hrdkorea.or.kr 세무사 시험': Liner API 실패(/tools/search/web, HTTP 402): {"error":{"code":"INSUFFICIENT_CREDITS","message":"Insufficient credits: you have $0.000292 usable for the Search API.","retryable":false}}
+    라이너 검색 '한국산업인력공단 세무사 시험 보도자료' (일반 경로) → 10건
+    라이너 검색 'site:hrdkorea.or.kr 시험 감독위원' (일반 경로) → 20건
+    라이너 검색 'site:hrdkorea.or.kr 세무사 시험 시험 감독위원 특이 사항 확인' (일반 경로) → 20건
+    라이너 검색 '한국산업인력공단 세무사 시험 시험 감독위원 특이 사항 확인  filetype:pdf' (일반 경로) → 10건
+    라이너 검색 '세무사 시험  통계 발표 자료' (일반 경로) → 10건
+    라이너 검색 'site:hrdkorea.or.kr filetype:pdf 세무사 시험 시험 감독위원 특이 사항 확인' (일반 경로) → 15건
+[2] None 원 보고서 후보 20건
+    보도 설명자료라 후보에서 뺌: 제63회 세무사시험 스마트안경 의혹 관련 설명    후보: Sheet2 — gen_7df14a197995.txt, 30쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 국가기술자격 실기시험 감독위원 모집공고 — gen_318f256e53fe.txt, 1쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 접수번호 접수일 청구제목 결정구분 처리상태 ... — gen_da92f3080efe.pdf, 5쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 2025년 능력평가이사 소관 경영계획 — gen_b8903701923e.pdf, 15쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 실기시험 감독(채점)위원 모집공고 — gen_53b76b46074c.pdf, 14쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 실기시험 감독위원 모집공고 — gen_0aacd1388533.pdf, 11쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    후보: 지속가능경영 운영규칙 — gen_7d29a8ec9341.pdf, 76쪽, 기준시점 일치 0/0, 제목 비슷함 0.00
+    라이너 Rerank 로 후보 보고서 7건 순위 매김
+[3] gen_0aacd1388533.pdf: 숫자 후보 0곳 → PDF 직접 읽기를 미리 출발
+[3] gen_0aacd1388533.pdf: 숫자 후보 0곳
+[3] gen_53b76b46074c.pdf: 숫자 후보 0곳
+[3] gen_318f256e53fe.txt: 숫자 후보 0곳
+[3] gen_da92f3080efe.pdf: 숫자 후보 0곳
+[3] gen_7df14a197995.txt: 숫자 후보 0곳
+[3] gen_b8903701923e.pdf: 숫자 후보 0곳
+[3] gen_7d29a8ec9341.pdf: 숫자 후보 0곳
+[4] 글자 찾기로 못 찾음 → 라이너 게이트웨이 모델이 gen_0aacd1388533.pdf 직접 읽기(계산 확인도 동시에)
+    계산 찾기: 원문 숫자 조합 중 기사 숫자가 나오는 식 419개
+    PDF 직접 읽기 실패: Liner API 실패(/chat/completions, HTTP 402): {"error":{"message":"Insufficient credits: you have $0.000292 usable for the Gateway API. Part of it is held by your requests still in progress.","type":"invalid_request_error","code":"insufficient_quota"}}
+    게이트웨이 모델: 11쪽 읽기에서 못 찾음
+    안내: 원문 위치 — 링크 3개
+    걸린 시간 45.6초 — 단계별 {'입구 필터': 0.0, '문장 분해': 4.71, '검색': 15.7, '후보 찾기': 0.58, 'PDF 받기·글자': 17.65, '숫자 찾기': 0.22, 'PDF 직접 읽기': 1.36, '계산 확인': 5.26, '확인할 곳 안내': 0.0, '라이너 Deep Research': 0.0}
+
+총 30건 — 일치 14, 원출처 미확인 13, 확인 대상 아님 2, 표현 바뀜 1 / 평균 57초
+단계별 평균(초, 그 단계를 거친 건만): 입구 필터 0.1(30건), 확인할 곳 안내 0.2(30건), 문장 분해 5.0(28건), 검색 13.8(28건), 후보 찾기 1.4(28건), PDF 받기·글자 10.8(28건), 숫자 찾기 0.6(28건), PDF 직접 읽기 18.3(14건), 계산 확인 0.8(14건), 고르기·판정 11.4(24건), 표현 다름 후보 7.2(13건), 라이너 Deep Research 28.4(14건), 교차 확인(Decisions) 0.6(16건)
+평가표: 작업/평가_시험세트_인용/평가표_회차3.md
